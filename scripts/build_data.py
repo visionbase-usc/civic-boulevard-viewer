@@ -42,7 +42,7 @@ access=json.loads((ROOT/'source/pedestrian-access.json').read_text())
 for item in access['items']:
     row=dict(編號=item['id'],分段=item['segment'],名稱=item['name'],類別='停車場行人出入口（樓梯）' if item['groundDocumented'] else '停車場樓梯（地面連通待核）',
         地址或鄰近路口=item['location'],經度=None,緯度=None,座標依據='未取得入口座標；街景相機位置不作為設施座標',範圍='所屬停車場的行人設施，不自動視為道路穿越設施',
-        確認程度='文件編號已核；'+('2024-09街景已核，現況待核' if item['groundReview'] else '現況及定位待核'),
+        確認程度='文件編號已核；'+(item['groundReview']['imageDate']+'街景已核，現況及定位待核' if item['groundReview'] else '現況及定位待核'),
         來源日期=item['document']['date'],查核日期=item['checkedAt'],來源連結=item['document']['url']+'#page='+str(item['document']['page']),待確認事項=item['limitations'],所屬編號=item['parent'])
     existing=next((r for r in records if r['id']==item['id']),None)
     if existing:
@@ -84,7 +84,11 @@ assert len(elevated)==30
 sources=sorted(set(r.get('currentSource',r['original']).get('來源連結','') for r in records if r['original'].get('來源連結')))
 sources=sorted(set(sources).union(ref['url'] for rev in reviews for ref in rev['references']))
 sources=sorted(set(sources).union(i['groundReview']['url'] for i in access['items'] if i['groundReview']))
-pack=dict(version='1.1.0',date=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],
+for audit in access['audits']:
+    items=[i for i in access['items'] if i['parent']==audit['parent']]
+    audit['groundImageReviewed']=sum(bool(i['groundReview']) for i in items)
+    audit['locatedCount']=sum(bool(byid[i['id']]['geometry']) for i in items)
+pack=dict(version='1.1.1',date=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],
     roads=src['roads'],elevated=elevated,sources=sources,
     meta=dict(pedestrianAccessCount=len(access['items']),documentedGroundAccessCount=sum(i['groundDocumented'] for i in access['items']),accessImageReviewCount=sum(bool(i['groundReview']) for i in access['items']),imageReviewCount=len(reviews),recordCount=len(records),indexCount=sum(r['isIndex'] for r in records),
         categoryCounts=dict(Counter(r['category'] for r in records if not r['isIndex'])),

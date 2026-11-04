@@ -89,8 +89,17 @@
       },
       "checkedAt": "2026-11-04",
       "position": null,
-      "groundReview": null,
-      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+      "groundReview": {
+        "imageDate": "2024-12",
+        "checkedAt": "2026-11-04",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=jfgXUbA-qVi1ACPMPHqX8Q&viewpoint=25.0477246,121.525352&heading=60&pitch=0",
+        "observation": [
+          121.525352,
+          25.0477246
+        ],
+        "summary": "2024-12街景可辨識「林森－金山」1號標牌、樓梯扶手及地面雨棚；位於市民大道北側，與官方第12頁1號樓梯側別及排列一致。"
+      },
+      "limitations": "已核對所列年月街景的編號與樓梯外觀，非2026現勘；入口座標、開放狀態、無障礙及自行車通行性仍未確認。"
     },
     {
       "id": "PA-TPE0110-2",
@@ -107,8 +116,17 @@
       },
       "checkedAt": "2026-11-04",
       "position": null,
-      "groundReview": null,
-      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+      "groundReview": {
+        "imageDate": "2025-05",
+        "checkedAt": "2026-11-04",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=g7CTLwF2f_KQU7Q1_-sSzQ&viewpoint=25.0476756,121.5255861&heading=60&pitch=0",
+        "observation": [
+          121.5255861,
+          25.0476756
+        ],
+        "summary": "2025-05街景可辨識2號樓梯標牌、樓梯開口與雨棚；位於北側、長安東路一段30巷以西，與官方第12頁一致。"
+      },
+      "limitations": "已核對所列年月街景的編號與樓梯外觀，非2026現勘；入口座標、開放狀態、無障礙及自行車通行性仍未確認。"
     },
     {
       "id": "PA-TPE0110-3",
@@ -155,8 +173,20 @@
       },
       "checkedAt": "2026-11-04",
       "position": null,
-      "groundReview": null,
-      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+      "groundReview": {
+        "imageDate": "2024-09",
+        "checkedAt": "2026-11-04",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=PVXxOyCQBIhGqVAerErYRQ&viewpoint=25.0472552,121.527267&heading=275&pitch=0",
+        "observation": [
+          121.527267,
+          25.0472552
+        ],
+        "summary": "2024-09人行道街景可清楚辨識4號標牌、樓梯開口及雨棚；位於北側、長安東路一段52巷以西，與官方第12頁一致。"
+      },
+      "limitations": "已核對所列年月街景的編號與樓梯外觀，非2026現勘；入口座標、開放狀態、無障礙及自行車通行性仍未確認。",
+      "related": [
+        "G-018"
+      ]
     },
     {
       "id": "PA-TPE0110-5",
@@ -173,8 +203,20 @@
       },
       "checkedAt": "2026-11-04",
       "position": null,
-      "groundReview": null,
-      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+      "groundReview": {
+        "imageDate": "2024-09",
+        "checkedAt": "2026-11-04",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=GTG-p1gPkuG6y9tv6fOLUw&viewpoint=25.0468564,121.5273087&heading=20&pitch=0",
+        "observation": [
+          121.5273087,
+          25.0468564
+        ],
+        "summary": "2024-09街景清楚可辨「林森－金山」5號樓梯標牌、樓梯扶手與雨棚；位於市民大道南側、中央藝文公園旁，與官方第12頁一致。"
+      },
+      "limitations": "已核對所列年月街景的編號與樓梯外觀，非2026現勘；入口座標、開放狀態、無障礙及自行車通行性仍未確認。",
+      "related": [
+        "G-018"
+      ]
     },
     {
       "id": "PA-TPE0110-6",
@@ -191,8 +233,20 @@
       },
       "checkedAt": "2026-11-04",
       "position": null,
-      "groundReview": null,
-      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+      "groundReview": {
+        "imageDate": "2025-04",
+        "checkedAt": "2026-11-04",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=bxityGjQxt_fhCrWn2lmWg&viewpoint=25.046768,121.5278452&heading=56.67&pitch=0&fov=30",
+        "observation": [
+          121.5278452,
+          25.046768
+        ],
+        "summary": "2025-04地面車道街景可讀北側雨棚的6號樓梯標牌，與林金車輛入口招牌同框；北側、52巷以東的側別及序列與官方第12頁相符。觀察點在對街，非入口所在點。"
+      },
+      "limitations": "已核對所列年月街景的編號與樓梯外觀，非2026現勘；入口座標、開放狀態、無障礙及自行車通行性仍未確認。",
+      "related": [
+        "G-018"
+      ]
     },
     {
       "id": "PA-TPE0110-7",
@@ -209,8 +263,17 @@
       },
       "checkedAt": "2026-11-04",
       "position": null,
-      "groundReview": null,
-      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+      "groundReview": {
+        "imageDate": "2024-09",
+        "checkedAt": "2026-11-04",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=_sSPdPIItcpV7rV1YaQBQw&viewpoint=25.046491,121.5284952&heading=91.88&pitch=0&fov=75",
+        "observation": [
+          121.5284952,
+          25.046491
+        ],
+        "summary": "2024-09人行道街景可辨7號樓梯標牌、樓梯扶手與雨棚；位於南側、5號以東，與官方第12頁地面層圖排列一致。"
+      },
+      "limitations": "已核對所列年月街景的編號與樓梯外觀，非2026現勘；入口座標、開放狀態、無障礙及自行車通行性仍未確認。"
     },
     {
       "id": "PA-TPE0109-1",
@@ -548,10 +611,10 @@
         "PA-TPE0110-7"
       ],
       "documentedGroundCount": 7,
-      "groundImageReviewed": 1,
+      "groundImageReviewed": 7,
       "locatedCount": 0,
       "complete": false,
-      "note": "地面層圖的編號樓梯已逐口建檔；現況與座標尚未逐口核實。"
+      "note": "官方地面層圖列1–7號樓梯，7個編號均有可辨識地面街景（2024-09至2025-05）與側別／序列交叉核對；入口精確座標及2026現況仍待確認。"
     },
     {
       "parent": "P-TPE0109",

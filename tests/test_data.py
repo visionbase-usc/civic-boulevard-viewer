@@ -40,7 +40,7 @@ class InventoryTests(unittest.TestCase):
  def test_sources_are_public_http(self):
   for x in r.values():self.assertRegex(x['original']['來源連結'],r'^https://')
  def test_image_review_preserves_original_geometry_and_counts(self):
-  self.assertEqual(d['meta']['imageReviewCount'],1)
+  self.assertEqual(d['meta']['imageReviewCount'],2)
   group=r['G-017'];self.assertTrue(group['isIndex'])
   self.assertEqual(group['review']['originalEditDate'],'2023-06-21')
   self.assertEqual([x['imageDate'] for x in group['review']['references']],['2025-05','2024-09'])
@@ -53,7 +53,14 @@ class InventoryTests(unittest.TestCase):
   access=[x for x in r.values() if x.get('access')]
   self.assertEqual(len(access),28)
   self.assertEqual(sum(x['access']['groundDocumented'] for x in access),23)
-  self.assertEqual(sum(bool(x['access']['groundReview']) for x in access),1)
+  source_access=json.loads((ROOT/'source/pedestrian-access.json').read_text())['items']
+  self.assertEqual(d['meta']['accessImageReviewCount'],sum(bool(x['groundReview']) for x in source_access))
+  for x in access:
+   g=x['access']['groundReview']
+   if g:
+    self.assertIn(g['imageDate'],x.get('currentSource',x['original'])['確認程度'])
+    self.assertRegex(g['imageDate'],r'^20\d\d-\d\d$')
+    self.assertIn('pano=',g['url'])
   for x in access:
    self.assertIsNone(x['geometry']);self.assertTrue(x['pending']);self.assertFalse(x['historical'])
    self.assertEqual(x['category'],'crossing');self.assertIn(x['parent'],r)
@@ -71,6 +78,7 @@ class InventoryTests(unittest.TestCase):
   for a in d['accessAudit']:
    self.assertFalse(a['complete']);self.assertEqual(a['locatedCount'],0)
    self.assertTrue(all(r[i]['parent']==a['parent'] for i in a['recordIds']))
+   self.assertEqual(a['groundImageReviewed'],sum(bool(r[i]['access']['groundReview']) for i in a['recordIds']))
  def test_cross_segment_system_not_duplicated(self):
   self.assertEqual(r['X-YMALL']['segments'],['S0','S1']);self.assertIsNone(r['X-YMALL']['geometry'])
   self.assertEqual(r['X-C076']['geometry']['type'],'MultiLineString')

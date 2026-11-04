@@ -139,13 +139,13 @@ function renderFeatures(){
  // or adding their constituent polygons to the facility count a second time.
  for(const r of D.records.filter(r=>r.isIndex&&r.review&&allowed(r))){
   const pos=[r.original['緯度'],r.original['經度']];if(!view.contains(pos))continue;
-  bindRecord(L.marker(pos,{icon:markerIcon(r),title:r.name,zIndexOffset:500}),r,z>=17).addTo(features);
+  bindRecord(L.marker(pos,{icon:markerIcon(r),title:r.name,zIndexOffset:500}),r,r.id===state.selected).addTo(features);
  }
  // Observation markers locate the evidence camera, never the unmeasured entrance.
  for(const r of D.records.filter(r=>r.access?.groundReview&&allowed(r))){
   const xy=r.access.groundReview.observation,pos=[xy[1],xy[0]];if(!view.contains(pos))continue;
-  const marker=L.marker(pos,{icon:L.divIcon({className:'marker-shell',iconSize:[28,28],iconAnchor:[14,14],html:'<span class="observation-marker" aria-hidden="true">◎</span>'}),title:r.name+'：街景觀察位置，非入口座標'});
-  marker.on('click',()=>selectRecord(r.id)).bindTooltip(esc(r.name.replace('市民大道','').replace('停車場／','').replace('行人出入口（樓梯）',''))+' · 街景觀察點（非入口位置）',{permanent:z>=18,direction:'bottom',offset:[0,14]}).addTo(features);
+  const marker=L.marker(pos,{icon:L.divIcon({className:'marker-shell',iconSize:[38,28],iconAnchor:[19,14],html:`<span class="observation-marker" aria-hidden="true">◎<small>${esc(r.access.number)}</small></span>`}),title:r.name+'：街景觀察位置，非入口座標'});
+  marker.on('click',()=>selectRecord(r.id)).bindTooltip(esc(r.name.replace('市民大道','').replace('停車場／','').replace('行人出入口（樓梯）',''))+' · 街景觀察點（非入口位置）',{permanent:r.id===state.selected,direction:'bottom',offset:[0,14]}).addTo(features);
  }
  const all=scopeRecords().filter(r=>!r.isIndex),missing=all.filter(r=>!r.geometry).length;
  $('visible-summary').textContent=`${state.segment==='all'?'全線':state.segment} ${all.length} 筆資料${missing?` · ${missing} 筆未定位`:''}`;
@@ -211,7 +211,7 @@ function renderResults(){
  const indexes=all.filter(r=>r.isIndex).length, missing=all.filter(r=>!r.geometry).length;
  $('results-title').textContent=resultMode==='access'?'停車場行人出入口核對清單':resultMode==='search'&&query?'搜尋結果':'資料清單';
  $('results-summary').textContent=`${all.length-indexes} 筆資料${indexes?`＋${indexes} 個查找索引`:''} · ${missing} 筆未定位。${resultMode==='search'&&query?'搜尋涵蓋隱藏圖層與歷史資料。':'依目前分段、圖層與狀態篩選。'}`;
- if(resultMode==='access')$('results-summary').textContent=`${D.meta.documentedGroundAccessCount} 個文件載明地面樓梯口＋5 座地面連通待核樓梯；${D.meta.accessImageReviewCount} 個另有日期街景，0 個已核實入口座標。全線查核未完成。包含全部相關紀錄，不受目前圖層與分段篩選影響。`;
+ if(resultMode==='access')$('results-summary').textContent=`${D.meta.documentedGroundAccessCount} 個文件載明地面樓梯口＋${D.meta.pedestrianAccessCount-D.meta.documentedGroundAccessCount} 座地面連通待核樓梯；${D.meta.accessImageReviewCount} 個另有日期街景，${D.accessAudit.reduce((n,a)=>n+a.locatedCount,0)} 個已核實入口座標。全線查核未完成。包含全部相關紀錄，不受目前圖層與分段篩選影響。`;
  $('results').innerHTML=ordered.slice(0,resultLimit).map(r=>`<button class="result" data-record="${esc(r.id)}">${categoryIcon(cats.get(r.category))}<strong>${esc(r.name)}</strong><small>${esc(r.segments.join('/'))} · ${esc(cats.get(r.category).name)} · ${statusName(r)}${r.isIndex?' · 查找索引':''}</small><small class="${r.geometry?'':'no-coordinate'}">${esc(r.id)}${r.geometry?'':' · 尚無可定位座標'}</small></button>`).join('')||'<div class="empty">沒有符合的資料。可調整分類或狀態，或輸入其他名稱查詢。</div>';
  if(ordered.length>resultLimit)$('results').insertAdjacentHTML('beforeend',`<button id="more-results">顯示更多（尚有 ${ordered.length-resultLimit} 筆）</button>`);
  $('results').querySelectorAll('[data-record]').forEach(el=>el.onclick=()=>selectRecord(el.dataset.record));

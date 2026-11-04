@@ -9,12 +9,12 @@ r={v['id']:v for v in d['records']}
 class InventoryTests(unittest.TestCase):
  def test_preserves_all_source_rows(self):
   source={x['編號']:x for k,rows in s['datasets'].items() if k not in ['路段範圍','補件清單'] for x in rows}
-  self.assertEqual(len(r),710);self.assertEqual(set(r),set(source))
+  self.assertEqual(len(r),734);self.assertTrue(set(source).issubset(r));self.assertEqual(len(source),710)
   for key, original in source.items(): self.assertEqual(r[key]['original'],original)
  def test_six_categories_and_indexes(self):
   self.assertEqual(len(d['categories']),6)
   self.assertEqual(sum(x['isIndex'] for x in r.values()),76)
-  self.assertEqual(sum(d['meta']['categoryCounts'].values()),634)
+  self.assertEqual(sum(d['meta']['categoryCounts'].values()),658)
   self.assertEqual(len([x for x in r.values() if x['table']=='行穿線圖形']),319)
   members=[child for x in r.values() if x['isIndex'] for child in x['members']]
   self.assertEqual(len(members),319);self.assertEqual(len(set(members)),319)
@@ -25,7 +25,7 @@ class InventoryTests(unittest.TestCase):
   for x in r.values():
    if x['parent']:self.assertIn(x['parent'],r)
    if x['group']:self.assertIn(x['group'],r)
-   if x['table']=='歷史圖說設備':self.assertTrue(x['historical'] and x['pending']);self.assertIsNone(x['geometry'])
+   if x['table']=='歷史圖說設備' and not x.get('access'):self.assertTrue(x['historical'] and x['pending']);self.assertIsNone(x['geometry'])
   stairs=[x for x in r.values() if x['subtype']=='地下樓梯（非地面口）']
   self.assertEqual(len(stairs),3)
  def test_demo_source_coordinates(self):
@@ -48,7 +48,29 @@ class InventoryTests(unittest.TestCase):
   for rid in ['C-08-7698','C-A8-7707']:
    self.assertEqual(r[rid]['geometry'],s['crossGeoms'][rid])
    self.assertTrue(r[rid]['pending'])
-  self.assertEqual(sum(d['meta']['categoryCounts'].values()),634)
+  self.assertEqual(sum(d['meta']['categoryCounts'].values()),658)
+ def test_pedestrian_entrance_evidence_and_no_fake_coordinates(self):
+  access=[x for x in r.values() if x.get('access')]
+  self.assertEqual(len(access),28)
+  self.assertEqual(sum(x['access']['groundDocumented'] for x in access),23)
+  self.assertEqual(sum(bool(x['access']['groundReview']) for x in access),1)
+  for x in access:
+   self.assertIsNone(x['geometry']);self.assertTrue(x['pending']);self.assertFalse(x['historical'])
+   self.assertEqual(x['category'],'crossing');self.assertIn(x['parent'],r)
+   self.assertGreater(x['access']['document']['page'],0)
+  a=r['PA-TPE0110-3'];self.assertEqual(a['parent'],'P-TPE0110')
+  self.assertEqual(a['access']['groundReview']['imageDate'],'2024-09')
+  self.assertIn('G-017',a['access']['related'])
+ def test_historical_stairs_keep_ids_and_source_history(self):
+  for i in range(1,5):
+   x=r[f'H-FD-{i:02}'];self.assertIn('currentSource',x)
+   self.assertEqual(x['access']['document']['page'],14)
+  self.assertFalse(any(x['id'].startswith('PA-TPE0155') for x in r.values()))
+ def test_access_audits_do_not_claim_completion(self):
+  self.assertEqual(len(d['accessAudit']),10)
+  for a in d['accessAudit']:
+   self.assertFalse(a['complete']);self.assertEqual(a['locatedCount'],0)
+   self.assertTrue(all(r[i]['parent']==a['parent'] for i in a['recordIds']))
  def test_cross_segment_system_not_duplicated(self):
   self.assertEqual(r['X-YMALL']['segments'],['S0','S1']);self.assertIsNone(r['X-YMALL']['geometry'])
   self.assertEqual(r['X-C076']['geometry']['type'],'MultiLineString')

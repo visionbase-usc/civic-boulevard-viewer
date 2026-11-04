@@ -9,7 +9,7 @@ osm = json.loads((ROOT/'source/osm-roads.json').read_text())
 categories = [
     dict(id='parking', name='停車場', color='#174b70', icon='P'),
     dict(id='entrance', name='車輛出入口', color='#d85a29', icon='E'),
-    dict(id='crossing', name='行人／自行車穿越', color='#7a4db1', icon='↔'),
+    dict(id='crossing', name='行人穿越／停車場行人入口', color='#7a4db1', icon='↔'),
     dict(id='transit', name='公共運輸', color='#287c9c', icon='▣'),
     dict(id='public', name='公共空間與服務', color='#427747', icon='✦'),
     dict(id='utility', name='機電維護', color='#9c7020', icon='⚙'),
@@ -38,6 +38,19 @@ for table,rows in src['datasets'].items():
             segments=segs,geometry=geom,historical=history,pending=pending,
             isIndex=rid.startswith('G-'),parent=row.get('所屬編號',''),
             group=row.get('候選群編號',''),members=members,original=row))
+access=json.loads((ROOT/'source/pedestrian-access.json').read_text())
+for item in access['items']:
+    row=dict(編號=item['id'],分段=item['segment'],名稱=item['name'],類別='停車場行人出入口（樓梯）' if item['groundDocumented'] else '停車場樓梯（地面連通待核）',
+        地址或鄰近路口=item['location'],經度=None,緯度=None,座標依據='未取得入口座標；街景相機位置不作為設施座標',範圍='所屬停車場的行人設施，不自動視為道路穿越設施',
+        確認程度='文件編號已核；'+('2024-09街景已核，現況待核' if item['groundReview'] else '現況及定位待核'),
+        來源日期=item['document']['date'],查核日期=item['checkedAt'],來源連結=item['document']['url']+'#page='+str(item['document']['page']),待確認事項=item['limitations'],所屬編號=item['parent'])
+    existing=next((r for r in records if r['id']==item['id']),None)
+    if existing:
+        # Reuse the historical facility ID; preserve the original snapshot as evidence history.
+        existing.update(name=item['name'],subtype=row['類別'],historical=False,pending=True,currentSource=row,access=item)
+    else:
+        records.append(dict(id=item['id'],name=item['name'],category='crossing',subtype=row['類別'],table='停車場行人出入口',segments=[item['segment']],geometry=None,
+            historical=False,pending=True,isIndex=False,parent=item['parent'],group='',members=[],original=row,access=item))
 byid={r['id']:r for r in records}
 assert len(byid)==len(records)
 for r in records:
@@ -68,11 +81,12 @@ for w in osm['elements']:
     if w.get('tags',{}).get('name')=='市民大道高架道路':
         elevated.append({'id':w['id'],'coords':[[p['lon'],p['lat']] for p in w['geometry']]})
 assert len(elevated)==30
-sources=sorted(set(r['original'].get('來源連結','') for r in records if r['original'].get('來源連結')))
+sources=sorted(set(r.get('currentSource',r['original']).get('來源連結','') for r in records if r['original'].get('來源連結')))
 sources=sorted(set(sources).union(ref['url'] for rev in reviews for ref in rev['references']))
-pack=dict(version='1.0.1',date=src['date'],categories=categories,segments=segments,records=records,
+sources=sorted(set(sources).union(i['groundReview']['url'] for i in access['items'] if i['groundReview']))
+pack=dict(version='1.1.0',date=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],
     roads=src['roads'],elevated=elevated,sources=sources,
-    meta=dict(imageReviewCount=len(reviews),recordCount=len(records),indexCount=sum(r['isIndex'] for r in records),
+    meta=dict(pedestrianAccessCount=len(access['items']),documentedGroundAccessCount=sum(i['groundDocumented'] for i in access['items']),accessImageReviewCount=sum(bool(i['groundReview']) for i in access['items']),imageReviewCount=len(reviews),recordCount=len(records),indexCount=sum(r['isIndex'] for r in records),
         categoryCounts=dict(Counter(r['category'] for r in records if not r['isIndex'])),
         snapshotSHA256=hashlib.sha256((ROOT/'source/inventory.json').read_bytes()).hexdigest(),
         roadsSource='OpenStreetMap contributors / ODbL',roadsDate=osm['osm3s']['timestamp_osm_base']))

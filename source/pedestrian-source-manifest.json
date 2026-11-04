@@ -1,0 +1,23 @@
+[
+  {
+    "id": "central2_2024",
+    "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
+    "sha256": "caf424773166e5a8d30072600ed976cf04f1c43852dd9c0462449f6ab62874b7",
+    "retrieved": "2026-11-04",
+    "method": "PDF頁面轉圖逐頁目視核對，未將示意圖當測量座標"
+  },
+  {
+    "id": "east4_2026",
+    "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
+    "sha256": "9a124b3ff2a39570f58a975788445722447313a9a76f3fc23312a5dc1909f058",
+    "retrieved": "2026-11-04",
+    "method": "PDF頁面轉圖逐頁目視核對，未將示意圖當測量座標"
+  },
+  {
+    "id": "west3_2025",
+    "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9414654/02bc10e1-c03f-4ce5-b261-ec44bf68c1e9.pdf",
+    "sha256": "b12dda39d1ca2c2e4cecb41efa1ff06424b35d2615a64972f04b374c1818d700",
+    "retrieved": "2026-11-04",
+    "method": "PDF頁面轉圖逐頁目視核對，未將示意圖當測量座標"
+  }
+]

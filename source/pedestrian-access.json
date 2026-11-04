@@ -1,0 +1,660 @@
+{
+  "version": "2026-11-04",
+  "scope": "市民大道8處地下停車場及2處相關場站的行人出入口補查；不宣稱全線橋下場站或現況出入口已完整盤點。",
+  "items": [
+    {
+      "id": "PA-TPE0100-1",
+      "parent": "P-TPE0100",
+      "segment": "S2",
+      "name": "市民大道中林段停車場／1號行人出入口（樓梯）",
+      "number": "1",
+      "groundDocumented": true,
+      "location": "北側；中山北路／健保局",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
+        "page": 6,
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0100-2",
+      "parent": "P-TPE0100",
+      "segment": "S2",
+      "name": "市民大道中林段停車場／2號行人出入口（樓梯）",
+      "number": "2",
+      "groundDocumented": true,
+      "location": "南側；中山北路／行政院",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
+        "page": 6,
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0100-3",
+      "parent": "P-TPE0100",
+      "segment": "S2",
+      "name": "市民大道中林段停車場／3號行人出入口（樓梯）",
+      "number": "3",
+      "groundDocumented": true,
+      "location": "南側；天津街／警政署",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
+        "page": 6,
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0100-4",
+      "parent": "P-TPE0100",
+      "segment": "S2",
+      "name": "市民大道中林段停車場／4號行人出入口（樓梯）",
+      "number": "4",
+      "groundDocumented": true,
+      "location": "南側；林森北路／善導寺",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
+        "page": 6,
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0110-1",
+      "parent": "P-TPE0110",
+      "segment": "S2",
+      "name": "市民大道林金段停車場／1號行人出入口（樓梯）",
+      "number": "1",
+      "groundDocumented": true,
+      "location": "北側；天津街／林森北路（原圖標註）",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
+        "page": 12,
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0110-2",
+      "parent": "P-TPE0110",
+      "segment": "S2",
+      "name": "市民大道林金段停車場／2號行人出入口（樓梯）",
+      "number": "2",
+      "groundDocumented": true,
+      "location": "北側；長安東路1段",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
+        "page": 12,
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0110-3",
+      "parent": "P-TPE0110",
+      "segment": "S2",
+      "name": "市民大道林金段停車場／3號行人出入口（樓梯）",
+      "number": "3",
+      "groundDocumented": true,
+      "location": "南側；紹興北街／中央藝文公園",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
+        "page": 12,
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": {
+        "imageDate": "2024-09",
+        "checkedAt": "2026-11-04",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0",
+        "observation": [
+          121.5260816,
+          25.0472326
+        ],
+        "summary": "2024年9月Google街景可清楚辨識「林森－金山段 3」標牌、樓梯口上蓋與旁側枕木紋。與官方地面層示意圖第3號樓梯交叉核對。"
+      },
+      "limitations": "已核對2024-09影像中的編號與樓梯口存在；無法據此保證2026年開放狀態。地圖相機符號僅為街景觀察位置，不是入口測量座標；入口幾何仍留空。無障礙、自行車通行性未確認。",
+      "related": [
+        "G-017"
+      ]
+    },
+    {
+      "id": "PA-TPE0110-4",
+      "parent": "P-TPE0110",
+      "segment": "S2",
+      "name": "市民大道林金段停車場／4號行人出入口（樓梯）",
+      "number": "4",
+      "groundDocumented": true,
+      "location": "北側；長安東路1段52巷",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
+        "page": 12,
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0110-5",
+      "parent": "P-TPE0110",
+      "segment": "S2",
+      "name": "市民大道林金段停車場／5號行人出入口（樓梯）",
+      "number": "5",
+      "groundDocumented": true,
+      "location": "南側；杭州北路／審計部",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
+        "page": 12,
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0110-6",
+      "parent": "P-TPE0110",
+      "segment": "S2",
+      "name": "市民大道林金段停車場／6號行人出入口（樓梯）",
+      "number": "6",
+      "groundDocumented": true,
+      "location": "北側；新生北路",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
+        "page": 12,
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0110-7",
+      "parent": "P-TPE0110",
+      "segment": "S2",
+      "name": "市民大道林金段停車場／7號行人出入口（樓梯）",
+      "number": "7",
+      "groundDocumented": true,
+      "location": "南側；光華商場／八德路",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
+        "page": 12,
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0109-1",
+      "parent": "P-TPE0109",
+      "segment": "S3",
+      "name": "市民大道建復段停車場／1號行人出入口（樓梯）",
+      "number": "1",
+      "groundDocumented": true,
+      "location": "北側；建國南路／美麗信酒店",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
+        "page": 13,
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0109-2",
+      "parent": "P-TPE0109",
+      "segment": "S3",
+      "name": "市民大道建復段停車場／2號行人出入口（樓梯）",
+      "number": "2",
+      "groundDocumented": true,
+      "location": "南側；昌隆公園／台北科技大學",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
+        "page": 13,
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0109-3",
+      "parent": "P-TPE0109",
+      "segment": "S3",
+      "name": "市民大道建復段停車場／3號行人出入口（樓梯）",
+      "number": "3",
+      "groundDocumented": true,
+      "location": "北側；市民大道3段",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
+        "page": 13,
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0109-4",
+      "parent": "P-TPE0109",
+      "segment": "S3",
+      "name": "市民大道建復段停車場／4號行人出入口（樓梯）",
+      "number": "4",
+      "groundDocumented": true,
+      "location": "北側；復興南路1段／懷生國小（原圖標註）",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
+        "page": 13,
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "H-FD-01",
+      "parent": "P-TPE0155",
+      "segment": "S4",
+      "name": "市民大道復敦段停車場／1號行人出入口（樓梯）",
+      "number": "1",
+      "groundDocumented": true,
+      "location": "南側；復興南路1段",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
+        "page": 14,
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "H-FD-02",
+      "parent": "P-TPE0155",
+      "segment": "S4",
+      "name": "市民大道復敦段停車場／2號行人出入口（樓梯）",
+      "number": "2",
+      "groundDocumented": true,
+      "location": "南側；大安路1段",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
+        "page": 14,
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "H-FD-03",
+      "parent": "P-TPE0155",
+      "segment": "S4",
+      "name": "市民大道復敦段停車場／3號行人出入口（樓梯）",
+      "number": "3",
+      "groundDocumented": true,
+      "location": "北側；聯邦微風廣場",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
+        "page": 14,
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "H-FD-04",
+      "parent": "P-TPE0155",
+      "segment": "S4",
+      "name": "市民大道復敦段停車場／4號行人出入口（樓梯）",
+      "number": "4",
+      "groundDocumented": true,
+      "location": "北側；敦化南路1段",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
+        "page": 14,
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0163-1",
+      "parent": "P-TPE0163",
+      "segment": "S4",
+      "name": "市民大道敦延段停車場／1號行人出入口（樓梯）",
+      "number": "1",
+      "groundDocumented": true,
+      "location": "中央橋下帶；敦化南路1段（原圖B1標註）",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
+        "page": 15,
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0163-2",
+      "parent": "P-TPE0163",
+      "segment": "S4",
+      "name": "市民大道敦延段停車場／2號行人出入口（樓梯）",
+      "number": "2",
+      "groundDocumented": true,
+      "location": "中央橋下帶；延吉街（原圖標註）",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
+        "page": 15,
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0164-1",
+      "parent": "P-TPE0164",
+      "segment": "S4",
+      "name": "市民大道延吉段停車場／1號行人出入口（樓梯）",
+      "number": "1",
+      "groundDocumented": true,
+      "location": "中央橋下帶；延吉街西側",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
+        "page": 16,
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0164-2",
+      "parent": "P-TPE0164",
+      "segment": "S4",
+      "name": "市民大道延吉段停車場／2號行人出入口（樓梯）",
+      "number": "2",
+      "groundDocumented": true,
+      "location": "南側；景福宮",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
+        "page": 16,
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0099-1",
+      "parent": "P-TPE0099",
+      "segment": "S1",
+      "name": "市民大道公中段停車場／1號樓梯（地面連通待核）",
+      "number": "1",
+      "groundDocumented": false,
+      "location": "公園路至中山北路；B1/B2圖標示行人樓梯1",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9414654/02bc10e1-c03f-4ce5-b261-ec44bf68c1e9.pdf",
+        "page": 11,
+        "date": "2025年招標附件；平面圖角落日期2017/2/7"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0099-2",
+      "parent": "P-TPE0099",
+      "segment": "S1",
+      "name": "市民大道公中段停車場／2號樓梯（地面連通待核）",
+      "number": "2",
+      "groundDocumented": false,
+      "location": "公園路至中山北路；B1/B2圖標示行人樓梯2",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9414654/02bc10e1-c03f-4ce5-b261-ec44bf68c1e9.pdf",
+        "page": 11,
+        "date": "2025年招標附件；平面圖角落日期2017/2/7"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0231-A",
+      "parent": "P-TPE0231",
+      "segment": "S0",
+      "name": "市民大道塔城段停車場／A號樓梯（地面連通待核）",
+      "number": "A",
+      "groundDocumented": false,
+      "location": "西寧北路至塔城街；設備清冊A樓梯",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9414654/02bc10e1-c03f-4ce5-b261-ec44bf68c1e9.pdf",
+        "page": 6,
+        "date": "2025年招標附件；設備清冊原始編製日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0231-B",
+      "parent": "P-TPE0231",
+      "segment": "S0",
+      "name": "市民大道塔城段停車場／B號樓梯（地面連通待核）",
+      "number": "B",
+      "groundDocumented": false,
+      "location": "西寧北路至塔城街；設備清冊B樓梯",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9414654/02bc10e1-c03f-4ce5-b261-ec44bf68c1e9.pdf",
+        "page": 6,
+        "date": "2025年招標附件；設備清冊原始編製日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    },
+    {
+      "id": "PA-TPE0231-C",
+      "parent": "P-TPE0231",
+      "segment": "S0",
+      "name": "市民大道塔城段停車場／C號樓梯（地面連通待核）",
+      "number": "C",
+      "groundDocumented": false,
+      "location": "西寧北路至塔城街；設備清冊C樓梯",
+      "document": {
+        "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9414654/02bc10e1-c03f-4ce5-b261-ec44bf68c1e9.pdf",
+        "page": 6,
+        "date": "2025年招標附件；設備清冊原始編製日期未載"
+      },
+      "checkedAt": "2026-11-04",
+      "position": null,
+      "groundReview": null,
+      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+    }
+  ],
+  "audits": [
+    {
+      "parent": "P-TPE0100",
+      "name": "市民大道中林段停車場",
+      "recordIds": [
+        "PA-TPE0100-1",
+        "PA-TPE0100-2",
+        "PA-TPE0100-3",
+        "PA-TPE0100-4"
+      ],
+      "documentedGroundCount": 4,
+      "groundImageReviewed": 0,
+      "locatedCount": 0,
+      "complete": false,
+      "note": "地面層圖的編號樓梯已逐口建檔；現況與座標尚未逐口核實。"
+    },
+    {
+      "parent": "P-TPE0110",
+      "name": "市民大道林金段停車場",
+      "recordIds": [
+        "PA-TPE0110-1",
+        "PA-TPE0110-2",
+        "PA-TPE0110-3",
+        "PA-TPE0110-4",
+        "PA-TPE0110-5",
+        "PA-TPE0110-6",
+        "PA-TPE0110-7"
+      ],
+      "documentedGroundCount": 7,
+      "groundImageReviewed": 1,
+      "locatedCount": 0,
+      "complete": false,
+      "note": "地面層圖的編號樓梯已逐口建檔；現況與座標尚未逐口核實。"
+    },
+    {
+      "parent": "P-TPE0109",
+      "name": "市民大道建復段停車場",
+      "recordIds": [
+        "PA-TPE0109-1",
+        "PA-TPE0109-2",
+        "PA-TPE0109-3",
+        "PA-TPE0109-4"
+      ],
+      "documentedGroundCount": 4,
+      "groundImageReviewed": 0,
+      "locatedCount": 0,
+      "complete": false,
+      "note": "地面層圖的編號樓梯已逐口建檔；現況與座標尚未逐口核實。"
+    },
+    {
+      "parent": "P-TPE0155",
+      "name": "市民大道復敦段停車場",
+      "recordIds": [
+        "H-FD-01",
+        "H-FD-02",
+        "H-FD-03",
+        "H-FD-04"
+      ],
+      "documentedGroundCount": 4,
+      "groundImageReviewed": 0,
+      "locatedCount": 0,
+      "complete": false,
+      "note": "地面層圖的編號樓梯已逐口建檔；現況與座標尚未逐口核實。"
+    },
+    {
+      "parent": "P-TPE0163",
+      "name": "市民大道敦延段停車場",
+      "recordIds": [
+        "PA-TPE0163-1",
+        "PA-TPE0163-2"
+      ],
+      "documentedGroundCount": 2,
+      "groundImageReviewed": 0,
+      "locatedCount": 0,
+      "complete": false,
+      "note": "地面層圖的編號樓梯已逐口建檔；現況與座標尚未逐口核實。"
+    },
+    {
+      "parent": "P-TPE0164",
+      "name": "市民大道延吉段停車場",
+      "recordIds": [
+        "PA-TPE0164-1",
+        "PA-TPE0164-2"
+      ],
+      "documentedGroundCount": 2,
+      "groundImageReviewed": 0,
+      "locatedCount": 0,
+      "complete": false,
+      "note": "地面層圖的編號樓梯已逐口建檔；現況與座標尚未逐口核實。"
+    },
+    {
+      "parent": "P-TPE0099",
+      "name": "市民大道公中段停車場",
+      "recordIds": [
+        "PA-TPE0099-1",
+        "PA-TPE0099-2"
+      ],
+      "documentedGroundCount": null,
+      "groundImageReviewed": 0,
+      "locatedCount": 0,
+      "complete": false,
+      "note": "文件僅證實樓梯編號；地面出口、連通路徑與完整數量仍待核實。"
+    },
+    {
+      "parent": "P-TPE0231",
+      "name": "市民大道塔城段停車場",
+      "recordIds": [
+        "PA-TPE0231-A",
+        "PA-TPE0231-B",
+        "PA-TPE0231-C"
+      ],
+      "documentedGroundCount": null,
+      "groundImageReviewed": 0,
+      "locatedCount": 0,
+      "complete": false,
+      "note": "文件僅證實樓梯編號；地面出口、連通路徑與完整數量仍待核實。"
+    },
+    {
+      "parent": "P-TPE0220",
+      "name": "台北地下街停車場",
+      "recordIds": [],
+      "documentedGroundCount": null,
+      "groundImageReviewed": 0,
+      "locatedCount": 0,
+      "complete": false,
+      "note": "跨S0/S1地下街系統；須另核對停車場與地下街出口的實際連通，不能把全部地下街出口直接歸屬停車場。"
+    },
+    {
+      "parent": "P-TPE0386U03",
+      "name": "新生高架（松江－金山北橋外）",
+      "recordIds": [],
+      "documentedGroundCount": null,
+      "groundImageReviewed": 0,
+      "locatedCount": 0,
+      "complete": false,
+      "note": "高架交會處相關場站；未取得可核實的獨立行人出入口清冊。"
+    }
+  ]
+}

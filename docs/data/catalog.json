@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
+  "version": "1.1.0",
   "date": "2026-11-04",
   "sources": [
     "https://bridge.nco.taipei/bms2/guest/Footbridge/inventory.aspx?vid=64",
@@ -12,19 +12,30 @@
     "https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.json",
     "https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediate.json",
     "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/8983930/17781cec-6657-46f9-8a0c-9ccb6b1844ec.pdf",
+    "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12",
+    "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6",
+    "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9414654/02bc10e1-c03f-4ce5-b261-ec44bf68c1e9.pdf#page=11",
+    "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9414654/02bc10e1-c03f-4ce5-b261-ec44bf68c1e9.pdf#page=6",
+    "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13",
+    "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+    "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15",
+    "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16",
     "https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0",
     "https://www.google.com/maps/@?api=1&map_action=pano&pano=q6mDoBi_z_u2BX6Xm9pwcw&viewpoint=25.0476003,121.5260754&heading=180&pitch=0",
     "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=40969D4BE7904072&sms=72544237BBE4C5F6",
     "https://www.tcma.gov.taipei/News_Content.aspx?n=0D4E37187A7154F0&s=3CDB32A9AC16BEEA&sms=42464882E656FEC0"
   ],
   "meta": {
+    "pedestrianAccessCount": 28,
+    "documentedGroundAccessCount": 23,
+    "accessImageReviewCount": 1,
     "imageReviewCount": 1,
-    "recordCount": 710,
+    "recordCount": 734,
     "indexCount": 76,
     "categoryCounts": {
       "parking": 64,
       "entrance": 62,
-      "crossing": 328,
+      "crossing": 352,
       "utility": 39,
       "transit": 94,
       "public": 47

@@ -135,6 +135,12 @@ function renderFeatures(){
    m.bindTooltip(`${esc(c.name)} · ${items.length} 筆資料，點選展開`);m.on('click',()=>fitBounds(L.latLngBounds(items.map(x=>x.pos))));m.addTo(features);
   }
  }
+ // Audited crossing indexes identify an observed place without inventing surveyed boundaries
+ // or adding their constituent polygons to the facility count a second time.
+ for(const r of D.records.filter(r=>r.isIndex&&r.review&&allowed(r))){
+  const pos=[r.original['緯度'],r.original['經度']];if(!view.contains(pos))continue;
+  bindRecord(L.marker(pos,{icon:markerIcon(r),title:r.name,zIndexOffset:500}),r,z>=17).addTo(features);
+ }
  const all=scopeRecords().filter(r=>!r.isIndex),missing=all.filter(r=>!r.geometry).length;
  $('visible-summary').textContent=`${state.segment==='all'?'全線':state.segment} ${all.length} 筆資料${missing?` · ${missing} 筆未定位`:''}`;
  $('layer-count').textContent=state.layers.size;
@@ -166,12 +172,15 @@ function showDetail(r){
  $('detail').hidden=false;document.body.classList.add('detail-open');const c=cats.get(r.category),o=r.original;
  $('detail-category').innerHTML=categoryIcon(c)+' '+esc(c.name);
  let body=`<h2>${esc(r.name)}</h2><div class="record-id">${esc(r.id)} · ${esc(r.segments.join(' / ')||'分段待核')}</div><div class="badges"><span class="badge ${r.historical?'historical':r.pending?'pending':''}">${statusName(r)}</span>${r.isIndex?'<span class="badge index">查找索引 · 不計為設施</span>':''}${r.category==='entrance'?'<span class="badge">出入口資料</span>':''}</div>`;
+ if(r.review){
+  body+=`<section class="notice"><strong>影像查核 · ${esc(r.review.checkedAt)}</strong><p>${esc(r.review.summary)}</p><p>${esc(r.review.limitation)}</p>${r.review.references.map(ref=>`<a class="source-link" href="${esc(ref.url)}" target="_blank" rel="noopener noreferrer">${esc(ref.label)} ↗</a>`).join('')}</section>`;
+ }
  if(!r.geometry)body+='<div class="notice warning">尚無可定位座標。地圖僅移至所屬分段，未將場站中心當作設備位置。</div>';
  if(r.historical)body+=`<div class="notice warning">歷史參考，不計現況。${esc(o['來源日期'])}</div>`;
  if(r.table==='車輛入口')body+='<div class="notice">登錄入口位置。來源未確認出口、雙向通行或進出方向；不代表完整出入口清冊。</div>';
  if(r.category==='crossing')body+='<div class="notice">自行車通行性：未確認。行穿線、陸橋、地下通道或樓梯資料，不等同已確認的自行車穿越路徑。</div>';
  if(r.isIndex)body+=`<div class="notice">包含 ${r.members.length} 個候選圖形。此為空間分群索引，不是 ${r.members.length} 處已確認過街地點。</div>`;
- body+='<dl>'+detailField('原始類別',o['類別'])+detailField('位置',o['地址或鄰近路口'])+detailField('範圍與歸屬',o['範圍'])+detailField('確認程度',o['確認程度'])+detailField('座標依據',o['座標依據'])+detailField('座標（WGS84）',o['經度']!=null?`${o['緯度']}, ${o['經度']}`:null)+detailField('地上／地下',o['地上地下'])+detailField('管理屬性',o['公私屬性'])+detailField('小型車格／機車格',o['小型車格']!=null?`${o['小型車格']} / ${o['機車格']??'未載'}`:null)+detailField('來源列示數值（非定位數量）',o['來源數值'])+detailField('原始標線類別',o['原始標線類別'])+detailField('南北連接',o['南北連接'])+detailField('待確認事項',o['待確認事項'])+detailField('來源日期',o['來源日期'])+detailField('查核日期',o['查核日期'])+'</dl>';
+ body+='<dl>'+detailField('原始類別',o['類別'])+detailField('位置',o['地址或鄰近路口'])+detailField('範圍與歸屬',o['範圍'])+detailField('確認程度',o['確認程度'])+detailField('座標依據',o['座標依據'])+detailField('座標（WGS84）',o['經度']!=null?`${o['緯度']}, ${o['經度']}`:null)+detailField('地上／地下',o['地上地下'])+detailField('管理屬性',o['公私屬性'])+detailField('小型車格／機車格',o['小型車格']!=null?`${o['小型車格']} / ${o['機車格']??'未載'}`:null)+detailField('來源列示數值（非定位數量）',o['來源數值'])+detailField('原始標線類別',o['原始標線類別'])+detailField('南北連接',o['南北連接'])+detailField('待確認事項',o['待確認事項'])+detailField('來源日期',o['來源日期'])+detailField('來源資料查核日期',o['查核日期'])+'</dl>';
  const relations=[...new Set([r.parent,r.group,...r.members,...D.records.filter(x=>x.parent===r.id).map(x=>x.id)].filter(id=>records.has(id)))];
  if(relations.length){body+='<h3>關聯資料</h3>';for(const id of relations){const x=records.get(id);body+=`<button class="relation-button" data-record="${esc(id)}">${esc(x.name)}${!x.geometry?' · 未定位':''}</button>`;}}
  const urls=(o['來源連結']||'').match(/https?:\/\/[^\s；、]+/g)||[];
@@ -183,7 +192,7 @@ function closeDetail(){state.selected=null;$('detail').hidden=true;document.body
 function closePanels(){for(const id of ['layers-panel','results-panel','about-panel'])$(id).hidden=true;$('layers-button').setAttribute('aria-expanded','false');$('list-button').setAttribute('aria-expanded','false');}
 function openPanel(id){const was=$(id).hidden;closePanels();$(id).hidden=!was;if(id==='layers-panel')$('layers-button').setAttribute('aria-expanded',String(was));if(id==='results-panel')$('list-button').setAttribute('aria-expanded',String(was));}
 function renderResults(){
- const query=$('search').value.trim().toLowerCase();const all=resultMode==='search'&&query?D.records.filter(r=>[r.name,r.id,r.original['地址或鄰近路口'],r.subtype,r.segments.join(' '),r.original['範圍']].some(x=>String(x??'').toLowerCase().includes(query))):scopeRecords();
+ const query=$('search').value.trim().toLowerCase();const all=resultMode==='search'&&query?D.records.filter(r=>[r.name,r.original['名稱'],r.id,r.original['地址或鄰近路口'],r.subtype,r.segments.join(' '),r.original['範圍']].some(x=>String(x??'').toLowerCase().includes(query))):scopeRecords();
  // Missing coordinates remain immediately discoverable; index rows are explicitly separate.
  const ordered=[...all].sort((a,b)=>Number(a.isIndex)-Number(b.isIndex)||Number(!!a.geometry)-Number(!!b.geometry)||a.id.localeCompare(b.id));
  const indexes=all.filter(r=>r.isIndex).length, missing=all.filter(r=>!r.geometry).length;
@@ -211,7 +220,7 @@ function saveHash(){
 }
 function fillAbout(){
  const sourceGroups=new Map();for(const r of D.records){const url=r.original['來源連結'];if(!sourceGroups.has(url))sourceGroups.set(url,new Set());sourceGroups.get(url).add(r.table);}
- $('about-content').innerHTML=`<p>這是市民大道沿線公開資料的查閱工具。以來源、位置與確認程度交叉閱讀；資料筆數不代表完整的現況設施總數。</p><div class="about-links"><a href="${PUBLIC_URL.replace('visionbase-usc.github.io/','github.com/visionbase-usc/')}" target="_blank" rel="noopener">GitHub</a><a href="https://github.com/visionbase-usc/civic-boulevard-viewer/archive/refs/heads/main.zip">下載整包</a></div><h3>版本與時間</h3><p>v${esc(D.version)} · 資料查核 ${esc(D.date)}<br>底圖影像拍攝年代未核。影像及資料並非即時現況。</p><h3>如何閱讀</h3><ul><li>實心：公開資料已列；空心虛線：待確認；灰色：歷史。</li><li>聚合圓圈中的數字為資料筆數。放大或點擊即可展開。</li><li>青綠寬帶依高架線形繪製，細線為平面道路；不是正式路界。</li><li>停車場代表點不是基地邊界。金色虛線僅表示資料關聯，不是通行動線。</li><li>319 個行穿線圖形、76 個候選分群分開呈現，分群不計為實際設施。</li><li>未定位資料可從清單或搜尋開啟。自行車通行性尚待個別確認。</li><li>S0 是西側延伸研究範圍；分段起訖仍有待核部分。</li></ul><h3>底圖與線形</h3><p><a href="https://maps.nlsc.gov.tw/S09SOA/pro/Wmts_ajax_main.jsp" target="_blank" rel="noopener">國土測繪中心 WMTS</a>：PHOTO2／EMAP／EMAP2。底圖需要網路，不隨下載包離線封裝。瀏覽範圍限制於臺北市周邊矩形範圍，只載入目前視窗所需圖磚，拖曳停止後才更新；不預載全市。</p><p>道路線形 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>，ODbL；快照 ${esc(D.meta.roadsDate)}。</p><h3>盤點來源</h3>${[...sourceGroups].map(([url,tables])=>`<div class="source-item"><a href="${esc(url)}" target="_blank" rel="noopener">${esc([...tables].join('／'))} ↗</a></div>`).join('')}`;
+ $('about-content').innerHTML=`<p>這是市民大道沿線公開資料的查閱工具。以來源、位置與確認程度交叉閱讀；資料筆數不代表完整的現況設施總數。全線尚未逐點進行影像或現地核對，目前另有 ${D.meta.imageReviewCount||0} 處附地面街景查核記錄。</p><div class="about-links"><a href="${PUBLIC_URL.replace('visionbase-usc.github.io/','github.com/visionbase-usc/')}" target="_blank" rel="noopener">GitHub</a><a href="https://github.com/visionbase-usc/civic-boulevard-viewer/archive/refs/heads/main.zip">下載整包</a></div><h3>版本與時間</h3><p>v${esc(D.version)} · 資料查核 ${esc(D.date)}<br>底圖影像拍攝年代未核。影像及資料並非即時現況。</p><h3>如何閱讀</h3><ul><li>實心：公開資料已列；空心虛線：待確認；灰色：歷史。</li><li>聚合圓圈中的數字為資料筆數。放大或點擊即可展開。</li><li>青綠寬帶依高架線形繪製，細線為平面道路；不是正式路界。</li><li>停車場代表點不是基地邊界。金色虛線僅表示資料關聯，不是通行動線。</li><li>319 個行穿線圖形、76 個候選分群分開呈現，分群不計為實際設施。</li><li>未定位資料可從清單或搜尋開啟。自行車通行性尚待個別確認。</li><li>S0 是西側延伸研究範圍；分段起訖仍有待核部分。</li></ul><h3>底圖與線形</h3><p><a href="https://maps.nlsc.gov.tw/S09SOA/pro/Wmts_ajax_main.jsp" target="_blank" rel="noopener">國土測繪中心 WMTS</a>：PHOTO2／EMAP／EMAP2。底圖需要網路，不隨下載包離線封裝。瀏覽範圍限制於臺北市周邊矩形範圍，只載入目前視窗所需圖磚，拖曳停止後才更新；不預載全市。</p><p>道路線形 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>，ODbL；快照 ${esc(D.meta.roadsDate)}。</p><h3>盤點來源</h3>${[...sourceGroups].map(([url,tables])=>`<div class="source-item"><a href="${esc(url)}" target="_blank" rel="noopener">${esc([...tables].join('／'))} ↗</a></div>`).join('')}`;
 }
 $('version').textContent=`公開圖資 · ${D.date} · v${D.version}`;
 D.segments.forEach(s=>{const op=document.createElement('option');op.value=s.id;op.textContent=`${s.id} · ${s.west}—${s.east}`;$('segment').append(op);});

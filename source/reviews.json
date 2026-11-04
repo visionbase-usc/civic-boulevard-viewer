@@ -1,0 +1,24 @@
+[
+  {
+    "id": "R-G017-20261104",
+    "indexId": "G-017",
+    "recordIds": ["G-017", "C-08-7698", "C-A8-7707"],
+    "displayName": "林金段3號梯旁枕木紋穿越點（影像查核）",
+    "checkedAt": "2026-11-04",
+    "summary": "北側2025年5月、南側2024年9月的地面街景均可見高架下平面車道的枕木紋行穿線及中央步行空間。原始SHP只收錄兩個小範圍圖形，不能據此呈現完整穿越範圍。",
+    "limitation": "僅確認各拍攝時點可見標線；2026年即時現況、號誌與無障礙通行狀態尚未現勘。圖釘使用原始圖形分群中心作查核參考，並非精確測繪點；原始多邊形保留，未推估補畫完整邊界。",
+    "originalEditDate": "2023-06-21",
+    "references": [
+      {
+        "label": "北側街景 · 2025年5月",
+        "imageDate": "2025-05",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=q6mDoBi_z_u2BX6Xm9pwcw&viewpoint=25.0476003,121.5260754&heading=180&pitch=0"
+      },
+      {
+        "label": "南側街景 · 2024年9月",
+        "imageDate": "2024-09",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0"
+      }
+    ]
+  }
+]

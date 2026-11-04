@@ -48,6 +48,13 @@ for r in records:
         r['geometry']={'type':'GeometryCollection','geometries':[x['geometry'] for x in children if x['geometry']]}
     if r['parent']: assert r['parent'] in byid, r['id']
     if r['group']: assert r['group'] in byid, r['id']
+reviews=json.loads((ROOT/'source/reviews.json').read_text())
+for review in reviews:
+    assert review['indexId'] in byid and byid[review['indexId']]['isIndex']
+    for rid in review['recordIds']:
+        assert rid in byid
+        byid[rid]['review']=review
+    byid[review['indexId']]['name']=review['displayName']
 segments=[]
 for s in src['datasets']['路段範圍']:
     coords=[p for w in src['roads'] if w['seg']==s['分段'] for p in w['coords']]
@@ -62,9 +69,10 @@ for w in osm['elements']:
         elevated.append({'id':w['id'],'coords':[[p['lon'],p['lat']] for p in w['geometry']]})
 assert len(elevated)==30
 sources=sorted(set(r['original'].get('來源連結','') for r in records if r['original'].get('來源連結')))
-pack=dict(version='1.0.0',date=src['date'],categories=categories,segments=segments,records=records,
+sources=sorted(set(sources).union(ref['url'] for rev in reviews for ref in rev['references']))
+pack=dict(version='1.0.1',date=src['date'],categories=categories,segments=segments,records=records,
     roads=src['roads'],elevated=elevated,sources=sources,
-    meta=dict(recordCount=len(records),indexCount=sum(r['isIndex'] for r in records),
+    meta=dict(imageReviewCount=len(reviews),recordCount=len(records),indexCount=sum(r['isIndex'] for r in records),
         categoryCounts=dict(Counter(r['category'] for r in records if not r['isIndex'])),
         snapshotSHA256=hashlib.sha256((ROOT/'source/inventory.json').read_bytes()).hexdigest(),
         roadsSource='OpenStreetMap contributors / ODbL',roadsDate=osm['osm3s']['timestamp_osm_base']))

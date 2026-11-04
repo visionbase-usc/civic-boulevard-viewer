@@ -39,6 +39,16 @@ class InventoryTests(unittest.TestCase):
    self.assertLess(seg['bounds'][0][0],seg['bounds'][1][0]);self.assertLess(seg['bounds'][0][1],seg['bounds'][1][1])
  def test_sources_are_public_http(self):
   for x in r.values():self.assertRegex(x['original']['來源連結'],r'^https://')
+ def test_image_review_preserves_original_geometry_and_counts(self):
+  self.assertEqual(d['meta']['imageReviewCount'],1)
+  group=r['G-017'];self.assertTrue(group['isIndex'])
+  self.assertEqual(group['review']['originalEditDate'],'2023-06-21')
+  self.assertEqual([x['imageDate'] for x in group['review']['references']],['2025-05','2024-09'])
+  self.assertEqual(set(group['review']['recordIds']),{'G-017','C-08-7698','C-A8-7707'})
+  for rid in ['C-08-7698','C-A8-7707']:
+   self.assertEqual(r[rid]['geometry'],s['crossGeoms'][rid])
+   self.assertTrue(r[rid]['pending'])
+  self.assertEqual(sum(d['meta']['categoryCounts'].values()),634)
  def test_cross_segment_system_not_duplicated(self):
   self.assertEqual(r['X-YMALL']['segments'],['S0','S1']);self.assertIsNone(r['X-YMALL']['geometry'])
   self.assertEqual(r['X-C076']['geometry']['type'],'MultiLineString')

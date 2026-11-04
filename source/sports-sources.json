@@ -1,0 +1,87 @@
+{
+  "checkedAt": "2026-11-04",
+  "downloads": [
+    {
+      "file": "civic-skate.html",
+      "url": "https://vbs.sports.taipei/venues/?K=1115",
+      "sha256": "182eb22d7d90a8af38b1d80fad55f423cb6756568d16f0c76ed9aa9464dc9233",
+      "retrievedAt": "2026-11-04T11:05:06.152981+00:00"
+    },
+    {
+      "file": "xinsheng-skate.html",
+      "url": "https://vbs.sports.taipei/venues/?K=262",
+      "sha256": "e701a8c565e857914f44efddc7d81c7d99c25e849535f4649af8f6a3b59109c6",
+      "retrievedAt": "2026-11-04T11:05:09.227715+00:00"
+    },
+    {
+      "file": "xinsheng-basket.html",
+      "url": "https://vbs.sports.taipei/venues/?K=261",
+      "sha256": "9996c9d59fb0563718ed80ef08377ac372f7fe56f50e09aee4231399afaa67d0",
+      "retrievedAt": "2026-11-04T11:05:06.193370+00:00"
+    },
+    {
+      "file": "xinsheng-iplay.html",
+      "url": "https://iplay.sports.gov.tw/GymInfo/Index/11869",
+      "sha256": "3b358aac07113f03f73efaaee4c481ed4298c638f7c5048ae25d3f1f7eaf344b",
+      "retrievedAt": "2026-11-04T11:05:03.213296+00:00"
+    },
+    {
+      "file": "zhengshou.html",
+      "url": "https://li.taipei/News_Content.aspx?n=8CC4391B60340D9C&s=94E197BB6F43BE45",
+      "sha256": "f6de915c55af79a345283d11b78271c28085a0ed9f37538c70132edd54766edb",
+      "retrievedAt": "2026-11-04T11:05:04.229525+00:00"
+    }
+  ],
+  "venues": {
+    "262": {
+      "Name": "滑板場",
+      "Address": "八德路與市民大道間新生高架橋下",
+      "LatLon": "25.045688, 121.530565",
+      "AreaSpec": "32m×18m",
+      "LevelGround": "576",
+      "OpenTime": "08:00:00",
+      "CloseTime": "22:00:00"
+    },
+    "261": {
+      "Name": "籃球場",
+      "Address": "八德路與市民大道間新生高架橋下",
+      "LatLon": "25.045100, 121.530433",
+      "AreaSpec": "32m×19m×2座",
+      "LevelGround": "1216",
+      "OpenTime": "07:00:00",
+      "CloseTime": "24:00:00"
+    }
+  },
+  "otherEvidence": [
+    {
+      "url": "https://vbs.sports.taipei/venues/?K=1115",
+      "observation": "官方名稱、市民大道橋下滑板場1處；第三張官方照片可辨安東藝術長廊標牌；位置欄空白。",
+      "imageURL": "https://vbs.sports.taipei/_/UD/1744958631009231700.jpg",
+      "imageDate": "未載"
+    },
+    {
+      "url": "https://www-ws.gov.taipei/Download.ashx?icon=..pdf&n=5ZCE56eR5a6k6YeN6bue5bel5L2c5aCx5ZGKLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvMzQwL3JlbGZpbGUvNDMyNTMvOTIzNzU4OS9jZTU4NmY0My02MzQyLTQ2MGItOTBkNS1hZDNkMDI0MGE3NjAucGRm",
+      "observation": "2024年6月28日市民大道橋下（安東街40巷至安東街間）滑板場門禁設施設計會勘，運動設施科第29項，文件印刷頁8。",
+      "access": "搜尋服務可讀官方文件索引文字；原始PDF本次直接下載404，未作PDF圖面目視核對。"
+    },
+    {
+      "url": "https://li.taipei/News_Content.aspx?n=8CC4391B60340D9C&s=94E197BB6F43BE45",
+      "sourceDate": "2025-11-10 09:37",
+      "observation": "里基本資料列出華山公園籃球場、溜冰場。"
+    },
+    {
+      "url": "https://hac.gov.taipei/News_Content.aspx?n=9DCF366EBD2635FF&s=C85EED91E7415313&sms=72544237BBE4C5F6",
+      "sourceDate": "2026-09（活動公告）",
+      "observation": "2026-09-26演出場地名稱華山溜冰場，地址市民大道二段與長安東路1段52巷交叉口。"
+    },
+    {
+      "url": "https://www-ws.gov.taipei/001/Upload/344/relfile/17090/3132724/58121964071.pdf",
+      "sourceDate": "2015-06（文件標題）",
+      "observation": "工務局施政報告記載華山公園第一區溜冰場改為多功能休憩廣場；本次讀取官方索引文字。"
+    },
+    {
+      "url": "https://iplay.sports.gov.tw/GymInfo/Index/11869",
+      "observation": "整體場館座標25.0427607776094,121.531833261251與VBS個別場地座標不一致；籃球時段08:00–22:00與VBS07:00–24:00不同。整體場館座標不採用。"
+    }
+  ]
+}

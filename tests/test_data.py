@@ -9,12 +9,12 @@ r={v['id']:v for v in d['records']}
 class InventoryTests(unittest.TestCase):
  def test_preserves_in_scope_original_rows(self):
   source={x['編號']:x for k,rows in s['datasets'].items() if k not in ['路段範圍','補件清單'] for x in rows}
-  self.assertEqual(len(r),365);self.assertEqual(len(source),710)
+  self.assertEqual(len(r),370);self.assertEqual(len(source),710)
   for key in set(source)&set(r): self.assertEqual(r[key]['original'],source[key])
  def test_six_categories_and_indexes(self):
   self.assertEqual(len(d['categories']),6)
   self.assertEqual(sum(x['isIndex'] for x in r.values()),29)
-  self.assertEqual(sum(d['meta']['categoryCounts'].values()),336)
+  self.assertEqual(sum(d['meta']['categoryCounts'].values()),341)
   self.assertEqual(len([x for x in r.values() if x['table']=='行穿線圖形']),137)
   members=[child for x in r.values() if x['isIndex'] for child in x['members']]
   self.assertEqual(len(members),137);self.assertEqual(len(set(members)),137)
@@ -50,7 +50,7 @@ class InventoryTests(unittest.TestCase):
   for rid in ['C-08-7698','C-A8-7707']:
    self.assertEqual(r[rid]['geometry'],s['crossGeoms'][rid])
    self.assertTrue(r[rid]['pending'])
-  self.assertEqual(sum(d['meta']['categoryCounts'].values()),336)
+  self.assertEqual(sum(d['meta']['categoryCounts'].values()),341)
  def test_pedestrian_entrance_evidence_and_no_fake_coordinates(self):
   access=[x for x in r.values() if x.get('access')]
   self.assertEqual(len(access),23)
@@ -96,12 +96,12 @@ class InventoryTests(unittest.TestCase):
   self.assertIsNone(r['E-TPE1871-01']['currentSource']['經度'])
  def test_every_record_has_field_level_audit(self):
   self.assertEqual(d['audit']['recordCount'],len(r))
-  self.assertEqual(d['audit']['issueCount'],8)
+  self.assertEqual(d['audit']['issueCount'],12)
   for x in r.values():
    a=x['verification'];self.assertEqual(a['id'],x['id']);self.assertTrue(a['checks']);self.assertTrue(a['sources'])
    self.assertTrue(all(c['result']=='match' for c in a['checks']),x['id'])
    self.assertNotEqual(a['result'],'unresolved')
-  self.assertEqual(d['audit']['summary'],{'official':252,'official-with-issue':8,'index':29,'document':76})
+  self.assertEqual(d['audit']['summary'],{'official':252,'official-with-issue':8,'index':29,'document':77,'document-with-issue':4})
  def test_source_exceptions_are_visible_without_changing_original(self):
   for key in ['B-1222','B-1501','B-1001120']:
    self.assertTrue(r[key]['pending']);self.assertTrue(r[key]['verification']['issues'])
@@ -120,4 +120,17 @@ class InventoryTests(unittest.TestCase):
   import csv
   with (ROOT/'docs/data/record-audit.csv').open(encoding='utf-8-sig',newline='') as f:rows=list(csv.DictReader(f))
   self.assertEqual(len(rows),len(r));self.assertEqual(set(x['編號'] for x in rows),set(r))
+ def test_sports_official_positions_counts_and_unknowns(self):
+  proof=json.loads((ROOT/'source/sports-sources.json').read_text())
+  for key in ['261','262']:
+   x=r['F-SPORT-VBS'+key];lat,lon=map(float,proof['venues'][key]['LatLon'].split(','))
+   self.assertEqual(x['geometry']['coordinates'],[lon,lat]);self.assertEqual(x['category'],'public')
+   self.assertTrue(x['verification']['issues'])
+  self.assertIn('2面',r['F-SPORT-VBS261']['original']['場地數量'])
+  for key in ['F-SPORT-VBS1115','F-SPORT-HUASHAN-BASKET','F-SPACE-HUASHAN-RINK']:
+   self.assertIsNone(r[key]['geometry']);self.assertTrue(r[key]['pending'])
+  self.assertIn('安東街40巷',r['F-SPORT-VBS1115']['original']['地址或鄰近路口'])
+  self.assertNotIn('南京東路',r['F-SPORT-VBS1115']['original']['地址或鄰近路口'])
+  self.assertIn('待核',r['F-SPACE-HUASHAN-RINK']['original']['使用性質'])
+  self.assertEqual(sum(x['table']=='官方運動與活動場地' for x in r.values()),5)
 if __name__=='__main__':unittest.main(verbosity=2)

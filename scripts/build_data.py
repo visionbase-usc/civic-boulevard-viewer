@@ -122,7 +122,7 @@ for lot_audit in access['audits']:
     items=[i for i in access['items'] if i['parent']==lot_audit['parent']]
     lot_audit['groundImageReviewed']=sum(bool(i['groundReview']) for i in items)
     lot_audit['locatedCount']=sum(bool(byid[i['id']]['geometry']) for i in items)
-pack=dict(version='1.3.0',scope=dict(name=NAME,segments=list(SEGMENTS),west=west,east=east,viewBounds=[[25.035,west-.002],[25.057,east+.002]]),date=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],
+pack=dict(version='1.4.0',scope=dict(name=NAME,segments=list(SEGMENTS),west=west,east=east,viewBounds=[[25.035,west-.002],[25.057,east+.002]]),date=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],
     roads=roads,elevated=elevated,sources=sources,
     meta=dict(pedestrianAccessCount=len(access['items']),documentedGroundAccessCount=sum(i['groundDocumented'] for i in access['items']),accessImageReviewCount=sum(bool(i['groundReview']) for i in access['items']),imageReviewCount=len(reviews),recordCount=len(records),indexCount=sum(r['isIndex'] for r in records),
         categoryCounts=dict(Counter(r['category'] for r in records if not r['isIndex'])),
@@ -133,7 +133,7 @@ if audit:
     pack['audit']['recordCount']=len(audit['records'])
     pack['audit']['issueCount']=sum(bool(a['issues']) for a in audit['records'])
     with (ROOT/'docs/data/record-audit.csv').open('w',encoding='utf-8-sig',newline='') as f:
-        w=csv.writer(f);w.writerow(['編號','名稱','分類','分段','查核結果','核對方法','查核摘要','位置依據','來源日期','查核日期','問題','來源','逐欄比對'])
+        w=csv.writer(f,lineterminator="\n");w.writerow(['編號','名稱','分類','分段','查核結果','核對方法','查核摘要','位置依據','來源日期','查核日期','問題','來源','逐欄比對'])
         for a in audit['records']:
             r=byid[a['id']]
             w.writerow([r['id'],r['name'],r['subtype'],' / '.join(r['segments']),a['result'],a['method'],a['summary'],a['position'],a['sourceDate'],a['checkedAt'],'；'.join(a['issues']),'；'.join(a['sources']),json.dumps(a['checks'],ensure_ascii=False)])

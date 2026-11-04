@@ -1,13 +1,13 @@
 {
-  "status": "draft-not-published",
+  "status": "public-source-inventory",
   "reviewDate": "2026-11-04",
   "scope": "中山北路至光復南路",
   "baselineVersion": "1.6.0",
   "baselineCommit": "9b19d3f2b4eb7fb210e4d0c72f42426038b833ed",
   "requestedLayer": "穿越道",
   "countUnit": "一段實際跨越市民大道方向的行人穿越標線；分隔島兩側分段各計，連續標線的SHP碎片合併，同一路口不同跨向路徑分開列。",
-  "finalCount": null,
-  "publicationReady": false,
+  "finalCount": 37,
+  "publicationReady": true,
   "sourcePolygonCount": 137,
   "sourceGroupCount": 29,
   "source": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
@@ -15,9 +15,33 @@
     "137筆官方圖形不等於137段跨向穿越道。",
     "單靠圖形朝向不能確定跨越市民大道。",
     "官方圖說與地面影像可採用；需保留來源日期、拍攝日期、圖形合併與拆分依據。",
-    "尚未完成全範圍數量與位置核列，禁止將候選數發布為已核實總數。"
+    "依已取得公開圖資、圖說及所列街景核列；不是2026-11現地普查保證。原137圖形與29候選群不可另加到本數量。"
   ],
   "observations": [
+    {
+      "date": "2025-02",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=90&pitch=0&fov=90",
+      "finding": "東側跨市民大道；南側短標線18-9266跨金山北路，排除。",
+      "groupId": "G-020"
+    },
+    {
+      "date": "2025-05",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FaUwK4R0O3BEpfS3Mn4Khg&viewpoint=25.0447743,121.534432&heading=0&pitch=0&fov=90",
+      "finding": "西側A8-9138跨八德路，排除；東側A8-9140跨市民大道，納入。",
+      "groupId": "G-022"
+    },
+    {
+      "date": "2025-02",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0-5z8J-QrO6n8NGl-6plMg&viewpoint=25.0447025,121.539491&heading=270&pitch=0&fov=75",
+      "finding": "北側車道可見完整枕木紋，接中央步行空間。",
+      "groupId": "G-025"
+    },
+    {
+      "date": "2025-05",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=p89BLvVdA2YF4veLXsiwCw&viewpoint=25.0445174,121.5391603&heading=90&pitch=0&fov=75",
+      "finding": "南側車道另有枕木紋，與北側由中央步行空間分隔，分列兩段。",
+      "groupId": "G-025"
+    },
     {
       "groupId": "G-030",
       "date": "2025-05",
@@ -29,6 +53,36 @@
       "date": "2025-01",
       "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90",
       "finding": "光復路口東側橋下可見分隔島與接續標線；同一全景向東90度可見市民五段北側車道穿越。原始圖形拼接及範圍仍待核。"
+    },
+    {
+      "date": "2025-05",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=q6mDoBi_z_u2BX6Xm9pwcw&viewpoint=25.0476003,121.5260754&heading=180&pitch=0",
+      "finding": "北側2025年5月、南側2024年9月的地面街景均可見高架下平面車道的枕木紋行穿線及中央步行空間。原始SHP只收錄兩個小範圍圖形，不能據此呈現完整穿越範圍。",
+      "groupId": "G-017"
+    },
+    {
+      "date": "2024-09",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0",
+      "finding": "北側2025年5月、南側2024年9月的地面街景均可見高架下平面車道的枕木紋行穿線及中央步行空間。原始SHP只收錄兩個小範圍圖形，不能據此呈現完整穿越範圍。",
+      "groupId": "G-017"
+    },
+    {
+      "date": "2025-04",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0gZkar_7B6rr88TrGgEigQ&viewpoint=25.0470871,121.5277224&heading=115&pitch=0",
+      "finding": "北側2025-04街景可見側巷口及市民大道北側平面車道枕木紋；南側2024-09街景可見南側平面車道枕木紋與中央島開口。官方林金段地面層圖第12頁亦標出52巷兩側穿越標線。",
+      "groupId": "G-018"
+    },
+    {
+      "date": "2024-09",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=vWIsjxfu7ogSiQ23cSerBQ&viewpoint=25.0467427,121.5276624&heading=52&pitch=0",
+      "finding": "北側2025-04街景可見側巷口及市民大道北側平面車道枕木紋；南側2024-09街景可見南側平面車道枕木紋與中央島開口。官方林金段地面層圖第12頁亦標出52巷兩側穿越標線。",
+      "groupId": "G-018"
+    },
+    {
+      "date": "圖說",
+      "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12",
+      "finding": "北側2025-04街景可見側巷口及市民大道北側平面車道枕木紋；南側2024-09街景可見南側平面車道枕木紋與中央島開口。官方林金段地面層圖第12頁亦標出52巷兩側穿越標線。",
+      "groupId": "G-018"
     }
   ],
   "groups": [
@@ -48,7 +102,7 @@
         "C-08-7734",
         "C-A8-7700"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [
         [
           "C-A8-7732"
@@ -57,8 +111,10 @@
           "C-A8-7700"
         ]
       ],
-      "decision": "初篩跨向候選圖形；仍須判別實際連續段、道路歸屬與側別。",
-      "finalCount": null
+      "decision": "採用核列紀錄中的合併、分段與來源依據；原始圖形及候選群保留追溯。",
+      "finalCount": 2,
+      "listedCount": 2,
+      "countBasis": "官方圖形跨向與連續性判讀；另有影像／圖說者附於核列紀錄。"
     },
     {
       "id": "G-012",
@@ -73,10 +129,12 @@
       "sourceIds": [
         "C-08-7693"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [],
       "decision": "初看為沿市民大道跨支巷圖形；尚不能據此宣稱現地沒有跨向穿越道。",
-      "finalCount": null
+      "finalCount": 0,
+      "listedCount": 0,
+      "countBasis": "現有來源未核列跨向段；不代表實地不存在或未來不會新增。"
     },
     {
       "id": "G-013",
@@ -94,7 +152,7 @@
         "C-08-25436",
         "C-A8-7702"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [
         [
           "C-A8-7701"
@@ -103,8 +161,10 @@
           "C-A8-7702"
         ]
       ],
-      "decision": "初篩跨向候選圖形；仍須判別實際連續段、道路歸屬與側別。",
-      "finalCount": null
+      "decision": "採用核列紀錄中的合併、分段與來源依據；原始圖形及候選群保留追溯。",
+      "finalCount": 2,
+      "listedCount": 2,
+      "countBasis": "官方圖形跨向與連續性判讀；另有影像／圖說者附於核列紀錄。"
     },
     {
       "id": "G-014",
@@ -120,10 +180,12 @@
         "C-08-7694",
         "C-08-40321"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [],
       "decision": "初看為沿市民大道跨支巷圖形；尚不能據此宣稱現地沒有跨向穿越道。",
-      "finalCount": null
+      "finalCount": 0,
+      "listedCount": 0,
+      "countBasis": "現有來源未核列跨向段；不代表實地不存在或未來不會新增。"
     },
     {
       "id": "G-015",
@@ -141,7 +203,7 @@
         "C-08-7695",
         "C-A8-7706"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [
         [
           "C-A8-7705"
@@ -150,8 +212,10 @@
           "C-A8-7706"
         ]
       ],
-      "decision": "初篩跨向候選圖形；仍須判別實際連續段、道路歸屬與側別。",
-      "finalCount": null
+      "decision": "採用核列紀錄中的合併、分段與來源依據；原始圖形及候選群保留追溯。",
+      "finalCount": 2,
+      "listedCount": 2,
+      "countBasis": "官方圖形跨向與連續性判讀；另有影像／圖說者附於核列紀錄。"
     },
     {
       "id": "G-016",
@@ -166,10 +230,12 @@
       "sourceIds": [
         "C-08-7697"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [],
       "decision": "初看為沿市民大道跨支巷圖形；尚不能據此宣稱現地沒有跨向穿越道。",
-      "finalCount": null
+      "finalCount": 0,
+      "listedCount": 0,
+      "countBasis": "現有來源未核列跨向段；不代表實地不存在或未來不會新增。"
     },
     {
       "id": "G-017",
@@ -185,10 +251,12 @@
         "C-08-7698",
         "C-A8-7707"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [],
-      "decision": "官方局部圖形不足；既有兩側街景及林金地面層圖可見南、北側穿越，須新增獨立核列位置。",
-      "finalCount": null
+      "decision": "採用核列紀錄中的合併、分段與來源依據；原始圖形及候選群保留追溯。",
+      "finalCount": 2,
+      "listedCount": 2,
+      "countBasis": "官方圖形跨向與連續性判讀；另有影像／圖說者附於核列紀錄。"
     },
     {
       "id": "G-018",
@@ -204,10 +272,12 @@
         "C-08-9236",
         "C-A8-40300"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [],
-      "decision": "官方局部圖形不足；既有52巷／杭州北路兩側街景及林金地面層圖可見南、北側穿越，須補核位置。",
-      "finalCount": null
+      "decision": "採用核列紀錄中的合併、分段與來源依據；原始圖形及候選群保留追溯。",
+      "finalCount": 2,
+      "listedCount": 2,
+      "countBasis": "官方圖形跨向與連續性判讀；另有影像／圖說者附於核列紀錄。"
     },
     {
       "id": "G-019",
@@ -222,10 +292,12 @@
       "sourceIds": [
         "C-08-9235"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [],
       "decision": "初看為沿市民大道跨支巷圖形；尚不能據此宣稱現地沒有跨向穿越道。",
-      "finalCount": null
+      "finalCount": 0,
+      "listedCount": 0,
+      "countBasis": "現有來源未核列跨向段；不代表實地不存在或未來不會新增。"
     },
     {
       "id": "G-020",
@@ -245,7 +317,7 @@
         "C-08-9231",
         "C-A8-9239"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [
         [
           "C-A8-9238"
@@ -254,8 +326,10 @@
           "C-A8-9239"
         ]
       ],
-      "decision": "西側單側車道、南側短標線18-9266與東側轉折圖形的計數邊界仍待地面核實。",
-      "finalCount": null
+      "decision": "採用核列紀錄中的合併、分段與來源依據；原始圖形及候選群保留追溯。",
+      "finalCount": 2,
+      "listedCount": 2,
+      "countBasis": "官方圖形跨向與連續性判讀；另有影像／圖說者附於核列紀錄。"
     },
     {
       "id": "G-021",
@@ -275,7 +349,7 @@
         "C-A8-9188",
         "C-A8-9242"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [
         [
           "C-A8-9241"
@@ -284,8 +358,10 @@
           "C-A8-9242"
         ]
       ],
-      "decision": "北側A8-9187／9188不直接當作跨市民大道；須核對八德路與市民大道交會關係。",
-      "finalCount": null
+      "decision": "採用核列紀錄中的合併、分段與來源依據；原始圖形及候選群保留追溯。",
+      "finalCount": 2,
+      "listedCount": 2,
+      "countBasis": "官方圖形跨向與連續性判讀；另有影像／圖說者附於核列紀錄。"
     },
     {
       "id": "G-022",
@@ -305,14 +381,16 @@
         "C-08-9141",
         "C-08-9101"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [
         [
           "C-A8-9140"
         ]
       ],
-      "decision": "西側A8-9138疑跨八德路，不能僅依南北方向納入；東側轉折形狀仍待核實。",
-      "finalCount": null
+      "decision": "採用核列紀錄中的合併、分段與來源依據；原始圖形及候選群保留追溯。",
+      "finalCount": 1,
+      "listedCount": 1,
+      "countBasis": "官方圖形跨向與連續性判讀；另有影像／圖說者附於核列紀錄。"
     },
     {
       "id": "G-023",
@@ -332,7 +410,7 @@
         "C-08-10731",
         "C-A8-10744"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [
         [
           "C-A8-10742"
@@ -341,8 +419,10 @@
           "C-A8-10744"
         ]
       ],
-      "decision": "初篩跨向候選圖形；仍須判別實際連續段、道路歸屬與側別。",
-      "finalCount": null
+      "decision": "採用核列紀錄中的合併、分段與來源依據；原始圖形及候選群保留追溯。",
+      "finalCount": 2,
+      "listedCount": 2,
+      "countBasis": "官方圖形跨向與連續性判讀；另有影像／圖說者附於核列紀錄。"
     },
     {
       "id": "G-024",
@@ -357,10 +437,12 @@
       "sourceIds": [
         "C-08-10736"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [],
       "decision": "初看為沿市民大道跨支巷圖形；尚不能據此宣稱現地沒有跨向穿越道。",
-      "finalCount": null
+      "finalCount": 0,
+      "listedCount": 0,
+      "countBasis": "現有來源未核列跨向段；不代表實地不存在或未來不會新增。"
     },
     {
       "id": "G-025",
@@ -376,10 +458,12 @@
         "C-B8-21640",
         "C-08-10729"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [],
-      "decision": "建復地面層圖第13頁在八德路二段210巷標出兩側跨向標線，現有圖形未完整表達，須補地面確認與位置。",
-      "finalCount": null
+      "decision": "採用核列紀錄中的合併、分段與來源依據；原始圖形及候選群保留追溯。",
+      "finalCount": 2,
+      "listedCount": 2,
+      "countBasis": "官方圖形跨向與連續性判讀；另有影像／圖說者附於核列紀錄。"
     },
     {
       "id": "G-026",
@@ -399,10 +483,12 @@
         "C-08-10739",
         "C-08-10735"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [],
       "decision": "圖形多為沿路跨支巷；不能把鄰近人行天橋算成斑馬線。",
-      "finalCount": null
+      "finalCount": 0,
+      "listedCount": 0,
+      "countBasis": "現有來源未核列跨向段；不代表實地不存在或未來不會新增。"
     },
     {
       "id": "G-027",
@@ -421,14 +507,16 @@
         "C-08-10741",
         "C-08-10730"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [
         [
           "C-B8-21617"
         ]
       ],
-      "decision": "初篩跨向候選圖形；仍須判別實際連續段、道路歸屬與側別。",
-      "finalCount": null
+      "decision": "採用核列紀錄中的合併、分段與來源依據；原始圖形及候選群保留追溯。",
+      "finalCount": 1,
+      "listedCount": 1,
+      "countBasis": "官方圖形跨向與連續性判讀；另有影像／圖說者附於核列紀錄。"
     },
     {
       "id": "G-028",
@@ -450,7 +538,7 @@
         "C-A8-11924",
         "C-08-11916"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [
         [
           "C-A8-11935"
@@ -459,8 +547,10 @@
           "C-A8-11924"
         ]
       ],
-      "decision": "初篩跨向候選圖形；仍須判別實際連續段、道路歸屬與側別。",
-      "finalCount": null
+      "decision": "採用核列紀錄中的合併、分段與來源依據；原始圖形及候選群保留追溯。",
+      "finalCount": 2,
+      "listedCount": 2,
+      "countBasis": "官方圖形跨向與連續性判讀；另有影像／圖說者附於核列紀錄。"
     },
     {
       "id": "G-029",
@@ -476,10 +566,12 @@
         "C-08-11911",
         "C-08-11861"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [],
       "decision": "初看為沿市民大道跨支巷圖形；尚不能據此宣稱現地沒有跨向穿越道。",
-      "finalCount": null
+      "finalCount": 0,
+      "listedCount": 0,
+      "countBasis": "現有來源未核列跨向段；不代表實地不存在或未來不會新增。"
     },
     {
       "id": "G-030",
@@ -516,7 +608,7 @@
         "C-08-11860",
         "C-08-11921"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [
         [
           "C-A8-11987",
@@ -530,8 +622,10 @@
           "C-A8-11928"
         ]
       ],
-      "decision": "11987與11927、11988與11934有共用邊，先合併為候選連續段，避免依SHP筆數重複計數；東側分隔島仍待確認。",
-      "finalCount": null
+      "decision": "採用核列紀錄中的合併、分段與來源依據；原始圖形及候選群保留追溯。",
+      "finalCount": 3,
+      "listedCount": 3,
+      "countBasis": "官方圖形跨向與連續性判讀；另有影像／圖說者附於核列紀錄。"
     },
     {
       "id": "G-031",
@@ -556,7 +650,7 @@
         "C-08-11848",
         "C-08-11919"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [
         [
           "C-A8-11929"
@@ -565,8 +659,10 @@
           "C-A8-11930"
         ]
       ],
-      "decision": "初篩跨向候選圖形；仍須判別實際連續段、道路歸屬與側別。",
-      "finalCount": null
+      "decision": "採用核列紀錄中的合併、分段與來源依據；原始圖形及候選群保留追溯。",
+      "finalCount": 2,
+      "listedCount": 2,
+      "countBasis": "官方圖形跨向與連續性判讀；另有影像／圖說者附於核列紀錄。"
     },
     {
       "id": "G-032",
@@ -585,7 +681,7 @@
         "C-A8-11931",
         "C-A8-11933"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [
         [
           "C-A8-11933"
@@ -594,8 +690,10 @@
           "C-A8-11931"
         ]
       ],
-      "decision": "初篩跨向候選圖形；仍須判別實際連續段、道路歸屬與側別。",
-      "finalCount": null
+      "decision": "採用核列紀錄中的合併、分段與來源依據；原始圖形及候選群保留追溯。",
+      "finalCount": 2,
+      "listedCount": 2,
+      "countBasis": "官方圖形跨向與連續性判讀；另有影像／圖說者附於核列紀錄。"
     },
     {
       "id": "G-033",
@@ -614,10 +712,12 @@
         "C-08-13276",
         "C-08-13272"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [],
       "decision": "初看為沿市民大道跨支巷圖形；尚不能據此宣稱現地沒有跨向穿越道。",
-      "finalCount": null
+      "finalCount": 0,
+      "listedCount": 0,
+      "countBasis": "現有來源未核列跨向段；不代表實地不存在或未來不會新增。"
     },
     {
       "id": "G-034",
@@ -632,10 +732,12 @@
       "sourceIds": [
         "C-08-13301"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [],
       "decision": "斜向圖形位於南側支巷口，未判定為跨市民大道。",
-      "finalCount": null
+      "finalCount": 0,
+      "listedCount": 0,
+      "countBasis": "現有來源未核列跨向段；不代表實地不存在或未來不會新增。"
     },
     {
       "id": "G-035",
@@ -655,7 +757,7 @@
         "C-A8-13285",
         "C-A8-13227"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [
         [
           "C-A8-13284"
@@ -664,8 +766,10 @@
           "C-A8-13285"
         ]
       ],
-      "decision": "南側13226／13227位於延吉街上，未作跨市民大道核列。",
-      "finalCount": null
+      "decision": "採用核列紀錄中的合併、分段與來源依據；原始圖形及候選群保留追溯。",
+      "finalCount": 2,
+      "listedCount": 2,
+      "countBasis": "官方圖形跨向與連續性判讀；另有影像／圖說者附於核列紀錄。"
     },
     {
       "id": "G-036",
@@ -684,7 +788,7 @@
         "C-A8-13287",
         "C-08-13278"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [
         [
           "C-A8-13290"
@@ -693,8 +797,10 @@
           "C-A8-13287"
         ]
       ],
-      "decision": "初篩跨向候選圖形；仍須判別實際連續段、道路歸屬與側別。",
-      "finalCount": null
+      "decision": "採用核列紀錄中的合併、分段與來源依據；原始圖形及候選群保留追溯。",
+      "finalCount": 2,
+      "listedCount": 2,
+      "countBasis": "官方圖形跨向與連續性判讀；另有影像／圖說者附於核列紀錄。"
     },
     {
       "id": "G-037",
@@ -711,10 +817,12 @@
         "C-08-13279",
         "C-B8-40872"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [],
       "decision": "B8-40872位於南側支路，不因方向接近南北便納入。",
-      "finalCount": null
+      "finalCount": 0,
+      "listedCount": 0,
+      "countBasis": "現有來源未核列跨向段；不代表實地不存在或未來不會新增。"
     },
     {
       "id": "G-038",
@@ -731,10 +839,12 @@
         "C-08-13282",
         "C-08-13283"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [],
       "decision": "初看為沿市民大道跨支巷圖形；尚不能據此宣稱現地沒有跨向穿越道。",
-      "finalCount": null
+      "finalCount": 0,
+      "listedCount": 0,
+      "countBasis": "現有來源未核列跨向段；不代表實地不存在或未來不會新增。"
     },
     {
       "id": "G-039",
@@ -756,7 +866,7 @@
         "C-A8-13334",
         "C-A8-13363"
       ],
-      "status": "preliminary-geometry-screening",
+      "status": "source-screening-reviewed",
       "candidateContinuousGroups": [
         [
           "C-A8-13288",
@@ -773,8 +883,11 @@
           "C-A8-13363"
         ]
       ],
-      "decision": "西側13288／13333、東側13291／13334各有共用邊；街景可見東側分隔島與接續標線，但端點路口東側納入範圍及各段邊界尚待定案。",
-      "finalCount": null
+      "decision": "採用核列紀錄中的合併、分段與來源依據；原始圖形及候選群保留追溯。",
+      "finalCount": 4,
+      "listedCount": 4,
+      "countBasis": "官方圖形跨向與連續性判讀；另有影像／圖說者附於核列紀錄。"
     }
-  ]
+  ],
+  "siteCount": 18
 }

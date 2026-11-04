@@ -131,7 +131,8 @@ for lot_audit in access['audits']:
     lot_audit['locatedCount']=sum(bool(byid[i['id']]['geometry']) for i in items)
     lot_audit['approximateCount']=sum(byid[i['id']].get('positionReview',{}).get('quality')=='approximate-image-intersection' for i in items)
 coverage=json.loads((ROOT/'source/corridor-audit.json').read_text())
-pack=dict(version='1.6.0',scope=dict(name=NAME,segments=list(SEGMENTS),west=west,east=east,viewBounds=[[25.035,west-.002],[25.057,east+.002]]),date=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],corridorAudit=coverage,
+crossways=json.loads((ROOT/'source/crossways.json').read_text())
+pack=dict(crossways=crossways,version='1.7.0',scope=dict(name=NAME,segments=list(SEGMENTS),west=west,east=east,viewBounds=[[25.035,west-.002],[25.057,east+.002]]),date=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],corridorAudit=coverage,
     roads=roads,elevated=elevated,sources=sources,
     meta=dict(pedestrianAccessCount=len(access['items']),documentedGroundAccessCount=sum(i['groundDocumented'] for i in access['items']),accessImageReviewCount=sum(bool(i['groundReview']) for i in access['items']),imageReviewCount=len(reviews),recordCount=len(records),indexCount=sum(r['isIndex'] for r in records),
         categoryCounts=dict(Counter(r['category'] for r in records if not r['isIndex'])),
@@ -146,6 +147,10 @@ if audit:
         for a in audit['records']:
             r=byid[a['id']]
             w.writerow([r['id'],r['name'],r['subtype'],' / '.join(r['segments']),a['result'],a['method'],a['summary'],a['position'],a['sourceDate'],a['checkedAt'],'；'.join(a['issues']),'；'.join(a['sources']),json.dumps(a['checks'],ensure_ascii=False)])
+with (ROOT/'docs/data/crossways.csv').open('w',encoding='utf-8-sig',newline='') as f:
+    w=csv.writer(f);w.writerow(['編號','地點','側別','分段','計數','原始圖形','位置性質','核列依據','來源'])
+    for r in crossways['records']:
+        c=r['crossway'];w.writerow([r['id'],c['location'],c['side'],'/'.join(r['segments']),1,'、'.join(c['sourceIds']),c['precision'],c['basis'],r['original']['來源連結']])
 encoded=json.dumps(pack,ensure_ascii=False,separators=(',',':'),allow_nan=False)
 (ROOT/'docs/data/inventory.js').write_text('window.CIVIC_DATA = '+encoded+';\n')
 (ROOT/'docs/data/catalog.json').write_text(json.dumps(dict(version=pack['version'],date=pack['date'],sources=sources,meta=pack['meta']),ensure_ascii=False,indent=2)+'\n')

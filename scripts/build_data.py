@@ -88,7 +88,7 @@ if audit:
         if 'historical' in a:r['historical']=a['historical']
         current={**r.get('currentSource',r['original']),**a.get('updates',{}),'查核日期':a['checkedAt']}
         if a.get('sourceDate'):current['來源日期']=a['sourceDate']
-        if r.get('access'):current['確認程度']='官方圖說已核；'+('影像概略定位，非測量座標' if r.get('positionReview') else '入口地理座標未提供')+('；'+r['access']['groundReview']['imageDate']+'街景補充' if r['access']['groundReview'] else '')
+        if r.get('access'):current['確認程度']='官方圖說已核；'+('圖說與街景交叉定位已核；概略位置，非測量座標' if r.get('positionReview') else '入口地理座標未提供')+('；'+r['access']['groundReview']['imageDate']+'街景補充' if r['access']['groundReview'] else '')
         r['currentSource']=current;r['subtype']=current['類別']
         # Accept official evidence; reserve pending for specific unresolved fields,
         # unlocated records and derived indexes, not a blanket lack of street view.
@@ -96,7 +96,7 @@ if audit:
 reviews=[r for r in reviews if r['indexId'] in byid]
 access['items']=[i for i in access['items'] if i['id'] in byid]
 access['audits']=[a for a in access['audits'] if a['parent'] in byid]
-access['scope']='中山北路至光復南路（S2–S4）：6處市民大道地下停車場及新生高架相關場站；尚未完成範圍內所有入口的定位與現況查核。'
+access['scope']='中山北路至光復南路（S2–S4）：6處市民大道地下停車場及新生高架相關場站；六處官方圖說23個地面樓梯口均已完成街景交叉定位；不代表新生高架相關場站與其他民營場站的完整入口清冊，亦非2026-11現勘。'
 roads=[w for w in src['roads'] if w['seg'] in SEGMENTS]
 west=min(p[0] for w in roads for p in w['coords'])
 east=max(p[0] for w in roads for p in w['coords'])
@@ -131,7 +131,7 @@ for lot_audit in access['audits']:
     lot_audit['locatedCount']=sum(bool(byid[i['id']]['geometry']) for i in items)
     lot_audit['approximateCount']=sum(byid[i['id']].get('positionReview',{}).get('quality')=='approximate-image-intersection' for i in items)
 coverage=json.loads((ROOT/'source/corridor-audit.json').read_text())
-pack=dict(version='1.5.0',scope=dict(name=NAME,segments=list(SEGMENTS),west=west,east=east,viewBounds=[[25.035,west-.002],[25.057,east+.002]]),date=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],corridorAudit=coverage,
+pack=dict(version='1.6.0',scope=dict(name=NAME,segments=list(SEGMENTS),west=west,east=east,viewBounds=[[25.035,west-.002],[25.057,east+.002]]),date=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],corridorAudit=coverage,
     roads=roads,elevated=elevated,sources=sources,
     meta=dict(pedestrianAccessCount=len(access['items']),documentedGroundAccessCount=sum(i['groundDocumented'] for i in access['items']),accessImageReviewCount=sum(bool(i['groundReview']) for i in access['items']),imageReviewCount=len(reviews),recordCount=len(records),indexCount=sum(r['isIndex'] for r in records),
         categoryCounts=dict(Counter(r['category'] for r in records if not r['isIndex'])),

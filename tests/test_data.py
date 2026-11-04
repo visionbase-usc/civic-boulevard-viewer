@@ -65,7 +65,7 @@ class InventoryTests(unittest.TestCase):
     self.assertIn('pano=',g['url'])
   for x in access:
    if not x.get('positionReview'):self.assertIsNone(x['geometry'])
-   self.assertTrue(x['pending']);self.assertFalse(x['historical'])
+   self.assertFalse(x['pending']);self.assertFalse(x['historical']);self.assertIsNotNone(x['geometry'])
    self.assertEqual(x['category'],'crossing');self.assertIn(x['parent'],r)
    self.assertGreater(x['access']['document']['page'],0)
   a=r['PA-TPE0110-3'];self.assertEqual(a['parent'],'P-TPE0110')
@@ -79,7 +79,7 @@ class InventoryTests(unittest.TestCase):
  def test_access_audits_do_not_claim_completion(self):
   self.assertEqual(len(d['accessAudit']),7)
   for a in d['accessAudit']:
-   self.assertFalse(a['complete']);self.assertEqual(a['locatedCount'],4 if a['parent']=='P-TPE0100' else 0)
+   self.assertFalse(a['complete']);self.assertEqual(a['locatedCount'],a['documentedGroundCount'] or 0)
    self.assertEqual(a['approximateCount'],a['locatedCount'])
    self.assertTrue(all(r[i]['parent']==a['parent'] for i in a['recordIds']))
    self.assertEqual(a['groundImageReviewed'],sum(bool(r[i]['access']['groundReview']) for i in a['recordIds']))
@@ -98,12 +98,12 @@ class InventoryTests(unittest.TestCase):
   self.assertIsNone(r['E-TPE1871-01']['currentSource']['經度'])
  def test_every_record_has_field_level_audit(self):
   self.assertEqual(d['audit']['recordCount'],len(r))
-  self.assertEqual(d['audit']['issueCount'],19)
+  self.assertEqual(d['audit']['issueCount'],14)
   for x in r.values():
    a=x['verification'];self.assertEqual(a['id'],x['id']);self.assertTrue(a['checks']);self.assertTrue(a['sources'])
    self.assertTrue(all(c['result']=='match' for c in a['checks']),x['id'])
    self.assertNotEqual(a['result'],'unresolved')
-  self.assertEqual(d['audit']['summary'],{'official':252,'official-with-issue':8,'index':29,'document':85,'document-with-issue':11})
+  self.assertEqual(d['audit']['summary'],{'official':252,'official-with-issue':8,'index':29,'document':90,'document-with-issue':6})
  def test_source_exceptions_are_visible_without_changing_original(self):
   for key in ['B-1222','B-1501','B-1001120']:
    self.assertTrue(r[key]['pending']);self.assertTrue(r[key]['verification']['issues'])
@@ -142,15 +142,20 @@ class InventoryTests(unittest.TestCase):
   sys.path.insert(0,str(ROOT/'scripts'))
   from positioning import intersect_rays
   reviews=json.loads((ROOT/'source/position-reviews.json').read_text())['records']
-  self.assertEqual(len(reviews),6)
+  self.assertEqual(len(reviews),26)
   for p in reviews:
    x=r[p['id']];self.assertEqual(x['geometry'],p['geometry'])
    self.assertIn(p['url'],x['verification']['sources'])
    self.assertEqual(x['currentSource']['經度'],x['geometry']['coordinates'][0])
    if p['quality']=='approximate-image-intersection':
     self.assertEqual(intersect_rays(p['rays']),p['geometry']['coordinates'])
-    self.assertTrue(x['pending']);self.assertTrue(x['verification']['issues'])
-    for ray in p['rays']:self.assertNotEqual(ray['camera'],x['geometry']['coordinates'])
+    self.assertFalse(x['pending']);self.assertFalse(x['verification']['issues'])
+    for ray in p['rays']:
+     self.assertNotEqual(ray['camera'],x['geometry']['coordinates'])
+     self.assertTrue(any('pano='+ray['pano'] in u for u in x['verification']['sources']))
+    if x.get('access'):
+     self.assertTrue(any('#page=' in u for u in x['verification']['sources']))
+     self.assertTrue(x['access']['groundReview']['summary'])
    else:self.assertEqual(p['quality'],'interior-observation')
   self.assertEqual(r['F-SPORT-VBS1115']['geometry']['coordinates'],[121.54159,25.044794])
  def test_coverage_and_new_source_classes(self):
@@ -160,7 +165,8 @@ class InventoryTests(unittest.TestCase):
    self.assertFalse(u['complete']);self.assertTrue(u['gaps'])
    self.assertTrue(all(i in r for i in u['recordIds']),u['id'])
   arts=[x for x in r.values() if x['table']=='官方公共藝術'];self.assertEqual(len(arts),5)
-  for key in ['F-ART-113071001','F-ART-090091403']:
+  self.assertEqual(r['F-ART-090091403']['geometry']['coordinates'],[121.55361,25.04415])
+  for key in ['F-ART-113071001']:
    self.assertIsNone(r[key]['geometry']);self.assertTrue(r[key]['verification']['issues'])
   self.assertEqual(r['F-ART-113071001']['category'],'public')
   projects=[x for x in r.values() if x['table']=='官方完工工程項目'];self.assertEqual(len(projects),10)

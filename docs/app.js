@@ -108,7 +108,7 @@ function drawRouteNames(){
  }
 }
 function allowed(r){return state.layers.has(r.category)&&(r.historical?state.historical:r.pending?state.pending:state.confirmed);}
-function statusName(r){if(r.positionReview?.quality==='approximate-image-intersection')return '影像概略定位／非測量點';if(r.positionReview?.quality==='interior-observation')return '場內影像代表位置';if(r.isIndex)return '派生查找索引';if(r.verification?.issues.length)return '官方來源已核／部分欄位待確認';if(r.historical)return '歷史資料';if(!r.geometry)return '官方來源可採用／未定位';return r.verification?'官方來源已核':'公開資料已列';}
+function statusName(r){if(r.positionReview?.quality==='approximate-image-intersection')return '官方資料＋街景已核／概略位置';if(r.positionReview?.quality==='interior-observation')return '場內影像代表位置';if(r.isIndex)return '派生查找索引';if(r.verification?.issues.length)return '官方來源已核／部分欄位待確認';if(r.historical)return '歷史資料';if(!r.geometry)return '官方來源可採用／未定位';return r.verification?'官方來源已核':'公開資料已列';}
 function scopeRecords(){return D.records.filter(r=>allowed(r)&&(state.segment==='all'||r.segments.includes(state.segment)));}
 function categoryIcon(c){return `<span class="category-icon" style="--color:${c.color}" aria-hidden="true">${c.icon}</span>`;}
 function markerIcon(r,small=false){
@@ -222,7 +222,7 @@ function renderResults(){
  const indexes=all.filter(r=>r.isIndex).length, missing=all.filter(r=>!r.geometry).length;
  $('results-title').textContent=resultMode==='audit'?'逐筆來源查核':resultMode==='access'?'停車場行人出入口核對清單':resultMode==='search'&&query?'搜尋結果':'資料清單';
  $('results-summary').textContent=`${all.length-indexes} 筆資料${indexes?`＋${indexes} 個查找索引`:''} · ${missing} 筆未定位。${resultMode==='search'&&query?'搜尋涵蓋隱藏圖層與歷史資料。':'依目前分段、圖層與狀態篩選。'}`;
- if(resultMode==='access')$('results-summary').textContent=`${D.meta.documentedGroundAccessCount} 個文件載明地面樓梯口＋${D.meta.pedestrianAccessCount-D.meta.documentedGroundAccessCount} 座地面連通待核樓梯；${D.meta.accessImageReviewCount} 個另有日期街景，${D.accessAudit.reduce((n,a)=>n+a.approximateCount,0)} 個影像概略定位（非測量座標）。採用官方圖說，入口精確定位另列缺口。包含全部相關紀錄，不受目前圖層與分段篩選影響。`;
+ if(resultMode==='access')$('results-summary').textContent=`${D.meta.documentedGroundAccessCount} 個文件載明地面樓梯口＋${D.meta.pedestrianAccessCount-D.meta.documentedGroundAccessCount} 座地面連通待核樓梯；${D.meta.accessImageReviewCount} 個另有日期街景，${D.accessAudit.reduce((n,a)=>n+a.approximateCount,0)} 個影像概略定位（非測量座標）。圖說與街景交叉依據可採用；位置精度與影像日期逐口列明。包含全部相關紀錄，不受目前圖層與分段篩選影響。`;
  if(resultMode==='audit')$('results-summary').textContent=`${D.audit.recordCount} 筆已逐筆對照來源（含 ${D.meta.indexCount} 個派生索引）；${D.audit.issueCount} 筆有特定欄位問題，優先列出。官方來源可採用，缺座標不推算位置。`;
  $('results').innerHTML=ordered.slice(0,resultLimit).map(r=>`<button class="result" data-record="${esc(r.id)}">${categoryIcon(cats.get(r.category))}<strong>${esc(r.name)}</strong><small>${esc(r.segments.join('/'))} · ${esc(cats.get(r.category).name)} · ${statusName(r)}${r.isIndex?' · 查找索引':''}</small><small class="${r.geometry?'':'no-coordinate'}">${esc(r.id)}${r.geometry?'':' · 尚無可定位座標'}</small></button>`).join('')||'<div class="empty">沒有符合的資料。可調整分類或狀態，或輸入其他名稱查詢。</div>';
  if(ordered.length>resultLimit)$('results').insertAdjacentHTML('beforeend',`<button id="more-results">顯示更多（尚有 ${ordered.length-resultLimit} 筆）</button>`);

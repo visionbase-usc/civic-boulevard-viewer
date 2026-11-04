@@ -2123,11 +2123,12 @@
     },
     "F-ART-090091403": {
       "method": "臺北市公共藝術作品頁：作品基本欄位、設置位置與公開地圖點交叉核對",
-      "result": "document-with-issue",
+      "result": "document",
       "sourceDate": "創作年代2001；官方頁面更新日期未載",
       "sourceKey": "090091403",
       "sources": [
-        "https://publicart.taipei/Works_detail.aspx?id=25"
+        "https://publicart.taipei/Works_detail.aspx?id=25",
+        "https://publicart.taipei/admincms/upload_file/works_icon/090091403_p183.jpg"
       ],
       "checks": [
         {
@@ -2164,11 +2165,9 @@
           ]
         }
       ],
-      "summary": "已核對官方作品紀錄。文字與地圖點矛盾，保留紀錄但不套用問題座標。",
-      "position": "官方文字路段可採用；地圖點與文字位置衝突，未定位",
-      "issues": [
-        "官方地圖點在文字所述路口南側，與安全島位置有疑義；不採為作品座標。"
-      ],
+      "summary": "官方作品名稱、作者、造型與地點已核；另以兩地面街景確認路口西南側綠地中的作品，改採影像概略位置，原官方點保留追溯。",
+      "position": "官方照片與街景交叉確認後概略套位",
+      "issues": [],
       "updates": {},
       "historical": false
     },

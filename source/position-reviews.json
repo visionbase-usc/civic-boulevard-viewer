@@ -210,6 +210,886 @@
       "observed": "場內可見棕色坡臺、銀色扶手、彩繪橋柱與藍柱護欄，與體育局VBS262照片構造一致。",
       "checkedAt": "2026-11-04",
       "limitations": "場內代表點，非出入口或測量界址；與VBS原登錄點約120公尺差異，原值保留。影像2026-01，不是2026-11現勘。"
+    },
+    {
+      "id": "PA-TPE0109-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53783,
+          25.04484
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖1號位置、飯店與174巷關係，交叉比對2025-02地面街景樓梯構造；兩視點水平視線交會概略套位，非測量座標。",
+      "imageDate": "2025-02",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=6jlQJ82IUGt51X7XGj-AlQ&viewpoint=25.0447917,121.5376728&heading=70&pitch=0&fov=50",
+      "observed": "美麗信飯店東側、八德路二段174巷西側北人行道；黑色頂棚、灰石牆與西向下行樓梯，兩側影像構造一致；號牌未辨讀，編號依官方圖說唯一位置與周邊巷口交叉對應。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.5376728,
+            25.0447917
+          ],
+          "pano": "6jlQJ82IUGt51X7XGj-AlQ",
+          "heading": 70,
+          "fov": 50,
+          "imageWidth": 1031,
+          "targetX": 519,
+          "imageDate": "2025-02"
+        },
+        {
+          "camera": [
+            121.5380719,
+            25.0447715
+          ],
+          "pano": "2nxzuGMC9-mZL8LDzxv5CA",
+          "heading": 285,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 555,
+          "imageDate": "2025-02"
+        }
+      ]
+    },
+    {
+      "id": "PA-TPE0109-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53878,
+          25.04449
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖2號位置、昌隆公園與兩巷口關係，交叉比對2025-05地面街景樓梯構造；兩視點視線交會概略套位。",
+      "imageDate": "2025-05",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=XlKa2PTVAhwb5VwkOyvz0g&viewpoint=25.0445488,121.5385194&heading=105&pitch=0&fov=45",
+      "observed": "昌隆198公園北緣、市民大道南側人行道，黑鋼頂棚、灰石牆與西向樓梯；官方2號圖說與公園、台北科大及174巷／210巷間位置一致，號牌未辨讀。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.5385194,
+            25.0445488
+          ],
+          "pano": "XlKa2PTVAhwb5VwkOyvz0g",
+          "heading": 105,
+          "fov": 45,
+          "imageWidth": 1031,
+          "targetX": 480,
+          "imageDate": "2025-05"
+        },
+        {
+          "camera": [
+            121.5388394,
+            25.0445318
+          ],
+          "pano": "SdRAWJ6nBdMKG2GrU35Q_g",
+          "heading": 220,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 635,
+          "imageDate": "2025-05"
+        }
+      ]
+    },
+    {
+      "id": "PA-TPE0109-3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54027,
+          25.04473
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖3號及安東街16巷、車輛入口相對位置，交叉比對兩側地面街景同一樓梯構造；視線交會概略套位。",
+      "imageDate": "2025-02",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=7WOLx6mh8rBNlSuD1O_YYA&viewpoint=25.0446671,121.5403005&heading=0&pitch=0&fov=90",
+      "observed": "市民大道三段161至165號前、安東街16巷西側北人行道；西向樓梯、黑鋼頂棚與灰石牆，官方3號圖說、樓梯與車輛入口相對關係一致，號牌未辨讀。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.5403005,
+            25.0446671
+          ],
+          "pano": "7WOLx6mh8rBNlSuD1O_YYA",
+          "heading": 0,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 270,
+          "imageDate": "2025-02"
+        },
+        {
+          "camera": [
+            121.5401994,
+            25.0446708
+          ],
+          "pano": "4XVjavr1yZVQSo4R07Y6vA",
+          "heading": 60,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 384,
+          "imageDate": "2025-02"
+        }
+      ]
+    },
+    {
+      "id": "PA-TPE0109-4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54112,
+          25.04469
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖4號、懷生國小與安東街16巷關係，交叉比對兩側街景下行樓梯構造；視線交會概略套位。",
+      "imageDate": "2025-02",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=cyfeb5DTVI2S6XHS-fC1xg&viewpoint=25.0446542,121.5410165&heading=90&pitch=0&fov=75",
+      "observed": "懷生國小西側校牆前、安東街16巷東側；西向下行樓梯與黑色頂棚，旁為校園天橋與籃球場，官方4號側別、巷口及學校關係一致；不與上行天橋樓梯混淆，號牌未辨讀。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.5410165,
+            25.0446542
+          ],
+          "pano": "cyfeb5DTVI2S6XHS-fC1xg",
+          "heading": 90,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 234,
+          "imageDate": "2025-02"
+        },
+        {
+          "camera": [
+            121.5411185,
+            25.0446575
+          ],
+          "pano": "jw8zSZmgFAYRwP4A8Es5Fw",
+          "heading": 330,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 860,
+          "imageDate": "2025-02"
+        }
+      ]
+    },
+    {
+      "id": "H-FD-01",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54529,
+          25.04484
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖編號／側別對照2024-12街景1號標牌；兩視點水平視線交會概略套位，未經測量校正。",
+      "imageDate": "2024-12",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=KafJiQnwhzpKAS2IHVcMwQ&viewpoint=25.0448581,121.5449533&heading=90&pitch=0&fov=75",
+      "observed": "可辨「樓1」標牌與下行階梯；市民大道四段32號前南人行道，樓梯東端為地面開口，官方1號圖說與門牌及車輛坡道位置一致。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.5449533,
+            25.0448581
+          ],
+          "pano": "KafJiQnwhzpKAS2IHVcMwQ",
+          "heading": 90,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 547,
+          "imageDate": "2024-12"
+        },
+        {
+          "camera": [
+            121.5453576,
+            25.044904
+          ],
+          "pano": "eHo-4cIX_lvz3DAGmYbsrw",
+          "heading": 250,
+          "fov": 60,
+          "imageWidth": 1031,
+          "targetX": 135,
+          "imageDate": "2024-12"
+        }
+      ]
+    },
+    {
+      "id": "H-FD-02",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54566,
+          25.0449
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖2號、36巷及大安路關係，交叉比對街景下行樓梯；兩視點交會概略套位。",
+      "imageDate": "2024-12",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=eHo-4cIX_lvz3DAGmYbsrw&viewpoint=25.044904,121.5453576&heading=90&pitch=0&fov=40",
+      "observed": "市民大道四段36巷西側、大安路西側南人行道；西向下行樓梯、灰牆黑鋼頂棚，與官方2號圖說的路口及門牌46號位置一致。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.5453576,
+            25.044904
+          ],
+          "pano": "eHo-4cIX_lvz3DAGmYbsrw",
+          "heading": 90,
+          "fov": 40,
+          "imageWidth": 1031,
+          "targetX": 539,
+          "imageDate": "2024-12"
+        },
+        {
+          "camera": [
+            121.5458605,
+            25.0449532
+          ],
+          "pano": "gnC9jHOlJgRhTQKjyIFeaQ",
+          "heading": 250,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 560,
+          "imageDate": "2024-12"
+        }
+      ]
+    },
+    {
+      "id": "H-FD-03",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54616,
+          25.04523
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖編號／側別對照2025-05街景3號標牌；兩視點水平視線交會概略套位，未經測量校正。",
+      "imageDate": "2025-05",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=60&pitch=0&fov=90",
+      "observed": "可辨「樓3」標牌；大安路／八德路二段366巷東側北人行道、市民大道四段51號全家店前；西向下行樓梯與官方3號圖說吻合。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.5461091,
+            25.045165
+          ],
+          "pano": "9qb1wAqRYxr2PrQ7KGT6KQ",
+          "heading": 60,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 310,
+          "imageDate": "2025-05"
+        },
+        {
+          "camera": [
+            121.5461999,
+            25.0451997
+          ],
+          "pano": "hM2avK5l_WXqsRBo5Vcy0A",
+          "heading": 310,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 510,
+          "imageDate": "2025-05"
+        }
+      ]
+    },
+    {
+      "id": "H-FD-04",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54724,
+          25.04518
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖4號、83號與100巷關係，交叉比對兩側街景同一樓梯構造；構造西端概略定位，並非門檻測量點。",
+      "imageDate": "2025-01",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=llP9V6Lmdij9sqZslh_Iaw&viewpoint=25.0451376,121.547383&heading=270&pitch=0&fov=75",
+      "observed": "敦化南路一段100巷東側、市民大道四段83號前北人行道；長形下行樓梯構造、灰牆黑鋼頂棚與官方4號圖說門牌及巷口吻合，號牌未辨讀；定位採樓梯構造西端代表位置。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.547383,
+            25.0451376
+          ],
+          "pano": "llP9V6Lmdij9sqZslh_Iaw",
+          "heading": 270,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 739,
+          "imageDate": "2025-01"
+        },
+        {
+          "camera": [
+            121.5471797,
+            25.0451616
+          ],
+          "pano": "P44bubjV26X_-NF7QPFBNg",
+          "heading": 60,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 637,
+          "imageDate": "2025-01"
+        }
+      ]
+    },
+    {
+      "id": "PA-TPE0163-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55067,
+          25.04461
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖編號／側別對照2025-04街景1號標牌；兩視點水平視線交會概略套位，未經測量校正。",
+      "imageDate": "2025-04",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=MaDpBJ6RyAh1rNoa1HLVEQ&viewpoint=25.04454,121.5506789&heading=0&pitch=0&fov=90",
+      "observed": "橋下中央帶南緣、忠孝東路四段181巷西側，正好停1號標記及西向下行樓梯可見；與官方1號樓梯及車行入口、南北行穿線的關係一致。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.5506789,
+            25.04454
+          ],
+          "pano": "MaDpBJ6RyAh1rNoa1HLVEQ",
+          "heading": 0,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 425,
+          "imageDate": "2025-04"
+        },
+        {
+          "camera": [
+            121.5505762,
+            25.0445503
+          ],
+          "pano": "8ULMj27G0rR66gPcpcZKBw",
+          "heading": 55,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 488,
+          "imageDate": "2025-04"
+        }
+      ]
+    },
+    {
+      "id": "PA-TPE0163-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55157,
+          25.0445
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖2號、車行出口及忠孝東路四段205巷關係，交叉比對兩側街景樓梯構造；視線交會概略套位。",
+      "imageDate": "2024-12",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=rZ15HNibSMZkMVtt7zegbw&viewpoint=25.044413,121.5518025&heading=290&pitch=0&fov=75",
+      "observed": "橋下中央帶南緣、市民大道四段138號對面；西向下行樓梯、正好停圓牌、灰牆黑棚，東側緊鄰通風排氣構造與車行出口；官方2號圖說及205巷西側關係一致，號碼未辨讀。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.5518025,
+            25.044413
+          ],
+          "pano": "rZ15HNibSMZkMVtt7zegbw",
+          "heading": 290,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 550,
+          "imageDate": "2024-12"
+        },
+        {
+          "camera": [
+            121.5515506,
+            25.0444674
+          ],
+          "pano": "hvJZsepMubPjrf7BeT3Epw",
+          "heading": 20,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 565,
+          "imageDate": "2024-12"
+        }
+      ]
+    },
+    {
+      "id": "PA-TPE0164-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55355,
+          25.04441
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖1號與延吉街口側別，交叉比對兩側地面影像樓梯井及頂棚；構造西端視線交會概略定位，號牌未辨讀。",
+      "imageDate": "2025-01",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=hCmwNptp5bYTaGEaHvH5Pw&viewpoint=25.0444722,121.5535626&heading=180&pitch=0&fov=90",
+      "observed": "延吉街西側橋下中央帶北緣、P264橋柱西側；長形樓梯井及黑棚與官方1號圖說的延吉街口、枕木紋及橋柱關係一致；入口東端局部受橋柱遮擋，定位採可交叉辨識的構造西端，非門檻點。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.5535626,
+            25.0444722
+          ],
+          "pano": "hCmwNptp5bYTaGEaHvH5Pw",
+          "heading": 180,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 600,
+          "imageDate": "2025-01"
+        },
+        {
+          "camera": [
+            121.5536657,
+            25.0444755
+          ],
+          "pano": "2FrDh188P14PiCc5aujrow",
+          "heading": 220,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 680,
+          "imageDate": "2025-01"
+        }
+      ]
+    },
+    {
+      "id": "PA-TPE0164-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55446,
+          25.0443
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖2號、景福宮及106巷關係，交叉比對2025-01與2024-05街景同一樓梯構造；構造東端視線交會概略套位。",
+      "imageDate": "2025-01",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=98P5-TSwyi9gx7dZ2eodPw&viewpoint=25.0443087,121.5546708&heading=260&pitch=0&fov=75",
+      "observed": "景福宮東側、市民大道四段194號前南人行道；長形下行樓梯井、灰石牆、綠頂棚與官方2號圖說及對面106巷關係一致。號牌未辨讀；定位採樓梯井東端構造，非門檻點。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.5546708,
+            25.0443087
+          ],
+          "pano": "98P5-TSwyi9gx7dZ2eodPw",
+          "heading": 260,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 592,
+          "imageDate": "2025-01"
+        },
+        {
+          "camera": [
+            121.5544628,
+            25.0443452
+          ],
+          "pano": "n1a35yn-aEqmQRxkLFxtYw",
+          "heading": 180,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 550,
+          "imageDate": "2024-05"
+        }
+      ]
+    },
+    {
+      "id": "PA-TPE0110-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52544,
+          25.04776
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖編號／側別對照2024-12街景1號標牌；兩視點水平視線交會概略套位，未經測量校正。",
+      "imageDate": "2024-12",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=jfgXUbA-qVi1ACPMPHqX8Q&viewpoint=25.0477246,121.525352&heading=60&pitch=0&fov=90",
+      "observed": "1號標牌及東向地面下行入口可見；林森北路東側北人行道，與官方1號圖說一致；2024-09及2024-12兩側影像交叉定位。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.525352,
+            25.0477246
+          ],
+          "pano": "jfgXUbA-qVi1ACPMPHqX8Q",
+          "heading": 60,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 580,
+          "imageDate": "2024-12"
+        },
+        {
+          "camera": [
+            121.5254738,
+            25.0477597
+          ],
+          "pano": "NCSq1FNfhL3tpcnsszm2QA",
+          "heading": 290,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 312,
+          "imageDate": "2024-09"
+        }
+      ]
+    },
+    {
+      "id": "PA-TPE0110-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52569,
+          25.04771
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖編號／側別對照2025-05街景2號標牌；兩視點水平視線交會概略套位，未經測量校正。",
+      "imageDate": "2025-05",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=g7CTLwF2f_KQU7Q1_-sSzQ&viewpoint=25.0476756,121.5255861&heading=60&pitch=0&fov=90",
+      "observed": "2號標牌與西向下行入口可見；長安東路一段30巷西側北人行道，兩側影像同一樓梯頂棚及牆體與官方2號圖說一致。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.5255861,
+            25.0476756
+          ],
+          "pano": "g7CTLwF2f_KQU7Q1_-sSzQ",
+          "heading": 60,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 623,
+          "imageDate": "2025-05"
+        },
+        {
+          "camera": [
+            121.5258784,
+            25.047604
+          ],
+          "pano": "ehIzimJFg-N5cRKxAiu0mQ",
+          "heading": 315,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 390,
+          "imageDate": "2025-05"
+        }
+      ]
+    },
+    {
+      "id": "PA-TPE0110-3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52609,
+          25.04727
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖編號／側別對照2024-09街景3號標牌；兩視點水平視線交會概略套位，未經測量校正。",
+      "imageDate": "2024-09",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0&fov=90",
+      "observed": "3號標牌與西向階梯可見；紹興北街對應行穿線東側、華山公園北緣南人行道；官方3號圖說及2025-04道路側影像交叉定位。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.5260816,
+            25.0472326
+          ],
+          "pano": "58rw11Q-NLcxvxCaAoXWCg",
+          "heading": 0,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 580,
+          "imageDate": "2024-09"
+        },
+        {
+          "camera": [
+            121.525986,
+            25.0473354
+          ],
+          "pano": "xRdSNtGd6aeOzGKFTuGQ9Q",
+          "heading": 125,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 510,
+          "imageDate": "2025-04"
+        }
+      ]
+    },
+    {
+      "id": "PA-TPE0110-4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5272,
+          25.04725
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖編號／側別對照2024-09街景4號標牌；兩視點水平視線交會概略套位，未經測量校正。",
+      "imageDate": "2024-09",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=PVXxOyCQBIhGqVAerErYRQ&viewpoint=25.0472552,121.527267&heading=275&pitch=0&fov=90",
+      "observed": "4號標牌與東向下行入口可見；長安東路一段52巷西側北人行道，兩側街景與官方4號圖說交叉核對。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.527267,
+            25.0472552
+          ],
+          "pano": "PVXxOyCQBIhGqVAerErYRQ",
+          "heading": 275,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 420,
+          "imageDate": "2024-09"
+        },
+        {
+          "camera": [
+            121.5271632,
+            25.0472884
+          ],
+          "pano": "9YSRpDMbZoIRB95IzAtrTQ",
+          "heading": 145,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 469,
+          "imageDate": "2024-09"
+        }
+      ]
+    },
+    {
+      "id": "PA-TPE0110-5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5273,
+          25.04689
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖編號／側別對照2024-09街景5號標牌；兩視點水平視線交會概略套位，未經測量校正。",
+      "imageDate": "2024-09",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=GTG-p1gPkuG6y9tv6fOLUw&viewpoint=25.0468564,121.5273087&heading=20&pitch=0&fov=90",
+      "observed": "5號標牌與西向下行入口可見；華山公園北緣、杭州北路西側南人行道；官方5號圖說與2025-04道路側影像交叉定位。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.5273087,
+            25.0468564
+          ],
+          "pano": "GTG-p1gPkuG6y9tv6fOLUw",
+          "heading": 20,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 275,
+          "imageDate": "2024-09"
+        },
+        {
+          "camera": [
+            121.5272736,
+            25.0469409
+          ],
+          "pano": "EJnaX5A24nUes5wWotO5yg",
+          "heading": 150,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 500,
+          "imageDate": "2025-04"
+        }
+      ]
+    },
+    {
+      "id": "PA-TPE0110-6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52808,
+          25.04694
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖編號／側別對照2025-04街景6號標牌；兩視點水平視線交會概略套位，未經測量校正。",
+      "imageDate": "2025-04",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=bxityGjQxt_fhCrWn2lmWg&viewpoint=25.046768,121.5278452&heading=56.67&pitch=0&fov=30",
+      "observed": "6號標牌於南側道路影像可辨；52巷東側、Times平面停車場南緣的市民大道北人行道。2024-09北側52巷9弄可見同一長形樓梯頂棚，採構造東端交叉定位，非對側相機位置。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.5278452,
+            25.046768
+          ],
+          "pano": "bxityGjQxt_fhCrWn2lmWg",
+          "heading": 56.67,
+          "fov": 30,
+          "imageWidth": 1031,
+          "targetX": 340,
+          "imageDate": "2025-04"
+        },
+        {
+          "camera": [
+            121.5282381,
+            25.047166
+          ],
+          "pano": "eVR88hGJY-P0dQejQDsr9A",
+          "heading": 210,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 535,
+          "imageDate": "2024-09"
+        }
+      ]
+    },
+    {
+      "id": "PA-TPE0110-7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5286,
+          25.04649
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖編號／側別對照2024-09街景7號標牌；兩視點水平視線交會概略套位，未經測量校正。",
+      "imageDate": "2024-09",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=_sSPdPIItcpV7rV1YaQBQw&viewpoint=25.046491,121.5284952&heading=91.88&pitch=0&fov=75",
+      "observed": "7號標牌與東向地面入口可見；華山公園北緣南人行道、杭州北路東側；兩側影像與官方7號圖說的光華商場／八德路方向一致。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.5284952,
+            25.046491
+          ],
+          "pano": "_sSPdPIItcpV7rV1YaQBQw",
+          "heading": 91.88,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 500,
+          "imageDate": "2024-09"
+        },
+        {
+          "camera": [
+            121.5285904,
+            25.046461
+          ],
+          "pano": "SJ24XGm4KxS7VciBpiyD_Q",
+          "heading": 30,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 350,
+          "imageDate": "2024-09"
+        }
+      ]
+    },
+    {
+      "id": "F-ART-090091403",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55361,
+          25.04415
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "臺北市公共藝術官方作品照片之交疊雙手造型、延吉路口位置，與2025-01及2025-04兩地面視角一致；兩視點水平視線交會概略定位作品構造中心，非測量點。",
+      "imageDate": "2025-01",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=1fFvxuRwCMM0-vQTI32Asg&viewpoint=25.0444798,121.5537687&heading=210&pitch=0&fov=40",
+      "observed": "延吉街／市民大道路口西南側綠地的交疊雙手青銅雕塑，造型與官方《合》照片一致；第二視角可辨識完整雕塑、綠地、人行道與高架關係。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略位置，非測量界址；2025影像不代表2026-11現勘。保留官方原始登錄點於來源欄，不將路口綠地稱為高架正下方。",
+      "rays": [
+        {
+          "camera": [
+            121.5537687,
+            25.0444798
+          ],
+          "pano": "1fFvxuRwCMM0-vQTI32Asg",
+          "heading": 210,
+          "fov": 40,
+          "imageWidth": 1031,
+          "targetX": 350,
+          "imageDate": "2025-01"
+        },
+        {
+          "camera": [
+            121.5538035,
+            25.044237
+          ],
+          "pano": "1H7Cfi9UWrMmmV9v9iwN2w",
+          "heading": 260,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 310,
+          "imageDate": "2025-04"
+        }
+      ]
     }
   ]
 }

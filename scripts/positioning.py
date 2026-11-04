@@ -4,7 +4,7 @@ Google Maps URL heading is clockwise from north; fov is horizontal:
 https://developers.google.com/maps/documentation/urls/get-started
 Camera/georeferencing/panorama calibration error is unknown. Human target pixels
 are retained in position-reviews.json. Round to five decimals for display only;
-that rounding is not an accuracy claim. Use hollow pending symbols in the viewer.
+that rounding is not an accuracy claim. Position precision limitations are separate from unresolved evidence status.
 """
 import math
 

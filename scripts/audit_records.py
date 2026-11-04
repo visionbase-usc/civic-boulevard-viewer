@@ -118,8 +118,12 @@ for r in pack['records']:
         a['checks'].append({'field':'位置交叉查核','result':'match','source':p['observed']})
         a['position']=p['method'];a['method']+='；'+p['method']
         a['updates'].update({'經度':p['geometry']['coordinates'][0],'緯度':p['geometry']['coordinates'][1],'座標依據':p['method'],'確認程度':'官方設施資料＋'+p['imageDate']+'地面影像交叉核對','待確認事項':p['limitations']})
-        if p['quality']=='approximate-image-intersection':
-            a['issues'].append('兩視點影像人工概略套位，未經測量校正；不可當成精確入口點。');a['result']='document-with-issue'
+        for ray in p.get('rays',[]):
+            a['sources'].append(f"https://www.google.com/maps/@?api=1&map_action=pano&pano={ray['pano']}&viewpoint={ray['camera'][1]},{ray['camera'][0]}&heading={ray['heading']}&pitch=0&fov={ray['fov']}")
+        a['sources']=list(dict.fromkeys(a['sources']))
+        if r.get('access'):
+            a['summary']='官方圖說之編號、道路側別及鄰近地標與地面樓梯構造交叉一致，採用兩視點影像概略位置；是否可讀號牌依逐口觀察記錄，不將構造代表點當成測量門檻位置。'
+        # Adopt cross-confirmed positions; precision limits alone are not unresolved evidence.
     if any(c['result']=='difference' for c in a['checks']):a['result']='official-with-issue'
     rows.append(a)
 assert len({a['id'] for a in rows})==len(pack['records'])

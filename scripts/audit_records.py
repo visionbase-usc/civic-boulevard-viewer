@@ -110,6 +110,16 @@ for r in pack['records']:
     else:
         assert rid in manual['records'],f'Unreviewed record: {rid}'
         a.update(manual['records'][rid]);a['id']=rid;a['checkedAt']=evidence['checkedAt']
+    if r.get('access',{}).get('groundReview'):
+        g=r['access']['groundReview'];a['sources'].append(g['url'])
+        a['checks'].append({'field':'地面影像辨識','result':'match','source':g['imageDate']+'：'+g['summary']})
+    if r.get('positionReview'):
+        p=r['positionReview'];a['sources']=list(dict.fromkeys(a['sources']+[p['url']]))
+        a['checks'].append({'field':'位置交叉查核','result':'match','source':p['observed']})
+        a['position']=p['method'];a['method']+='；'+p['method']
+        a['updates'].update({'經度':p['geometry']['coordinates'][0],'緯度':p['geometry']['coordinates'][1],'座標依據':p['method'],'確認程度':'官方設施資料＋'+p['imageDate']+'地面影像交叉核對','待確認事項':p['limitations']})
+        if p['quality']=='approximate-image-intersection':
+            a['issues'].append('兩視點影像人工概略套位，未經測量校正；不可當成精確入口點。');a['result']='document-with-issue'
     if any(c['result']=='difference' for c in a['checks']):a['result']='official-with-issue'
     rows.append(a)
 assert len({a['id'] for a in rows})==len(pack['records'])

@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-11-04",
+  "sources": [
+    {
+      "url": "https://publicart.taipei/Works_detail.aspx?id=24",
+      "sha256": "d9ab613ef7571f7b13074c5db3b40da083aebecfaf31b25a86b029214d58ca58",
+      "retainedFields": "source/public-art-sources.json"
+    },
+    {
+      "url": "https://publicart.taipei/Works_detail.aspx?id=25",
+      "sha256": "418a9560a8e4528c2f8aa7c432a3ca20b621286ee46469c609b678612643f829",
+      "retainedFields": "source/public-art-sources.json"
+    },
+    {
+      "url": "https://publicart.taipei/Works_detail.aspx?id=49",
+      "sha256": "a16e7a7a1fdd54d6bb4a74db40f7c18682e39db4d96d7880de36bfc400af1525",
+      "retainedFields": "source/public-art-sources.json"
+    },
+    {
+      "url": "https://publicart.taipei/Works_detail.aspx?id=229",
+      "sha256": "86c498d76ff58454440a9530826e781e20a74121c4828636e7ac595b589064b9",
+      "retainedFields": "source/public-art-sources.json"
+    },
+    {
+      "url": "https://publicart.taipei/Works_detail.aspx?id=1144",
+      "sha256": "de9e1f49232a1f70c6dfad59ce3c86e3033b612862b77fb47be10216d5d5d6e2",
+      "retainedFields": "source/public-art-sources.json"
+    },
+    {
+      "url": "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf",
+      "sha256": "9258a1d631260d18f2f6159f701388fc4936da4da6f78ae439b63eb17d54ce63",
+      "page": 1,
+      "printedPage": 30
+    }
+  ],
+  "previews": [
+    {
+      "path": "docs/evidence/parking-TPE0100.png",
+      "sha256": "df2b4f6bc4826eaf6a9742cee8568b13658a8793df1f243dd2f63fba4e1961cf",
+      "note": "官方PDF原頁點陣預覽；來源及頁碼見pedestrian-access.json"
+    },
+    {
+      "path": "docs/evidence/parking-TPE0109.png",
+      "sha256": "dd54e0888c1743cf221422c7bc44cc00aa55f1c37877a62a794e06bb17ed86da",
+      "note": "官方PDF原頁點陣預覽；來源及頁碼見pedestrian-access.json"
+    },
+    {
+      "path": "docs/evidence/parking-TPE0110.png",
+      "sha256": "572161011f4c24f58f40a5348873f7b5f156138a624c37fb6647cc40ad9dc920",
+      "note": "官方PDF原頁點陣預覽；來源及頁碼見pedestrian-access.json"
+    },
+    {
+      "path": "docs/evidence/parking-TPE0155.png",
+      "sha256": "7dfc73f81dd94ffe5f5f54419e54d5cb3ab370ff9b647cd3c3464e13c4afadde",
+      "note": "官方PDF原頁點陣預覽；來源及頁碼見pedestrian-access.json"
+    },
+    {
+      "path": "docs/evidence/parking-TPE0163.png",
+      "sha256": "553704d7e2a6fb53e6c856a9e029c7355b8e9697f7ee4c0a4fc4002e07f5cf50",
+      "note": "官方PDF原頁點陣預覽；來源及頁碼見pedestrian-access.json"
+    },
+    {
+      "path": "docs/evidence/parking-TPE0164.png",
+      "sha256": "79d8a5f2280cef814e640673004f96cdeeaf36a4287207d252258447b8d35b0f",
+      "note": "官方PDF原頁點陣預覽；來源及頁碼見pedestrian-access.json"
+    }
+  ]
+}

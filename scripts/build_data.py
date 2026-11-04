@@ -4,6 +4,7 @@ import json, re, hashlib, csv, sys
 from pathlib import Path
 from collections import Counter
 from scope import SEGMENTS, NAME, clip_line, select_records
+from positioning import intersect_rays
 ROOT = Path(__file__).resolve().parents[1]
 src = json.loads((ROOT/'source/inventory.json').read_text())
 osm = json.loads((ROOT/'source/osm-roads.json').read_text())
@@ -53,6 +54,11 @@ for item in access['items']:
         records.append(dict(id=item['id'],name=item['name'],category='crossing',subtype=row['類別'],table='停車場行人出入口',segments=[item['segment']],geometry=None,
             historical=False,pending=True,isIndex=False,parent=item['parent'],group='',members=[],original=row,access=item))
 records.extend(json.loads((ROOT/'source/supplemental-records.json').read_text()))
+positions=json.loads((ROOT/'source/position-reviews.json').read_text())['records']
+for p in positions:
+    if p['quality']=='approximate-image-intersection':assert intersect_rays(p['rays'])==p['geometry']['coordinates'], p['id']
+    r=next(r for r in records if r['id']==p['id'])
+    r['geometry']=p['geometry'];r['positionReview']=p
 byid={r['id']:r for r in records}
 assert len(byid)==len(records)
 for r in records:
@@ -82,7 +88,7 @@ if audit:
         if 'historical' in a:r['historical']=a['historical']
         current={**r.get('currentSource',r['original']),**a.get('updates',{}),'查核日期':a['checkedAt']}
         if a.get('sourceDate'):current['來源日期']=a['sourceDate']
-        if r.get('access'):current['確認程度']='官方圖說已核；入口地理座標未提供'+('；'+r['access']['groundReview']['imageDate']+'街景補充' if r['access']['groundReview'] else '')
+        if r.get('access'):current['確認程度']='官方圖說已核；'+('影像概略定位，非測量座標' if r.get('positionReview') else '入口地理座標未提供')+('；'+r['access']['groundReview']['imageDate']+'街景補充' if r['access']['groundReview'] else '')
         r['currentSource']=current;r['subtype']=current['類別']
         # Accept official evidence; reserve pending for specific unresolved fields,
         # unlocated records and derived indexes, not a blanket lack of street view.
@@ -118,11 +124,14 @@ sources=sorted(set(url for r in records for url in r.get('currentSource',r['orig
 if audit:sources=sorted(set(sources).union(url for a in audit['records'] for url in a['sources']))
 sources=sorted(set(sources).union(ref['url'] for rev in reviews for ref in rev['references']))
 sources=sorted(set(sources).union(i['groundReview']['url'] for i in access['items'] if i['groundReview']))
+sources=sorted(set(sources).union(p['url'] for p in positions))
 for lot_audit in access['audits']:
     items=[i for i in access['items'] if i['parent']==lot_audit['parent']]
     lot_audit['groundImageReviewed']=sum(bool(i['groundReview']) for i in items)
     lot_audit['locatedCount']=sum(bool(byid[i['id']]['geometry']) for i in items)
-pack=dict(version='1.4.0',scope=dict(name=NAME,segments=list(SEGMENTS),west=west,east=east,viewBounds=[[25.035,west-.002],[25.057,east+.002]]),date=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],
+    lot_audit['approximateCount']=sum(byid[i['id']].get('positionReview',{}).get('quality')=='approximate-image-intersection' for i in items)
+coverage=json.loads((ROOT/'source/corridor-audit.json').read_text())
+pack=dict(version='1.5.0',scope=dict(name=NAME,segments=list(SEGMENTS),west=west,east=east,viewBounds=[[25.035,west-.002],[25.057,east+.002]]),date=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],corridorAudit=coverage,
     roads=roads,elevated=elevated,sources=sources,
     meta=dict(pedestrianAccessCount=len(access['items']),documentedGroundAccessCount=sum(i['groundDocumented'] for i in access['items']),accessImageReviewCount=sum(bool(i['groundReview']) for i in access['items']),imageReviewCount=len(reviews),recordCount=len(records),indexCount=sum(r['isIndex'] for r in records),
         categoryCounts=dict(Counter(r['category'] for r in records if not r['isIndex'])),

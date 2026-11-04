@@ -8,3 +8,5 @@
 .observation-marker{display:flex;align-items:center;justify-content:center;gap:2px;width:38px;height:28px;border:2px dashed #7a4db1;background:white;color:#7a4db1;border-radius:50%;font-size:24px;font-weight:bold;box-shadow:0 1px 5px #0003}
 
 .observation-marker small{font-size:12px;line-height:1}
+
+.source-preview{display:block;width:100%;height:auto;background:#fff;border:1px solid #d3dce1;border-radius:6px;margin-top:10px}

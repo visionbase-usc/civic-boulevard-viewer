@@ -1,0 +1,91 @@
+{
+  "checkedAt": "2026-11-04",
+  "works": [
+    {
+      "id": "F-ART-090091402",
+      "source": "https://publicart.taipei/Works_detail.aspx?id=24",
+      "sourceSHA256": "37b5f6f7311af1a779cca16fc5d3fa7b358c651bd26c83fd0f162c95d7abb6f7",
+      "officialNumber": "090091402",
+      "name": "星光時刻",
+      "artist": "陳慧嶠",
+      "creationYear": "2001",
+      "location": "市民大道過延吉街口往敦北方向橋下鄰里公園",
+      "registeredCoordinates": [
+        121.551597595215,
+        25.0448894500732
+      ],
+      "coordinateAccepted": true,
+      "issues": [
+        "市文化局與文化部典藏頁的創作年、登錄點不同；本版保留市文化局登錄點，未當作作品界址。"
+      ]
+    },
+    {
+      "id": "F-ART-090091403",
+      "source": "https://publicart.taipei/Works_detail.aspx?id=25",
+      "sourceSHA256": "faefe304c86addd5b04444ac6299f8abdbdefab632318fc9efb14f0668488b38",
+      "officialNumber": "090091403",
+      "name": "合",
+      "artist": "李光裕",
+      "creationYear": "2001",
+      "location": "市民大道／延吉街交叉口安全島",
+      "registeredCoordinates": [
+        121.5537753,
+        25.044274
+      ],
+      "coordinateAccepted": false,
+      "issues": [
+        "官方地圖點在文字所述路口南側，與安全島位置有疑義；不採為作品座標。"
+      ]
+    },
+    {
+      "id": "F-ART-090091404",
+      "source": "https://publicart.taipei/Works_detail.aspx?id=49",
+      "sourceSHA256": "8333aec2f5e4ae1f94219dfe6c0f4f95b40b2558818f1d01cfa807ea1089648c",
+      "officialNumber": "090091404",
+      "name": "金樹歲月",
+      "artist": "王文志",
+      "creationYear": "2001",
+      "location": "市民大道／松江路口西北側人行道",
+      "registeredCoordinates": [
+        121.532402038574,
+        25.0458297729492
+      ],
+      "coordinateAccepted": true,
+      "issues": []
+    },
+    {
+      "id": "F-ART-090091405",
+      "source": "https://publicart.taipei/Works_detail.aspx?id=229",
+      "sourceSHA256": "cc70003fb4e1a6a8c1bfeecc86d5b9e57337eb7f438f9d528f5fe3e0a2c0b233",
+      "officialNumber": "090091405",
+      "name": "女武神，時間廊",
+      "artist": "董振平",
+      "creationYear": "2001",
+      "location": "市民大道／敦化北路口西側中央分隔島",
+      "registeredCoordinates": [
+        121.548301696777,
+        25.0447902679443
+      ],
+      "coordinateAccepted": true,
+      "issues": []
+    },
+    {
+      "id": "F-ART-113071001",
+      "source": "https://publicart.taipei/Works_detail.aspx?id=1144",
+      "sourceSHA256": "9efd7494db24fbb4f4233fc56f04fd9946f9b323fc47a782a347f0c8791425d8",
+      "officialNumber": "113071001",
+      "name": "時間斑馬線",
+      "artist": "黃中宇",
+      "creationYear": "2000",
+      "location": "市民大道四段與敦化路口人行道",
+      "registeredCoordinates": [
+        121.5661857,
+        25.0383099
+      ],
+      "coordinateAccepted": false,
+      "issues": [
+        "官方地圖點25.0383099,121.5661857與市民大道／敦化路口文字地址不符，拒用錯點。作品名稱不代表行穿線。"
+      ]
+    }
+  ]
+}

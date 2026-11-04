@@ -1813,7 +1813,7 @@
     "F-SPORT-VBS262": {
       "method": "官方場館欄位、頁面及公開文件逐項核對；位置精度另列",
       "result": "document-with-issue",
-      "sourceDate": "VBS／iPlay頁面未載更新日期；2026-11-04查核",
+      "sourceDate": "VBS／iPlay頁面未載更新日期；2026-11-04查核；場內360影像2026-01",
       "sourceKey": "262",
       "sources": [
         "https://vbs.sports.taipei/venues/?K=262",
@@ -1869,9 +1869,12 @@
       "summary": "已核對場地名稱、規格、數量、附屬設施及官方個別場地座標；來源差異另列。",
       "position": "體育局VBS個別場地LatLon登錄點；非入口或場地邊界",
       "issues": [
-        "iPlay整體場館登錄點與體育局VBS個別場地登錄點不一致；本圖採VBS個別場地點，不代表測量界址。"
+        "VBS原登錄點與2026-01可辨識滑板構造的場內影像位置約差120公尺；本版採後者為代表點，保留原值。",
+        "iPlay整體場館登錄點不當作個別滑板場位置。"
       ],
-      "updates": {},
+      "updates": {
+        "範圍": "新生高架與市民大道交會的南側運動場；屬新生高架橋下相關設施，非市民大道橋面正下方。"
+      },
       "historical": false
     },
     "F-SPORT-VBS261": {
@@ -1942,7 +1945,7 @@
     "F-SPORT-VBS1115": {
       "method": "官方場館欄位、頁面及公開文件逐項核對；位置精度另列",
       "result": "document-with-issue",
-      "sourceDate": "場館頁未載更新日期；會勘文件內容2024-06-28",
+      "sourceDate": "場館頁未載更新日期；會勘文件內容2024-06-28；場內360影像2026-03",
       "sourceKey": "1115",
       "sources": [
         "https://vbs.sports.taipei/venues/?K=1115",
@@ -1983,7 +1986,7 @@
       "summary": "官方場館頁確認滑板場，第三張場地照片可辨安東藝術長廊；官方會勘文件索引文字支持安東街40巷至安東街路段。",
       "position": "官方會勘文件文字指認路段、場館照片可辨安東藝術長廊；未提供精確座標",
       "issues": [
-        "場館頁缺地址與座標；路段依官方文件索引文字交叉判讀，非測量定位。",
+        "官方場館頁缺座標；現採2026-03場內360影像觀察點作代表位置，不作入口或測量界址。",
         "會勘PDF本次原始下載404，尚待恢復可直接讀取文件；未宣稱已目視核對該PDF。",
         "不開放租借不等同停止民眾使用；現行出入管制與使用狀態待確認。"
       ],
@@ -2063,6 +2066,598 @@
       "issues": [
         "2015工務局報告提及溜冰場改為多功能休憩廣場；里資料仍列溜冰場。名稱、活動用途可採用，現行運動設施及精確邊界未確認。"
       ],
+      "updates": {},
+      "historical": false
+    },
+    "F-ART-090091402": {
+      "method": "臺北市公共藝術作品頁：作品基本欄位、設置位置與公開地圖點交叉核對",
+      "result": "document-with-issue",
+      "sourceDate": "創作年代2001；官方頁面更新日期未載",
+      "sourceKey": "090091402",
+      "sources": [
+        "https://publicart.taipei/Works_detail.aspx?id=24",
+        "https://tcmb.culture.tw/zh-tw/detail?id=9&indexCode=v_efa_works"
+      ],
+      "checks": [
+        {
+          "field": "作品編號",
+          "result": "match",
+          "source": "090091402"
+        },
+        {
+          "field": "名稱",
+          "result": "match",
+          "source": "星光時刻"
+        },
+        {
+          "field": "作者",
+          "result": "match",
+          "source": "陳慧嶠"
+        },
+        {
+          "field": "創作年代",
+          "result": "match",
+          "source": "2001"
+        },
+        {
+          "field": "設置地點",
+          "result": "match",
+          "source": "市民大道過延吉街口往敦北方向橋下鄰里公園"
+        },
+        {
+          "field": "官方地圖登錄點",
+          "result": "match",
+          "source": [
+            121.551597595215,
+            25.0448894500732
+          ]
+        }
+      ],
+      "summary": "已核對官方作品紀錄。地圖登錄點與文字描述可供定位參考。",
+      "position": "臺北市公共藝術網的作品登錄地圖點；非測量位置、界址或出入口",
+      "issues": [
+        "市文化局與文化部典藏頁的創作年、登錄點不同；本版保留市文化局登錄點，未當作作品界址。"
+      ],
+      "updates": {},
+      "historical": false
+    },
+    "F-ART-090091403": {
+      "method": "臺北市公共藝術作品頁：作品基本欄位、設置位置與公開地圖點交叉核對",
+      "result": "document-with-issue",
+      "sourceDate": "創作年代2001；官方頁面更新日期未載",
+      "sourceKey": "090091403",
+      "sources": [
+        "https://publicart.taipei/Works_detail.aspx?id=25"
+      ],
+      "checks": [
+        {
+          "field": "作品編號",
+          "result": "match",
+          "source": "090091403"
+        },
+        {
+          "field": "名稱",
+          "result": "match",
+          "source": "合"
+        },
+        {
+          "field": "作者",
+          "result": "match",
+          "source": "李光裕"
+        },
+        {
+          "field": "創作年代",
+          "result": "match",
+          "source": "2001"
+        },
+        {
+          "field": "設置地點",
+          "result": "match",
+          "source": "市民大道／延吉街交叉口安全島"
+        },
+        {
+          "field": "官方地圖登錄點",
+          "result": "match",
+          "source": [
+            121.5537753,
+            25.044274
+          ]
+        }
+      ],
+      "summary": "已核對官方作品紀錄。文字與地圖點矛盾，保留紀錄但不套用問題座標。",
+      "position": "官方文字路段可採用；地圖點與文字位置衝突，未定位",
+      "issues": [
+        "官方地圖點在文字所述路口南側，與安全島位置有疑義；不採為作品座標。"
+      ],
+      "updates": {},
+      "historical": false
+    },
+    "F-ART-090091404": {
+      "method": "臺北市公共藝術作品頁：作品基本欄位、設置位置與公開地圖點交叉核對",
+      "result": "document",
+      "sourceDate": "創作年代2001；官方頁面更新日期未載",
+      "sourceKey": "090091404",
+      "sources": [
+        "https://publicart.taipei/Works_detail.aspx?id=49"
+      ],
+      "checks": [
+        {
+          "field": "作品編號",
+          "result": "match",
+          "source": "090091404"
+        },
+        {
+          "field": "名稱",
+          "result": "match",
+          "source": "金樹歲月"
+        },
+        {
+          "field": "作者",
+          "result": "match",
+          "source": "王文志"
+        },
+        {
+          "field": "創作年代",
+          "result": "match",
+          "source": "2001"
+        },
+        {
+          "field": "設置地點",
+          "result": "match",
+          "source": "市民大道／松江路口西北側人行道"
+        },
+        {
+          "field": "官方地圖登錄點",
+          "result": "match",
+          "source": [
+            121.532402038574,
+            25.0458297729492
+          ]
+        }
+      ],
+      "summary": "已核對官方作品紀錄。地圖登錄點與文字描述可供定位參考。",
+      "position": "臺北市公共藝術網的作品登錄地圖點；非測量位置、界址或出入口",
+      "issues": [],
+      "updates": {},
+      "historical": false
+    },
+    "F-ART-090091405": {
+      "method": "臺北市公共藝術作品頁：作品基本欄位、設置位置與公開地圖點交叉核對",
+      "result": "document",
+      "sourceDate": "創作年代2001；官方頁面更新日期未載",
+      "sourceKey": "090091405",
+      "sources": [
+        "https://publicart.taipei/Works_detail.aspx?id=229"
+      ],
+      "checks": [
+        {
+          "field": "作品編號",
+          "result": "match",
+          "source": "090091405"
+        },
+        {
+          "field": "名稱",
+          "result": "match",
+          "source": "女武神，時間廊"
+        },
+        {
+          "field": "作者",
+          "result": "match",
+          "source": "董振平"
+        },
+        {
+          "field": "創作年代",
+          "result": "match",
+          "source": "2001"
+        },
+        {
+          "field": "設置地點",
+          "result": "match",
+          "source": "市民大道／敦化北路口西側中央分隔島"
+        },
+        {
+          "field": "官方地圖登錄點",
+          "result": "match",
+          "source": [
+            121.548301696777,
+            25.0447902679443
+          ]
+        }
+      ],
+      "summary": "已核對官方作品紀錄。地圖登錄點與文字描述可供定位參考。",
+      "position": "臺北市公共藝術網的作品登錄地圖點；非測量位置、界址或出入口",
+      "issues": [],
+      "updates": {},
+      "historical": false
+    },
+    "F-ART-113071001": {
+      "method": "臺北市公共藝術作品頁：作品基本欄位、設置位置與公開地圖點交叉核對",
+      "result": "document-with-issue",
+      "sourceDate": "創作年代2000；官方頁面更新日期未載",
+      "sourceKey": "113071001",
+      "sources": [
+        "https://publicart.taipei/Works_detail.aspx?id=1144"
+      ],
+      "checks": [
+        {
+          "field": "作品編號",
+          "result": "match",
+          "source": "113071001"
+        },
+        {
+          "field": "名稱",
+          "result": "match",
+          "source": "時間斑馬線"
+        },
+        {
+          "field": "作者",
+          "result": "match",
+          "source": "黃中宇"
+        },
+        {
+          "field": "創作年代",
+          "result": "match",
+          "source": "2000"
+        },
+        {
+          "field": "設置地點",
+          "result": "match",
+          "source": "市民大道四段與敦化路口人行道"
+        },
+        {
+          "field": "官方地圖登錄點",
+          "result": "match",
+          "source": [
+            121.5661857,
+            25.0383099
+          ]
+        }
+      ],
+      "summary": "已核對官方作品紀錄。文字與地圖點矛盾，保留紀錄但不套用問題座標。",
+      "position": "官方文字路段可採用；地圖點與文字位置衝突，未定位",
+      "issues": [
+        "官方地圖點25.0383099,121.5661857與市民大道／敦化路口文字地址不符，拒用錯點。作品名稱不代表行穿線。"
+      ],
+      "updates": {},
+      "historical": false
+    },
+    "F-ENG-JA-STAGE": {
+      "method": "工務局113年景觀及其他工程修正表第1頁（印刷頁30）逐項核對",
+      "result": "document",
+      "sourceDate": "113年（2024）工程年報修正表；列完工113.01；檔案製作2025-03",
+      "sourceKey": {
+        "project": "市民大道(建國南路至安東街40巷)橋下分隔島環境改造工程",
+        "item": "舞臺"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ],
+      "checks": [
+        {
+          "field": "工程路段",
+          "result": "match",
+          "source": "市民大道建國南路至安東街40巷橋下分隔島"
+        },
+        {
+          "field": "施工項目",
+          "result": "match",
+          "source": "舞臺"
+        },
+        {
+          "field": "登錄完工年月",
+          "result": "match",
+          "source": "113.01"
+        }
+      ],
+      "summary": "官方完工年報載明此類施工項目及路段；記為項目紀錄，不把未載的實體數量推定為一件。",
+      "position": "官方完工年報提供工程路段；未提供各設施座標、數量或竣工配置圖",
+      "issues": [],
+      "updates": {},
+      "historical": false
+    },
+    "F-ENG-JA-SEAT": {
+      "method": "工務局113年景觀及其他工程修正表第1頁（印刷頁30）逐項核對",
+      "result": "document",
+      "sourceDate": "113年（2024）工程年報修正表；列完工113.01；檔案製作2025-03",
+      "sourceKey": {
+        "project": "市民大道(建國南路至安東街40巷)橋下分隔島環境改造工程",
+        "item": "座椅"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ],
+      "checks": [
+        {
+          "field": "工程路段",
+          "result": "match",
+          "source": "市民大道建國南路至安東街40巷橋下分隔島"
+        },
+        {
+          "field": "施工項目",
+          "result": "match",
+          "source": "座椅"
+        },
+        {
+          "field": "登錄完工年月",
+          "result": "match",
+          "source": "113.01"
+        }
+      ],
+      "summary": "官方完工年報載明此類施工項目及路段；記為項目紀錄，不把未載的實體數量推定為一件。",
+      "position": "官方完工年報提供工程路段；未提供各設施座標、數量或竣工配置圖",
+      "issues": [],
+      "updates": {},
+      "historical": false
+    },
+    "F-ENG-JA-LIGHT": {
+      "method": "工務局113年景觀及其他工程修正表第1頁（印刷頁30）逐項核對",
+      "result": "document",
+      "sourceDate": "113年（2024）工程年報修正表；列完工113.01；檔案製作2025-03",
+      "sourceKey": {
+        "project": "市民大道(建國南路至安東街40巷)橋下分隔島環境改造工程",
+        "item": "照明"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ],
+      "checks": [
+        {
+          "field": "工程路段",
+          "result": "match",
+          "source": "市民大道建國南路至安東街40巷橋下分隔島"
+        },
+        {
+          "field": "施工項目",
+          "result": "match",
+          "source": "照明"
+        },
+        {
+          "field": "登錄完工年月",
+          "result": "match",
+          "source": "113.01"
+        }
+      ],
+      "summary": "官方完工年報載明此類施工項目及路段；記為項目紀錄，不把未載的實體數量推定為一件。",
+      "position": "官方完工年報提供工程路段；未提供各設施座標、數量或竣工配置圖",
+      "issues": [],
+      "updates": {},
+      "historical": false
+    },
+    "F-ENG-JA-FENCE": {
+      "method": "工務局113年景觀及其他工程修正表第1頁（印刷頁30）逐項核對",
+      "result": "document",
+      "sourceDate": "113年（2024）工程年報修正表；列完工113.01；檔案製作2025-03",
+      "sourceKey": {
+        "project": "市民大道(建國南路至安東街40巷)橋下分隔島環境改造工程",
+        "item": "造型圍籬"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ],
+      "checks": [
+        {
+          "field": "工程路段",
+          "result": "match",
+          "source": "市民大道建國南路至安東街40巷橋下分隔島"
+        },
+        {
+          "field": "施工項目",
+          "result": "match",
+          "source": "造型圍籬"
+        },
+        {
+          "field": "登錄完工年月",
+          "result": "match",
+          "source": "113.01"
+        }
+      ],
+      "summary": "官方完工年報載明此類施工項目及路段；記為項目紀錄，不把未載的實體數量推定為一件。",
+      "position": "官方完工年報提供工程路段；未提供各設施座標、數量或竣工配置圖",
+      "issues": [],
+      "updates": {},
+      "historical": false
+    },
+    "F-ENG-JA-SCREEN": {
+      "method": "工務局113年景觀及其他工程修正表第1頁（印刷頁30）逐項核對",
+      "result": "document",
+      "sourceDate": "113年（2024）工程年報修正表；列完工113.01；檔案製作2025-03",
+      "sourceKey": {
+        "project": "市民大道(建國南路至安東街40巷)橋下分隔島環境改造工程",
+        "item": "入口遮板"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ],
+      "checks": [
+        {
+          "field": "工程路段",
+          "result": "match",
+          "source": "市民大道建國南路至安東街40巷橋下分隔島"
+        },
+        {
+          "field": "施工項目",
+          "result": "match",
+          "source": "入口遮板"
+        },
+        {
+          "field": "登錄完工年月",
+          "result": "match",
+          "source": "113.01"
+        }
+      ],
+      "summary": "官方完工年報載明此類施工項目及路段；記為項目紀錄，不把未載的實體數量推定為一件。",
+      "position": "官方完工年報提供工程路段；未提供各設施座標、數量或竣工配置圖",
+      "issues": [],
+      "updates": {},
+      "historical": false
+    },
+    "F-ENG-JA-IRRIGATION": {
+      "method": "工務局113年景觀及其他工程修正表第1頁（印刷頁30）逐項核對",
+      "result": "document",
+      "sourceDate": "113年（2024）工程年報修正表；列完工113.01；檔案製作2025-03",
+      "sourceKey": {
+        "project": "市民大道(建國南路至安東街40巷)橋下分隔島環境改造工程",
+        "item": "噴灌系統"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ],
+      "checks": [
+        {
+          "field": "工程路段",
+          "result": "match",
+          "source": "市民大道建國南路至安東街40巷橋下分隔島"
+        },
+        {
+          "field": "施工項目",
+          "result": "match",
+          "source": "噴灌系統"
+        },
+        {
+          "field": "登錄完工年月",
+          "result": "match",
+          "source": "113.01"
+        }
+      ],
+      "summary": "官方完工年報載明此類施工項目及路段；記為項目紀錄，不把未載的實體數量推定為一件。",
+      "position": "官方完工年報提供工程路段；未提供各設施座標、數量或竣工配置圖",
+      "issues": [],
+      "updates": {},
+      "historical": false
+    },
+    "F-ENG-JA-PAVING": {
+      "method": "工務局113年景觀及其他工程修正表第1頁（印刷頁30）逐項核對",
+      "result": "document",
+      "sourceDate": "113年（2024）工程年報修正表；列完工113.01；檔案製作2025-03",
+      "sourceKey": {
+        "project": "市民大道(建國南路至安東街40巷)橋下分隔島環境改造工程",
+        "item": "更新地坪"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ],
+      "checks": [
+        {
+          "field": "工程路段",
+          "result": "match",
+          "source": "市民大道建國南路至安東街40巷橋下分隔島"
+        },
+        {
+          "field": "施工項目",
+          "result": "match",
+          "source": "更新地坪"
+        },
+        {
+          "field": "登錄完工年月",
+          "result": "match",
+          "source": "113.01"
+        }
+      ],
+      "summary": "官方完工年報載明此類施工項目及路段；記為項目紀錄，不把未載的實體數量推定為一件。",
+      "position": "官方完工年報提供工程路段；未提供各設施座標、數量或竣工配置圖",
+      "issues": [],
+      "updates": {},
+      "historical": false
+    },
+    "F-ENG-JA-PLANT": {
+      "method": "工務局113年景觀及其他工程修正表第1頁（印刷頁30）逐項核對",
+      "result": "document",
+      "sourceDate": "113年（2024）工程年報修正表；列完工113.01；檔案製作2025-03",
+      "sourceKey": {
+        "project": "市民大道(建國南路至安東街40巷)橋下分隔島環境改造工程",
+        "item": "植栽"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ],
+      "checks": [
+        {
+          "field": "工程路段",
+          "result": "match",
+          "source": "市民大道建國南路至安東街40巷橋下分隔島"
+        },
+        {
+          "field": "施工項目",
+          "result": "match",
+          "source": "植栽"
+        },
+        {
+          "field": "登錄完工年月",
+          "result": "match",
+          "source": "113.01"
+        }
+      ],
+      "summary": "官方完工年報載明此類施工項目及路段；記為項目紀錄，不把未載的實體數量推定為一件。",
+      "position": "官方完工年報提供工程路段；未提供各設施座標、數量或竣工配置圖",
+      "issues": [],
+      "updates": {},
+      "historical": false
+    },
+    "F-ENG-JA-COLUMN-ART": {
+      "method": "工務局113年景觀及其他工程修正表第1頁（印刷頁30）逐項核對",
+      "result": "document",
+      "sourceDate": "113年（2024）工程年報修正表；列完工113.01；檔案製作2025-03",
+      "sourceKey": {
+        "project": "市民大道(建國南路至安東街40巷)橋下分隔島環境改造工程",
+        "item": "橋柱彩繪"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ],
+      "checks": [
+        {
+          "field": "工程路段",
+          "result": "match",
+          "source": "市民大道建國南路至安東街40巷橋下分隔島"
+        },
+        {
+          "field": "施工項目",
+          "result": "match",
+          "source": "橋柱彩繪"
+        },
+        {
+          "field": "登錄完工年月",
+          "result": "match",
+          "source": "113.01"
+        }
+      ],
+      "summary": "官方完工年報載明此類施工項目及路段；記為項目紀錄，不把未載的實體數量推定為一件。",
+      "position": "官方完工年報提供工程路段；未提供各設施座標、數量或竣工配置圖",
+      "issues": [],
+      "updates": {},
+      "historical": false
+    },
+    "F-ENG-JA-GROUND-ART": {
+      "method": "工務局113年景觀及其他工程修正表第1頁（印刷頁30）逐項核對",
+      "result": "document",
+      "sourceDate": "113年（2024）工程年報修正表；列完工113.01；檔案製作2025-03",
+      "sourceKey": {
+        "project": "市民大道(建國南路至安東街40巷)橋下分隔島環境改造工程",
+        "item": "地面3D彩繪"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ],
+      "checks": [
+        {
+          "field": "工程路段",
+          "result": "match",
+          "source": "市民大道建國南路至安東街40巷橋下分隔島"
+        },
+        {
+          "field": "施工項目",
+          "result": "match",
+          "source": "地面3D彩繪"
+        },
+        {
+          "field": "登錄完工年月",
+          "result": "match",
+          "source": "113.01"
+        }
+      ],
+      "summary": "官方完工年報載明此類施工項目及路段；記為項目紀錄，不把未載的實體數量推定為一件。",
+      "position": "官方完工年報提供工程路段；未提供各設施座標、數量或竣工配置圖",
+      "issues": [],
       "updates": {},
       "historical": false
     }

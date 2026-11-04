@@ -1,0 +1,250 @@
+{
+  "checkedAt": "2026-11-04",
+  "scope": "中山北路至光復南路",
+  "complete": false,
+  "method": "按7個連續路段對照停車場地面層、機電圖例、運動場館、公共藝術與完工工程來源；現有紀錄逐筆來源核對不代表實體普查完整。",
+  "units": [
+    {
+      "id": "ZL",
+      "segment": "S2",
+      "name": "中山北路—林森北路",
+      "parent": "P-TPE0100",
+      "recordIds": [
+        "PA-TPE0100-1",
+        "PA-TPE0100-2",
+        "PA-TPE0100-3",
+        "PA-TPE0100-4",
+        "U-DOC-TPE0100-W-S",
+        "U-DOC-TPE0100-W-W",
+        "U-DOC-TPE0100-W-E",
+        "U-DOC-TPE0100-G",
+        "U-DOC-TPE0100-E-E",
+        "U-DOC-TPE0100-E-S",
+        "U-DOC-TPE0100-E-W",
+        "F-PARK-HS"
+      ],
+      "checkedSourceFamilies": [
+        "停管處地面層圖說",
+        "既有停車／入口／公廁／運輸／行穿線資料",
+        "體育局／公園官方資料"
+      ],
+      "gaps": [
+        "中林1–4號均有編號街景及兩視點概略套位；尚非測量入口座標。機電各項仍只有圖說相對位置。",
+        "華山公園A遊戲場個別範圍未完成套繪。"
+      ],
+      "complete": false
+    },
+    {
+      "id": "LJ",
+      "segment": "S2",
+      "name": "林森北路—金山北路",
+      "parent": "P-TPE0110",
+      "recordIds": [
+        "PA-TPE0110-1",
+        "PA-TPE0110-2",
+        "PA-TPE0110-3",
+        "PA-TPE0110-4",
+        "PA-TPE0110-5",
+        "PA-TPE0110-6",
+        "PA-TPE0110-7",
+        "U-DOC-TPE0110-W-S",
+        "U-DOC-TPE0110-W-W",
+        "U-DOC-TPE0110-W-E",
+        "U-DOC-TPE0110-G",
+        "U-DOC-TPE0110-E-E",
+        "U-DOC-TPE0110-E-S",
+        "U-DOC-TPE0110-E-W",
+        "F-SPACE-HUASHAN-RINK",
+        "F-SPORT-HUASHAN-BASKET"
+      ],
+      "checkedSourceFamilies": [
+        "停管處地面層圖說",
+        "既有停車／入口／公廁／運輸／行穿線資料",
+        "體育局／公園官方資料"
+      ],
+      "gaps": [
+        "林金7口號碼均有街景，尚無測量或可信套繪入口點。",
+        "華山活動廣場用途、籃球個別位置未確認。"
+      ],
+      "complete": false
+    },
+    {
+      "id": "XJ",
+      "segment": "S3",
+      "name": "金山北路／新生高架—建國南路",
+      "parent": "P-TPE0386U03",
+      "recordIds": [
+        "F-SPORT-VBS262",
+        "F-SPORT-VBS261",
+        "F-ART-090091404"
+      ],
+      "checkedSourceFamilies": [
+        "停管處地面層圖說",
+        "既有停車／入口／公廁／運輸／行穿線資料",
+        "體育局／公園官方資料",
+        "公共藝術作品資料"
+      ],
+      "gaps": [
+        "新生滑板場已以2026-01場內360影像修正代表位置；籃球場仍採VBS登錄點，未解決全部來源差異。尚無新生橋下停車場完整人行入口清冊。",
+        "金樹歲月採官方登錄點，未核對現況界址。"
+      ],
+      "complete": false
+    },
+    {
+      "id": "JF",
+      "segment": "S3",
+      "name": "建國南路—復興南路",
+      "parent": "P-TPE0109",
+      "recordIds": [
+        "PA-TPE0109-1",
+        "PA-TPE0109-2",
+        "PA-TPE0109-3",
+        "PA-TPE0109-4",
+        "U-DOC-TPE0109-A",
+        "U-DOC-TPE0109-B",
+        "U-DOC-TPE0109-C",
+        "U-DOC-TPE0109-D",
+        "U-DOC-TPE0109-E",
+        "U-DOC-TPE0109-F",
+        "U-DOC-TPE0109-G",
+        "U-DOC-TPE0109-H",
+        "U-DOC-TPE0109-I",
+        "F-PARK-CL",
+        "F-SPACE-TH",
+        "F-SPORT-VBS1115",
+        "F-ENG-JA-STAGE",
+        "F-ENG-JA-SEAT",
+        "F-ENG-JA-LIGHT",
+        "F-ENG-JA-FENCE",
+        "F-ENG-JA-SCREEN",
+        "F-ENG-JA-IRRIGATION",
+        "F-ENG-JA-PAVING",
+        "F-ENG-JA-PLANT",
+        "F-ENG-JA-COLUMN-ART",
+        "F-ENG-JA-GROUND-ART"
+      ],
+      "checkedSourceFamilies": [
+        "停管處地面層圖說",
+        "既有停車／入口／公廁／運輸／行穿線資料",
+        "體育局／公園官方資料",
+        "工務局完工年報"
+      ],
+      "gaps": [
+        "建復4個入口與9類機電只有官方圖說相對位置，未完成地面套位。",
+        "工程年報10類項目已收錄；個別構件位置與數量未載。"
+      ],
+      "complete": false
+    },
+    {
+      "id": "FD",
+      "segment": "S4",
+      "name": "復興南路—敦化南路",
+      "parent": "P-TPE0155",
+      "recordIds": [
+        "H-FD-01",
+        "H-FD-02",
+        "H-FD-03",
+        "H-FD-04",
+        "F-ART-090091405",
+        "F-ART-113071001",
+        "H-FD-05",
+        "H-FD-06",
+        "H-FD-07",
+        "H-FD-08",
+        "H-FD-09",
+        "H-FD-10",
+        "H-FD-11",
+        "H-FD-12",
+        "H-FD-13",
+        "H-FD-14",
+        "H-FD-15",
+        "H-FD-16",
+        "H-FD-17",
+        "H-FD-18",
+        "H-FD-19"
+      ],
+      "checkedSourceFamilies": [
+        "停管處地面層圖說",
+        "既有停車／入口／公廁／運輸／行穿線資料",
+        "公共藝術作品資料"
+      ],
+      "gaps": [
+        "復敦4個地面口與15筆圖說設備位置未套繪；3座地下梯保持地下性質。",
+        "時間斑馬線官方點與地址衝突，未套用問題座標。"
+      ],
+      "complete": false
+    },
+    {
+      "id": "DY",
+      "segment": "S4",
+      "name": "敦化南路—延吉街",
+      "parent": "P-TPE0163",
+      "recordIds": [
+        "PA-TPE0163-1",
+        "PA-TPE0163-2",
+        "U-DOC-TPE0163-A",
+        "U-DOC-TPE0163-B",
+        "U-DOC-TPE0163-C",
+        "U-DOC-TPE0163-D",
+        "U-DOC-TPE0163-E",
+        "U-DOC-TPE0163-F",
+        "F-ART-090091402"
+      ],
+      "checkedSourceFamilies": [
+        "停管處地面層圖說",
+        "既有停車／入口／公廁／運輸／行穿線資料",
+        "公共藝術作品資料"
+      ],
+      "gaps": [
+        "敦延2個地面口與6類機電只有圖說相對位置；待地面定位。",
+        "星光時刻兩官方來源年份與位置有差異，保留市文化局登錄點及疑義。"
+      ],
+      "complete": false
+    },
+    {
+      "id": "YJ",
+      "segment": "S4",
+      "name": "延吉街—光復南路",
+      "parent": "P-TPE0164",
+      "recordIds": [
+        "PA-TPE0164-1",
+        "PA-TPE0164-2",
+        "U-DOC-TPE0164-A",
+        "U-DOC-TPE0164-B",
+        "U-DOC-TPE0164-C",
+        "U-DOC-TPE0164-D",
+        "U-DOC-TPE0164-E",
+        "U-DOC-TPE0164-F",
+        "F-ART-090091403"
+      ],
+      "checkedSourceFamilies": [
+        "停管處地面層圖說",
+        "既有停車／入口／公廁／運輸／行穿線資料",
+        "公共藝術作品資料"
+      ],
+      "gaps": [
+        "延吉2個地面口與6類機電只有圖說相對位置；待地面定位。",
+        "合的官方文字與地圖點有位置疑義，保留資料但不定位。"
+      ],
+      "complete": false
+    }
+  ],
+  "rejectedEvidence": [
+    {
+      "source": "臺北市路外停車場出入口SHP",
+      "reason": "不能將車道口圖資直接當作人行樓梯座標。"
+    },
+    {
+      "source": "Google Maps自動選取街景",
+      "reason": "同一平面座標可能跳到高架橋上；只採確認為地面層的影像。"
+    },
+    {
+      "source": "官方示意圖紅色增設LED註記",
+      "reason": "施工要求不能當成已完工設備證明。"
+    },
+    {
+      "source": "市民大道安東滑板場Google商家點",
+      "reason": "商家點與場內觀察位置不同；採可辨識設施的場內360影像位置。"
+    }
+  ]
+}

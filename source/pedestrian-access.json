@@ -13,12 +13,21 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
         "page": 6,
-        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載",
+        "preview": "./evidence/parking-TPE0100.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
-      "groundReview": null,
-      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+      "groundReview": {
+        "imageDate": "2025-04",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=HQNqDz5oYepHpCA2O-kOJQ&viewpoint=25.0480501,121.521878&heading=285&pitch=0&fov=65",
+        "summary": "1號標牌、向地下樓梯、綠色鋼架頂棚；北側人行道，市民大道二段巷口東側。",
+        "observation": [
+          121.521878,
+          25.0480501
+        ]
+      },
+      "limitations": "概略定位，非測量入口座標；2026現況、開放狀態、無障礙及自行車通行性未確認。"
     },
     {
       "id": "PA-TPE0100-2",
@@ -31,12 +40,21 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
         "page": 6,
-        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載",
+        "preview": "./evidence/parking-TPE0100.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
-      "groundReview": null,
-      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+      "groundReview": {
+        "imageDate": "2022-03",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=c9qGq5tGIE8u1dEj2FpQEA&viewpoint=25.0478211,121.522119&heading=235&pitch=0&fov=75",
+        "summary": "2號標牌及向地下樓梯；南側、天津街西側；2025-04背側頂棚、牆體仍可辨識。",
+        "observation": [
+          121.522119,
+          25.0478211
+        ]
+      },
+      "limitations": "影像年月不同，2025影像為背面，未重讀號碼；概略套位非測量座標，2026開放狀態與通行性未確認。"
     },
     {
       "id": "PA-TPE0100-3",
@@ -49,12 +67,21 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
         "page": 6,
-        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載",
+        "preview": "./evidence/parking-TPE0100.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
-      "groundReview": null,
-      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+      "groundReview": {
+        "imageDate": "2025-05",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=UG7IXH4_zKEqu5UlQF-c9A&viewpoint=25.0477984,121.5229408&heading=265&pitch=0&fov=75",
+        "summary": "3號標牌、下行樓梯與頂棚；天津街東側、市民大道南側人行道，兩側影像構造一致。",
+        "observation": [
+          121.5229408,
+          25.0477984
+        ]
+      },
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。"
     },
     {
       "id": "PA-TPE0100-4",
@@ -67,12 +94,21 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
         "page": 6,
-        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載",
+        "preview": "./evidence/parking-TPE0100.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
-      "groundReview": null,
-      "limitations": "尚未取得可核實的入口座標；尚未逐口完成地面影像核對。開放狀態、無障礙及自行車通行性未確認。"
+      "groundReview": {
+        "imageDate": "2025-05",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=vt0sCAs5PCHnwBvYN2v5ig&viewpoint=25.0477222,121.5237622&heading=250&pitch=0&fov=75",
+        "summary": "4號標牌與下行樓梯；林森北路西側、市民大道南側人行道；兩側影像頂棚與牆體一致。",
+        "observation": [
+          121.5237622,
+          25.0477222
+        ]
+      },
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。"
     },
     {
       "id": "PA-TPE0110-1",
@@ -85,7 +121,8 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
         "page": 12,
-        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載",
+        "preview": "./evidence/parking-TPE0110.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
@@ -112,7 +149,8 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
         "page": 12,
-        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載",
+        "preview": "./evidence/parking-TPE0110.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
@@ -139,7 +177,8 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
         "page": 12,
-        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載",
+        "preview": "./evidence/parking-TPE0110.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
@@ -169,7 +208,8 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
         "page": 12,
-        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載",
+        "preview": "./evidence/parking-TPE0110.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
@@ -199,7 +239,8 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
         "page": 12,
-        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載",
+        "preview": "./evidence/parking-TPE0110.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
@@ -229,7 +270,8 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
         "page": 12,
-        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載",
+        "preview": "./evidence/parking-TPE0110.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
@@ -259,7 +301,8 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf",
         "page": 12,
-        "date": "2024年招標附件；圖名為現況，原始測繪日期未載"
+        "date": "2024年招標附件；圖名為現況，原始測繪日期未載",
+        "preview": "./evidence/parking-TPE0110.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
@@ -286,7 +329,8 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
         "page": 13,
-        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+        "preview": "./evidence/parking-TPE0109.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
@@ -304,7 +348,8 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
         "page": 13,
-        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+        "preview": "./evidence/parking-TPE0109.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
@@ -322,7 +367,8 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
         "page": 13,
-        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+        "preview": "./evidence/parking-TPE0109.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
@@ -340,7 +386,8 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
         "page": 13,
-        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+        "preview": "./evidence/parking-TPE0109.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
@@ -358,7 +405,8 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
         "page": 14,
-        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+        "preview": "./evidence/parking-TPE0155.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
@@ -376,7 +424,8 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
         "page": 14,
-        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+        "preview": "./evidence/parking-TPE0155.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
@@ -394,7 +443,8 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
         "page": 14,
-        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+        "preview": "./evidence/parking-TPE0155.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
@@ -412,7 +462,8 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
         "page": 14,
-        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+        "preview": "./evidence/parking-TPE0155.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
@@ -430,7 +481,8 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
         "page": 15,
-        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+        "preview": "./evidence/parking-TPE0163.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
@@ -448,7 +500,8 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
         "page": 15,
-        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+        "preview": "./evidence/parking-TPE0163.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
@@ -466,7 +519,8 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
         "page": 16,
-        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+        "preview": "./evidence/parking-TPE0164.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
@@ -484,7 +538,8 @@
       "document": {
         "url": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf",
         "page": 16,
-        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載"
+        "date": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+        "preview": "./evidence/parking-TPE0164.png"
       },
       "checkedAt": "2026-11-04",
       "position": null,
@@ -596,7 +651,7 @@
       "groundImageReviewed": 0,
       "locatedCount": 0,
       "complete": false,
-      "note": "地面層圖的編號樓梯已逐口建檔；現況與座標尚未逐口核實。"
+      "note": "官方圖說1–4號均已對照地面影像編號並以兩視點概略套位；2號標牌影像2022-03，另有2025-04背側影像，其餘2025-04／05。非測量座標，2026現況及通行性未確認。"
     },
     {
       "parent": "P-TPE0110",

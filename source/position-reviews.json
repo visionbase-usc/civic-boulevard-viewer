@@ -1,0 +1,215 @@
+{
+  "checkedAt": "2026-11-04",
+  "records": [
+    {
+      "id": "F-SPORT-VBS1115",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54159,
+          25.044794
+        ]
+      },
+      "method": "官方場館照片與2026-03場內360度影像交叉辨識；採影像場內觀察點作場地代表位置，非出入口或測量界址",
+      "imageDate": "2026-03",
+      "provider": "群立科技 Nina Geoforce（Google Maps公開360影像）",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=CIABIhCXEwNKdPna8a4CslZ2dRs6&viewpoint=25.044794,121.54159&heading=270&pitch=0",
+      "observed": "藍色滑板鋪面、中央鐵桿及台面、西端斜坡與樓梯、南側彩繪橋柱、黑色圍欄、西端機電百葉建物及安東藝術長廊圖案；與官方VBS1115照片同一組設施。",
+      "checkedAt": "2026-11-04",
+      "quality": "interior-observation",
+      "limitations": "採場內代表觀察點；不是入口、界址或測量點。影像為2026-03，並非2026-11現勘。"
+    },
+    {
+      "id": "PA-TPE0100-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52178,
+          25.0481
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖編號／側別對照2025-04街景1號標牌；兩個街景相機的水平視線交會，僅供街廓尺度概略定位，未經測量校正。",
+      "imageDate": "2025-04",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=HQNqDz5oYepHpCA2O-kOJQ&viewpoint=25.0480501,121.521878&heading=285&pitch=0&fov=65",
+      "observed": "1號標牌、向地下樓梯、綠色鋼架頂棚；北側人行道，市民大道二段巷口東側。",
+      "checkedAt": "2026-11-04",
+      "limitations": "概略定位，非測量入口座標；2026現況、開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.5216298,
+            25.0480664
+          ],
+          "pano": "ssgky6ifikSVLQ94iWlecw",
+          "heading": 65,
+          "fov": 65,
+          "imageWidth": 1031,
+          "targetX": 666
+        },
+        {
+          "camera": [
+            121.521878,
+            25.0480501
+          ],
+          "pano": "HQNqDz5oYepHpCA2O-kOJQ",
+          "heading": 285,
+          "fov": 65,
+          "imageWidth": 1031,
+          "targetX": 710
+        }
+      ]
+    },
+    {
+      "id": "PA-TPE0100-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52205,
+          25.04778
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖編號／側別對照2022-03街景2號標牌，2025-04另一側同一樓梯頂棚與牆體；兩視點水平視線交會概略套位，未經測量校正。",
+      "imageDate": "2022-03",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=c9qGq5tGIE8u1dEj2FpQEA&viewpoint=25.0478211,121.522119&heading=235&pitch=0&fov=75",
+      "observed": "2號標牌及向地下樓梯；南側、天津街西側；2025-04背側頂棚、牆體仍可辨識。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像年月不同，2025影像為背面，未重讀號碼；概略套位非測量座標，2026開放狀態與通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.522119,
+            25.0478211
+          ],
+          "pano": "c9qGq5tGIE8u1dEj2FpQEA",
+          "heading": 235,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 520,
+          "imageDate": "2022-03"
+        },
+        {
+          "camera": [
+            121.5218994,
+            25.0478307
+          ],
+          "pano": "9OtjsHJNm_1sCaPzID-qFQ",
+          "heading": 120,
+          "fov": 65,
+          "imageWidth": 1031,
+          "targetX": 402,
+          "imageDate": "2025-04"
+        }
+      ]
+    },
+    {
+      "id": "PA-TPE0100-3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52278,
+          25.04775
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖編號／側別對照2025-05街景3號標牌；兩視點水平視線交會概略套位，未經測量校正。",
+      "imageDate": "2025-05",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=UG7IXH4_zKEqu5UlQF-c9A&viewpoint=25.0477984,121.5229408&heading=265&pitch=0&fov=75",
+      "observed": "3號標牌、下行樓梯與頂棚；天津街東側、市民大道南側人行道，兩側影像構造一致。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.5229408,
+            25.0477984
+          ],
+          "pano": "UG7IXH4_zKEqu5UlQF-c9A",
+          "heading": 265,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 345,
+          "imageDate": "2025-05"
+        },
+        {
+          "camera": [
+            121.5226164,
+            25.0477973
+          ],
+          "pano": "K4az5of-SUSWaiZHjXo6VQ",
+          "heading": 110,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 490,
+          "imageDate": "2025-05"
+        }
+      ]
+    },
+    {
+      "id": "PA-TPE0100-4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52369,
+          25.0477
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖編號／側別對照2025-05街景4號標牌；兩視點水平視線交會概略套位，未經測量校正。",
+      "imageDate": "2025-05",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=vt0sCAs5PCHnwBvYN2v5ig&viewpoint=25.0477222,121.5237622&heading=250&pitch=0&fov=75",
+      "observed": "4號標牌與下行樓梯；林森北路西側、市民大道南側人行道；兩側影像頂棚與牆體一致。",
+      "checkedAt": "2026-11-04",
+      "limitations": "影像概略定位，非測量入口座標；2026開放狀態、無障礙及自行車通行性未確認。",
+      "rays": [
+        {
+          "camera": [
+            121.5237622,
+            25.0477222
+          ],
+          "pano": "vt0sCAs5PCHnwBvYN2v5ig",
+          "heading": 250,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 504,
+          "imageDate": "2025-05"
+        },
+        {
+          "camera": [
+            121.5235268,
+            25.0477388
+          ],
+          "pano": "UExxxSsr_l7KGrHEQvZveA",
+          "heading": 90,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 700,
+          "imageDate": "2025-05"
+        }
+      ]
+    },
+    {
+      "id": "F-SPORT-VBS262",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.530279,
+          25.044648
+        ]
+      },
+      "quality": "interior-observation",
+      "method": "體育局滑板場照片與2026-01場內360度影像的棕色坡臺、金屬扶手、彩繪橋柱、藍色立柱護欄交叉辨識；採場內觀察點作代表位置。",
+      "imageDate": "2026-01",
+      "provider": "群立科技 Nina Geoforce（Google Maps公開360影像）",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=CIABIhC0XICfin7Tx0NU9pRpkudY&viewpoint=25.044648,121.530279&heading=180&pitch=0&fov=90",
+      "observed": "場內可見棕色坡臺、銀色扶手、彩繪橋柱與藍柱護欄，與體育局VBS262照片構造一致。",
+      "checkedAt": "2026-11-04",
+      "limitations": "場內代表點，非出入口或測量界址；與VBS原登錄點約120公尺差異，原值保留。影像2026-01，不是2026-11現勘。"
+    }
+  ]
+}

@@ -1,0 +1,1178 @@
+{
+  "status": "queued-after-crossway-publication",
+  "baselineVersion": "1.6.0",
+  "baselineCount": 77,
+  "scope": "中山北路至光復南路",
+  "policy": "先發布穿越道圖層，再逐段核實77筆；優先機電設備及活動場地。有官方圖說與街景交叉依據即採用；不以場站中心、相機點或推測件數冒充個別設施。",
+  "records": [
+    {
+      "id": "E-TPE1871-01",
+      "name": "八德路2段臨時平面停車場／入口",
+      "segments": [
+        "S3"
+      ],
+      "category": "entrance",
+      "parent": "P-TPE1871",
+      "priority": 2,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.json"
+      ]
+    },
+    {
+      "id": "F-TPE0100-ChargingStation",
+      "name": "市民大道中林段停車場／充電樁",
+      "segments": [
+        "S2"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0100",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.json",
+        "https://data.taipei/dataset/detail?id=d5c0656b-5250-4179-a491-c94daa56ef2c"
+      ]
+    },
+    {
+      "id": "F-TPE0109-ChargingStation",
+      "name": "市民大道建復段停車場／充電樁",
+      "segments": [
+        "S3"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0109",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.json",
+        "https://data.taipei/dataset/detail?id=d5c0656b-5250-4179-a491-c94daa56ef2c"
+      ]
+    },
+    {
+      "id": "F-TPE0110-ChargingStation",
+      "name": "市民大道林金段停車場／充電樁",
+      "segments": [
+        "S2"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0110",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.json",
+        "https://data.taipei/dataset/detail?id=d5c0656b-5250-4179-a491-c94daa56ef2c"
+      ]
+    },
+    {
+      "id": "F-TPE0155-ChargingStation",
+      "name": "市民大道復敦段停車場／充電樁",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0155",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.json",
+        "https://data.taipei/dataset/detail?id=d5c0656b-5250-4179-a491-c94daa56ef2c"
+      ]
+    },
+    {
+      "id": "F-TPE0163-ChargingStation",
+      "name": "市民大道敦延段停車場／充電樁",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0163",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.json",
+        "https://data.taipei/dataset/detail?id=d5c0656b-5250-4179-a491-c94daa56ef2c"
+      ]
+    },
+    {
+      "id": "F-TPE0164-ChargingStation",
+      "name": "市民大道延吉段停車場／充電樁",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0164",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.json",
+        "https://data.taipei/dataset/detail?id=d5c0656b-5250-4179-a491-c94daa56ef2c"
+      ]
+    },
+    {
+      "id": "F-TPE0263-ChargingStation",
+      "name": "微風廣場地下停車場／充電樁",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0263",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.json",
+        "https://data.taipei/dataset/detail?id=d5c0656b-5250-4179-a491-c94daa56ef2c"
+      ]
+    },
+    {
+      "id": "F-TPE0509-ChargingStation",
+      "name": "美麗信花園酒店／充電樁",
+      "segments": [
+        "S3"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0509",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.json",
+        "https://data.taipei/dataset/detail?id=d5c0656b-5250-4179-a491-c94daa56ef2c"
+      ]
+    },
+    {
+      "id": "F-TPE0910-ChargingStation",
+      "name": "三創生活園區停車場／充電樁",
+      "segments": [
+        "S3"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0910",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.json",
+        "https://data.taipei/dataset/detail?id=d5c0656b-5250-4179-a491-c94daa56ef2c"
+      ]
+    },
+    {
+      "id": "F-TPE1598-ChargingStation",
+      "name": "USPACE富邦敦北大樓／充電樁",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE1598",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.json",
+        "https://data.taipei/dataset/detail?id=d5c0656b-5250-4179-a491-c94daa56ef2c"
+      ]
+    },
+    {
+      "id": "F-PARK-HS",
+      "name": "華山公園A",
+      "segments": [
+        "S2"
+      ],
+      "category": "public",
+      "parent": "",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://pkl.gov.taipei/News_Content.aspx?n=4EFE2EB2E80F8C6B&s=242DEA27C4CD6313&sms=83FE2CD176299663"
+      ]
+    },
+    {
+      "id": "F-PARK-CL",
+      "name": "昌隆公園／昌隆198公園",
+      "segments": [
+        "S3"
+      ],
+      "category": "public",
+      "parent": "",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://dado.gov.taipei/cp.aspx?n=6949FA3AE36CF292",
+        "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=40969D4BE7904072&sms=72544237BBE4C5F6"
+      ]
+    },
+    {
+      "id": "F-SPACE-TH",
+      "name": "泰國音樂廣場",
+      "segments": [
+        "S3"
+      ],
+      "category": "public",
+      "parent": "",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=40969D4BE7904072&sms=72544237BBE4C5F6",
+        "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=6910509CFDFEA2EA"
+      ]
+    },
+    {
+      "id": "H-FD-05",
+      "name": "復敦段／平面往B1坡道",
+      "segments": [
+        "S4"
+      ],
+      "category": "entrance",
+      "parent": "P-TPE0155",
+      "priority": 2,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ]
+    },
+    {
+      "id": "H-FD-06",
+      "name": "復敦段／B1往平面坡道",
+      "segments": [
+        "S4"
+      ],
+      "category": "entrance",
+      "parent": "P-TPE0155",
+      "priority": 2,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ]
+    },
+    {
+      "id": "H-FD-07",
+      "name": "復敦段／A水塔",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0155",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ]
+    },
+    {
+      "id": "H-FD-08",
+      "name": "復敦段／B送風口",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0155",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ]
+    },
+    {
+      "id": "H-FD-09",
+      "name": "復敦段／C排風口",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0155",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ]
+    },
+    {
+      "id": "H-FD-10",
+      "name": "復敦段／D排風口",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0155",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ]
+    },
+    {
+      "id": "H-FD-11",
+      "name": "復敦段／E發電機出風口",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0155",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ]
+    },
+    {
+      "id": "H-FD-12",
+      "name": "復敦段／F送風口",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0155",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ]
+    },
+    {
+      "id": "H-FD-13",
+      "name": "復敦段／G排風口",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0155",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ]
+    },
+    {
+      "id": "H-FD-14",
+      "name": "復敦段／H水塔",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0155",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ]
+    },
+    {
+      "id": "H-FD-15",
+      "name": "復敦段／I送風口",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0155",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ]
+    },
+    {
+      "id": "H-FD-16",
+      "name": "復敦段／A梯",
+      "segments": [
+        "S4"
+      ],
+      "category": "crossing",
+      "parent": "P-TPE0155",
+      "priority": 2,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ]
+    },
+    {
+      "id": "H-FD-17",
+      "name": "復敦段／B梯",
+      "segments": [
+        "S4"
+      ],
+      "category": "crossing",
+      "parent": "P-TPE0155",
+      "priority": 2,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ]
+    },
+    {
+      "id": "H-FD-18",
+      "name": "復敦段／C梯",
+      "segments": [
+        "S4"
+      ],
+      "category": "crossing",
+      "parent": "P-TPE0155",
+      "priority": 2,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ]
+    },
+    {
+      "id": "H-FD-19",
+      "name": "復敦段／鐵路檢修門",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0155",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0100-W-S",
+      "name": "市民大道中林段停車場／西端送風口",
+      "segments": [
+        "S2"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0100",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0100-W-W",
+      "name": "市民大道中林段停車場／西端水塔",
+      "segments": [
+        "S2"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0100",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0100-W-E",
+      "name": "市民大道中林段停車場／西側排風口",
+      "segments": [
+        "S2"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0100",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0100-G",
+      "name": "市民大道中林段停車場／發電機排煙管道口",
+      "segments": [
+        "S2"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0100",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0100-E-E",
+      "name": "市民大道中林段停車場／東側排風口",
+      "segments": [
+        "S2"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0100",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0100-E-S",
+      "name": "市民大道中林段停車場／東端送風口",
+      "segments": [
+        "S2"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0100",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0100-E-W",
+      "name": "市民大道中林段停車場／東端水塔",
+      "segments": [
+        "S2"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0100",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0110-W-S",
+      "name": "市民大道林金段停車場／西端送風口",
+      "segments": [
+        "S2"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0110",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0110-W-W",
+      "name": "市民大道林金段停車場／西端水塔",
+      "segments": [
+        "S2"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0110",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0110-W-E",
+      "name": "市民大道林金段停車場／西側排風口",
+      "segments": [
+        "S2"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0110",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0110-G",
+      "name": "市民大道林金段停車場／發電機排煙管道口",
+      "segments": [
+        "S2"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0110",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0110-E-E",
+      "name": "市民大道林金段停車場／東側排風口",
+      "segments": [
+        "S2"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0110",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0110-E-S",
+      "name": "市民大道林金段停車場／東端送風口",
+      "segments": [
+        "S2"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0110",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0110-E-W",
+      "name": "市民大道林金段停車場／東端水塔",
+      "segments": [
+        "S2"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0110",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0109-A",
+      "name": "市民大道建復段停車場／A通風口",
+      "segments": [
+        "S3"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0109",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0109-B",
+      "name": "市民大道建復段停車場／B排氣口",
+      "segments": [
+        "S3"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0109",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0109-C",
+      "name": "市民大道建復段停車場／C排氣口",
+      "segments": [
+        "S3"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0109",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0109-D",
+      "name": "市民大道建復段停車場／D發電機出風口",
+      "segments": [
+        "S3"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0109",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0109-E",
+      "name": "市民大道建復段停車場／E排氣口",
+      "segments": [
+        "S3"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0109",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0109-F",
+      "name": "市民大道建復段停車場／F水塔",
+      "segments": [
+        "S3"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0109",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0109-G",
+      "name": "市民大道建復段停車場／G排氣口",
+      "segments": [
+        "S3"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0109",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0109-H",
+      "name": "市民大道建復段停車場／H通風口",
+      "segments": [
+        "S3"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0109",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0109-I",
+      "name": "市民大道建復段停車場／I通風口",
+      "segments": [
+        "S3"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0109",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0163-A",
+      "name": "市民大道敦延段停車場／A水箱",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0163",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0163-B",
+      "name": "市民大道敦延段停車場／B水箱開關",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0163",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0163-C",
+      "name": "市民大道敦延段停車場／C通風口",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0163",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0163-D",
+      "name": "市民大道敦延段停車場／D排氣口",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0163",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0163-E",
+      "name": "市民大道敦延段停車場／E排氣口",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0163",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0163-F",
+      "name": "市民大道敦延段停車場／F通風口",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0163",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0164-A",
+      "name": "市民大道延吉段停車場／A通風口",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0164",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0164-B",
+      "name": "市民大道延吉段停車場／B通風口",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0164",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0164-C",
+      "name": "市民大道延吉段停車場／C排氣口",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0164",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0164-D",
+      "name": "市民大道延吉段停車場／D水塔",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0164",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0164-E",
+      "name": "市民大道延吉段停車場／E發電機出風口",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0164",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
+      ]
+    },
+    {
+      "id": "U-DOC-TPE0164-F",
+      "name": "市民大道延吉段停車場／F通風口",
+      "segments": [
+        "S4"
+      ],
+      "category": "utility",
+      "parent": "P-TPE0164",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
+      ]
+    },
+    {
+      "id": "F-SPORT-HUASHAN-BASKET",
+      "name": "華山公園／籃球設施",
+      "segments": [
+        "S2"
+      ],
+      "category": "public",
+      "parent": "",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://li.taipei/News_Content.aspx?n=8CC4391B60340D9C&s=94E197BB6F43BE45"
+      ]
+    },
+    {
+      "id": "F-SPACE-HUASHAN-RINK",
+      "name": "華山溜冰場／活動廣場",
+      "segments": [
+        "S2"
+      ],
+      "category": "public",
+      "parent": "",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://hac.gov.taipei/News_Content.aspx?n=9DCF366EBD2635FF&s=C85EED91E7415313&sms=72544237BBE4C5F6",
+        "https://li.taipei/News_Content.aspx?n=8CC4391B60340D9C&s=94E197BB6F43BE45",
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17090/3132724/58121964071.pdf"
+      ]
+    },
+    {
+      "id": "F-ART-113071001",
+      "name": "時間斑馬線",
+      "segments": [
+        "S4"
+      ],
+      "category": "public",
+      "parent": "",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://publicart.taipei/Works_detail.aspx?id=1144"
+      ]
+    },
+    {
+      "id": "F-ENG-JA-STAGE",
+      "name": "建國—安東40巷橋下／舞臺",
+      "segments": [
+        "S3"
+      ],
+      "category": "public",
+      "parent": "",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ]
+    },
+    {
+      "id": "F-ENG-JA-SEAT",
+      "name": "建國—安東40巷橋下／座椅",
+      "segments": [
+        "S3"
+      ],
+      "category": "public",
+      "parent": "",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ]
+    },
+    {
+      "id": "F-ENG-JA-LIGHT",
+      "name": "建國—安東40巷橋下／照明",
+      "segments": [
+        "S3"
+      ],
+      "category": "utility",
+      "parent": "",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ]
+    },
+    {
+      "id": "F-ENG-JA-FENCE",
+      "name": "建國—安東40巷橋下／造型圍籬",
+      "segments": [
+        "S3"
+      ],
+      "category": "public",
+      "parent": "",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ]
+    },
+    {
+      "id": "F-ENG-JA-SCREEN",
+      "name": "建國—安東40巷橋下／入口遮板",
+      "segments": [
+        "S3"
+      ],
+      "category": "public",
+      "parent": "",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ]
+    },
+    {
+      "id": "F-ENG-JA-IRRIGATION",
+      "name": "建國—安東40巷橋下／噴灌系統",
+      "segments": [
+        "S3"
+      ],
+      "category": "utility",
+      "parent": "",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ]
+    },
+    {
+      "id": "F-ENG-JA-PAVING",
+      "name": "建國—安東40巷橋下／更新地坪",
+      "segments": [
+        "S3"
+      ],
+      "category": "public",
+      "parent": "",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ]
+    },
+    {
+      "id": "F-ENG-JA-PLANT",
+      "name": "建國—安東40巷橋下／植栽",
+      "segments": [
+        "S3"
+      ],
+      "category": "public",
+      "parent": "",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ]
+    },
+    {
+      "id": "F-ENG-JA-COLUMN-ART",
+      "name": "建國—安東40巷橋下／橋柱彩繪",
+      "segments": [
+        "S3"
+      ],
+      "category": "public",
+      "parent": "",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ]
+    },
+    {
+      "id": "F-ENG-JA-GROUND-ART",
+      "name": "建國—安東40巷橋下／地面3D彩繪",
+      "segments": [
+        "S3"
+      ],
+      "category": "public",
+      "parent": "",
+      "priority": 1,
+      "status": "not-yet-reviewed-this-pass",
+      "resultPosition": null,
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@
 import json, re, hashlib
 from pathlib import Path
 from collections import Counter
+from scope import SEGMENTS, NAME, clip_line, select_records
 ROOT = Path(__file__).resolve().parents[1]
 src = json.loads((ROOT/'source/inventory.json').read_text())
 osm = json.loads((ROOT/'source/osm-roads.json').read_text())
@@ -27,7 +28,7 @@ for table,rows in src['datasets'].items():
         else: cat='utility'
         geom=src['crossGeoms'].get(rid)
         if geom is None and isinstance(row.get('經度'),(int,float)) and isinstance(row.get('緯度'),(int,float)):
-            geom={'type':'Point','coordinates':[row['經度'],row['緯度']]}
+            geom={'type':'Point','coordinates':[row['經度'],row['緯度']]} if 24.9<row['緯度']<25.3 and 121.4<row['經度']<121.7 else None
         if rid=='X-C076':
             geom={'type':'MultiLineString','coordinates':[[[121.51669,25.04898],[121.51656,25.04847]],[[121.51612,25.04908],[121.51669,25.04898]]]}
         history=table=='歷史圖說設備' or '歷史' in row.get('確認程度','')
@@ -68,8 +69,24 @@ for review in reviews:
         assert rid in byid
         byid[rid]['review']=review
     byid[review['indexId']]['name']=review['displayName']
+records=select_records(records)
+byid={r['id']:r for r in records}
+reviews=[r for r in reviews if r['indexId'] in byid]
+access['items']=[i for i in access['items'] if i['id'] in byid]
+access['audits']=[a for a in access['audits'] if a['parent'] in byid]
+access['scope']='中山北路至光復南路（S2–S4）：6處市民大道地下停車場及新生高架相關場站；尚未完成範圍內所有入口的定位與現況查核。'
+roads=[w for w in src['roads'] if w['seg'] in SEGMENTS]
+west=min(p[0] for w in roads for p in w['coords'])
+east=max(p[0] for w in roads for p in w['coords'])
+for r in records:
+    if r['original'].get('經度')==0 and r['original'].get('緯度')==0:
+        r['currentSource']={**r['original'],'經度':None,'緯度':None,'確認程度':'原始登錄座標0,0無效；位置待核','座標依據':'原始0,0非可靠座標；未以場站中心替代'}
+    g=r['geometry']
+    if g and g['type']=='Point' and not west<=g['coordinates'][0]<=east:
+        r['scopeNote']='邊界設施關聯：登錄入口位置位於中山北路端邊界附近；保留所屬場站及入口完整關聯，位置依原始登錄資料。'
 segments=[]
 for s in src['datasets']['路段範圍']:
+    if s['分段'] not in SEGMENTS:continue
     coords=[p for w in src['roads'] if w['seg']==s['分段'] for p in w['coords']]
     assert coords
     segments.append(dict(id=s['分段'],name=s['名稱'],west=s['西界'],east=s['東界'],
@@ -79,8 +96,8 @@ for s in src['datasets']['路段範圍']:
 elevated=[]
 for w in osm['elements']:
     if w.get('tags',{}).get('name')=='市民大道高架道路':
-        elevated.append({'id':w['id'],'coords':[[p['lon'],p['lat']] for p in w['geometry']]})
-assert len(elevated)==30
+        for part,coords in enumerate(clip_line([[p['lon'],p['lat']] for p in w['geometry']],west,east)):
+            elevated.append({'id':w['id'],'part':part,'coords':coords})
 sources=sorted(set(r.get('currentSource',r['original']).get('來源連結','') for r in records if r['original'].get('來源連結')))
 sources=sorted(set(sources).union(ref['url'] for rev in reviews for ref in rev['references']))
 sources=sorted(set(sources).union(i['groundReview']['url'] for i in access['items'] if i['groundReview']))
@@ -88,8 +105,8 @@ for audit in access['audits']:
     items=[i for i in access['items'] if i['parent']==audit['parent']]
     audit['groundImageReviewed']=sum(bool(i['groundReview']) for i in items)
     audit['locatedCount']=sum(bool(byid[i['id']]['geometry']) for i in items)
-pack=dict(version='1.1.1',date=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],
-    roads=src['roads'],elevated=elevated,sources=sources,
+pack=dict(version='1.2.0',scope=dict(name=NAME,segments=list(SEGMENTS),west=west,east=east,viewBounds=[[25.035,west-.002],[25.057,east+.002]]),date=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],
+    roads=roads,elevated=elevated,sources=sources,
     meta=dict(pedestrianAccessCount=len(access['items']),documentedGroundAccessCount=sum(i['groundDocumented'] for i in access['items']),accessImageReviewCount=sum(bool(i['groundReview']) for i in access['items']),imageReviewCount=len(reviews),recordCount=len(records),indexCount=sum(r['isIndex'] for r in records),
         categoryCounts=dict(Counter(r['category'] for r in records if not r['isIndex'])),
         snapshotSHA256=hashlib.sha256((ROOT/'source/inventory.json').read_bytes()).hexdigest(),

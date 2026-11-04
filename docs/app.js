@@ -4,7 +4,7 @@
 const D=window.CIVIC_DATA, $=id=>document.getElementById(id);
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const cats=new Map(D.categories.map(c=>[c.id,c])), records=new Map(D.records.map(r=>[r.id,r]));
-const TAIPEI_BOUNDS=[[24.95,121.45],[25.22,121.67]]; // Viewing envelope, not an administrative boundary.
+const STUDY_BOUNDS=D.scope.viewBounds; // Context margin around the study corridor, not a formal road boundary.
 const PUBLIC_URL='https://visionbase-usc.github.io/civic-boulevard-viewer/';
 const state={layers:new Set(['parking','entrance']),confirmed:true,pending:true,historical:false,segment:'all',base:'photo',fade:60,labels:true,selected:null};
 let restoring=false, resultLimit=60, resultMode='list', searchTimer, tileFailures=0, tilesLoaded=0, baseGeneration=0;
@@ -19,11 +19,11 @@ function readHash(){
  state.selected=records.has(p.get('id'))?p.get('id'):null;
  if(p.has('lat')&&p.has('lng')&&p.has('z')){
   const lat=Number(p.get('lat')),lng=Number(p.get('lng')),z=Number(p.get('z'));
-  camera=Number.isFinite(lat)&&Number.isFinite(lng)&&Number.isFinite(z)&&lat>=24.95&&lat<=25.22&&lng>=121.45&&lng<=121.67&&z>=10&&z<=20?{lat,lng,z}:null;
+  camera=Number.isFinite(lat)&&Number.isFinite(lng)&&Number.isFinite(z)&&lat>=STUDY_BOUNDS[0][0]&&lat<=STUDY_BOUNDS[1][0]&&lng>=STUDY_BOUNDS[0][1]&&lng<=STUDY_BOUNDS[1][1]&&z>=12&&z<=20?{lat,lng,z}:null;
  }
 }
 readHash();
-const map=L.map('map',{zoomControl:false,preferCanvas:true,minZoom:11,maxZoom:20,maxBounds:TAIPEI_BOUNDS,maxBoundsViscosity:1,zoomSnap:.5,attributionControl:true});
+const map=L.map('map',{zoomControl:false,preferCanvas:true,minZoom:12,maxZoom:20,maxBounds:STUDY_BOUNDS,maxBoundsViscosity:1,zoomSnap:.5,attributionControl:true});
 L.control.zoom({position:'bottomright'}).addTo(map);
 L.control.scale({position:'bottomright',imperial:false,maxWidth:90}).addTo(map);
 map.attributionControl.setPrefix('<a href="https://leafletjs.com" target="_blank" rel="noopener">Leaflet</a>');
@@ -48,7 +48,7 @@ function updateBaseMessage(){
 function setBase(type){
  state.base=type;tileFailures=0;tilesLoaded=0;const gen=++baseGeneration;
  if(baseLayer)map.removeLayer(baseLayer);
- baseLayer=L.tileLayer(baseURL(type==='photo'?'PHOTO2':'EMAP'),{maxNativeZoom:19,maxZoom:20,minZoom:10,attribution,bounds:TAIPEI_BOUNDS,noWrap:true,keepBuffer:0,updateWhenIdle:true,updateWhenZooming:false});
+ baseLayer=L.tileLayer(baseURL(type==='photo'?'PHOTO2':'EMAP'),{maxNativeZoom:19,maxZoom:20,minZoom:10,attribution,bounds:STUDY_BOUNDS,noWrap:true,keepBuffer:0,updateWhenIdle:true,updateWhenZooming:false});
  baseLayer.on('tileerror',()=>{if(gen===baseGeneration){tileFailures++;updateBaseMessage();}});
  baseLayer.on('tileload',()=>{if(gen===baseGeneration){tilesLoaded++;updateBaseMessage();}});
  baseLayer.addTo(map);
@@ -58,7 +58,7 @@ function setBase(type){
 }
 function updateLabels(){
  if(labelLayer)map.removeLayer(labelLayer);
- if(state.labels&&state.base==='photo')labelLayer=L.tileLayer(baseURL('EMAP2'),{pane:'labels',minZoom:15,maxNativeZoom:19,maxZoom:20,bounds:TAIPEI_BOUNDS,noWrap:true,keepBuffer:0,updateWhenIdle:true,updateWhenZooming:false}).addTo(map);
+ if(state.labels&&state.base==='photo')labelLayer=L.tileLayer(baseURL('EMAP2'),{pane:'labels',minZoom:15,maxNativeZoom:19,maxZoom:20,bounds:STUDY_BOUNDS,noWrap:true,keepBuffer:0,updateWhenIdle:true,updateWhenZooming:false}).addTo(map);
  drawRouteNames();
 }
 function updateFade(){document.documentElement.style.setProperty('--fade',state.fade/100);$('fade-value').textContent=state.fade+'%';$('fade').value=state.fade;}
@@ -83,8 +83,8 @@ function setSegment(id,fit=true){
 }
 function updateSegmentInfo(){
  const s=D.segments.find(x=>x.id===state.segment), el=$('segment-info');el.hidden=!s;
- if(s)el.innerHTML=`<strong>${esc(s.id)} · ${esc(s.name)}</strong>${esc(s.west)} → ${esc(s.east)}<br><small>${esc(s.status)}${s.id==='S0'?' · 西側延伸研究範圍':''}</small>`;
- $('prev-segment').disabled=state.segment==='S0';$('next-segment').disabled=state.segment==='S8';
+ if(s)el.innerHTML=`<strong>${esc(s.id)} · ${esc(s.name)}</strong>${esc(s.west)} → ${esc(s.east)}<br><small>${esc(s.status)}</small>`;
+ $('prev-segment').disabled=state.segment===D.segments[0].id;$('next-segment').disabled=state.segment===D.segments.at(-1).id;
 }
 function drawCorridor(){
  corridor.clearLayers();const z=map.getZoom()||12;
@@ -103,7 +103,7 @@ function drawRouteNames(){
   while(lift<maxLift&&taken.some(t=>Math.abs(t.x-p.x)<width&&Math.abs(t.y-(p.y-lift))<38))lift+=40;
   if(lift>=maxLift)continue;
   taken.push({x:p.x,y:p.y-lift});
-  const label=s.id==='S0'?'西側延伸':s.name;
+  const label=s.name;
   L.marker(s.center,{pane:'routeNames',interactive:false,keyboard:false,icon:L.divIcon({className:'route-label',iconSize:[width,35],iconAnchor:[width/2,45+lift],html:`<span><b class="seg-code">${s.id}</b>${esc(label)}${long?`<small>${esc(s.west)}—${esc(s.east)}</small>`:''}</span>`})}).addTo(names);
  }
 }
@@ -148,7 +148,7 @@ function renderFeatures(){
   marker.on('click',()=>selectRecord(r.id)).bindTooltip(esc(r.name.replace('市民大道','').replace('停車場／','').replace('行人出入口（樓梯）',''))+' · 街景觀察點（非入口位置）',{permanent:r.id===state.selected,direction:'bottom',offset:[0,14]}).addTo(features);
  }
  const all=scopeRecords().filter(r=>!r.isIndex),missing=all.filter(r=>!r.geometry).length;
- $('visible-summary').textContent=`${state.segment==='all'?'全線':state.segment} ${all.length} 筆資料${missing?` · ${missing} 筆未定位`:''}`;
+ $('visible-summary').textContent=`${state.segment==='all'?'研究範圍':state.segment} ${all.length} 筆資料${missing?` · ${missing} 筆未定位`:''}`;
  $('layer-count').textContent=state.layers.size;
  renderSelection();
 }
@@ -188,6 +188,7 @@ function showDetail(r){
  }
  const audit=D.accessAudit.find(a=>a.parent===r.id);
  if(audit)body+=`<section class="notice warning"><strong>行人出入口核對進度：未完成</strong><p>${audit.documentedGroundCount===null?'尚無完整地面入口數':`文件載明 ${audit.documentedGroundCount} 個地面樓梯口`}；${audit.groundImageReviewed} 個另有日期街景；${audit.locatedCount} 個已核實入口座標。</p><p>${esc(audit.note)}</p></section>`;
+ if(r.scopeNote)body+=`<div class="notice">${esc(r.scopeNote)}</div>`;
  if(!r.geometry)body+='<div class="notice warning">尚無已核實的入口／設施座標。地圖僅顯示所屬分段或另標示街景觀察點，不將場站中心或相機位置當作入口位置。</div>';
  if(r.historical)body+=`<div class="notice warning">歷史參考，不計現況。${esc(o['來源日期'])}</div>`;
  if(r.table==='車輛入口')body+='<div class="notice">登錄入口位置。來源未確認出口、雙向通行或進出方向；不代表完整出入口清冊。</div>';
@@ -211,7 +212,7 @@ function renderResults(){
  const indexes=all.filter(r=>r.isIndex).length, missing=all.filter(r=>!r.geometry).length;
  $('results-title').textContent=resultMode==='access'?'停車場行人出入口核對清單':resultMode==='search'&&query?'搜尋結果':'資料清單';
  $('results-summary').textContent=`${all.length-indexes} 筆資料${indexes?`＋${indexes} 個查找索引`:''} · ${missing} 筆未定位。${resultMode==='search'&&query?'搜尋涵蓋隱藏圖層與歷史資料。':'依目前分段、圖層與狀態篩選。'}`;
- if(resultMode==='access')$('results-summary').textContent=`${D.meta.documentedGroundAccessCount} 個文件載明地面樓梯口＋${D.meta.pedestrianAccessCount-D.meta.documentedGroundAccessCount} 座地面連通待核樓梯；${D.meta.accessImageReviewCount} 個另有日期街景，${D.accessAudit.reduce((n,a)=>n+a.locatedCount,0)} 個已核實入口座標。全線查核未完成。包含全部相關紀錄，不受目前圖層與分段篩選影響。`;
+ if(resultMode==='access')$('results-summary').textContent=`${D.meta.documentedGroundAccessCount} 個文件載明地面樓梯口＋${D.meta.pedestrianAccessCount-D.meta.documentedGroundAccessCount} 座地面連通待核樓梯；${D.meta.accessImageReviewCount} 個另有日期街景，${D.accessAudit.reduce((n,a)=>n+a.locatedCount,0)} 個已核實入口座標。範圍內查核未完成。包含全部相關紀錄，不受目前圖層與分段篩選影響。`;
  $('results').innerHTML=ordered.slice(0,resultLimit).map(r=>`<button class="result" data-record="${esc(r.id)}">${categoryIcon(cats.get(r.category))}<strong>${esc(r.name)}</strong><small>${esc(r.segments.join('/'))} · ${esc(cats.get(r.category).name)} · ${statusName(r)}${r.isIndex?' · 查找索引':''}</small><small class="${r.geometry?'':'no-coordinate'}">${esc(r.id)}${r.geometry?'':' · 尚無可定位座標'}</small></button>`).join('')||'<div class="empty">沒有符合的資料。可調整分類或狀態，或輸入其他名稱查詢。</div>';
  if(ordered.length>resultLimit)$('results').insertAdjacentHTML('beforeend',`<button id="more-results">顯示更多（尚有 ${ordered.length-resultLimit} 筆）</button>`);
  $('results').querySelectorAll('[data-record]').forEach(el=>el.onclick=()=>selectRecord(el.dataset.record));
@@ -235,7 +236,7 @@ function saveHash(){
 function fillAbout(){
  const sourceGroups=new Map();for(const r of D.records){const url=(r.currentSource||r.original)['來源連結'];if(!sourceGroups.has(url))sourceGroups.set(url,new Set());sourceGroups.get(url).add(r.table);}
  const accessSummary=`<h3>停車場行人出入口查核</h3><p>${esc(D.accessScope)}</p>${D.accessAudit.map(a=>`<p><strong>${esc(a.name)}</strong><br>${esc(a.note)}<br>建檔 ${a.recordIds.length} 筆 · 街景 ${a.groundImageReviewed} 筆 · 已核實座標 ${a.locatedCount} 筆</p>`).join('')}`;
- $('about-content').innerHTML=`<p>這是市民大道沿線公開資料的查閱工具。以來源、位置與確認程度交叉閱讀；資料筆數不代表完整的現況設施總數。全線尚未逐點進行影像或現地核對，目前另有 ${D.meta.imageReviewCount||0} 處附地面街景查核記錄。</p><div class="about-links"><a href="${PUBLIC_URL.replace('visionbase-usc.github.io/','github.com/visionbase-usc/')}" target="_blank" rel="noopener">GitHub</a><a href="https://github.com/visionbase-usc/civic-boulevard-viewer/archive/refs/heads/main.zip">下載整包</a></div><h3>版本與時間</h3><p>v${esc(D.version)} · 資料查核 ${esc(D.date)}<br>底圖影像拍攝年代未核。影像及資料並非即時現況。</p><h3>如何閱讀</h3><ul><li>實心：公開資料已列；空心虛線：待確認；灰色：歷史。</li><li>聚合圓圈中的數字為資料筆數。放大或點擊即可展開。</li><li>青綠寬帶依高架線形繪製，細線為平面道路；不是正式路界。</li><li>停車場代表點不是基地邊界。金色虛線僅表示資料關聯，不是通行動線。</li><li>319 個行穿線圖形、76 個候選分群分開呈現，分群不計為實際設施。</li><li>未定位資料可從清單或搜尋開啟。自行車通行性尚待個別確認。</li><li>S0 是西側延伸研究範圍；分段起訖仍有待核部分。</li></ul><h3>底圖與線形</h3><p><a href="https://maps.nlsc.gov.tw/S09SOA/pro/Wmts_ajax_main.jsp" target="_blank" rel="noopener">國土測繪中心 WMTS</a>：PHOTO2／EMAP／EMAP2。底圖需要網路，不隨下載包離線封裝。瀏覽範圍限制於臺北市周邊矩形範圍，只載入目前視窗所需圖磚，拖曳停止後才更新；不預載全市。</p><p>道路線形 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>，ODbL；快照 ${esc(D.meta.roadsDate)}。</p>${accessSummary}<h3>盤點來源</h3>${[...sourceGroups].map(([url,tables])=>`<div class="source-item"><a href="${esc(url)}" target="_blank" rel="noopener">${esc([...tables].join('／'))} ↗</a></div>`).join('')}`;
+ $('about-content').innerHTML=`<p>研究範圍：西至中山北路、東至光復南路（S2–S4）。這是範圍內公開資料的查閱工具。以來源、位置與確認程度交叉閱讀；資料筆數不代表完整的現況設施總數。研究範圍內尚未逐點進行影像或現地核對，目前另有 ${D.meta.imageReviewCount||0} 處附地面街景查核記錄。</p><div class="about-links"><a href="${PUBLIC_URL.replace('visionbase-usc.github.io/','github.com/visionbase-usc/')}" target="_blank" rel="noopener">GitHub</a><a href="https://github.com/visionbase-usc/civic-boulevard-viewer/archive/refs/heads/main.zip">下載整包</a></div><h3>版本與時間</h3><p>v${esc(D.version)} · 資料查核 ${esc(D.date)}<br>底圖影像拍攝年代未核。影像及資料並非即時現況。</p><h3>如何閱讀</h3><ul><li>實心：公開資料已列；空心虛線：待確認；灰色：歷史。</li><li>聚合圓圈中的數字為資料筆數。放大或點擊即可展開。</li><li>青綠寬帶依高架線形繪製，細線為平面道路；不是正式路界。</li><li>停車場代表點不是基地邊界。金色虛線僅表示資料關聯，不是通行動線。</li><li>${D.records.filter(r=>r.table==='行穿線圖形').length} 個行穿線圖形、${D.meta.indexCount} 個候選分群分開呈現，分群不計為實際設施。</li><li>未定位資料可從清單或搜尋開啟。自行車通行性尚待個別確認。</li><li>保留 S2–S4 原分段編號；邊界設施保留關聯資料，分段起訖仍有待核部分。</li></ul><h3>底圖與線形</h3><p><a href="https://maps.nlsc.gov.tw/S09SOA/pro/Wmts_ajax_main.jsp" target="_blank" rel="noopener">國土測繪中心 WMTS</a>：PHOTO2／EMAP／EMAP2。底圖需要網路，不隨下載包離線封裝。瀏覽範圍限制於中山北路至光復南路路廊周邊，只載入目前視窗所需圖磚，拖曳停止後才更新；不預載全市。</p><p>道路線形 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>，ODbL；快照 ${esc(D.meta.roadsDate)}。</p>${accessSummary}<h3>盤點來源</h3>${[...sourceGroups].map(([url,tables])=>`<div class="source-item"><a href="${esc(url)}" target="_blank" rel="noopener">${esc([...tables].join('／'))} ↗</a></div>`).join('')}`;
 }
 $('version').textContent=`公開圖資 · ${D.date} · v${D.version}`;
 D.segments.forEach(s=>{const op=document.createElement('option');op.value=s.id;op.textContent=`${s.id} · ${s.west}—${s.east}`;$('segment').append(op);});
@@ -252,8 +253,8 @@ $('about-button').onclick=()=>openPanel('about-panel');
 $('search').addEventListener('input',()=>{clearTimeout(searchTimer);searchTimer=setTimeout(()=>{resultMode='search';resultLimit=60;renderResults();closePanels();$('results-panel').hidden=false;},160);});
 $('search').addEventListener('focus',()=>{if($('search').value){renderResults();closePanels();$('results-panel').hidden=false;}});
 $('segment').onchange=()=>setSegment($('segment').value);
-$('prev-segment').onclick=()=>setSegment(state.segment==='all'?'S8':'S'+Math.max(0,Number(state.segment.slice(1))-1));
-$('next-segment').onclick=()=>setSegment(state.segment==='all'?'S0':'S'+Math.min(8,Number(state.segment.slice(1))+1));
+$('prev-segment').onclick=()=>setSegment(D.segments[state.segment==='all'?D.segments.length-1:Math.max(0,D.segments.findIndex(s=>s.id===state.segment)-1)].id);
+$('next-segment').onclick=()=>setSegment(D.segments[state.segment==='all'?0:Math.min(D.segments.length-1,D.segments.findIndex(s=>s.id===state.segment)+1)].id);
 $('full-extent').onclick=()=>{fitAll();drawCorridor();drawRouteNames();renderFeatures();};
 $('base-photo').onclick=()=>setBase('photo');$('base-map').onclick=()=>setBase('map');
 $('fade').oninput=()=>{state.fade=Number($('fade').value);updateFade();saveHash();};
@@ -265,7 +266,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'){closePanels();close
 map.on('moveend',()=>{renderFeatures();drawRouteNames();saveHash();});map.on('zoomend',drawCorridor);
 window.addEventListener('online',()=>setBase(state.base));window.addEventListener('offline',updateBaseMessage);
 let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{map.invalidateSize();renderFeatures();drawRouteNames();},150);});
-window.addEventListener('hashchange',()=>{restoring=true;camera=null;readHash();syncControls();setBase(state.base);if(camera)map.setView([camera.lat,camera.lng],camera.z,{animate:false});else setSegment(state.segment,true);updateSegmentInfo();if(state.selected)selectRecord(state.selected,false);else closeDetail();restoring=false;drawCorridor();renderFeatures();});
+window.addEventListener('hashchange',()=>{restoring=true;camera=null;readHash();syncControls();setBase(state.base);if(camera)map.setView([camera.lat,camera.lng],camera.z,{animate:false});else setSegment(state.segment,true);updateSegmentInfo();if(state.selected)selectRecord(state.selected,false);else closeDetail();restoring=false;drawCorridor();renderFeatures();saveHash();});
 restoring=true;syncControls();fillAbout();setBase(state.base);
 if(camera)map.setView([camera.lat,camera.lng],camera.z,{animate:false});else if(state.segment!=='all')setSegment(state.segment,true);else fitBounds(fullBounds);
 updateSegmentInfo();drawCorridor();drawRouteNames();renderFeatures();if(state.selected)selectRecord(state.selected,false);restoring=false;saveHash();

@@ -1,12 +1,10 @@
 {
-  "version": "1.1.1",
+  "version": "1.2.0",
   "date": "2026-11-04",
   "sources": [
-    "https://bridge.nco.taipei/bms2/guest/Footbridge/inventory.aspx?vid=64",
     "https://dado.gov.taipei/cp.aspx?n=6949FA3AE36CF292",
     "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
     "https://data.taipei/dataset/detail?id=ca205b54-a06f-4d84-894c-d6ab5079ce79",
-    "https://health.gov.taipei/cp.aspx?n=4099c431a571415e&s=A6321F317C683152",
     "https://pkl.gov.taipei/News_Content.aspx?n=4EFE2EB2E80F8C6B&s=242DEA27C4CD6313&sms=83FE2CD176299663",
     "https://tcgbusfs.blob.core.windows.net/blobbus/GetStop.gz",
     "https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.json",
@@ -14,8 +12,6 @@
     "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/8983930/17781cec-6657-46f9-8a0c-9ccb6b1844ec.pdf",
     "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12",
     "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6",
-    "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9414654/02bc10e1-c03f-4ce5-b261-ec44bf68c1e9.pdf#page=11",
-    "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9414654/02bc10e1-c03f-4ce5-b261-ec44bf68c1e9.pdf#page=6",
     "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13",
     "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
     "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15",
@@ -30,23 +26,22 @@
     "https://www.google.com/maps/@?api=1&map_action=pano&pano=jfgXUbA-qVi1ACPMPHqX8Q&viewpoint=25.0477246,121.525352&heading=60&pitch=0",
     "https://www.google.com/maps/@?api=1&map_action=pano&pano=q6mDoBi_z_u2BX6Xm9pwcw&viewpoint=25.0476003,121.5260754&heading=180&pitch=0",
     "https://www.google.com/maps/@?api=1&map_action=pano&pano=vWIsjxfu7ogSiQ23cSerBQ&viewpoint=25.0467427,121.5276624&heading=52&pitch=0",
-    "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=40969D4BE7904072&sms=72544237BBE4C5F6",
-    "https://www.tcma.gov.taipei/News_Content.aspx?n=0D4E37187A7154F0&s=3CDB32A9AC16BEEA&sms=42464882E656FEC0"
+    "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=40969D4BE7904072&sms=72544237BBE4C5F6"
   ],
   "meta": {
-    "pedestrianAccessCount": 28,
+    "pedestrianAccessCount": 23,
     "documentedGroundAccessCount": 23,
     "accessImageReviewCount": 7,
     "imageReviewCount": 2,
-    "recordCount": 734,
-    "indexCount": 76,
+    "recordCount": 330,
+    "indexCount": 29,
     "categoryCounts": {
-      "parking": 64,
-      "entrance": 62,
-      "crossing": 352,
-      "utility": 39,
-      "transit": 94,
-      "public": 47
+      "parking": 29,
+      "entrance": 29,
+      "crossing": 163,
+      "utility": 20,
+      "transit": 45,
+      "public": 15
     },
     "snapshotSHA256": "3a0ddefd0bc1c773f0e2512744fd3fbb956cb9379d1d6fd31f3a133bee5fa628",
     "roadsSource": "OpenStreetMap contributors / ODbL",

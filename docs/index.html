@@ -2,17 +2,17 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="市民大道全線公開圖資檢視器：停車場、車輛出入口、行人與自行車穿越、公共運輸、公共空間及機電維護。">
+<meta name="description" content="市民大道中山北路—光復南路公開圖資檢視器：停車場、車輛出入口、行人與自行車穿越、公共運輸、公共空間及機電維護。">
 <meta name="theme-color" content="#174b70"><title>市民大道｜資料庫檢視器</title>
 <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="./vendor/leaflet.css"><link rel="stylesheet" href="./style.css?v=1.1.1-r2">
+<link rel="stylesheet" href="./vendor/leaflet.css"><link rel="stylesheet" href="./style.css?v=1.2.0">
 </head>
 <body>
-<div id="map" aria-label="市民大道全線互動地圖"></div>
+<div id="map" aria-label="市民大道中山北路—光復南路互動地圖"></div>
 <header class="toolbar surface">
   <div class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><div><h1>市民大道 <span>資料庫檢視器</span></h1><p id="version"></p></div><button id="about-button" class="icon-button" aria-label="資料來源與使用說明" title="資料來源與使用說明">i</button></div>
   <div class="tools"><button id="layers-button" aria-expanded="false" aria-controls="layers-panel">☷ <span>圖層</span><b id="layer-count">2</b></button><label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜尋設施、路名或編號" aria-label="搜尋設施、路名或編號" autocomplete="off"></label><button id="list-button" aria-label="資料清單" aria-expanded="false" title="資料清單">清單</button></div>
-  <div class="segment-controls"><button id="prev-segment" aria-label="上一段">‹</button><select id="segment" aria-label="選擇市民大道分段"><option value="all">全線總覽 · S0—S8</option></select><button id="next-segment" aria-label="下一段">›</button><button id="share-button" title="複製目前檢視網址">分享</button></div>
+  <div class="segment-controls"><button id="prev-segment" aria-label="上一段">‹</button><select id="segment" aria-label="選擇市民大道分段"><option value="all">範圍總覽 · 中山北路—光復南路</option></select><button id="next-segment" aria-label="下一段">›</button><button id="share-button" title="複製目前檢視網址">分享</button></div>
 </header>
 <aside id="layers-panel" class="panel surface" hidden aria-label="圖層與顯示設定">
  <div class="panel-heading"><h2>圖層</h2><button class="close" data-close="layers-panel" aria-label="關閉圖層面板">×</button></div>
@@ -28,8 +28,8 @@
 <div id="segment-info" class="segment-info surface" hidden></div>
 <div id="map-message" class="map-message surface" role="status" hidden></div>
 <div class="bottom-info surface"><span class="corridor-key"></span><span>市民大道</span><span class="info-separator"></span><button id="visible-summary" title="開啟目前資料清單"></button></div>
-<div class="map-actions"><button id="full-extent" class="surface" title="回到全線" aria-label="回到市民大道全線">⌖<span>全線</span></button></div>
+<div class="map-actions"><button id="full-extent" class="surface" title="回到研究範圍" aria-label="回到市民大道中山北路—光復南路">⌖<span>總覽</span></button></div>
 <div id="toast" role="status" hidden></div>
 <noscript>請開啟瀏覽器 JavaScript 以使用互動地圖。原始資料可從 GitHub repo 下載。</noscript>
-<script src="./vendor/leaflet.js"></script><script src="./data/inventory.js?v=1.1.1"></script><script src="./app.js?v=1.1.1-r2"></script>
+<script src="./vendor/leaflet.js"></script><script src="./data/inventory.js?v=1.2.0"></script><script src="./app.js?v=1.2.0-r2"></script>
 </body></html>

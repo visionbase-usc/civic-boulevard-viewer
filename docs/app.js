@@ -150,7 +150,9 @@ function renderSelection(){
 }
 function reveal(r){state.layers.add(r.category);if(r.historical)state.historical=true;else if(r.pending)state.pending=true;else state.confirmed=true;syncControls();}
 function selectRecord(id,move=true){
- const r=records.get(id);if(!r)return;state.selected=id;reveal(r);showDetail(r);closePanels();
+ const r=records.get(id);if(!r)return;
+ if(move){state.segment=r.segments.length===1?r.segments[0]:'all';updateSegmentInfo();drawCorridor();}
+ state.selected=id;reveal(r);showDetail(r);closePanels();
  if(move){
   if(r.geometry){const pts=geometryPoints(r.geometry);const b=L.latLngBounds(pts);if(r.geometry.type==='Point')map.setView(b.getCenter(),Math.max(map.getZoom(),18),{animate:false});else fitBounds(b,true);
    if(innerWidth>=700&&r.geometry.type==='Point')map.panBy([(365+40)/2,0],{animate:false});

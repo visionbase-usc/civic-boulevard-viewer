@@ -9,12 +9,12 @@ r={v['id']:v for v in d['records']}
 class InventoryTests(unittest.TestCase):
  def test_preserves_in_scope_original_rows(self):
   source={x['編號']:x for k,rows in s['datasets'].items() if k not in ['路段範圍','補件清單'] for x in rows}
-  self.assertEqual(len(r),330);self.assertEqual(len(source),710)
+  self.assertEqual(len(r),365);self.assertEqual(len(source),710)
   for key in set(source)&set(r): self.assertEqual(r[key]['original'],source[key])
  def test_six_categories_and_indexes(self):
   self.assertEqual(len(d['categories']),6)
   self.assertEqual(sum(x['isIndex'] for x in r.values()),29)
-  self.assertEqual(sum(d['meta']['categoryCounts'].values()),301)
+  self.assertEqual(sum(d['meta']['categoryCounts'].values()),336)
   self.assertEqual(len([x for x in r.values() if x['table']=='行穿線圖形']),137)
   members=[child for x in r.values() if x['isIndex'] for child in x['members']]
   self.assertEqual(len(members),137);self.assertEqual(len(set(members)),137)
@@ -25,7 +25,9 @@ class InventoryTests(unittest.TestCase):
   for x in r.values():
    if x['parent']:self.assertIn(x['parent'],r)
    if x['group']:self.assertIn(x['group'],r)
-   if x['table']=='歷史圖說設備' and not x.get('access'):self.assertTrue(x['historical'] and x['pending']);self.assertIsNone(x['geometry'])
+   if x['table']=='歷史圖說設備' and not x.get('access'):
+    self.assertFalse(x['historical']);self.assertTrue(x['pending']);self.assertIsNone(x['geometry'])
+    self.assertIn('2026-10-05',x['verification']['sourceDate'])
   stairs=[x for x in r.values() if x['subtype']=='地下樓梯（非地面口）']
   self.assertEqual(len(stairs),3)
  def test_demo_source_coordinates(self):
@@ -48,7 +50,7 @@ class InventoryTests(unittest.TestCase):
   for rid in ['C-08-7698','C-A8-7707']:
    self.assertEqual(r[rid]['geometry'],s['crossGeoms'][rid])
    self.assertTrue(r[rid]['pending'])
-  self.assertEqual(sum(d['meta']['categoryCounts'].values()),301)
+  self.assertEqual(sum(d['meta']['categoryCounts'].values()),336)
  def test_pedestrian_entrance_evidence_and_no_fake_coordinates(self):
   access=[x for x in r.values() if x.get('access')]
   self.assertEqual(len(access),23)
@@ -92,4 +94,30 @@ class InventoryTests(unittest.TestCase):
   self.assertIsNone(r['E-TPE1871-01']['geometry']);self.assertTrue(r['E-TPE1871-01']['pending'])
   self.assertEqual(r['E-TPE1871-01']['original']['經度'],0)
   self.assertIsNone(r['E-TPE1871-01']['currentSource']['經度'])
+ def test_every_record_has_field_level_audit(self):
+  self.assertEqual(d['audit']['recordCount'],len(r))
+  self.assertEqual(d['audit']['issueCount'],8)
+  for x in r.values():
+   a=x['verification'];self.assertEqual(a['id'],x['id']);self.assertTrue(a['checks']);self.assertTrue(a['sources'])
+   self.assertTrue(all(c['result']=='match' for c in a['checks']),x['id'])
+   self.assertNotEqual(a['result'],'unresolved')
+  self.assertEqual(d['audit']['summary'],{'official':252,'official-with-issue':8,'index':29,'document':76})
+ def test_source_exceptions_are_visible_without_changing_original(self):
+  for key in ['B-1222','B-1501','B-1001120']:
+   self.assertTrue(r[key]['pending']);self.assertTrue(r[key]['verification']['issues'])
+   self.assertIn('疑有誤',r[key]['currentSource']['地址或鄰近路口'])
+   self.assertNotEqual(r[key]['currentSource']['地址或鄰近路口'],r[key]['original']['地址或鄰近路口'])
+  self.assertFalse(r['C-A8-7732']['pending'])
+  self.assertTrue(r['C-08-7698']['pending'])
+ def test_official_supplemental_equipment(self):
+  supplements=[x for x in r.values() if x['table']=='官方圖說補充設備']
+  self.assertEqual(len(supplements),35)
+  for x in supplements:
+   self.assertIsNone(x['geometry']);self.assertIn(x['parent'],r)
+   self.assertEqual(x['verification']['result'],'document')
+   self.assertIn('#page=',x['original']['來源連結'])
+ def test_audit_csv_has_every_id_once(self):
+  import csv
+  with (ROOT/'docs/data/record-audit.csv').open(encoding='utf-8-sig',newline='') as f:rows=list(csv.DictReader(f))
+  self.assertEqual(len(rows),len(r));self.assertEqual(set(x['編號'] for x in rows),set(r))
 if __name__=='__main__':unittest.main(verbosity=2)

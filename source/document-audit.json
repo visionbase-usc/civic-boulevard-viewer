@@ -1,0 +1,1814 @@
+{
+  "checkedAt": "2026-11-04",
+  "records": {
+    "H-FD-05": {
+      "method": "2026官方PDF第14頁目視對照原始設備編號",
+      "result": "document",
+      "sourceDate": "2026-10-05招標附件；原始測繪日期未載",
+      "sourceKey": {
+        "page": 14,
+        "label": "復敦段／平面往B1坡道"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ],
+      "checks": [
+        {
+          "field": "設施名稱與類型",
+          "result": "match",
+          "source": "復敦段／平面往B1坡道"
+        },
+        {
+          "field": "圖說層位",
+          "result": "match",
+          "source": "地面層"
+        }
+      ],
+      "summary": "2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {
+        "來源連結": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "來源日期": "2026-10-05招標附件；原始測繪日期未載",
+        "確認程度": "官方圖說列示；精確定位未提供",
+        "待確認事項": "無地理座標；2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+        "範圍": "復敦段官方圖說設施；未套繪"
+      },
+      "historical": false
+    },
+    "H-FD-06": {
+      "method": "2026官方PDF第14頁目視對照原始設備編號",
+      "result": "document",
+      "sourceDate": "2026-10-05招標附件；原始測繪日期未載",
+      "sourceKey": {
+        "page": 14,
+        "label": "復敦段／B1往平面坡道"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ],
+      "checks": [
+        {
+          "field": "設施名稱與類型",
+          "result": "match",
+          "source": "復敦段／B1往平面坡道"
+        },
+        {
+          "field": "圖說層位",
+          "result": "match",
+          "source": "地面層"
+        }
+      ],
+      "summary": "2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {
+        "來源連結": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "來源日期": "2026-10-05招標附件；原始測繪日期未載",
+        "確認程度": "官方圖說列示；精確定位未提供",
+        "待確認事項": "無地理座標；2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+        "範圍": "復敦段官方圖說設施；未套繪"
+      },
+      "historical": false
+    },
+    "H-FD-07": {
+      "method": "2026官方PDF第14頁目視對照原始設備編號",
+      "result": "document",
+      "sourceDate": "2026-10-05招標附件；原始測繪日期未載",
+      "sourceKey": {
+        "page": 14,
+        "label": "復敦段／A水塔"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ],
+      "checks": [
+        {
+          "field": "設施名稱與類型",
+          "result": "match",
+          "source": "復敦段／A水塔"
+        },
+        {
+          "field": "圖說層位",
+          "result": "match",
+          "source": "地面層"
+        }
+      ],
+      "summary": "2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {
+        "來源連結": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "來源日期": "2026-10-05招標附件；原始測繪日期未載",
+        "確認程度": "官方圖說列示；精確定位未提供",
+        "待確認事項": "無地理座標；2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+        "範圍": "復敦段官方圖說設施；未套繪"
+      },
+      "historical": false
+    },
+    "H-FD-08": {
+      "method": "2026官方PDF第14頁目視對照原始設備編號",
+      "result": "document",
+      "sourceDate": "2026-10-05招標附件；原始測繪日期未載",
+      "sourceKey": {
+        "page": 14,
+        "label": "復敦段／B送風口"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ],
+      "checks": [
+        {
+          "field": "設施名稱與類型",
+          "result": "match",
+          "source": "復敦段／B送風口"
+        },
+        {
+          "field": "圖說層位",
+          "result": "match",
+          "source": "地面層"
+        }
+      ],
+      "summary": "2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {
+        "來源連結": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "來源日期": "2026-10-05招標附件；原始測繪日期未載",
+        "確認程度": "官方圖說列示；精確定位未提供",
+        "待確認事項": "無地理座標；2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+        "範圍": "復敦段官方圖說設施；未套繪"
+      },
+      "historical": false
+    },
+    "H-FD-09": {
+      "method": "2026官方PDF第14頁目視對照原始設備編號",
+      "result": "document",
+      "sourceDate": "2026-10-05招標附件；原始測繪日期未載",
+      "sourceKey": {
+        "page": 14,
+        "label": "復敦段／C排風口"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ],
+      "checks": [
+        {
+          "field": "設施名稱與類型",
+          "result": "match",
+          "source": "復敦段／C排風口"
+        },
+        {
+          "field": "圖說層位",
+          "result": "match",
+          "source": "地面層"
+        },
+        {
+          "field": "地面圖代號與位置",
+          "result": "match",
+          "source": "大安路西側出場坡道北側邊緣（圖示相對位置）；未提供地理座標"
+        }
+      ],
+      "summary": "放大核對2026年附件第14頁，代號C位於大安路西側出場坡道北側邊緣，與排風口圖例一致。",
+      "position": "大安路西側出場坡道北側邊緣（圖示相對位置）；未提供地理座標",
+      "issues": [],
+      "updates": {
+        "來源連結": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "來源日期": "2026-10-05招標附件；原始測繪日期未載",
+        "確認程度": "官方圖說代號及位置已核；精確座標未提供",
+        "待確認事項": "官方示意圖無地理座標；未以停車場中心替代。",
+        "範圍": "復敦段官方圖說設施；未套繪",
+        "地址或鄰近路口": "大安路西側出場坡道北側邊緣（圖示相對位置）；未提供地理座標"
+      },
+      "historical": false
+    },
+    "H-FD-10": {
+      "method": "2026官方PDF第14頁目視對照原始設備編號",
+      "result": "document",
+      "sourceDate": "2026-10-05招標附件；原始測繪日期未載",
+      "sourceKey": {
+        "page": 14,
+        "label": "復敦段／D排風口"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ],
+      "checks": [
+        {
+          "field": "設施名稱與類型",
+          "result": "match",
+          "source": "復敦段／D排風口"
+        },
+        {
+          "field": "圖說層位",
+          "result": "match",
+          "source": "地面層"
+        },
+        {
+          "field": "地面圖代號與位置",
+          "result": "match",
+          "source": "大安路西側出場坡道南側邊緣（圖示相對位置）；未提供地理座標"
+        }
+      ],
+      "summary": "放大核對2026年附件第14頁，代號D位於大安路西側出場坡道南側邊緣，與排風口圖例一致。",
+      "position": "大安路西側出場坡道南側邊緣（圖示相對位置）；未提供地理座標",
+      "issues": [],
+      "updates": {
+        "來源連結": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "來源日期": "2026-10-05招標附件；原始測繪日期未載",
+        "確認程度": "官方圖說代號及位置已核；精確座標未提供",
+        "待確認事項": "官方示意圖無地理座標；未以停車場中心替代。",
+        "範圍": "復敦段官方圖說設施；未套繪",
+        "地址或鄰近路口": "大安路西側出場坡道南側邊緣（圖示相對位置）；未提供地理座標"
+      },
+      "historical": false
+    },
+    "H-FD-11": {
+      "method": "2026官方PDF第14頁目視對照原始設備編號",
+      "result": "document",
+      "sourceDate": "2026-10-05招標附件；原始測繪日期未載",
+      "sourceKey": {
+        "page": 14,
+        "label": "復敦段／E發電機出風口"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ],
+      "checks": [
+        {
+          "field": "設施名稱與類型",
+          "result": "match",
+          "source": "復敦段／E發電機出風口"
+        },
+        {
+          "field": "圖說層位",
+          "result": "match",
+          "source": "地面層"
+        }
+      ],
+      "summary": "2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {
+        "來源連結": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "來源日期": "2026-10-05招標附件；原始測繪日期未載",
+        "確認程度": "官方圖說列示；精確定位未提供",
+        "待確認事項": "無地理座標；2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+        "範圍": "復敦段官方圖說設施；未套繪"
+      },
+      "historical": false
+    },
+    "H-FD-12": {
+      "method": "2026官方PDF第14頁目視對照原始設備編號",
+      "result": "document",
+      "sourceDate": "2026-10-05招標附件；原始測繪日期未載",
+      "sourceKey": {
+        "page": 14,
+        "label": "復敦段／F送風口"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ],
+      "checks": [
+        {
+          "field": "設施名稱與類型",
+          "result": "match",
+          "source": "復敦段／F送風口"
+        },
+        {
+          "field": "圖說層位",
+          "result": "match",
+          "source": "地面層"
+        }
+      ],
+      "summary": "2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {
+        "來源連結": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "來源日期": "2026-10-05招標附件；原始測繪日期未載",
+        "確認程度": "官方圖說列示；精確定位未提供",
+        "待確認事項": "無地理座標；2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+        "範圍": "復敦段官方圖說設施；未套繪"
+      },
+      "historical": false
+    },
+    "H-FD-13": {
+      "method": "2026官方PDF第14頁目視對照原始設備編號",
+      "result": "document",
+      "sourceDate": "2026-10-05招標附件；原始測繪日期未載",
+      "sourceKey": {
+        "page": 14,
+        "label": "復敦段／G排風口"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ],
+      "checks": [
+        {
+          "field": "設施名稱與類型",
+          "result": "match",
+          "source": "復敦段／G排風口"
+        },
+        {
+          "field": "圖說層位",
+          "result": "match",
+          "source": "地面層"
+        }
+      ],
+      "summary": "2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {
+        "來源連結": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "來源日期": "2026-10-05招標附件；原始測繪日期未載",
+        "確認程度": "官方圖說列示；精確定位未提供",
+        "待確認事項": "無地理座標；2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+        "範圍": "復敦段官方圖說設施；未套繪"
+      },
+      "historical": false
+    },
+    "H-FD-14": {
+      "method": "2026官方PDF第14頁目視對照原始設備編號",
+      "result": "document",
+      "sourceDate": "2026-10-05招標附件；原始測繪日期未載",
+      "sourceKey": {
+        "page": 14,
+        "label": "復敦段／H水塔"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ],
+      "checks": [
+        {
+          "field": "設施名稱與類型",
+          "result": "match",
+          "source": "復敦段／H水塔"
+        },
+        {
+          "field": "圖說層位",
+          "result": "match",
+          "source": "地面層"
+        }
+      ],
+      "summary": "2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {
+        "來源連結": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "來源日期": "2026-10-05招標附件；原始測繪日期未載",
+        "確認程度": "官方圖說列示；精確定位未提供",
+        "待確認事項": "無地理座標；2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+        "範圍": "復敦段官方圖說設施；未套繪"
+      },
+      "historical": false
+    },
+    "H-FD-15": {
+      "method": "2026官方PDF第14頁目視對照原始設備編號",
+      "result": "document",
+      "sourceDate": "2026-10-05招標附件；原始測繪日期未載",
+      "sourceKey": {
+        "page": 14,
+        "label": "復敦段／I送風口"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ],
+      "checks": [
+        {
+          "field": "設施名稱與類型",
+          "result": "match",
+          "source": "復敦段／I送風口"
+        },
+        {
+          "field": "圖說層位",
+          "result": "match",
+          "source": "地面層"
+        }
+      ],
+      "summary": "2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {
+        "來源連結": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "來源日期": "2026-10-05招標附件；原始測繪日期未載",
+        "確認程度": "官方圖說列示；精確定位未提供",
+        "待確認事項": "無地理座標；2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+        "範圍": "復敦段官方圖說設施；未套繪"
+      },
+      "historical": false
+    },
+    "H-FD-16": {
+      "method": "2026官方PDF第14頁目視對照原始設備編號",
+      "result": "document",
+      "sourceDate": "2026-10-05招標附件；原始測繪日期未載",
+      "sourceKey": {
+        "page": 14,
+        "label": "復敦段／A梯"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ],
+      "checks": [
+        {
+          "field": "設施名稱與類型",
+          "result": "match",
+          "source": "復敦段／A梯"
+        },
+        {
+          "field": "圖說層位",
+          "result": "match",
+          "source": "地下B1／B2"
+        }
+      ],
+      "summary": "2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {
+        "來源連結": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "來源日期": "2026-10-05招標附件；原始測繪日期未載",
+        "確認程度": "官方圖說列示；精確定位未提供",
+        "待確認事項": "無地理座標；2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+        "範圍": "復敦段官方圖說設施；未套繪"
+      },
+      "historical": false
+    },
+    "H-FD-17": {
+      "method": "2026官方PDF第14頁目視對照原始設備編號",
+      "result": "document",
+      "sourceDate": "2026-10-05招標附件；原始測繪日期未載",
+      "sourceKey": {
+        "page": 14,
+        "label": "復敦段／B梯"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ],
+      "checks": [
+        {
+          "field": "設施名稱與類型",
+          "result": "match",
+          "source": "復敦段／B梯"
+        },
+        {
+          "field": "圖說層位",
+          "result": "match",
+          "source": "地下B1／B2"
+        }
+      ],
+      "summary": "2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {
+        "來源連結": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "來源日期": "2026-10-05招標附件；原始測繪日期未載",
+        "確認程度": "官方圖說列示；精確定位未提供",
+        "待確認事項": "無地理座標；2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+        "範圍": "復敦段官方圖說設施；未套繪"
+      },
+      "historical": false
+    },
+    "H-FD-18": {
+      "method": "2026官方PDF第14頁目視對照原始設備編號",
+      "result": "document",
+      "sourceDate": "2026-10-05招標附件；原始測繪日期未載",
+      "sourceKey": {
+        "page": 14,
+        "label": "復敦段／C梯"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ],
+      "checks": [
+        {
+          "field": "設施名稱與類型",
+          "result": "match",
+          "source": "復敦段／C梯"
+        },
+        {
+          "field": "圖說層位",
+          "result": "match",
+          "source": "地下B1／B2"
+        }
+      ],
+      "summary": "2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {
+        "來源連結": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "來源日期": "2026-10-05招標附件；原始測繪日期未載",
+        "確認程度": "官方圖說列示；精確定位未提供",
+        "待確認事項": "無地理座標；2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。",
+        "範圍": "復敦段官方圖說設施；未套繪"
+      },
+      "historical": false
+    },
+    "H-FD-19": {
+      "method": "2026官方PDF第14頁目視對照原始設備編號",
+      "result": "document",
+      "sourceDate": "2026-10-05招標附件；原始測繪日期未載",
+      "sourceKey": {
+        "page": 14,
+        "label": "復敦段／鐵路檢修門"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+      ],
+      "checks": [
+        {
+          "field": "設施名稱與類型",
+          "result": "match",
+          "source": "復敦段／鐵路檢修門"
+        },
+        {
+          "field": "圖說層位",
+          "result": "match",
+          "source": "地下B1／B2"
+        }
+      ],
+      "summary": "2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。 B1圖有兩處鐵路檢修門標註，本筆保留為圖說設備項目，不作單一門數量。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {
+        "來源連結": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "來源日期": "2026-10-05招標附件；原始測繪日期未載",
+        "確認程度": "官方圖說列示；精確定位未提供",
+        "待確認事項": "無地理座標；2026年招標附件第14頁仍載此設施及相對位置；紅字施工要求未作為已完成設施採用。 B1圖有兩處鐵路檢修門標註，本筆保留為圖說設備項目，不作單一門數量。",
+        "範圍": "復敦段官方圖說設施；未套繪"
+      },
+      "historical": false
+    },
+    "F-PARK-HS": {
+      "method": "官方網頁主文與位置欄逐項核對",
+      "result": "document",
+      "sourceDate": "2026-09-30 16:06（頁面更新）",
+      "sourceKey": "華山公園A",
+      "sources": [
+        "https://pkl.gov.taipei/News_Content.aspx?n=4EFE2EB2E80F8C6B&s=242DEA27C4CD6313&sms=83FE2CD176299663"
+      ],
+      "checks": [
+        {
+          "field": "名稱及官方位置描述",
+          "result": "match",
+          "source": "官方特色遊戲場頁面確認名稱、遊具及天津街／市民大道附近位置；頁面描述2座遊戲場，並非整座華山公園的完整範圍。"
+        }
+      ],
+      "summary": "官方特色遊戲場頁面確認名稱、遊具及天津街／市民大道附近位置；頁面描述2座遊戲場，並非整座華山公園的完整範圍。",
+      "position": "官方文字位置；未提供可直接套繪的界址",
+      "issues": [],
+      "updates": {
+        "確認程度": "官方頁面確認；遊戲場範圍待定位",
+        "待確認事項": "名稱華山公園A指特色遊戲場資訊；不可當作整座華山公園邊界。",
+        "來源日期": "2026-09-30 16:06（頁面更新）",
+        "來源連結": "https://pkl.gov.taipei/News_Content.aspx?n=4EFE2EB2E80F8C6B&s=242DEA27C4CD6313&sms=83FE2CD176299663"
+      },
+      "historical": false
+    },
+    "F-PARK-CL": {
+      "method": "官方網頁主文與位置欄逐項核對",
+      "result": "document",
+      "sourceDate": "頁面更新日期未核；另有2024-02-03改名與啟用新聞",
+      "sourceKey": "昌隆公園／昌隆198公園",
+      "sources": [
+        "https://dado.gov.taipei/cp.aspx?n=6949FA3AE36CF292",
+        "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=40969D4BE7904072&sms=72544237BBE4C5F6"
+      ],
+      "checks": [
+        {
+          "field": "名稱及官方位置描述",
+          "result": "match",
+          "source": "區公所鄰里公園表列昌隆公園、3808平方公尺與市民大道／建國南路路口；市府新聞另確認昌隆198公園名稱。"
+        }
+      ],
+      "summary": "區公所鄰里公園表列昌隆公園、3808平方公尺與市民大道／建國南路路口；市府新聞另確認昌隆198公園名稱。",
+      "position": "官方文字位置；未提供可直接套繪的界址",
+      "issues": [],
+      "updates": {
+        "確認程度": "官方名稱、路口與改名資訊已核；邊界未定位",
+        "來源日期": "頁面更新日期未核；另有2024-02-03改名與啟用新聞",
+        "來源連結": "https://dado.gov.taipei/cp.aspx?n=6949FA3AE36CF292；https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=40969D4BE7904072&sms=72544237BBE4C5F6"
+      },
+      "historical": false
+    },
+    "F-SPACE-TH": {
+      "method": "官方網頁主文與位置欄逐項核對",
+      "result": "document",
+      "sourceDate": "2024-02-03啟用；2024-01-15公園處新聞",
+      "sourceKey": "泰國音樂廣場",
+      "sources": [
+        "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=40969D4BE7904072&sms=72544237BBE4C5F6",
+        "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=6910509CFDFEA2EA"
+      ],
+      "checks": [
+        {
+          "field": "名稱及官方位置描述",
+          "result": "match",
+          "source": "市府新聞確認啟用，公園處新聞另確認位於市民大道橋下；採用為有官方依據的活動空間。"
+        }
+      ],
+      "summary": "市府新聞確認啟用，公園處新聞另確認位於市民大道橋下；採用為有官方依據的活動空間。",
+      "position": "官方文字位置；未提供可直接套繪的界址",
+      "issues": [],
+      "updates": {
+        "確認程度": "官方啟用及橋下位置已核；精確範圍未提供",
+        "待確認事項": "未提供界址座標、家具清冊或即時使用狀態。",
+        "來源日期": "2024-02-03啟用；2024-01-15公園處新聞",
+        "來源連結": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=40969D4BE7904072&sms=72544237BBE4C5F6；https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=6910509CFDFEA2EA"
+      },
+      "historical": false
+    },
+    "U-DOC-TPE0100-W-S": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "2024年招標附件；圖名為現況，原始測繪日期未載",
+      "sourceKey": {
+        "page": 6,
+        "label": "西端送風口",
+        "parent": "P-TPE0100"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "西端送風口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0100"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "中山北路側橋下中央"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0100-W-W": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "2024年招標附件；圖名為現況，原始測繪日期未載",
+      "sourceKey": {
+        "page": 6,
+        "label": "西端水塔",
+        "parent": "P-TPE0100"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "西端水塔"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0100"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "中山北路側橋下中央"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0100-W-E": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "2024年招標附件；圖名為現況，原始測繪日期未載",
+      "sourceKey": {
+        "page": 6,
+        "label": "西側排風口",
+        "parent": "P-TPE0100"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "西側排風口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0100"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "天津街西側橋下中央"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0100-G": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "2024年招標附件；圖名為現況，原始測繪日期未載",
+      "sourceKey": {
+        "page": 6,
+        "label": "發電機排煙管道口",
+        "parent": "P-TPE0100"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "發電機排煙管道口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0100"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "天津街東側橋下中央"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0100-E-E": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "2024年招標附件；圖名為現況，原始測繪日期未載",
+      "sourceKey": {
+        "page": 6,
+        "label": "東側排風口",
+        "parent": "P-TPE0100"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "東側排風口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0100"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "天津街東側橋下中央"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0100-E-S": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "2024年招標附件；圖名為現況，原始測繪日期未載",
+      "sourceKey": {
+        "page": 6,
+        "label": "東端送風口",
+        "parent": "P-TPE0100"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "東端送風口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0100"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "林森北路側橋下中央"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0100-E-W": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "2024年招標附件；圖名為現況，原始測繪日期未載",
+      "sourceKey": {
+        "page": 6,
+        "label": "東端水塔",
+        "parent": "P-TPE0100"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "東端水塔"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0100"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "林森北路側橋下中央"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0110-W-S": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "2024年招標附件；圖名為現況，原始測繪日期未載",
+      "sourceKey": {
+        "page": 12,
+        "label": "西端送風口",
+        "parent": "P-TPE0110"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "西端送風口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0110"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "林森北路側橋下中央"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0110-W-W": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "2024年招標附件；圖名為現況，原始測繪日期未載",
+      "sourceKey": {
+        "page": 12,
+        "label": "西端水塔",
+        "parent": "P-TPE0110"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "西端水塔"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0110"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "林森北路側橋下中央"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0110-W-E": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "2024年招標附件；圖名為現況，原始測繪日期未載",
+      "sourceKey": {
+        "page": 12,
+        "label": "西側排風口",
+        "parent": "P-TPE0110"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "西側排風口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0110"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "長安東路1段30巷口以西橋下中央"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0110-G": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "2024年招標附件；圖名為現況，原始測繪日期未載",
+      "sourceKey": {
+        "page": 12,
+        "label": "發電機排煙管道口",
+        "parent": "P-TPE0110"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "發電機排煙管道口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0110"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "長安東路1段52巷口以西橋下中央"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0110-E-E": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "2024年招標附件；圖名為現況，原始測繪日期未載",
+      "sourceKey": {
+        "page": 12,
+        "label": "東側排風口",
+        "parent": "P-TPE0110"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "東側排風口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0110"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "長安東路1段52巷口以西橋下中央"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0110-E-S": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "2024年招標附件；圖名為現況，原始測繪日期未載",
+      "sourceKey": {
+        "page": 12,
+        "label": "東端送風口",
+        "parent": "P-TPE0110"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "東端送風口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0110"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "金山北路側橋下中央"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0110-E-W": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "2024年招標附件；圖名為現況，原始測繪日期未載",
+      "sourceKey": {
+        "page": 12,
+        "label": "東端水塔",
+        "parent": "P-TPE0110"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "東端水塔"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0110"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "金山北路側橋下中央"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0109-A": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 13,
+        "label": "A通風口",
+        "parent": "P-TPE0109"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "A通風口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0109"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "建復段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0109-B": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 13,
+        "label": "B排氣口",
+        "parent": "P-TPE0109"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "B排氣口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0109"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "建復段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0109-C": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 13,
+        "label": "C排氣口",
+        "parent": "P-TPE0109"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "C排氣口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0109"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "建復段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0109-D": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 13,
+        "label": "D發電機出風口",
+        "parent": "P-TPE0109"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "D發電機出風口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0109"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "建復段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0109-E": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 13,
+        "label": "E排氣口",
+        "parent": "P-TPE0109"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "E排氣口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0109"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "建復段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0109-F": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 13,
+        "label": "F水塔",
+        "parent": "P-TPE0109"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "F水塔"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0109"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "建復段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0109-G": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 13,
+        "label": "G排氣口",
+        "parent": "P-TPE0109"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "G排氣口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0109"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "建復段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0109-H": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 13,
+        "label": "H通風口",
+        "parent": "P-TPE0109"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "H通風口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0109"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "建復段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0109-I": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 13,
+        "label": "I通風口",
+        "parent": "P-TPE0109"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "I通風口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0109"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "建復段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0163-A": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 15,
+        "label": "A水箱",
+        "parent": "P-TPE0163"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "A水箱"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0163"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "敦延段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0163-B": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 15,
+        "label": "B水箱開關",
+        "parent": "P-TPE0163"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15"
+      ],
+      "checks": [
+        {
+          "field": "圖例設備名稱",
+          "result": "match",
+          "source": "B水箱開關"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0163"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "水箱旁（圖例明載）"
+        }
+      ],
+      "summary": "官方圖例明載B為水箱開關，位置描述為水箱旁；圖面未見清楚獨立B代號，採用此相對描述。",
+      "position": "圖例明載水箱旁；無獨立地理座標",
+      "issues": [],
+      "updates": {
+        "地址或鄰近路口": "敦延段水箱旁（官方圖例文字）",
+        "待確認事項": "來源為圖例文字，圖面未見清楚獨立B代號；無地理座標，不推算實體位置。"
+      }
+    },
+    "U-DOC-TPE0163-C": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 15,
+        "label": "C通風口",
+        "parent": "P-TPE0163"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "C通風口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0163"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "敦延段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0163-D": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 15,
+        "label": "D排氣口",
+        "parent": "P-TPE0163"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "D排氣口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0163"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "敦延段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0163-E": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 15,
+        "label": "E排氣口",
+        "parent": "P-TPE0163"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "E排氣口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0163"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "敦延段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0163-F": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 15,
+        "label": "F通風口",
+        "parent": "P-TPE0163"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "F通風口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0163"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "敦延段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0164-A": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 16,
+        "label": "A通風口",
+        "parent": "P-TPE0164"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "A通風口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0164"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "延吉段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0164-B": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 16,
+        "label": "B通風口",
+        "parent": "P-TPE0164"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "B通風口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0164"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "延吉段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0164-C": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 16,
+        "label": "C排氣口",
+        "parent": "P-TPE0164"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "C排氣口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0164"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "延吉段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0164-D": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 16,
+        "label": "D水塔",
+        "parent": "P-TPE0164"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "D水塔"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0164"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "延吉段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0164-E": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 16,
+        "label": "E發電機出風口",
+        "parent": "P-TPE0164"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "E發電機出風口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0164"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "延吉段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    },
+    "U-DOC-TPE0164-F": {
+      "method": "官方地面層PDF逐項圖示與圖例核對",
+      "result": "document",
+      "sourceDate": "附件標示115.10.5（2026-10-05）；圖面測繪日期未載",
+      "sourceKey": {
+        "page": 16,
+        "label": "F通風口",
+        "parent": "P-TPE0164"
+      },
+      "sources": [
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
+      ],
+      "checks": [
+        {
+          "field": "設備類型及圖示",
+          "result": "match",
+          "source": "F通風口"
+        },
+        {
+          "field": "所屬場站",
+          "result": "match",
+          "source": "P-TPE0164"
+        },
+        {
+          "field": "相對位置",
+          "result": "match",
+          "source": "延吉段橋下中央；位置依地面層圖代號"
+        }
+      ],
+      "summary": "官方地面層圖明列此設備；採用名稱、類型、所屬場站與圖示相對位置。",
+      "position": "官方圖說相對位置；未提供地理座標",
+      "issues": [],
+      "updates": {}
+    }
+  }
+}

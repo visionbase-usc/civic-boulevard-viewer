@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Rebuild the portable browser data pack from versioned public-source snapshots."""
-import json, re, hashlib
+import json, re, hashlib, csv, sys
 from pathlib import Path
 from collections import Counter
 from scope import SEGMENTS, NAME, clip_line, select_records
@@ -52,6 +52,7 @@ for item in access['items']:
     else:
         records.append(dict(id=item['id'],name=item['name'],category='crossing',subtype=row['類別'],table='停車場行人出入口',segments=[item['segment']],geometry=None,
             historical=False,pending=True,isIndex=False,parent=item['parent'],group='',members=[],original=row,access=item))
+records.extend(json.loads((ROOT/'source/supplemental-records.json').read_text()))
 byid={r['id']:r for r in records}
 assert len(byid)==len(records)
 for r in records:
@@ -71,6 +72,21 @@ for review in reviews:
     byid[review['indexId']]['name']=review['displayName']
 records=select_records(records)
 byid={r['id']:r for r in records}
+audit_path=ROOT/'source/record-audit.json'
+audit=json.loads(audit_path.read_text()) if audit_path.exists() and '--prepare-audit' not in sys.argv else None
+if audit:
+    audited={a['id']:a for a in audit['records']}
+    assert set(audited)==set(byid), 'Run audit_records.py after changing scope or records'
+    for rid,r in byid.items():
+        a=audited[rid];r['verification']=a
+        if 'historical' in a:r['historical']=a['historical']
+        current={**r.get('currentSource',r['original']),**a.get('updates',{}),'查核日期':a['checkedAt']}
+        if a.get('sourceDate'):current['來源日期']=a['sourceDate']
+        if r.get('access'):current['確認程度']='官方圖說已核；入口地理座標未提供'+('；'+r['access']['groundReview']['imageDate']+'街景補充' if r['access']['groundReview'] else '')
+        r['currentSource']=current;r['subtype']=current['類別']
+        # Accept official evidence; reserve pending for specific unresolved fields,
+        # unlocated records and derived indexes, not a blanket lack of street view.
+        r['pending']=bool(a['issues']) or r['geometry'] is None or r['isIndex']
 reviews=[r for r in reviews if r['indexId'] in byid]
 access['items']=[i for i in access['items'] if i['id'] in byid]
 access['audits']=[a for a in access['audits'] if a['parent'] in byid]
@@ -98,19 +114,29 @@ for w in osm['elements']:
     if w.get('tags',{}).get('name')=='市民大道高架道路':
         for part,coords in enumerate(clip_line([[p['lon'],p['lat']] for p in w['geometry']],west,east)):
             elevated.append({'id':w['id'],'part':part,'coords':coords})
-sources=sorted(set(r.get('currentSource',r['original']).get('來源連結','') for r in records if r['original'].get('來源連結')))
+sources=sorted(set(url for r in records for url in r.get('currentSource',r['original']).get('來源連結','').split('；') if url))
+if audit:sources=sorted(set(sources).union(url for a in audit['records'] for url in a['sources']))
 sources=sorted(set(sources).union(ref['url'] for rev in reviews for ref in rev['references']))
 sources=sorted(set(sources).union(i['groundReview']['url'] for i in access['items'] if i['groundReview']))
-for audit in access['audits']:
-    items=[i for i in access['items'] if i['parent']==audit['parent']]
-    audit['groundImageReviewed']=sum(bool(i['groundReview']) for i in items)
-    audit['locatedCount']=sum(bool(byid[i['id']]['geometry']) for i in items)
-pack=dict(version='1.2.0',scope=dict(name=NAME,segments=list(SEGMENTS),west=west,east=east,viewBounds=[[25.035,west-.002],[25.057,east+.002]]),date=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],
+for lot_audit in access['audits']:
+    items=[i for i in access['items'] if i['parent']==lot_audit['parent']]
+    lot_audit['groundImageReviewed']=sum(bool(i['groundReview']) for i in items)
+    lot_audit['locatedCount']=sum(bool(byid[i['id']]['geometry']) for i in items)
+pack=dict(version='1.3.0',scope=dict(name=NAME,segments=list(SEGMENTS),west=west,east=east,viewBounds=[[25.035,west-.002],[25.057,east+.002]]),date=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],
     roads=roads,elevated=elevated,sources=sources,
     meta=dict(pedestrianAccessCount=len(access['items']),documentedGroundAccessCount=sum(i['groundDocumented'] for i in access['items']),accessImageReviewCount=sum(bool(i['groundReview']) for i in access['items']),imageReviewCount=len(reviews),recordCount=len(records),indexCount=sum(r['isIndex'] for r in records),
         categoryCounts=dict(Counter(r['category'] for r in records if not r['isIndex'])),
         snapshotSHA256=hashlib.sha256((ROOT/'source/inventory.json').read_bytes()).hexdigest(),
         roadsSource='OpenStreetMap contributors / ODbL',roadsDate=osm['osm3s']['timestamp_osm_base']))
+if audit:
+    pack['audit']={k:v for k,v in audit.items() if k!='records'}
+    pack['audit']['recordCount']=len(audit['records'])
+    pack['audit']['issueCount']=sum(bool(a['issues']) for a in audit['records'])
+    with (ROOT/'docs/data/record-audit.csv').open('w',encoding='utf-8-sig',newline='') as f:
+        w=csv.writer(f);w.writerow(['編號','名稱','分類','分段','查核結果','核對方法','查核摘要','位置依據','來源日期','查核日期','問題','來源','逐欄比對'])
+        for a in audit['records']:
+            r=byid[a['id']]
+            w.writerow([r['id'],r['name'],r['subtype'],' / '.join(r['segments']),a['result'],a['method'],a['summary'],a['position'],a['sourceDate'],a['checkedAt'],'；'.join(a['issues']),'；'.join(a['sources']),json.dumps(a['checks'],ensure_ascii=False)])
 encoded=json.dumps(pack,ensure_ascii=False,separators=(',',':'),allow_nan=False)
 (ROOT/'docs/data/inventory.js').write_text('window.CIVIC_DATA = '+encoded+';\n')
 (ROOT/'docs/data/catalog.json').write_text(json.dumps(dict(version=pack['version'],date=pack['date'],sources=sources,meta=pack['meta']),ensure_ascii=False,indent=2)+'\n')

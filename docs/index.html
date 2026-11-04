@@ -5,7 +5,7 @@
 <meta name="description" content="市民大道中山北路—光復南路公開圖資檢視器：停車場、車輛出入口、行人與自行車穿越、公共運輸、公共空間及機電維護。">
 <meta name="theme-color" content="#174b70"><title>市民大道｜資料庫檢視器</title>
 <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="./vendor/leaflet.css"><link rel="stylesheet" href="./style.css?v=1.2.0">
+<link rel="stylesheet" href="./vendor/leaflet.css"><link rel="stylesheet" href="./style.css?v=1.3.0">
 </head>
 <body>
 <div id="map" aria-label="市民大道中山北路—光復南路互動地圖"></div>
@@ -19,7 +19,7 @@
  <div class="small-actions"><button id="all-layers">全部開啟</button><button id="no-layers">全部關閉</button></div>
  <div id="layer-options"></div>
  <button id="access-button" class="relation-button">停車場行人出入口 · 核對清單</button>
- <div class="settings-group"><h3>資料狀態</h3><label><input type="checkbox" id="status-confirmed" checked><span class="status-key solid"></span>公開資料已列</label><label><input type="checkbox" id="status-pending" checked><span class="status-key pending"></span>待確認／候選</label><label><input type="checkbox" id="status-historical"><span class="status-key historical"></span>歷史資料</label><p class="hint">分類與狀態分開篩選。歷史資料不代表現況。</p></div>
+ <div class="settings-group"><h3>資料狀態</h3><label><input type="checkbox" id="status-confirmed" checked><span class="status-key solid"></span>官方來源已核</label><label><input type="checkbox" id="status-pending" checked><span class="status-key pending"></span>待確認／未定位</label><label><input type="checkbox" id="status-historical"><span class="status-key historical"></span>歷史資料</label><p class="hint">分類與狀態分開篩選。歷史資料不代表現況。</p></div>
  <div class="settings-group"><h3>底圖</h3><div class="base-choice"><button id="base-photo" class="active" aria-pressed="true">正射影像</button><button id="base-map" aria-pressed="false">電子地圖</button></div><label class="fade-label" for="fade">底圖淡化 <output id="fade-value">60%</output></label><input type="range" id="fade" min="0" max="85" value="60"><label><input type="checkbox" id="road-labels" checked>周遭道路名稱</label><p class="hint">國土測繪中心 · 影像拍攝年代未核</p></div>
 </aside>
 <section id="results-panel" class="panel surface" hidden aria-label="資料查詢結果"><div class="panel-heading"><h2 id="results-title">資料清單</h2><button class="close" data-close="results-panel" aria-label="關閉資料清單">×</button></div><p id="results-summary" class="hint"></p><div id="results"></div></section>
@@ -31,5 +31,5 @@
 <div class="map-actions"><button id="full-extent" class="surface" title="回到研究範圍" aria-label="回到市民大道中山北路—光復南路">⌖<span>總覽</span></button></div>
 <div id="toast" role="status" hidden></div>
 <noscript>請開啟瀏覽器 JavaScript 以使用互動地圖。原始資料可從 GitHub repo 下載。</noscript>
-<script src="./vendor/leaflet.js"></script><script src="./data/inventory.js?v=1.2.0"></script><script src="./app.js?v=1.2.0-r2"></script>
+<script src="./vendor/leaflet.js"></script><script src="./data/inventory.js?v=1.3.0"></script><script src="./app.js?v=1.3.0"></script>
 </body></html>

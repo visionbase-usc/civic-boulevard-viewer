@@ -1090,6 +1090,659 @@
           "imageDate": "2025-04"
         }
       ]
+    },
+    {
+      "id": "U-DOC-TPE0163-E",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55176,
+          25.04449
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖設備代號、相鄰樓梯及道路側別與兩個地面街景視角交叉辨識；以水平視線交會定位設備組代表點，非測量座標。",
+      "imageDate": "2024-12",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=hvJZsepMubPjrf7BeT3Epw&viewpoint=25.0444674,121.5515506&heading=90&pitch=0&fov=75",
+      "observed": "官方第15頁E排風口位於2號樓梯東側；2024-12東西兩側街景均可辨識樓梯東側綠帶內三座灰色圓筒狀百葉罩，採整組代表點，未將三罩當成三筆設備。",
+      "checkedAt": "2026-11-04",
+      "limitations": "設備組概略代表位置，非測量界址；圖說功能與影像外形交叉比對，不推定地下連接、運作狀態或設備數量。影像日期不代表2026-11現勘。",
+      "rays": [
+        {
+          "camera": [
+            121.5515506,
+            25.0444674
+          ],
+          "pano": "hvJZsepMubPjrf7BeT3Epw",
+          "heading": 90,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 437,
+          "imageDate": "2024-12"
+        },
+        {
+          "camera": [
+            121.5518025,
+            25.044413
+          ],
+          "pano": "rZ15HNibSMZkMVtt7zegbw",
+          "heading": 315,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 715,
+          "imageDate": "2024-12"
+        }
+      ],
+      "document": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15"
+    },
+    {
+      "id": "F-ENG-JA-SEAT",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53968,
+          25.04462
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方工程年報所列設施類型與2025-02兩側街景交叉辨識；兩視點水平視線交會取得一處可辨識構造代表點，非全工程配置圖或完整件數。",
+      "imageDate": "2025-02",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Fpipa2wH3w1q9zHYUYBXPw&viewpoint=25.0446825,121.5398964&heading=250&pitch=0&fov=90",
+      "observed": "工程年報列有新設座椅；2025-02兩側地面影像可見210巷東側中央橋下廣場、北側綠帶旁三組白色基座木頂長椅。採中間一組代表點，不表示該工程只有一張座椅，也不是全數座椅位置清冊。",
+      "checkedAt": "2026-11-04",
+      "limitations": "工程項目代表位置，未完成同類設施全數定位；未經測量校正，不推定單件數量。2025-02影像不代表2026-11現勘。",
+      "rays": [
+        {
+          "camera": [
+            121.5398964,
+            25.0446825
+          ],
+          "pano": "Fpipa2wH3w1q9zHYUYBXPw",
+          "heading": 250,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 532,
+          "imageDate": "2025-02"
+        },
+        {
+          "camera": [
+            121.539491,
+            25.0447025
+          ],
+          "pano": "0-5z8J-QrO6n8NGl-6plMg",
+          "heading": 110,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 572,
+          "imageDate": "2025-02"
+        }
+      ],
+      "document": "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+    },
+    {
+      "id": "F-ENG-JA-COLUMN-ART",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5397,
+          25.04465
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方工程年報所列設施類型與2025-02兩側街景交叉辨識；兩視點水平視線交會取得一處可辨識構造代表點，非全工程配置圖或完整件數。",
+      "imageDate": "2025-02",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Fpipa2wH3w1q9zHYUYBXPw&viewpoint=25.0446825,121.5398964&heading=250&pitch=0&fov=90",
+      "observed": "工程年報列有橋柱彩繪；2025-02兩側影像在210巷東側橋下廣場可見同組橋柱之藍色天空、綠色下緣及泰式尖塔等圖案。定位北列一支彩繪橋柱代表點，不表示工程只有一支橋柱，也不表示完整分布。",
+      "checkedAt": "2026-11-04",
+      "limitations": "工程項目代表位置，未完成同類設施全數定位；未經測量校正，不推定單件數量。2025-02影像不代表2026-11現勘。",
+      "rays": [
+        {
+          "camera": [
+            121.5398964,
+            25.0446825
+          ],
+          "pano": "Fpipa2wH3w1q9zHYUYBXPw",
+          "heading": 250,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 596,
+          "imageDate": "2025-02"
+        },
+        {
+          "camera": [
+            121.539491,
+            25.0447025
+          ],
+          "pano": "0-5z8J-QrO6n8NGl-6plMg",
+          "heading": 110,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 484,
+          "imageDate": "2025-02"
+        }
+      ],
+      "document": "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+    },
+    {
+      "id": "U-DOC-TPE0100-W-W",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52111,
+          25.04803
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖設備代號、相鄰樓梯及道路側別與兩個地面街景視角交叉辨識；以水平視線交會定位設備組代表點，非測量座標。",
+      "imageDate": "2025-04",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=xIGUGLmqZGPTrQYHTpKYJA&viewpoint=25.0481329,121.521129&heading=180&pitch=0&fov=90",
+      "observed": "官方中林地面層圖西端路島列送風口在西、水塔在東；2025-04兩個北側地面視角可辨識東側低矮矩形箱體、直立外飾條、其東側迴轉車道與西側橋柱／百葉構造，按圖說相對排列定位水塔箱體代表點；功能採官方圖說，不由外觀推斷運作狀態。",
+      "checkedAt": "2026-11-04",
+      "limitations": "設備組概略代表位置，非測量界址；圖說功能與影像外形交叉比對，不推定地下連接、運作狀態或設備數量。影像日期不代表2026-11現勘。",
+      "rays": [
+        {
+          "camera": [
+            121.521129,
+            25.0481329
+          ],
+          "pano": "xIGUGLmqZGPTrQYHTpKYJA",
+          "heading": 180,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 612,
+          "imageDate": "2025-04"
+        },
+        {
+          "camera": [
+            121.5212398,
+            25.0481174
+          ],
+          "pano": "PrlYzPX1p0tL5dftvOsbww",
+          "heading": 230,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 540,
+          "imageDate": "2025-04"
+        }
+      ],
+      "document": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+    },
+    {
+      "id": "U-DOC-TPE0100-W-S",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52105,
+          25.04803
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖設備代號、相鄰樓梯及道路側別與兩個地面街景視角交叉辨識；以水平視線交會定位設備組代表點，非測量座標。",
+      "imageDate": "2025-04",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Ec3P-jDzUjaiWQk68hjTkg&viewpoint=25.0481589,121.5210013&heading=145&pitch=0&fov=90",
+      "observed": "官方第6頁西端路島送風口位於水塔西側；2025-04北西側及2025-05路口西側均見西端矩形百葉構造，與橋柱、水塔、迴轉車道排列一致。採可辨識北側百葉構造代表點，不推定外殼數等於機組數，亦未量測整體邊界。",
+      "checkedAt": "2026-11-04",
+      "limitations": "設備組概略代表位置，非測量界址；圖說功能與影像外形交叉比對，不推定地下連接、運作狀態或設備數量。影像日期不代表2026-11現勘。",
+      "rays": [
+        {
+          "camera": [
+            121.5210013,
+            25.0481589
+          ],
+          "pano": "Ec3P-jDzUjaiWQk68hjTkg",
+          "heading": 145,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 660,
+          "imageDate": "2025-04"
+        },
+        {
+          "camera": [
+            121.5208231,
+            25.048197
+          ],
+          "pano": "qjpJ_2bJXud-71DivMuFrg",
+          "heading": 120,
+          "fov": 75,
+          "imageWidth": 1031,
+          "targetX": 615,
+          "imageDate": "2025-05"
+        }
+      ],
+      "document": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+    },
+    {
+      "id": "U-DOC-TPE0100-E-E",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52258,
+          25.04791
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖設備代號、相鄰樓梯及道路側別與兩個地面街景視角交叉辨識；以水平視線交會定位設備組代表點，非測量座標。",
+      "imageDate": "2025-05",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=K4az5of-SUSWaiZHjXo6VQ&viewpoint=25.0477973,121.5226164&heading=0&pitch=0&fov=90",
+      "observed": "官方第6頁天津街東側路島列排風口，位於發電機排煙設施東側及汽車坡道西端；2025-05兩個南側視角可辨識低矮長方形格柵頂蓋及石材基座、旁側坡道與天津街側設備，採格柵組代表點。",
+      "checkedAt": "2026-11-04",
+      "limitations": "設備組概略代表位置，非測量界址；圖說功能與影像外形交叉比對，不推定地下連接、運作狀態或設備數量。影像日期不代表2026-11現勘。",
+      "rays": [
+        {
+          "camera": [
+            121.5226164,
+            25.0477973
+          ],
+          "pano": "K4az5of-SUSWaiZHjXo6VQ",
+          "heading": 0,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 365,
+          "imageDate": "2025-05"
+        },
+        {
+          "camera": [
+            121.5227409,
+            25.0478106
+          ],
+          "pano": "ou2ErwddbzjJ86pJUdSlnA",
+          "heading": 310,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 465,
+          "imageDate": "2025-05"
+        }
+      ],
+      "document": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+    },
+    {
+      "id": "U-DOC-TPE0100-G",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52252,
+          25.04792
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖設備代號、相鄰樓梯及道路側別與兩個地面街景視角交叉辨識；以水平視線交會定位設備組代表點，非測量座標。",
+      "imageDate": "2025-05",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=K4az5of-SUSWaiZHjXo6VQ&viewpoint=25.0477973,121.5226164&heading=0&pitch=0&fov=90",
+      "observed": "官方第6頁天津街東側路島列發電機排煙管道口，位於排風格柵西側；2025-05兩個南側地面視角可見西側金屬筒體上方黑色管口及旁側藍色設備箱，與圖說設備順序一致。定位外露排煙構造代表點，沒有將其稱為整座發電機或推定地下機組位置。",
+      "checkedAt": "2026-11-04",
+      "limitations": "設備組概略代表位置，非測量界址；圖說功能與影像外形交叉比對，不推定地下連接、運作狀態或設備數量。影像日期不代表2026-11現勘。",
+      "rays": [
+        {
+          "camera": [
+            121.5226164,
+            25.0477973
+          ],
+          "pano": "K4az5of-SUSWaiZHjXo6VQ",
+          "heading": 0,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 165,
+          "imageDate": "2025-05"
+        },
+        {
+          "camera": [
+            121.5227409,
+            25.0478106
+          ],
+          "pano": "ou2ErwddbzjJ86pJUdSlnA",
+          "heading": 310,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 420,
+          "imageDate": "2025-05"
+        }
+      ],
+      "document": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+    },
+    {
+      "id": "U-DOC-TPE0100-W-E",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52224,
+          25.04794
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖設備代號、相鄰樓梯及道路側別與兩個地面街景視角交叉辨識；以水平視線交會定位設備組代表點，非測量座標。",
+      "imageDate": "2022-03",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=c9qGq5tGIE8u1dEj2FpQEA&viewpoint=25.0478211,121.522119&heading=0&pitch=0&fov=90",
+      "observed": "官方第6頁排風口在天津街西側路島、汽車坡道東端；2022-03可見完整低矮格柵基座，2024-12路口側影像雖由P144橋柱遮住中部，東端格柵、基座及植栽帶仍可交叉辨識。以兩視點可見之格柵東端作構造代表點，不冒充幾何中心或界址。",
+      "checkedAt": "2026-11-04",
+      "limitations": "設備組概略代表位置，非測量界址；圖說功能與影像外形交叉比對，不推定地下連接、運作狀態或設備數量。影像日期不代表2026-11現勘。",
+      "rays": [
+        {
+          "camera": [
+            121.522119,
+            25.0478211
+          ],
+          "pano": "c9qGq5tGIE8u1dEj2FpQEA",
+          "heading": 0,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 970,
+          "imageDate": "2022-03"
+        },
+        {
+          "camera": [
+            121.5222405,
+            25.0478388
+          ],
+          "pano": "l3QO6stnZyRizMg6S4SqMw",
+          "heading": 340,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 690,
+          "imageDate": "2024-12"
+        }
+      ],
+      "document": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+    },
+    {
+      "id": "U-DOC-TPE0100-E-W",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52402,
+          25.04778
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖設備代號、相鄰樓梯及道路側別與兩個地面街景視角交叉辨識；以水平視線交會定位設備組代表點，非測量座標。",
+      "imageDate": "2025-05",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=dxH8Yoy27Pnp61LbkyKbLw&viewpoint=25.0477045,121.5240047&heading=0&pitch=0&fov=90",
+      "observed": "官方第6頁中林東端路島南側列水塔，西側為送風口；2025-05南側及林森北路東側街景可辨識同一淺色修補矩形箱體、外圍直立飾條、橋柱及路口關係。採南側水塔箱體代表點，北側另一矩形建物不併稱水塔。",
+      "checkedAt": "2026-11-04",
+      "limitations": "設備組概略代表位置，非測量界址；圖說功能與影像外形交叉比對，不推定地下連接、運作狀態或設備數量。影像日期不代表2026-11現勘。",
+      "rays": [
+        {
+          "camera": [
+            121.5240047,
+            25.0477045
+          ],
+          "pano": "dxH8Yoy27Pnp61LbkyKbLw",
+          "heading": 0,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 615,
+          "imageDate": "2025-05"
+        },
+        {
+          "camera": [
+            121.5242207,
+            25.047684
+          ],
+          "pano": "blbnDC_WSncyDy8Bb1_WBg",
+          "heading": 290,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 580,
+          "imageDate": "2025-05"
+        }
+      ],
+      "document": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+    },
+    {
+      "id": "U-DOC-TPE0100-E-S",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52396,
+          25.04782
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖設備代號、相鄰樓梯及道路側別與兩個地面街景視角交叉辨識；以水平視線交會定位設備組代表點，非測量座標。",
+      "imageDate": "2024-12",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=bbI_lbB7ymdqTs2pmHukcQ&viewpoint=25.0479398,121.5239817&heading=180&pitch=0&fov=90",
+      "observed": "官方第6頁東端送風口位於水塔及北側維修建物西側；2024-12北側及2025-05西北側街景均可辨識P150橋柱西側矩形百葉構造與直立飾條。採同一外露百葉箱體西北側轉角代表點，不是整體設備中心；南北相向視圖看見不同外殼面，未用其不合理交會結果。",
+      "checkedAt": "2026-11-04",
+      "limitations": "設備組概略代表位置，非測量界址；圖說功能與影像外形交叉比對，不推定地下連接、運作狀態或設備數量。影像日期不代表2026-11現勘。",
+      "rays": [
+        {
+          "camera": [
+            121.5239817,
+            25.0479398
+          ],
+          "pano": "bbI_lbB7ymdqTs2pmHukcQ",
+          "heading": 180,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 585,
+          "imageDate": "2024-12"
+        },
+        {
+          "camera": [
+            121.5237738,
+            25.0478928
+          ],
+          "pano": "91mHcJm_jnaXsKFWoyS5yQ",
+          "heading": 135,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 320,
+          "imageDate": "2025-05"
+        }
+      ],
+      "document": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=6"
+    },
+    {
+      "id": "U-DOC-TPE0110-W-W",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52459,
+          25.04774
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方地面層圖設備代號、相鄰樓梯及道路側別與兩個地面街景視角交叉辨識；以水平視線交會定位設備組代表點，非測量座標。",
+      "imageDate": "2023-03",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=A6NgVI9wZJZcttaG2UJtnA&viewpoint=25.0478699,121.5246197&heading=180&pitch=0&fov=90",
+      "observed": "官方第12頁林金西端水塔位於送風口東側、汽車坡道西側；2023-03與2025-05北側兩視角可辨識同一圓形淺色箱體、灰色修補面、直立飾條及路島關係。採圓形箱體代表點；較早與較新影像日期分別保留。",
+      "checkedAt": "2026-11-04",
+      "limitations": "設備組概略代表位置，非測量界址；圖說功能與影像外形交叉比對，不推定地下連接、運作狀態或設備數量。影像日期不代表2026-11現勘。",
+      "rays": [
+        {
+          "camera": [
+            121.5246197,
+            25.0478699
+          ],
+          "pano": "A6NgVI9wZJZcttaG2UJtnA",
+          "heading": 180,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 624,
+          "imageDate": "2023-03"
+        },
+        {
+          "camera": [
+            121.5244223,
+            25.0478875
+          ],
+          "pano": "KW6mbNzeovXtbhFCYaD-7Q",
+          "heading": 140,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 470,
+          "imageDate": "2025-05"
+        }
+      ],
+      "document": "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12"
+    },
+    {
+      "id": "F-PARK-CL",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53851,
+          25.04413
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "官方公園新聞／啟用海報的木格柵地標、地址與兩個地面街景交叉辨識，以廊下地標概略代表公園位置。",
+      "imageDate": "2025-05",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=XlKa2PTVAhwb5VwkOyvz0g&viewpoint=25.0445488,121.5385194&heading=180&pitch=0&fov=90",
+      "observed": "市府2024-01-15公園更新新聞及啟用海報載明市民大道三段198號、南鄰瑠公圳公園；海報的木格柵地標與2025-02／05地面街景相符。以公園側木格柵廊下地標概略代表位置。公園API原值121.5357132,25.0437603與地面位置相差約280公尺，未採用，另留原值追溯。",
+      "checkedAt": "2026-11-04",
+      "limitations": "公園的地標代表位置，不是公園邊界、完整範圍、入口門檻或橋下泰國音樂廣場位置；未採用有疑義的官方API原座標。影像拍攝日期不是現勘日期。",
+      "rays": [
+        {
+          "camera": [
+            121.5385194,
+            25.0445488
+          ],
+          "pano": "XlKa2PTVAhwb5VwkOyvz0g",
+          "heading": 180,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 522,
+          "imageDate": "2025-05"
+        },
+        {
+          "camera": [
+            121.5380719,
+            25.0447715
+          ],
+          "pano": "2nxzuGMC9-mZL8LDzxv5CA",
+          "heading": 145,
+          "fov": 50,
+          "imageWidth": 1031,
+          "targetX": 573,
+          "imageDate": "2025-02"
+        }
+      ],
+      "document": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=6910509CFDFEA2EA",
+      "originalOfficialPosition": [
+        121.5357132,
+        25.0437603
+      ],
+      "evidenceUrls": [
+        "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=6910509CFDFEA2EA",
+        "https://www-ws.gov.taipei/001/Upload/348/relpic/10162/9103700/f2abee37-e3dc-477b-b1ef-97e64291e441.png",
+        "https://parks.gov.taipei/parks/api/"
+      ]
+    },
+    {
+      "id": "F-SPACE-TH",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53985,
+          25.04458
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "以官方啟用照片、工程年報及兩個地面街景辨識舞臺、橋柱與車道相對關係；採舞臺靠北部分概略代表位置。",
+      "imageDate": "2025-02",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Fpipa2wH3w1q9zHYUYBXPw&viewpoint=25.0446825,121.5398964&heading=180&pitch=0&fov=90",
+      "observed": "官方2024-02-03泰國音樂廣場啟用照片的橋柱、橫梁、灰色抬高舞臺及兩側建物，與2025-02街景所見210巷東側廣場東端相符；舞臺位於建復停車場車道西端，採舞臺靠北部分概略代表點。",
+      "checkedAt": "2026-11-04",
+      "limitations": "場地／舞臺代表位置，非完整場地邊界或測量座標；未推定現行開放時段及設備數量。工程類型與場地紀錄有重疊，不加總為兩處。未完成同類設施全數定位。",
+      "rays": [
+        {
+          "camera": [
+            121.5398964,
+            25.0446825
+          ],
+          "pano": "Fpipa2wH3w1q9zHYUYBXPw",
+          "heading": 180,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 730,
+          "imageDate": "2025-02"
+        },
+        {
+          "camera": [
+            121.539491,
+            25.0447025
+          ],
+          "pano": "0-5z8J-QrO6n8NGl-6plMg",
+          "heading": 100,
+          "fov": 60,
+          "imageWidth": 1031,
+          "targetX": 678,
+          "imageDate": "2025-02"
+        }
+      ],
+      "document": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=40969D4BE7904072&sms=72544237BBE4C5F6",
+      "evidenceUrls": [
+        "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=40969D4BE7904072&sms=72544237BBE4C5F6",
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ],
+      "relatedRecordIds": [
+        "F-ENG-JA-STAGE"
+      ]
+    },
+    {
+      "id": "F-ENG-JA-STAGE",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53985,
+          25.04458
+        ]
+      },
+      "quality": "approximate-image-intersection",
+      "method": "以官方啟用照片、工程年報及兩個地面街景辨識舞臺、橋柱與車道相對關係；採舞臺靠北部分概略代表位置。",
+      "imageDate": "2025-02",
+      "provider": "Google街景服務",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Fpipa2wH3w1q9zHYUYBXPw&viewpoint=25.0446825,121.5398964&heading=180&pitch=0&fov=90",
+      "observed": "官方113年完工年報列橋下舞臺；官方2024-02-03泰國音樂廣場啟用照片的橋柱、橫梁、灰色抬高舞臺及兩側建物，與2025-02街景所見210巷東側廣場東端相符；舞臺位於建復停車場車道西端，採舞臺靠北部分概略代表點。 本工程項目與F-SPACE-TH為同一場域的工程／場地紀錄，不重複計為兩座舞臺。",
+      "checkedAt": "2026-11-04",
+      "limitations": "場地／舞臺代表位置，非完整場地邊界或測量座標；未推定現行開放時段及設備數量。工程類型與場地紀錄有重疊，不加總為兩處。未完成同類設施全數定位。",
+      "rays": [
+        {
+          "camera": [
+            121.5398964,
+            25.0446825
+          ],
+          "pano": "Fpipa2wH3w1q9zHYUYBXPw",
+          "heading": 180,
+          "fov": 90,
+          "imageWidth": 1031,
+          "targetX": 730,
+          "imageDate": "2025-02"
+        },
+        {
+          "camera": [
+            121.539491,
+            25.0447025
+          ],
+          "pano": "0-5z8J-QrO6n8NGl-6plMg",
+          "heading": 100,
+          "fov": 60,
+          "imageWidth": 1031,
+          "targetX": 678,
+          "imageDate": "2025-02"
+        }
+      ],
+      "document": "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1",
+      "evidenceUrls": [
+        "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=40969D4BE7904072&sms=72544237BBE4C5F6",
+        "https://www-ws.gov.taipei/001/Upload/344/relfile/17103/3132932/27836e2b-7eef-4214-8685-fb990ad3588f.pdf#page=1"
+      ],
+      "relatedRecordIds": [
+        "F-SPACE-TH"
+      ]
     }
   ]
 }

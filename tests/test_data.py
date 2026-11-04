@@ -115,7 +115,9 @@ class InventoryTests(unittest.TestCase):
   supplements=[x for x in r.values() if x['table']=='官方圖說補充設備']
   self.assertEqual(len(supplements),35)
   for x in supplements:
-   self.assertIsNone(x['geometry']);self.assertIn(x['parent'],r)
+   self.assertIn(x['parent'],r)
+   if not x.get('positionReview'):self.assertIsNone(x['geometry'])
+   else:self.assertEqual(x['geometry'],x['positionReview']['geometry'])
    self.assertEqual(x['verification']['result'],'document')
    self.assertIn('#page=',x['original']['來源連結'])
  def test_audit_csv_has_every_id_once(self):
@@ -142,7 +144,7 @@ class InventoryTests(unittest.TestCase):
   sys.path.insert(0,str(ROOT/'scripts'))
   from positioning import intersect_rays
   reviews=json.loads((ROOT/'source/position-reviews.json').read_text())['records']
-  self.assertEqual(len(reviews),26)
+  self.assertGreaterEqual(len(reviews),26)
   for p in reviews:
    x=r[p['id']];self.assertEqual(x['geometry'],p['geometry'])
    self.assertIn(p['url'],x['verification']['sources'])
@@ -156,7 +158,7 @@ class InventoryTests(unittest.TestCase):
     if x.get('access'):
      self.assertTrue(any('#page=' in u for u in x['verification']['sources']))
      self.assertTrue(x['access']['groundReview']['summary'])
-   else:self.assertEqual(p['quality'],'interior-observation')
+   else:self.assertIn(p['quality'],['interior-observation','official-source-point'])
   self.assertEqual(r['F-SPORT-VBS1115']['geometry']['coordinates'],[121.54159,25.044794])
  def test_coverage_and_new_source_classes(self):
   units=d['corridorAudit']['units'];self.assertEqual(len(units),7)
@@ -171,7 +173,9 @@ class InventoryTests(unittest.TestCase):
   self.assertEqual(r['F-ART-113071001']['category'],'public')
   projects=[x for x in r.values() if x['table']=='官方完工工程項目'];self.assertEqual(len(projects),10)
   for x in projects:
-   self.assertIsNone(x['geometry']);self.assertIn('不是1座',x['original']['計數單位'])
+   self.assertIn('不是1座',x['original']['計數單位'])
+   if not x.get('positionReview'):self.assertIsNone(x['geometry'])
+   else:self.assertIn('未完成同類設施全數定位',x['positionReview']['limitations'])
   for x in r.values():
    if x.get('access'):
     self.assertTrue((ROOT/'docs'/x['access']['document']['preview']).is_file())

@@ -114,10 +114,10 @@ for r in pack['records']:
         g=r['access']['groundReview'];a['sources'].append(g['url'])
         a['checks'].append({'field':'地面影像辨識','result':'match','source':g['imageDate']+'：'+g['summary']})
     if r.get('positionReview'):
-        p=r['positionReview'];a['sources']=list(dict.fromkeys(a['sources']+[p['url']]))
+        p=r['positionReview'];a['sources']=list(dict.fromkeys(a['sources']+[p['url']]+p.get('evidenceUrls',[])))
         a['checks'].append({'field':'位置交叉查核','result':'match','source':p['observed']})
         a['position']=p['method'];a['method']+='；'+p['method']
-        a['updates'].update({'經度':p['geometry']['coordinates'][0],'緯度':p['geometry']['coordinates'][1],'座標依據':p['method'],'確認程度':'官方設施資料＋'+p['imageDate']+'地面影像交叉核對','待確認事項':p['limitations']})
+        a['updates'].update({'經度':p['geometry']['coordinates'][0],'緯度':p['geometry']['coordinates'][1],'座標依據':p['method'],'確認程度':('官方來源登錄位置；非個別設備或測量界址' if p['quality']=='official-source-point' else '官方設施資料＋'+p['imageDate']+'地面影像交叉核對'),'待確認事項':p['limitations']})
         for ray in p.get('rays',[]):
             a['sources'].append(f"https://www.google.com/maps/@?api=1&map_action=pano&pano={ray['pano']}&viewpoint={ray['camera'][1]},{ray['camera'][0]}&heading={ray['heading']}&pitch=0&fov={ray['fov']}")
         a['sources']=list(dict.fromkeys(a['sources']))

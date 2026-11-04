@@ -132,7 +132,15 @@ for lot_audit in access['audits']:
     lot_audit['approximateCount']=sum(byid[i['id']].get('positionReview',{}).get('quality')=='approximate-image-intersection' for i in items)
 coverage=json.loads((ROOT/'source/corridor-audit.json').read_text())
 crossways=json.loads((ROOT/'source/crossways.json').read_text())
-pack=dict(crossways=crossways,version='1.7.0',scope=dict(name=NAME,segments=list(SEGMENTS),west=west,east=east,viewBounds=[[25.035,west-.002],[25.057,east+.002]]),date=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],corridorAudit=coverage,
+followup=json.loads((ROOT/'source/unlocated-followup.json').read_text())
+assert len(followup['records'])==followup['baselineCount']==77
+for f in followup['records']:
+    assert f['id'] in byid
+    if f['resultPosition'] is not None:assert f['resultPosition']==byid[f['id']]['geometry']
+followup['locatedCount']=sum(bool(byid[f['id']]['geometry']) for f in followup['records'])
+followup['remainingCount']=77-followup['locatedCount']
+followup['reviewedCount']=sum(f['status']!='not-yet-reviewed-this-pass' for f in followup['records'])
+pack=dict(followup=followup,crossways=crossways,version='1.8.0',scope=dict(name=NAME,segments=list(SEGMENTS),west=west,east=east,viewBounds=[[25.035,west-.002],[25.057,east+.002]]),date=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],corridorAudit=coverage,
     roads=roads,elevated=elevated,sources=sources,
     meta=dict(pedestrianAccessCount=len(access['items']),documentedGroundAccessCount=sum(i['groundDocumented'] for i in access['items']),accessImageReviewCount=sum(bool(i['groundReview']) for i in access['items']),imageReviewCount=len(reviews),recordCount=len(records),indexCount=sum(r['isIndex'] for r in records),
         categoryCounts=dict(Counter(r['category'] for r in records if not r['isIndex'])),
@@ -151,6 +159,10 @@ with (ROOT/'docs/data/crossways.csv').open('w',encoding='utf-8-sig',newline='') 
     w=csv.writer(f);w.writerow(['編號','地點','側別','分段','計數','原始圖形','位置性質','核列依據','來源'])
     for r in crossways['records']:
         c=r['crossway'];w.writerow([r['id'],c['location'],c['side'],'/'.join(r['segments']),1,'、'.join(c['sourceIds']),c['precision'],c['basis'],r['original']['來源連結']])
+with (ROOT/'docs/data/unlocated-followup.csv').open('w',encoding='utf-8-sig',newline='') as f:
+    w=csv.writer(f);w.writerow(['編號','名稱','分段','查核狀態','採用位置','查核日期','觀察與限制','來源'])
+    for r in followup['records']:
+        w.writerow([r['id'],r['name'],'/'.join(r['segments']),r['status'],json.dumps(r['resultPosition'],ensure_ascii=False) if r['resultPosition'] else '',r.get('checkedAt',''),r.get('observed','本輪尚未查核'),'；'.join(r['sources'])])
 encoded=json.dumps(pack,ensure_ascii=False,separators=(',',':'),allow_nan=False)
 (ROOT/'docs/data/inventory.js').write_text('window.CIVIC_DATA = '+encoded+';\n')
 (ROOT/'docs/data/catalog.json').write_text(json.dumps(dict(version=pack['version'],date=pack['date'],sources=sources,meta=pack['meta']),ensure_ascii=False,indent=2)+'\n')

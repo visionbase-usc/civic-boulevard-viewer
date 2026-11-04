@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-11-04",
+  "url": "https://parks.gov.taipei/parks/api/",
+  "dataset": "https://data.taipei/dataset/detail?id=ea732fb5-4bec-4be7-93f2-8ab91e74a6c6",
+  "responseSHA256": "866ed5f79853eb38e6ff0b9ffcdf0fc51d23763405a6086ef72cc7bcc6342cd9",
+  "row": {
+    "SeqNo": "64",
+    "pm_regions": "大安區",
+    "pm_name": "昌隆198公園",
+    "pm_overview": "昌隆198公園(Changlong 198 Park)位於建國南路與市民大道交叉口，面積3,807平方公尺。每當大花紫薇及阿勃勒盛開季節，搖曳生姿，美不勝收。",
+    "pm_Longitude": "121.5357132000",
+    "pm_Latitude": "25.0437603000",
+    "pm_unit": "大安區公所",
+    "pm_location": "市民大道與建國南路交叉口"
+  },
+  "adoptedFields": [
+    "SeqNo",
+    "pm_name",
+    "pm_location"
+  ],
+  "note": "僅保留本筆位置核對所用欄位；未採用API跨公園串接的pm_playeq內容。",
+  "coordinateDisposition": "不採用：與地面街景市民大道198號公園所處位置有疑義，保留API原值追溯。"
+}

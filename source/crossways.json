@@ -1,11 +1,11 @@
 {
-  "status": "public-source-inventory",
-  "checkedAt": "2026-11-04",
-  "count": 37,
+  "status": "ground-reviewed-public-source-inventory",
+  "checkedAt": "2026-11-05",
+  "count": 39,
   "siteCount": 18,
   "countUnit": "一段實際跨越市民大道方向的行人穿越標線；分隔島兩側分段各計，連續標線的SHP碎片合併，同一路口不同跨向路徑分開列。",
   "scope": "中山北路至光復南路，含兩端路口完整穿越組",
-  "limitations": "依已取得公開圖資、圖說及所列街景核列；不是2026-11現地普查保證。原137圖形與29候選群不可另加到本數量。",
+  "limitations": "29個既有候選位置均已對照所列地面影像（2024-05至2025-05）。39段為有公開來源支持的核列結果，不是2026-11即時現地普查或測量保證；27段採來源圖形，12段採概略查核點。137原圖形與29候選群不可另加到本數量。",
   "records": [
     {
       "id": "CW-001",
@@ -60,9 +60,22 @@
           "C-A8-7732"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "中山北路口東、西各1條連續跨市民大道標線。兩側標線均從中央島端點外通過，沒有被中央實體島分成兩段；不把橋下陰影或車道分隔線當分段。",
+        "observations": [
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Ec3P-jDzUjaiWQk68hjTkg&viewpoint=25.0481589,121.5210013&heading=230&pitch=0&fov=90",
+            "finding": "東側近景：標線沿島頭外側連續，1段。"
+          },
+          {
+            "date": "2024-12",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Lj1Im6nh5obgDATl3BBgIQ&viewpoint=25.0482018,121.5207108&heading=270&pitch=0&fov=90",
+            "finding": "西側標線連續穿越南北兩側車道，1段。"
+          }
+        ],
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-001",
@@ -73,35 +86,40 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2024-12、2025-04",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=Ec3P-jDzUjaiWQk68hjTkg&viewpoint=25.0481589,121.5210013&heading=230&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=Lj1Im6nh5obgDATl3BBgIQ&viewpoint=25.0482018,121.5207108&heading=270&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-001",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "中山北路口東、西各1條連續跨市民大道標線。兩側標線均從中央島端點外通過，沒有被中央實體島分成兩段；不把橋下陰影或車道分隔線當分段。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
-          "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5"
+          "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=Ec3P-jDzUjaiWQk68hjTkg&viewpoint=25.0481589,121.5210013&heading=230&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=Lj1Im6nh5obgDATl3BBgIQ&viewpoint=25.0482018,121.5207108&heading=270&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "中山北路口東、西各1條連續跨市民大道標線。兩側標線均從中央島端點外通過，沒有被中央實體島分成兩段；不把橋下陰影或車道分隔線當分段。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-7732"
-            ]
+            "source": "C-A8-7732"
           }
         ],
         "result": "derived-crossway"
@@ -160,9 +178,22 @@
           "C-A8-7700"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "中山北路口東、西各1條連續跨市民大道標線。兩側標線均從中央島端點外通過，沒有被中央實體島分成兩段；不把橋下陰影或車道分隔線當分段。",
+        "observations": [
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Ec3P-jDzUjaiWQk68hjTkg&viewpoint=25.0481589,121.5210013&heading=230&pitch=0&fov=90",
+            "finding": "東側近景：標線沿島頭外側連續，1段。"
+          },
+          {
+            "date": "2024-12",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Lj1Im6nh5obgDATl3BBgIQ&viewpoint=25.0482018,121.5207108&heading=270&pitch=0&fov=90",
+            "finding": "西側標線連續穿越南北兩側車道，1段。"
+          }
+        ],
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-002",
@@ -173,35 +204,40 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2024-12、2025-04",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=Ec3P-jDzUjaiWQk68hjTkg&viewpoint=25.0481589,121.5210013&heading=230&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=Lj1Im6nh5obgDATl3BBgIQ&viewpoint=25.0482018,121.5207108&heading=270&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-002",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "中山北路口東、西各1條連續跨市民大道標線。兩側標線均從中央島端點外通過，沒有被中央實體島分成兩段；不把橋下陰影或車道分隔線當分段。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
-          "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5"
+          "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=Ec3P-jDzUjaiWQk68hjTkg&viewpoint=25.0481589,121.5210013&heading=230&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=Lj1Im6nh5obgDATl3BBgIQ&viewpoint=25.0482018,121.5207108&heading=270&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "中山北路口東、西各1條連續跨市民大道標線。兩側標線均從中央島端點外通過，沒有被中央實體島分成兩段；不把橋下陰影或車道分隔線當分段。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-7700"
-            ]
+            "source": "C-A8-7700"
           }
         ],
         "result": "derived-crossway"
@@ -260,9 +296,37 @@
           "C-A8-7701"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "天津街西側1段連續穿越；東側北、南車道各有獨立枕木紋，中間為停車場設備／綠帶實體島，應分列2段。原C-A8-7702以單一長方形包覆全寬，不能直接當作一段現況標線；原核列2段須修正為3段，東側需改用兩段概略位置並保留原圖形關聯。",
+        "observations": [
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=180&pitch=0&fov=90",
+            "finding": "西側連續標線可見；東側島頭與北車道分開。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=130&pitch=0&fov=90",
+            "finding": "東側北車道枕木紋接中央島北側。"
+          },
+          {
+            "date": "2025-02",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=YEUpOUSi2jBqb2-mjdAGLg&viewpoint=25.0478031,121.5223883&heading=30&pitch=0&fov=90",
+            "finding": "東側南車道枕木紋接中央島南側；設備綠帶佔中央。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=K4az5of-SUSWaiZHjXo6VQ&viewpoint=25.0477973,121.5226164&heading=315&pitch=0&fov=90",
+            "finding": "南側近景對照中央島設備、綠帶及標線端點。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=150&pitch=0&fov=40",
+            "finding": "放大島頭可見北側標線終止於緣石斜坡，島頭中段無連續枕木紋；南側另有標線，確認東側須拆2段。"
+          }
+        ],
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-003",
@@ -273,35 +337,43 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-02、2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=180&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=130&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=YEUpOUSi2jBqb2-mjdAGLg&viewpoint=25.0478031,121.5223883&heading=30&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=K4az5of-SUSWaiZHjXo6VQ&viewpoint=25.0477973,121.5226164&heading=315&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=150&pitch=0&fov=40",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-003",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "天津街西側1段連續穿越；東側北、南車道各有獨立枕木紋，中間為停車場設備／綠帶實體島，應分列2段。原C-A8-7702以單一長方形包覆全寬，不能直接當作一段現況標線；原核列2段須修正為3段，東側需改用兩段概略位置並保留原圖形關聯。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
-          "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5"
+          "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=180&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=130&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=YEUpOUSi2jBqb2-mjdAGLg&viewpoint=25.0478031,121.5223883&heading=30&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=K4az5of-SUSWaiZHjXo6VQ&viewpoint=25.0477973,121.5226164&heading=315&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=150&pitch=0&fov=40"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計3段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "天津街西側1段連續穿越；東側北、南車道各有獨立枕木紋，中間為停車場設備／綠帶實體島，應分列2段。原C-A8-7702以單一長方形包覆全寬，不能直接當作一段現況標線；原核列2段須修正為3段，東側需改用兩段概略位置並保留原圖形關聯。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-7701"
-            ]
+            "source": "C-A8-7701"
           }
         ],
         "result": "derived-crossway"
@@ -309,7 +381,7 @@
     },
     {
       "id": "CW-004",
-      "name": "04｜天津街口／東側",
+      "name": "04｜天津街口／東側／北側車道",
       "category": "crossway",
       "subtype": "跨市民大道行人穿越標線",
       "table": "穿越道核列",
@@ -317,30 +389,10 @@
         "S2"
       ],
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              121.52252827874304,
-              25.048045948130206
-            ],
-            [
-              121.52252713815716,
-              25.047784383697152
-            ],
-            [
-              121.52247617618588,
-              25.04778499118733
-            ],
-            [
-              121.52247664621949,
-              25.048050200552282
-            ],
-            [
-              121.52252827874304,
-              25.048045948130206
-            ]
-          ]
+          121.5225,
+          25.04802
         ]
       },
       "historical": false,
@@ -355,53 +407,267 @@
         "number": 4,
         "site": "G-013",
         "location": "天津街口",
-        "side": "東側",
+        "side": "東側／北側車道",
         "sourceIds": [
           "C-A8-7702"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "天津街西側1段連續穿越；東側北、南車道各有獨立枕木紋，中間為停車場設備／綠帶實體島，應分列2段。原C-A8-7702以單一長方形包覆全寬，不能直接當作一段現況標線；原核列2段須修正為3段，東側需改用兩段概略位置並保留原圖形關聯。",
+        "observations": [
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=180&pitch=0&fov=90",
+            "finding": "西側連續標線可見；東側島頭與北車道分開。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=130&pitch=0&fov=90",
+            "finding": "東側北車道枕木紋接中央島北側。"
+          },
+          {
+            "date": "2025-02",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=YEUpOUSi2jBqb2-mjdAGLg&viewpoint=25.0478031,121.5223883&heading=30&pitch=0&fov=90",
+            "finding": "東側南車道枕木紋接中央島南側；設備綠帶佔中央。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=K4az5of-SUSWaiZHjXo6VQ&viewpoint=25.0477973,121.5226164&heading=315&pitch=0&fov=90",
+            "finding": "南側近景對照中央島設備、綠帶及標線端點。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=150&pitch=0&fov=40",
+            "finding": "放大島頭可見北側標線終止於緣石斜坡，島頭中段無連續枕木紋；南側另有標線，確認東側須拆2段。"
+          }
+        ],
+        "precision": "地面影像／圖說概略查核點，非測量標線範圍",
+        "sourceGeometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                121.52252827874304,
+                25.048045948130206
+              ],
+              [
+                121.52252713815716,
+                25.047784383697152
+              ],
+              [
+                121.52247617618588,
+                25.04778499118733
+              ],
+              [
+                121.52247664621949,
+                25.048050200552282
+              ],
+              [
+                121.52252827874304,
+                25.048045948130206
+              ]
+            ]
+          ]
+        },
+        "splitFrom": "CW-004",
+        "splitPart": "北側車道",
+        "positionBasis": "官方原圖形提供跨向軸線；地面影像辨識中央島及南北車道，採各車道概略查核點。原矩形橫跨島面，不作現況連續標線邊界。",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段",
+        "positionLimitations": "相機定位、全景拼接及人工判讀誤差未經測量評定；點位代表所在車道與穿越位置，不代表標線端點或範圍。"
       },
       "original": {
         "編號": "CW-004",
-        "名稱": "04｜天津街口／東側",
+        "名稱": "04｜天津街口／東側／北側車道",
         "類別": "跨市民大道行人穿越標線",
-        "地址或鄰近路口": "天津街口／東側",
+        "地址或鄰近路口": "天津街口／東側／北側車道",
         "範圍": "中山北路至光復南路，保留端點路口完整穿越組",
-        "經度": null,
-        "緯度": null,
-        "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
+        "經度": 121.5225,
+        "緯度": 25.04802,
+        "座標依據": "官方原圖形提供跨向軸線；地面影像辨識中央島及南北車道，採各車道概略查核點。原矩形橫跨島面，不作現況連續標線邊界。",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-02、2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=180&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=130&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=YEUpOUSi2jBqb2-mjdAGLg&viewpoint=25.0478031,121.5223883&heading=30&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=K4az5of-SUSWaiZHjXo6VQ&viewpoint=25.0477973,121.5226164&heading=315&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=150&pitch=0&fov=40",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-004",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "天津街西側1段連續穿越；東側北、南車道各有獨立枕木紋，中間為停車場設備／綠帶實體島，應分列2段。原C-A8-7702以單一長方形包覆全寬，不能直接當作一段現況標線；原核列2段須修正為3段，東側需改用兩段概略位置並保留原圖形關聯。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "地面影像／圖說概略查核點，非測量標線範圍",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
-          "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5"
+          "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=180&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=130&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=YEUpOUSi2jBqb2-mjdAGLg&viewpoint=25.0478031,121.5223883&heading=30&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=K4az5of-SUSWaiZHjXo6VQ&viewpoint=25.0477973,121.5226164&heading=315&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=150&pitch=0&fov=40"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計3段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "天津街西側1段連續穿越；東側北、南車道各有獨立枕木紋，中間為停車場設備／綠帶實體島，應分列2段。原C-A8-7702以單一長方形包覆全寬，不能直接當作一段現況標線；原核列2段須修正為3段，東側需改用兩段概略位置並保留原圖形關聯。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-7702"
+            "source": "C-A8-7702"
+          }
+        ],
+        "result": "derived-crossway"
+      }
+    },
+    {
+      "id": "CW-038",
+      "name": "38｜天津街口／東側／南側車道",
+      "category": "crossway",
+      "subtype": "跨市民大道行人穿越標線",
+      "table": "穿越道核列",
+      "segments": [
+        "S2"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5225,
+          25.04782
+        ]
+      },
+      "historical": false,
+      "pending": false,
+      "isIndex": false,
+      "parent": "",
+      "group": "",
+      "members": [
+        "C-A8-7702"
+      ],
+      "crossway": {
+        "number": 38,
+        "site": "G-013",
+        "location": "天津街口",
+        "side": "東側／南側車道",
+        "sourceIds": [
+          "C-A8-7702"
+        ],
+        "count": 1,
+        "basis": "天津街西側1段連續穿越；東側北、南車道各有獨立枕木紋，中間為停車場設備／綠帶實體島，應分列2段。原C-A8-7702以單一長方形包覆全寬，不能直接當作一段現況標線；原核列2段須修正為3段，東側需改用兩段概略位置並保留原圖形關聯。",
+        "observations": [
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=180&pitch=0&fov=90",
+            "finding": "西側連續標線可見；東側島頭與北車道分開。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=130&pitch=0&fov=90",
+            "finding": "東側北車道枕木紋接中央島北側。"
+          },
+          {
+            "date": "2025-02",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=YEUpOUSi2jBqb2-mjdAGLg&viewpoint=25.0478031,121.5223883&heading=30&pitch=0&fov=90",
+            "finding": "東側南車道枕木紋接中央島南側；設備綠帶佔中央。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=K4az5of-SUSWaiZHjXo6VQ&viewpoint=25.0477973,121.5226164&heading=315&pitch=0&fov=90",
+            "finding": "南側近景對照中央島設備、綠帶及標線端點。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=150&pitch=0&fov=40",
+            "finding": "放大島頭可見北側標線終止於緣石斜坡，島頭中段無連續枕木紋；南側另有標線，確認東側須拆2段。"
+          }
+        ],
+        "precision": "地面影像／圖說概略查核點，非測量標線範圍",
+        "sourceGeometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                121.52252827874304,
+                25.048045948130206
+              ],
+              [
+                121.52252713815716,
+                25.047784383697152
+              ],
+              [
+                121.52247617618588,
+                25.04778499118733
+              ],
+              [
+                121.52247664621949,
+                25.048050200552282
+              ],
+              [
+                121.52252827874304,
+                25.048045948130206
+              ]
             ]
+          ]
+        },
+        "splitFrom": "CW-004",
+        "splitPart": "南側車道",
+        "positionBasis": "官方原圖形提供跨向軸線；地面影像辨識中央島及南北車道，採各車道概略查核點。原矩形橫跨島面，不作現況連續標線邊界。",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段",
+        "positionLimitations": "相機定位、全景拼接及人工判讀誤差未經測量評定；點位代表所在車道與穿越位置，不代表標線端點或範圍。"
+      },
+      "original": {
+        "編號": "CW-038",
+        "名稱": "38｜天津街口／東側／南側車道",
+        "類別": "跨市民大道行人穿越標線",
+        "地址或鄰近路口": "天津街口／東側／南側車道",
+        "範圍": "中山北路至光復南路，保留端點路口完整穿越組",
+        "經度": 121.5225,
+        "緯度": 25.04782,
+        "座標依據": "官方原圖形提供跨向軸線；地面影像辨識中央島及南北車道，採各車道概略查核點。原矩形橫跨島面，不作現況連續標線邊界。",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-02、2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=180&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=130&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=YEUpOUSi2jBqb2-mjdAGLg&viewpoint=25.0478031,121.5223883&heading=30&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=K4az5of-SUSWaiZHjXo6VQ&viewpoint=25.0477973,121.5226164&heading=315&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=150&pitch=0&fov=40",
+        "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
+      },
+      "verification": {
+        "id": "CW-038",
+        "checkedAt": "2026-11-05",
+        "summary": "天津街西側1段連續穿越；東側北、南車道各有獨立枕木紋，中間為停車場設備／綠帶實體島，應分列2段。原C-A8-7702以單一長方形包覆全寬，不能直接當作一段現況標線；原核列2段須修正為3段，東側需改用兩段概略位置並保留原圖形關聯。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "地面影像／圖說概略查核點，非測量標線範圍",
+        "sourceDate": "來源日期與影像日期分列",
+        "sources": [
+          "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=180&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=130&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=YEUpOUSi2jBqb2-mjdAGLg&viewpoint=25.0478031,121.5223883&heading=30&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=K4az5of-SUSWaiZHjXo6VQ&viewpoint=25.0477973,121.5226164&heading=315&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&viewpoint=25.0480664,121.5223903&heading=150&pitch=0&fov=40"
+        ],
+        "issues": [],
+        "checks": [
+          {
+            "field": "計數單位",
+            "result": "match",
+            "source": "本筆1段；同處合計3段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "天津街西側1段連續穿越；東側北、南車道各有獨立枕木紋，中間為停車場設備／綠帶實體島，應分列2段。原C-A8-7702以單一長方形包覆全寬，不能直接當作一段現況標線；原核列2段須修正為3段，東側需改用兩段概略位置並保留原圖形關聯。"
+          },
+          {
+            "field": "原圖形關聯",
+            "result": "match",
+            "source": "C-A8-7702"
           }
         ],
         "result": "derived-crossway"
@@ -460,9 +726,22 @@
           "C-A8-7705"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "林森北路口西側與東側各1段；2025-05近景可見兩側標線均沿中央島端點外彎折連續通過。橋柱／設備在標線旁，不把彎折或車道分界拆成兩段。",
+        "observations": [
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=blbnDC_WSncyDy8Bb1_WBg&viewpoint=25.047684,121.5242207&heading=315&pitch=0&fov=90",
+            "finding": "西側彎折標線通過島頭外側。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=KW6mbNzeovXtbhFCYaD-7Q&viewpoint=25.0478875,121.5244223&heading=200&pitch=0&fov=90",
+            "finding": "東側近景可見北車道、島頭與南車道標線連續。"
+          }
+        ],
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-005",
@@ -473,35 +752,40 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=blbnDC_WSncyDy8Bb1_WBg&viewpoint=25.047684,121.5242207&heading=315&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=KW6mbNzeovXtbhFCYaD-7Q&viewpoint=25.0478875,121.5244223&heading=200&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-005",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "林森北路口西側與東側各1段；2025-05近景可見兩側標線均沿中央島端點外彎折連續通過。橋柱／設備在標線旁，不把彎折或車道分界拆成兩段。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
-          "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5"
+          "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=blbnDC_WSncyDy8Bb1_WBg&viewpoint=25.047684,121.5242207&heading=315&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=KW6mbNzeovXtbhFCYaD-7Q&viewpoint=25.0478875,121.5244223&heading=200&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "林森北路口西側與東側各1段；2025-05近景可見兩側標線均沿中央島端點外彎折連續通過。橋柱／設備在標線旁，不把彎折或車道分界拆成兩段。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-7705"
-            ]
+            "source": "C-A8-7705"
           }
         ],
         "result": "derived-crossway"
@@ -560,9 +844,22 @@
           "C-A8-7706"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "林森北路口西側與東側各1段；2025-05近景可見兩側標線均沿中央島端點外彎折連續通過。橋柱／設備在標線旁，不把彎折或車道分界拆成兩段。",
+        "observations": [
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=blbnDC_WSncyDy8Bb1_WBg&viewpoint=25.047684,121.5242207&heading=315&pitch=0&fov=90",
+            "finding": "西側彎折標線通過島頭外側。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=KW6mbNzeovXtbhFCYaD-7Q&viewpoint=25.0478875,121.5244223&heading=200&pitch=0&fov=90",
+            "finding": "東側近景可見北車道、島頭與南車道標線連續。"
+          }
+        ],
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-006",
@@ -573,35 +870,40 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=blbnDC_WSncyDy8Bb1_WBg&viewpoint=25.047684,121.5242207&heading=315&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=KW6mbNzeovXtbhFCYaD-7Q&viewpoint=25.0478875,121.5244223&heading=200&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-006",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "林森北路口西側與東側各1段；2025-05近景可見兩側標線均沿中央島端點外彎折連續通過。橋柱／設備在標線旁，不把彎折或車道分界拆成兩段。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
-          "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5"
+          "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=blbnDC_WSncyDy8Bb1_WBg&viewpoint=25.047684,121.5242207&heading=315&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=KW6mbNzeovXtbhFCYaD-7Q&viewpoint=25.0478875,121.5244223&heading=200&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "林森北路口西側與東側各1段；2025-05近景可見兩側標線均沿中央島端點外彎折連續通過。橋柱／設備在標線旁，不把彎折或車道分界拆成兩段。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-7706"
-            ]
+            "source": "C-A8-7706"
           }
         ],
         "result": "derived-crossway"
@@ -636,20 +938,23 @@
         "side": "北側車道",
         "sourceIds": [],
         "count": 1,
-        "basis": "官方地面層圖與兩側地面街景交叉確認；地圖採道路側別與巷口的概略查核點，未重畫標線邊界。中央島兩側標線分開計數。",
+        "basis": "長安東路一段30巷／紹興北街對應穿越：北車道1段、南車道1段，中間為橋下步行空間，合計2段。南側林金3號樓梯為相鄰停車場入口，不另算穿越線。",
         "observations": [
           {
             "date": "2025-05",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=q6mDoBi_z_u2BX6Xm9pwcw&viewpoint=25.0476003,121.5260754&heading=180&pitch=0",
-            "finding": "北側2025年5月、南側2024年9月的地面街景均可見高架下平面車道的枕木紋行穿線及中央步行空間。原始SHP只收錄兩個小範圍圖形，不能據此呈現完整穿越範圍。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=q6mDoBi_z_u2BX6Xm9pwcw&viewpoint=25.0476003,121.5260754&heading=180&pitch=0&fov=90",
+            "finding": "長安東路一段30巷／紹興北街對應穿越：北車道1段、南車道1段，中間為橋下步行空間，合計2段。南側林金3號樓梯為相鄰停車場入口，不另算穿越線。"
           },
           {
             "date": "2024-09",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0",
-            "finding": "北側2025年5月、南側2024年9月的地面街景均可見高架下平面車道的枕木紋行穿線及中央步行空間。原始SHP只收錄兩個小範圍圖形，不能據此呈現完整穿越範圍。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0&fov=90",
+            "finding": "長安東路一段30巷／紹興北街對應穿越：北車道1段、南車道1段，中間為橋下步行空間，合計2段。南側林金3號樓梯為相鄰停車場入口，不另算穿越線。"
           }
         ],
-        "precision": "路口概略查核點，非測量標線範圍"
+        "precision": "地面影像／圖說概略查核點，非測量標線範圍",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段",
+        "positionLimitations": "相機定位、全景拼接及人工判讀誤差未經測量評定；點位代表所在車道與穿越位置，不代表標線端點或範圍。"
       },
       "original": {
         "編號": "CW-007",
@@ -659,37 +964,44 @@
         "範圍": "中山北路至光復南路，保留端點路口完整穿越組",
         "經度": 121.52604,
         "緯度": 25.04754,
-        "座標依據": "圖說、地面街景與既有道路線形比對之概略查核位置",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12；https://www.google.com/maps/@?api=1&map_action=pano&pano=q6mDoBi_z_u2BX6Xm9pwcw&viewpoint=25.0476003,121.5260754&heading=180&pitch=0；https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0",
+        "座標依據": "地面影像／圖說概略查核點，非測量標線範圍",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2024-09、2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12；https://www.google.com/maps/@?api=1&map_action=pano&pano=q6mDoBi_z_u2BX6Xm9pwcw&viewpoint=25.0476003,121.5260754&heading=180&pitch=0；https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0；https://www.google.com/maps/@?api=1&map_action=pano&pano=q6mDoBi_z_u2BX6Xm9pwcw&viewpoint=25.0476003,121.5260754&heading=180&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-007",
-        "checkedAt": "2026-11-04",
-        "summary": "官方地面層圖與兩側地面街景交叉確認；地圖採道路側別與巷口的概略查核點，未重畫標線邊界。中央島兩側標線分開計數。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "概略查核點",
+        "checkedAt": "2026-11-05",
+        "summary": "長安東路一段30巷／紹興北街對應穿越：北車道1段、南車道1段，中間為橋下步行空間，合計2段。南側林金3號樓梯為相鄰停車場入口，不另算穿越線。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "地面影像／圖說概略查核點，非測量標線範圍",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
           "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12",
           "https://www.google.com/maps/@?api=1&map_action=pano&pano=q6mDoBi_z_u2BX6Xm9pwcw&viewpoint=25.0476003,121.5260754&heading=180&pitch=0",
-          "https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0"
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=q6mDoBi_z_u2BX6Xm9pwcw&viewpoint=25.0476003,121.5260754&heading=180&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "長安東路一段30巷／紹興北街對應穿越：北車道1段、南車道1段，中間為橋下步行空間，合計2段。南側林金3號樓梯為相鄰停車場入口，不另算穿越線。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": "圖說及街景補列"
+            "source": "圖說及地面影像補列；未虛構標線邊界"
           }
         ],
         "result": "derived-crossway"
@@ -724,20 +1036,23 @@
         "side": "南側車道",
         "sourceIds": [],
         "count": 1,
-        "basis": "官方地面層圖與兩側地面街景交叉確認；地圖採道路側別與巷口的概略查核點，未重畫標線邊界。中央島兩側標線分開計數。",
+        "basis": "長安東路一段30巷／紹興北街對應穿越：北車道1段、南車道1段，中間為橋下步行空間，合計2段。南側林金3號樓梯為相鄰停車場入口，不另算穿越線。",
         "observations": [
           {
             "date": "2025-05",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=q6mDoBi_z_u2BX6Xm9pwcw&viewpoint=25.0476003,121.5260754&heading=180&pitch=0",
-            "finding": "北側2025年5月、南側2024年9月的地面街景均可見高架下平面車道的枕木紋行穿線及中央步行空間。原始SHP只收錄兩個小範圍圖形，不能據此呈現完整穿越範圍。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=q6mDoBi_z_u2BX6Xm9pwcw&viewpoint=25.0476003,121.5260754&heading=180&pitch=0&fov=90",
+            "finding": "長安東路一段30巷／紹興北街對應穿越：北車道1段、南車道1段，中間為橋下步行空間，合計2段。南側林金3號樓梯為相鄰停車場入口，不另算穿越線。"
           },
           {
             "date": "2024-09",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0",
-            "finding": "北側2025年5月、南側2024年9月的地面街景均可見高架下平面車道的枕木紋行穿線及中央步行空間。原始SHP只收錄兩個小範圍圖形，不能據此呈現完整穿越範圍。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0&fov=90",
+            "finding": "長安東路一段30巷／紹興北街對應穿越：北車道1段、南車道1段，中間為橋下步行空間，合計2段。南側林金3號樓梯為相鄰停車場入口，不另算穿越線。"
           }
         ],
-        "precision": "路口概略查核點，非測量標線範圍"
+        "precision": "地面影像／圖說概略查核點，非測量標線範圍",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段",
+        "positionLimitations": "相機定位、全景拼接及人工判讀誤差未經測量評定；點位代表所在車道與穿越位置，不代表標線端點或範圍。"
       },
       "original": {
         "編號": "CW-008",
@@ -747,37 +1062,44 @@
         "範圍": "中山北路至光復南路，保留端點路口完整穿越組",
         "經度": 121.52609,
         "緯度": 25.0473,
-        "座標依據": "圖說、地面街景與既有道路線形比對之概略查核位置",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12；https://www.google.com/maps/@?api=1&map_action=pano&pano=q6mDoBi_z_u2BX6Xm9pwcw&viewpoint=25.0476003,121.5260754&heading=180&pitch=0；https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0",
+        "座標依據": "地面影像／圖說概略查核點，非測量標線範圍",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2024-09、2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12；https://www.google.com/maps/@?api=1&map_action=pano&pano=q6mDoBi_z_u2BX6Xm9pwcw&viewpoint=25.0476003,121.5260754&heading=180&pitch=0；https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0；https://www.google.com/maps/@?api=1&map_action=pano&pano=q6mDoBi_z_u2BX6Xm9pwcw&viewpoint=25.0476003,121.5260754&heading=180&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-008",
-        "checkedAt": "2026-11-04",
-        "summary": "官方地面層圖與兩側地面街景交叉確認；地圖採道路側別與巷口的概略查核點，未重畫標線邊界。中央島兩側標線分開計數。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "概略查核點",
+        "checkedAt": "2026-11-05",
+        "summary": "長安東路一段30巷／紹興北街對應穿越：北車道1段、南車道1段，中間為橋下步行空間，合計2段。南側林金3號樓梯為相鄰停車場入口，不另算穿越線。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "地面影像／圖說概略查核點，非測量標線範圍",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
           "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12",
           "https://www.google.com/maps/@?api=1&map_action=pano&pano=q6mDoBi_z_u2BX6Xm9pwcw&viewpoint=25.0476003,121.5260754&heading=180&pitch=0",
-          "https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0"
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=q6mDoBi_z_u2BX6Xm9pwcw&viewpoint=25.0476003,121.5260754&heading=180&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=58rw11Q-NLcxvxCaAoXWCg&viewpoint=25.0472326,121.5260816&heading=0&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "長安東路一段30巷／紹興北街對應穿越：北車道1段、南車道1段，中間為橋下步行空間，合計2段。南側林金3號樓梯為相鄰停車場入口，不另算穿越線。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": "圖說及街景補列"
+            "source": "圖說及地面影像補列；未虛構標線邊界"
           }
         ],
         "result": "derived-crossway"
@@ -795,7 +1117,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.52775,
+          121.52784,
           25.04702
         ]
       },
@@ -812,17 +1134,17 @@
         "side": "北側車道",
         "sourceIds": [],
         "count": 1,
-        "basis": "官方地面層圖與兩側地面街景交叉確認；地圖採道路側別與巷口的概略查核點，未重畫標線邊界。中央島兩側標線分開計數。",
+        "basis": "52巷／杭州北路對應穿越：北側車道1段、南側車道1段，中間橋下步行空間分隔；52巷巷口沿市民大道方向的另一條標線排除。北側查核點依近景道路側別微調，數量2段已辨識。 北側查核點依52巷口東側標線調整；標記代表車道側別及近景位置，非標線測量邊界。",
         "observations": [
           {
             "date": "2025-04",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0gZkar_7B6rr88TrGgEigQ&viewpoint=25.0470871,121.5277224&heading=115&pitch=0",
-            "finding": "北側2025-04街景可見側巷口及市民大道北側平面車道枕木紋；南側2024-09街景可見南側平面車道枕木紋與中央島開口。官方林金段地面層圖第12頁亦標出52巷兩側穿越標線。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0gZkar_7B6rr88TrGgEigQ&viewpoint=25.0470871,121.5277224&heading=115&pitch=0&fov=90",
+            "finding": "52巷／杭州北路對應穿越：北側車道1段、南側車道1段，中間橋下步行空間分隔；52巷巷口沿市民大道方向的另一條標線排除。北側查核點依近景道路側別微調，數量2段已辨識。"
           },
           {
             "date": "2024-09",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=vWIsjxfu7ogSiQ23cSerBQ&viewpoint=25.0467427,121.5276624&heading=52&pitch=0",
-            "finding": "北側2025-04街景可見側巷口及市民大道北側平面車道枕木紋；南側2024-09街景可見南側平面車道枕木紋與中央島開口。官方林金段地面層圖第12頁亦標出52巷兩側穿越標線。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=vWIsjxfu7ogSiQ23cSerBQ&viewpoint=25.0467427,121.5276624&heading=0&pitch=0&fov=90",
+            "finding": "52巷／杭州北路對應穿越：北側車道1段、南側車道1段，中間橋下步行空間分隔；52巷巷口沿市民大道方向的另一條標線排除。北側查核點依近景道路側別微調，數量2段已辨識。"
           },
           {
             "date": "圖說",
@@ -830,7 +1152,18 @@
             "finding": "北側2025-04街景可見側巷口及市民大道北側平面車道枕木紋；南側2024-09街景可見南側平面車道枕木紋與中央島開口。官方林金段地面層圖第12頁亦標出52巷兩側穿越標線。"
           }
         ],
-        "precision": "路口概略查核點，非測量標線範圍"
+        "precision": "地面影像／圖說概略查核點，非測量標線範圍",
+        "sourceGeometry": {
+          "type": "Point",
+          "coordinates": [
+            121.52775,
+            25.04702
+          ]
+        },
+        "positionBasis": "52巷北側近景可見跨市民大道標線位於巷口東側；依相機位置與路緣關係微調概略點。",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段",
+        "positionLimitations": "相機定位、全景拼接及人工判讀誤差未經測量評定；點位代表所在車道與穿越位置，不代表標線端點或範圍。"
       },
       "original": {
         "編號": "CW-009",
@@ -838,39 +1171,46 @@
         "類別": "跨市民大道行人穿越標線",
         "地址或鄰近路口": "長安東路一段52巷／杭州北路／北側車道",
         "範圍": "中山北路至光復南路，保留端點路口完整穿越組",
-        "經度": 121.52775,
+        "經度": 121.52784,
         "緯度": 25.04702,
-        "座標依據": "圖說、地面街景與既有道路線形比對之概略查核位置",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12；https://www.google.com/maps/@?api=1&map_action=pano&pano=0gZkar_7B6rr88TrGgEigQ&viewpoint=25.0470871,121.5277224&heading=115&pitch=0；https://www.google.com/maps/@?api=1&map_action=pano&pano=vWIsjxfu7ogSiQ23cSerBQ&viewpoint=25.0467427,121.5276624&heading=52&pitch=0",
+        "座標依據": "52巷北側近景可見跨市民大道標線位於巷口東側；依相機位置與路緣關係微調概略點。",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2024-09、2025-04",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12；https://www.google.com/maps/@?api=1&map_action=pano&pano=0gZkar_7B6rr88TrGgEigQ&viewpoint=25.0470871,121.5277224&heading=115&pitch=0；https://www.google.com/maps/@?api=1&map_action=pano&pano=vWIsjxfu7ogSiQ23cSerBQ&viewpoint=25.0467427,121.5276624&heading=52&pitch=0；https://www.google.com/maps/@?api=1&map_action=pano&pano=0gZkar_7B6rr88TrGgEigQ&viewpoint=25.0470871,121.5277224&heading=115&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=vWIsjxfu7ogSiQ23cSerBQ&viewpoint=25.0467427,121.5276624&heading=0&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-009",
-        "checkedAt": "2026-11-04",
-        "summary": "官方地面層圖與兩側地面街景交叉確認；地圖採道路側別與巷口的概略查核點，未重畫標線邊界。中央島兩側標線分開計數。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "概略查核點",
+        "checkedAt": "2026-11-05",
+        "summary": "52巷／杭州北路對應穿越：北側車道1段、南側車道1段，中間橋下步行空間分隔；52巷巷口沿市民大道方向的另一條標線排除。北側查核點依近景道路側別微調，數量2段已辨識。 北側查核點依52巷口東側標線調整；標記代表車道側別及近景位置，非標線測量邊界。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "地面影像／圖說概略查核點，非測量標線範圍",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
           "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12",
           "https://www.google.com/maps/@?api=1&map_action=pano&pano=0gZkar_7B6rr88TrGgEigQ&viewpoint=25.0470871,121.5277224&heading=115&pitch=0",
-          "https://www.google.com/maps/@?api=1&map_action=pano&pano=vWIsjxfu7ogSiQ23cSerBQ&viewpoint=25.0467427,121.5276624&heading=52&pitch=0"
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=vWIsjxfu7ogSiQ23cSerBQ&viewpoint=25.0467427,121.5276624&heading=52&pitch=0",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=0gZkar_7B6rr88TrGgEigQ&viewpoint=25.0470871,121.5277224&heading=115&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=vWIsjxfu7ogSiQ23cSerBQ&viewpoint=25.0467427,121.5276624&heading=0&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "52巷／杭州北路對應穿越：北側車道1段、南側車道1段，中間橋下步行空間分隔；52巷巷口沿市民大道方向的另一條標線排除。北側查核點依近景道路側別微調，數量2段已辨識。 北側查核點依52巷口東側標線調整；標記代表車道側別及近景位置，非標線測量邊界。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": "圖說及街景補列"
+            "source": "圖說及地面影像補列；未虛構標線邊界"
           }
         ],
         "result": "derived-crossway"
@@ -905,17 +1245,17 @@
         "side": "南側車道",
         "sourceIds": [],
         "count": 1,
-        "basis": "官方地面層圖與兩側地面街景交叉確認；地圖採道路側別與巷口的概略查核點，未重畫標線邊界。中央島兩側標線分開計數。",
+        "basis": "52巷／杭州北路對應穿越：北側車道1段、南側車道1段，中間橋下步行空間分隔；52巷巷口沿市民大道方向的另一條標線排除。北側查核點依近景道路側別微調，數量2段已辨識。 北側查核點依52巷口東側標線調整；標記代表車道側別及近景位置，非標線測量邊界。",
         "observations": [
           {
             "date": "2025-04",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0gZkar_7B6rr88TrGgEigQ&viewpoint=25.0470871,121.5277224&heading=115&pitch=0",
-            "finding": "北側2025-04街景可見側巷口及市民大道北側平面車道枕木紋；南側2024-09街景可見南側平面車道枕木紋與中央島開口。官方林金段地面層圖第12頁亦標出52巷兩側穿越標線。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0gZkar_7B6rr88TrGgEigQ&viewpoint=25.0470871,121.5277224&heading=115&pitch=0&fov=90",
+            "finding": "52巷／杭州北路對應穿越：北側車道1段、南側車道1段，中間橋下步行空間分隔；52巷巷口沿市民大道方向的另一條標線排除。北側查核點依近景道路側別微調，數量2段已辨識。"
           },
           {
             "date": "2024-09",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=vWIsjxfu7ogSiQ23cSerBQ&viewpoint=25.0467427,121.5276624&heading=52&pitch=0",
-            "finding": "北側2025-04街景可見側巷口及市民大道北側平面車道枕木紋；南側2024-09街景可見南側平面車道枕木紋與中央島開口。官方林金段地面層圖第12頁亦標出52巷兩側穿越標線。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=vWIsjxfu7ogSiQ23cSerBQ&viewpoint=25.0467427,121.5276624&heading=0&pitch=0&fov=90",
+            "finding": "52巷／杭州北路對應穿越：北側車道1段、南側車道1段，中間橋下步行空間分隔；52巷巷口沿市民大道方向的另一條標線排除。北側查核點依近景道路側別微調，數量2段已辨識。"
           },
           {
             "date": "圖說",
@@ -923,7 +1263,10 @@
             "finding": "北側2025-04街景可見側巷口及市民大道北側平面車道枕木紋；南側2024-09街景可見南側平面車道枕木紋與中央島開口。官方林金段地面層圖第12頁亦標出52巷兩側穿越標線。"
           }
         ],
-        "precision": "路口概略查核點，非測量標線範圍"
+        "precision": "地面影像／圖說概略查核點，非測量標線範圍",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段",
+        "positionLimitations": "相機定位、全景拼接及人工判讀誤差未經測量評定；點位代表所在車道與穿越位置，不代表標線端點或範圍。"
       },
       "original": {
         "編號": "CW-010",
@@ -933,37 +1276,44 @@
         "範圍": "中山北路至光復南路，保留端點路口完整穿越組",
         "經度": 121.52771,
         "緯度": 25.0468,
-        "座標依據": "圖說、地面街景與既有道路線形比對之概略查核位置",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12；https://www.google.com/maps/@?api=1&map_action=pano&pano=0gZkar_7B6rr88TrGgEigQ&viewpoint=25.0470871,121.5277224&heading=115&pitch=0；https://www.google.com/maps/@?api=1&map_action=pano&pano=vWIsjxfu7ogSiQ23cSerBQ&viewpoint=25.0467427,121.5276624&heading=52&pitch=0",
+        "座標依據": "地面影像／圖說概略查核點，非測量標線範圍",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2024-09、2025-04",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12；https://www.google.com/maps/@?api=1&map_action=pano&pano=0gZkar_7B6rr88TrGgEigQ&viewpoint=25.0470871,121.5277224&heading=115&pitch=0；https://www.google.com/maps/@?api=1&map_action=pano&pano=vWIsjxfu7ogSiQ23cSerBQ&viewpoint=25.0467427,121.5276624&heading=52&pitch=0；https://www.google.com/maps/@?api=1&map_action=pano&pano=0gZkar_7B6rr88TrGgEigQ&viewpoint=25.0470871,121.5277224&heading=115&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=vWIsjxfu7ogSiQ23cSerBQ&viewpoint=25.0467427,121.5276624&heading=0&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-010",
-        "checkedAt": "2026-11-04",
-        "summary": "官方地面層圖與兩側地面街景交叉確認；地圖採道路側別與巷口的概略查核點，未重畫標線邊界。中央島兩側標線分開計數。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "概略查核點",
+        "checkedAt": "2026-11-05",
+        "summary": "52巷／杭州北路對應穿越：北側車道1段、南側車道1段，中間橋下步行空間分隔；52巷巷口沿市民大道方向的另一條標線排除。北側查核點依近景道路側別微調，數量2段已辨識。 北側查核點依52巷口東側標線調整；標記代表車道側別及近景位置，非標線測量邊界。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "地面影像／圖說概略查核點，非測量標線範圍",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
           "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12",
           "https://www.google.com/maps/@?api=1&map_action=pano&pano=0gZkar_7B6rr88TrGgEigQ&viewpoint=25.0470871,121.5277224&heading=115&pitch=0",
-          "https://www.google.com/maps/@?api=1&map_action=pano&pano=vWIsjxfu7ogSiQ23cSerBQ&viewpoint=25.0467427,121.5276624&heading=52&pitch=0"
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=vWIsjxfu7ogSiQ23cSerBQ&viewpoint=25.0467427,121.5276624&heading=52&pitch=0",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=0gZkar_7B6rr88TrGgEigQ&viewpoint=25.0470871,121.5277224&heading=115&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=vWIsjxfu7ogSiQ23cSerBQ&viewpoint=25.0467427,121.5276624&heading=0&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "52巷／杭州北路對應穿越：北側車道1段、南側車道1段，中間橋下步行空間分隔；52巷巷口沿市民大道方向的另一條標線排除。北側查核點依近景道路側別微調，數量2段已辨識。 北側查核點依52巷口東側標線調整；標記代表車道側別及近景位置，非標線測量邊界。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": "圖說及街景補列"
+            "source": "圖說及地面影像補列；未虛構標線邊界"
           }
         ],
         "result": "derived-crossway"
@@ -1022,15 +1372,32 @@
           "C-A8-9238"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。",
+        "basis": "金山北路口採西側匝道口1段、東側跨市民大道1段。西側標線是兩個實體島間匝道口的單段，不向南北延伸虛畫到其他車道；南側短標線跨金山北路，排除。北側平面車道在所見路口無另列跨向標線。",
         "observations": [
           {
             "date": "2025-02",
             "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=90&pitch=0&fov=90",
-            "finding": "東側跨市民大道；南側短標線18-9266跨金山北路，排除。"
+            "finding": "東側可見跨市民大道連續標線。"
+          },
+          {
+            "date": "2025-02",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=320&pitch=0&fov=90",
+            "finding": "西側匝道口有一段標線，兩端為實體島。"
+          },
+          {
+            "date": "2025-02",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=220&pitch=0&fov=90",
+            "finding": "南方短標線跨金山北路，不納入。"
+          },
+          {
+            "date": "2025-01",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=NBxMp77ZaFXYy7d3096lfA&viewpoint=25.0461729,121.5305568&heading=270&pitch=0&fov=90",
+            "finding": "北側平面道路及匝道由綠帶分開；不把匝道標線延伸到北側車道。"
           }
         ],
-        "precision": "官方來源圖形"
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-011",
@@ -1041,36 +1408,42 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=90&pitch=0&fov=90",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-01、2025-02",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=90&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=320&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=220&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=NBxMp77ZaFXYy7d3096lfA&viewpoint=25.0461729,121.5305568&heading=270&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-011",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "金山北路口採西側匝道口1段、東側跨市民大道1段。西側標線是兩個實體島間匝道口的單段，不向南北延伸虛畫到其他車道；南側短標線跨金山北路，排除。北側平面車道在所見路口無另列跨向標線。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=90&pitch=0&fov=90"
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=90&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=320&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=220&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=NBxMp77ZaFXYy7d3096lfA&viewpoint=25.0461729,121.5305568&heading=270&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "金山北路口採西側匝道口1段、東側跨市民大道1段。西側標線是兩個實體島間匝道口的單段，不向南北延伸虛畫到其他車道；南側短標線跨金山北路，排除。北側平面車道在所見路口無另列跨向標線。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-9238"
-            ]
+            "source": "C-A8-9238"
           }
         ],
         "result": "derived-crossway"
@@ -1137,15 +1510,32 @@
           "C-A8-9239"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。",
+        "basis": "金山北路口採西側匝道口1段、東側跨市民大道1段。西側標線是兩個實體島間匝道口的單段，不向南北延伸虛畫到其他車道；南側短標線跨金山北路，排除。北側平面車道在所見路口無另列跨向標線。",
         "observations": [
           {
             "date": "2025-02",
             "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=90&pitch=0&fov=90",
-            "finding": "東側跨市民大道；南側短標線18-9266跨金山北路，排除。"
+            "finding": "東側可見跨市民大道連續標線。"
+          },
+          {
+            "date": "2025-02",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=320&pitch=0&fov=90",
+            "finding": "西側匝道口有一段標線，兩端為實體島。"
+          },
+          {
+            "date": "2025-02",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=220&pitch=0&fov=90",
+            "finding": "南方短標線跨金山北路，不納入。"
+          },
+          {
+            "date": "2025-01",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=NBxMp77ZaFXYy7d3096lfA&viewpoint=25.0461729,121.5305568&heading=270&pitch=0&fov=90",
+            "finding": "北側平面道路及匝道由綠帶分開；不把匝道標線延伸到北側車道。"
           }
         ],
-        "precision": "官方來源圖形"
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-012",
@@ -1156,36 +1546,42 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=90&pitch=0&fov=90",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-01、2025-02",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=90&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=320&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=220&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=NBxMp77ZaFXYy7d3096lfA&viewpoint=25.0461729,121.5305568&heading=270&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-012",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "金山北路口採西側匝道口1段、東側跨市民大道1段。西側標線是兩個實體島間匝道口的單段，不向南北延伸虛畫到其他車道；南側短標線跨金山北路，排除。北側平面車道在所見路口無另列跨向標線。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=90&pitch=0&fov=90"
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=90&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=320&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9vpQIz9F1fAlPl6-EUXauA&viewpoint=25.0460563,121.530592&heading=220&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=NBxMp77ZaFXYy7d3096lfA&viewpoint=25.0461729,121.5305568&heading=270&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "金山北路口採西側匝道口1段、東側跨市民大道1段。西側標線是兩個實體島間匝道口的單段，不向南北延伸虛畫到其他車道；南側短標線跨金山北路，排除。北側平面車道在所見路口無另列跨向標線。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-9239"
-            ]
+            "source": "C-A8-9239"
           }
         ],
         "result": "derived-crossway"
@@ -1244,9 +1640,22 @@
           "C-A8-9241"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "新生南路／松江路口：西側及東側各1段連續跨市民大道標線。西側近景可見標線沿島頭外側連續；東側正面可見整條枕木紋在橋柱／中央島端點之前連續。更北側跨八德路的兩條標線不屬本核列。",
+        "observations": [
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FZ9QmT0h5eF-CQ407nb6fg&viewpoint=25.0456142,121.5326785&heading=180&pitch=0&fov=90",
+            "finding": "西側近景。"
+          },
+          {
+            "date": "2025-02",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=I6NzORh9_9BfoCR6eCCaYw&viewpoint=25.0453707,121.5329455&heading=90&pitch=0&fov=90",
+            "finding": "東側正面全幅。"
+          }
+        ],
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-013",
@@ -1257,35 +1666,40 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-02、2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=FZ9QmT0h5eF-CQ407nb6fg&viewpoint=25.0456142,121.5326785&heading=180&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=I6NzORh9_9BfoCR6eCCaYw&viewpoint=25.0453707,121.5329455&heading=90&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-013",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "新生南路／松江路口：西側及東側各1段連續跨市民大道標線。西側近景可見標線沿島頭外側連續；東側正面可見整條枕木紋在橋柱／中央島端點之前連續。更北側跨八德路的兩條標線不屬本核列。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
-          "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5"
+          "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=FZ9QmT0h5eF-CQ407nb6fg&viewpoint=25.0456142,121.5326785&heading=180&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=I6NzORh9_9BfoCR6eCCaYw&viewpoint=25.0453707,121.5329455&heading=90&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "新生南路／松江路口：西側及東側各1段連續跨市民大道標線。西側近景可見標線沿島頭外側連續；東側正面可見整條枕木紋在橋柱／中央島端點之前連續。更北側跨八德路的兩條標線不屬本核列。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-9241"
-            ]
+            "source": "C-A8-9241"
           }
         ],
         "result": "derived-crossway"
@@ -1344,9 +1758,22 @@
           "C-A8-9242"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "新生南路／松江路口：西側及東側各1段連續跨市民大道標線。西側近景可見標線沿島頭外側連續；東側正面可見整條枕木紋在橋柱／中央島端點之前連續。更北側跨八德路的兩條標線不屬本核列。",
+        "observations": [
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FZ9QmT0h5eF-CQ407nb6fg&viewpoint=25.0456142,121.5326785&heading=180&pitch=0&fov=90",
+            "finding": "西側近景。"
+          },
+          {
+            "date": "2025-02",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=I6NzORh9_9BfoCR6eCCaYw&viewpoint=25.0453707,121.5329455&heading=90&pitch=0&fov=90",
+            "finding": "東側正面全幅。"
+          }
+        ],
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-014",
@@ -1357,35 +1784,40 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-02、2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=FZ9QmT0h5eF-CQ407nb6fg&viewpoint=25.0456142,121.5326785&heading=180&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=I6NzORh9_9BfoCR6eCCaYw&viewpoint=25.0453707,121.5329455&heading=90&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-014",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "新生南路／松江路口：西側及東側各1段連續跨市民大道標線。西側近景可見標線沿島頭外側連續；東側正面可見整條枕木紋在橋柱／中央島端點之前連續。更北側跨八德路的兩條標線不屬本核列。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
-          "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5"
+          "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=FZ9QmT0h5eF-CQ407nb6fg&viewpoint=25.0456142,121.5326785&heading=180&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=I6NzORh9_9BfoCR6eCCaYw&viewpoint=25.0453707,121.5329455&heading=90&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "新生南路／松江路口：西側及東側各1段連續跨市民大道標線。西側近景可見標線沿島頭外側連續；東側正面可見整條枕木紋在橋柱／中央島端點之前連續。更北側跨八德路的兩條標線不屬本核列。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-9242"
-            ]
+            "source": "C-A8-9242"
           }
         ],
         "result": "derived-crossway"
@@ -1452,15 +1884,22 @@
           "C-A8-9140"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。排除跨八德路的西側圖形。",
+        "basis": "八德路二段交會口東側1段跨市民大道折線形標線；2025-05近景可見枕木紋繞島端連續通過。西側另條跨八德路，方向與道路歸屬不同，排除；不因東側轉折拆成兩段。",
         "observations": [
           {
             "date": "2025-05",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FaUwK4R0O3BEpfS3Mn4Khg&viewpoint=25.0447743,121.534432&heading=0&pitch=0&fov=90",
-            "finding": "西側A8-9138跨八德路，排除；東側A8-9140跨市民大道，納入。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FaUwK4R0O3BEpfS3Mn4Khg&viewpoint=25.0447743,121.534432&heading=60&pitch=0&fov=90",
+            "finding": "交會口道路歸屬。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=ryT_kQK_96lKX4KbvU69Xw&viewpoint=25.0448081,121.5348321&heading=0&pitch=0&fov=90",
+            "finding": "東側近景標線連續。"
           }
         ],
-        "precision": "官方來源圖形"
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-015",
@@ -1471,36 +1910,41 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=FaUwK4R0O3BEpfS3Mn4Khg&viewpoint=25.0447743,121.534432&heading=0&pitch=0&fov=90",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=FaUwK4R0O3BEpfS3Mn4Khg&viewpoint=25.0447743,121.534432&heading=0&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=FaUwK4R0O3BEpfS3Mn4Khg&viewpoint=25.0447743,121.534432&heading=60&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=ryT_kQK_96lKX4KbvU69Xw&viewpoint=25.0448081,121.5348321&heading=0&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-015",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。排除跨八德路的西側圖形。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "八德路二段交會口東側1段跨市民大道折線形標線；2025-05近景可見枕木紋繞島端連續通過。西側另條跨八德路，方向與道路歸屬不同，排除；不因東側轉折拆成兩段。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www.google.com/maps/@?api=1&map_action=pano&pano=FaUwK4R0O3BEpfS3Mn4Khg&viewpoint=25.0447743,121.534432&heading=0&pitch=0&fov=90"
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=FaUwK4R0O3BEpfS3Mn4Khg&viewpoint=25.0447743,121.534432&heading=0&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=FaUwK4R0O3BEpfS3Mn4Khg&viewpoint=25.0447743,121.534432&heading=60&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=ryT_kQK_96lKX4KbvU69Xw&viewpoint=25.0448081,121.5348321&heading=0&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計1段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "八德路二段交會口東側1段跨市民大道折線形標線；2025-05近景可見枕木紋繞島端連續通過。西側另條跨八德路，方向與道路歸屬不同，排除；不因東側轉折拆成兩段。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-9140"
-            ]
+            "source": "C-A8-9140"
           }
         ],
         "result": "derived-crossway"
@@ -1559,9 +2003,22 @@
           "C-A8-10742"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "建國南路口西側與東側各1段連續標線。近景可見兩側均沿中央島端點外緣延續；東側標線內的平行導引紋不另計一條，不把建國路向的其他標線算入。",
+        "observations": [
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=tMdBDVW51UPzbAeVCSS7bg&viewpoint=25.0446613,121.5362638&heading=0&pitch=0&fov=90",
+            "finding": "建國南路口西側與東側各1段連續標線。近景可見兩側均沿中央島端點外緣延續；東側標線內的平行導引紋不另計一條，不把建國路向的其他標線算入。"
+          },
+          {
+            "date": "2024-09",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=DHuNmoqD--z9RLIc8GJg1Q&viewpoint=25.0445619,121.5369993&heading=0&pitch=0&fov=90",
+            "finding": "建國南路口西側與東側各1段連續標線。近景可見兩側均沿中央島端點外緣延續；東側標線內的平行導引紋不另計一條，不把建國路向的其他標線算入。"
+          }
+        ],
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-016",
@@ -1572,36 +2029,41 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2024-09、2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13；https://www.google.com/maps/@?api=1&map_action=pano&pano=tMdBDVW51UPzbAeVCSS7bg&viewpoint=25.0446613,121.5362638&heading=0&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=DHuNmoqD--z9RLIc8GJg1Q&viewpoint=25.0445619,121.5369993&heading=0&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-016",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "建國南路口西側與東側各1段連續標線。近景可見兩側均沿中央島端點外緣延續；東側標線內的平行導引紋不另計一條，不把建國路向的其他標線算入。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=tMdBDVW51UPzbAeVCSS7bg&viewpoint=25.0446613,121.5362638&heading=0&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=DHuNmoqD--z9RLIc8GJg1Q&viewpoint=25.0445619,121.5369993&heading=0&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "建國南路口西側與東側各1段連續標線。近景可見兩側均沿中央島端點外緣延續；東側標線內的平行導引紋不另計一條，不把建國路向的其他標線算入。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-10742"
-            ]
+            "source": "C-A8-10742"
           }
         ],
         "result": "derived-crossway"
@@ -1660,9 +2122,22 @@
           "C-A8-10744"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "建國南路口西側與東側各1段連續標線。近景可見兩側均沿中央島端點外緣延續；東側標線內的平行導引紋不另計一條，不把建國路向的其他標線算入。",
+        "observations": [
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=tMdBDVW51UPzbAeVCSS7bg&viewpoint=25.0446613,121.5362638&heading=0&pitch=0&fov=90",
+            "finding": "建國南路口西側與東側各1段連續標線。近景可見兩側均沿中央島端點外緣延續；東側標線內的平行導引紋不另計一條，不把建國路向的其他標線算入。"
+          },
+          {
+            "date": "2024-09",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=DHuNmoqD--z9RLIc8GJg1Q&viewpoint=25.0445619,121.5369993&heading=0&pitch=0&fov=90",
+            "finding": "建國南路口西側與東側各1段連續標線。近景可見兩側均沿中央島端點外緣延續；東側標線內的平行導引紋不另計一條，不把建國路向的其他標線算入。"
+          }
+        ],
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-017",
@@ -1673,36 +2148,41 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2024-09、2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13；https://www.google.com/maps/@?api=1&map_action=pano&pano=tMdBDVW51UPzbAeVCSS7bg&viewpoint=25.0446613,121.5362638&heading=0&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=DHuNmoqD--z9RLIc8GJg1Q&viewpoint=25.0445619,121.5369993&heading=0&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-017",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "建國南路口西側與東側各1段連續標線。近景可見兩側均沿中央島端點外緣延續；東側標線內的平行導引紋不另計一條，不把建國路向的其他標線算入。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=tMdBDVW51UPzbAeVCSS7bg&viewpoint=25.0446613,121.5362638&heading=0&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=DHuNmoqD--z9RLIc8GJg1Q&viewpoint=25.0445619,121.5369993&heading=0&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "建國南路口西側與東側各1段連續標線。近景可見兩側均沿中央島端點外緣延續；東側標線內的平行導引紋不另計一條，不把建國路向的其他標線算入。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-10744"
-            ]
+            "source": "C-A8-10744"
           }
         ],
         "result": "derived-crossway"
@@ -1737,20 +2217,23 @@
         "side": "北側車道",
         "sourceIds": [],
         "count": 1,
-        "basis": "官方地面層圖與兩側地面街景交叉確認；地圖採道路側別與巷口的概略查核點，未重畫標線邊界。中央島兩側標線分開計數。",
+        "basis": "八德路二段210巷：北側與南側市民大道車道各1段枕木紋，中間橋下活動／步行空間打斷標線，分計2段；巷口沿市民方向標線另排除。",
         "observations": [
           {
             "date": "2025-02",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0-5z8J-QrO6n8NGl-6plMg&viewpoint=25.0447025,121.539491&heading=270&pitch=0&fov=75",
-            "finding": "北側車道可見完整枕木紋，接中央步行空間。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0-5z8J-QrO6n8NGl-6plMg&viewpoint=25.0447025,121.539491&heading=270&pitch=0&fov=90",
+            "finding": "八德路二段210巷：北側與南側市民大道車道各1段枕木紋，中間橋下活動／步行空間打斷標線，分計2段；巷口沿市民方向標線另排除。"
           },
           {
             "date": "2025-05",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=p89BLvVdA2YF4veLXsiwCw&viewpoint=25.0445174,121.5391603&heading=90&pitch=0&fov=75",
-            "finding": "南側車道另有枕木紋，與北側由中央步行空間分隔，分列兩段。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=p89BLvVdA2YF4veLXsiwCw&viewpoint=25.0445174,121.5391603&heading=90&pitch=0&fov=90",
+            "finding": "八德路二段210巷：北側與南側市民大道車道各1段枕木紋，中間橋下活動／步行空間打斷標線，分計2段；巷口沿市民方向標線另排除。"
           }
         ],
-        "precision": "路口概略查核點，非測量標線範圍"
+        "precision": "地面影像／圖說概略查核點，非測量標線範圍",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段",
+        "positionLimitations": "相機定位、全景拼接及人工判讀誤差未經測量評定；點位代表所在車道與穿越位置，不代表標線端點或範圍。"
       },
       "original": {
         "編號": "CW-018",
@@ -1760,37 +2243,44 @@
         "範圍": "中山北路至光復南路，保留端點路口完整穿越組",
         "經度": 121.53945,
         "緯度": 25.04472,
-        "座標依據": "圖說、地面街景與既有道路線形比對之概略查核位置",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13；https://www.google.com/maps/@?api=1&map_action=pano&pano=0-5z8J-QrO6n8NGl-6plMg&viewpoint=25.0447025,121.539491&heading=270&pitch=0&fov=75；https://www.google.com/maps/@?api=1&map_action=pano&pano=p89BLvVdA2YF4veLXsiwCw&viewpoint=25.0445174,121.5391603&heading=90&pitch=0&fov=75",
+        "座標依據": "地面影像／圖說概略查核點，非測量標線範圍",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-02、2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13；https://www.google.com/maps/@?api=1&map_action=pano&pano=0-5z8J-QrO6n8NGl-6plMg&viewpoint=25.0447025,121.539491&heading=270&pitch=0&fov=75；https://www.google.com/maps/@?api=1&map_action=pano&pano=p89BLvVdA2YF4veLXsiwCw&viewpoint=25.0445174,121.5391603&heading=90&pitch=0&fov=75；https://www.google.com/maps/@?api=1&map_action=pano&pano=0-5z8J-QrO6n8NGl-6plMg&viewpoint=25.0447025,121.539491&heading=270&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=p89BLvVdA2YF4veLXsiwCw&viewpoint=25.0445174,121.5391603&heading=90&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-018",
-        "checkedAt": "2026-11-04",
-        "summary": "官方地面層圖與兩側地面街景交叉確認；地圖採道路側別與巷口的概略查核點，未重畫標線邊界。中央島兩側標線分開計數。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "概略查核點",
+        "checkedAt": "2026-11-05",
+        "summary": "八德路二段210巷：北側與南側市民大道車道各1段枕木紋，中間橋下活動／步行空間打斷標線，分計2段；巷口沿市民方向標線另排除。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "地面影像／圖說概略查核點，非測量標線範圍",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
           "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13",
           "https://www.google.com/maps/@?api=1&map_action=pano&pano=0-5z8J-QrO6n8NGl-6plMg&viewpoint=25.0447025,121.539491&heading=270&pitch=0&fov=75",
-          "https://www.google.com/maps/@?api=1&map_action=pano&pano=p89BLvVdA2YF4veLXsiwCw&viewpoint=25.0445174,121.5391603&heading=90&pitch=0&fov=75"
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=p89BLvVdA2YF4veLXsiwCw&viewpoint=25.0445174,121.5391603&heading=90&pitch=0&fov=75",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=0-5z8J-QrO6n8NGl-6plMg&viewpoint=25.0447025,121.539491&heading=270&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=p89BLvVdA2YF4veLXsiwCw&viewpoint=25.0445174,121.5391603&heading=90&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "八德路二段210巷：北側與南側市民大道車道各1段枕木紋，中間橋下活動／步行空間打斷標線，分計2段；巷口沿市民方向標線另排除。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": "圖說及街景補列"
+            "source": "圖說及地面影像補列；未虛構標線邊界"
           }
         ],
         "result": "derived-crossway"
@@ -1825,20 +2315,23 @@
         "side": "南側車道",
         "sourceIds": [],
         "count": 1,
-        "basis": "官方地面層圖與兩側地面街景交叉確認；地圖採道路側別與巷口的概略查核點，未重畫標線邊界。中央島兩側標線分開計數。",
+        "basis": "八德路二段210巷：北側與南側市民大道車道各1段枕木紋，中間橋下活動／步行空間打斷標線，分計2段；巷口沿市民方向標線另排除。",
         "observations": [
           {
             "date": "2025-02",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0-5z8J-QrO6n8NGl-6plMg&viewpoint=25.0447025,121.539491&heading=270&pitch=0&fov=75",
-            "finding": "北側車道可見完整枕木紋，接中央步行空間。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0-5z8J-QrO6n8NGl-6plMg&viewpoint=25.0447025,121.539491&heading=270&pitch=0&fov=90",
+            "finding": "八德路二段210巷：北側與南側市民大道車道各1段枕木紋，中間橋下活動／步行空間打斷標線，分計2段；巷口沿市民方向標線另排除。"
           },
           {
             "date": "2025-05",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=p89BLvVdA2YF4veLXsiwCw&viewpoint=25.0445174,121.5391603&heading=90&pitch=0&fov=75",
-            "finding": "南側車道另有枕木紋，與北側由中央步行空間分隔，分列兩段。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=p89BLvVdA2YF4veLXsiwCw&viewpoint=25.0445174,121.5391603&heading=90&pitch=0&fov=90",
+            "finding": "八德路二段210巷：北側與南側市民大道車道各1段枕木紋，中間橋下活動／步行空間打斷標線，分計2段；巷口沿市民方向標線另排除。"
           }
         ],
-        "precision": "路口概略查核點，非測量標線範圍"
+        "precision": "地面影像／圖說概略查核點，非測量標線範圍",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段",
+        "positionLimitations": "相機定位、全景拼接及人工判讀誤差未經測量評定；點位代表所在車道與穿越位置，不代表標線端點或範圍。"
       },
       "original": {
         "編號": "CW-019",
@@ -1848,37 +2341,44 @@
         "範圍": "中山北路至光復南路，保留端點路口完整穿越組",
         "經度": 121.53945,
         "緯度": 25.04452,
-        "座標依據": "圖說、地面街景與既有道路線形比對之概略查核位置",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13；https://www.google.com/maps/@?api=1&map_action=pano&pano=0-5z8J-QrO6n8NGl-6plMg&viewpoint=25.0447025,121.539491&heading=270&pitch=0&fov=75；https://www.google.com/maps/@?api=1&map_action=pano&pano=p89BLvVdA2YF4veLXsiwCw&viewpoint=25.0445174,121.5391603&heading=90&pitch=0&fov=75",
+        "座標依據": "地面影像／圖說概略查核點，非測量標線範圍",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-02、2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13；https://www.google.com/maps/@?api=1&map_action=pano&pano=0-5z8J-QrO6n8NGl-6plMg&viewpoint=25.0447025,121.539491&heading=270&pitch=0&fov=75；https://www.google.com/maps/@?api=1&map_action=pano&pano=p89BLvVdA2YF4veLXsiwCw&viewpoint=25.0445174,121.5391603&heading=90&pitch=0&fov=75；https://www.google.com/maps/@?api=1&map_action=pano&pano=0-5z8J-QrO6n8NGl-6plMg&viewpoint=25.0447025,121.539491&heading=270&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=p89BLvVdA2YF4veLXsiwCw&viewpoint=25.0445174,121.5391603&heading=90&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-019",
-        "checkedAt": "2026-11-04",
-        "summary": "官方地面層圖與兩側地面街景交叉確認；地圖採道路側別與巷口的概略查核點，未重畫標線邊界。中央島兩側標線分開計數。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "概略查核點",
+        "checkedAt": "2026-11-05",
+        "summary": "八德路二段210巷：北側與南側市民大道車道各1段枕木紋，中間橋下活動／步行空間打斷標線，分計2段；巷口沿市民方向標線另排除。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "地面影像／圖說概略查核點，非測量標線範圍",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
           "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13",
           "https://www.google.com/maps/@?api=1&map_action=pano&pano=0-5z8J-QrO6n8NGl-6plMg&viewpoint=25.0447025,121.539491&heading=270&pitch=0&fov=75",
-          "https://www.google.com/maps/@?api=1&map_action=pano&pano=p89BLvVdA2YF4veLXsiwCw&viewpoint=25.0445174,121.5391603&heading=90&pitch=0&fov=75"
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=p89BLvVdA2YF4veLXsiwCw&viewpoint=25.0445174,121.5391603&heading=90&pitch=0&fov=75",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=0-5z8J-QrO6n8NGl-6plMg&viewpoint=25.0447025,121.539491&heading=270&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=p89BLvVdA2YF4veLXsiwCw&viewpoint=25.0445174,121.5391603&heading=90&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "八德路二段210巷：北側與南側市民大道車道各1段枕木紋，中間橋下活動／步行空間打斷標線，分計2段；巷口沿市民方向標線另排除。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": "圖說及街景補列"
+            "source": "圖說及地面影像補列；未虛構標線邊界"
           }
         ],
         "result": "derived-crossway"
@@ -1937,9 +2437,17 @@
           "C-B8-21617"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "安東街口西側1段跨市民大道標線，沿橋下道路／兩島之間連續，沒有被島面打斷；2025-04部分白色標線磨損，仍可辨識原連續路徑。對側未見另一條跨向標線，支巷標線不另計。",
+        "observations": [
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=jZydiSalj8_VReQel6Q7aQ&viewpoint=25.0445302,121.5424255&heading=0&pitch=0&fov=90",
+            "finding": "安東街口西側1段跨市民大道標線，沿橋下道路／兩島之間連續，沒有被島面打斷；2025-04部分白色標線磨損，仍可辨識原連續路徑。對側未見另一條跨向標線，支巷標線不另計。"
+          }
+        ],
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-020",
@@ -1950,36 +2458,40 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-04",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13；https://www.google.com/maps/@?api=1&map_action=pano&pano=jZydiSalj8_VReQel6Q7aQ&viewpoint=25.0445302,121.5424255&heading=0&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-020",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "安東街口西側1段跨市民大道標線，沿橋下道路／兩島之間連續，沒有被島面打斷；2025-04部分白色標線磨損，仍可辨識原連續路徑。對側未見另一條跨向標線，支巷標線不另計。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13"
+          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=13",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=jZydiSalj8_VReQel6Q7aQ&viewpoint=25.0445302,121.5424255&heading=0&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計1段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "安東街口西側1段跨市民大道標線，沿橋下道路／兩島之間連續，沒有被島面打斷；2025-04部分白色標線磨損，仍可辨識原連續路徑。對側未見另一條跨向標線，支巷標線不另計。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-B8-21617"
-            ]
+            "source": "C-B8-21617"
           }
         ],
         "result": "derived-crossway"
@@ -1987,7 +2499,7 @@
     },
     {
       "id": "CW-021",
-      "name": "21｜復興南路口／西側",
+      "name": "21｜復興南路口／西側／北側車道",
       "category": "crossway",
       "subtype": "跨市民大道行人穿越標線",
       "table": "穿越道核列",
@@ -1995,30 +2507,10 @@
         "S4"
       ],
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              121.5436298076981,
-              25.044673966622383
-            ],
-            [
-              121.5435791810029,
-              25.04466720582141
-            ],
-            [
-              121.54354786048897,
-              25.04495731596223
-            ],
-            [
-              121.54358068282943,
-              25.044960268487333
-            ],
-            [
-              121.5436298076981,
-              25.044673966622383
-            ]
-          ]
+          121.54356,
+          25.04493
         ]
       },
       "historical": false,
@@ -2033,54 +2525,109 @@
         "number": 21,
         "site": "G-028",
         "location": "復興南路口",
-        "side": "西側",
+        "side": "西側／北側車道",
         "sourceIds": [
           "C-A8-11935"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "復興南路口西側北、南車道各1段，中央為通風建物與橋柱間的鋪面斜坡步行通道，沒有連續枕木紋，原單一SHP須拆2段；東側標線沿島頭外緣連續，計1段。合計3段，原核列2段需修正。",
+        "observations": [
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=OCI9OZwdTue1yfHZijZmDA&viewpoint=25.0447,121.543551&heading=60&pitch=0&fov=90",
+            "finding": "西側南段終止於通風建物／橋柱間鋪面。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=gCLe0lNmRyHMO0Tcuuy1Og&viewpoint=25.0449162,121.5435525&heading=180&pitch=0&fov=90",
+            "finding": "西側北段接中央鋪面斜坡，可見兩段中間為步行通道。"
+          },
+          {
+            "date": "2024-12",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=W7yVqpmB3_GRMjErCguLjQ&viewpoint=25.0447615,121.5440413&heading=0&pitch=0&fov=90",
+            "finding": "東側整條標線在實體島外連續通過。"
+          }
+        ],
+        "precision": "地面影像／圖說概略查核點，非測量標線範圍",
+        "sourceGeometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                121.5436298076981,
+                25.044673966622383
+              ],
+              [
+                121.5435791810029,
+                25.04466720582141
+              ],
+              [
+                121.54354786048897,
+                25.04495731596223
+              ],
+              [
+                121.54358068282943,
+                25.044960268487333
+              ],
+              [
+                121.5436298076981,
+                25.044673966622383
+              ]
+            ]
+          ]
+        },
+        "splitFrom": "CW-021",
+        "splitPart": "北側車道",
+        "positionBasis": "官方原圖形提供跨向軸線；地面影像辨識中央島及南北車道，採各車道概略查核點。原矩形橫跨島面，不作現況連續標線邊界。",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段",
+        "positionLimitations": "相機定位、全景拼接及人工判讀誤差未經測量評定；點位代表所在車道與穿越位置，不代表標線端點或範圍。"
       },
       "original": {
         "編號": "CW-021",
-        "名稱": "21｜復興南路口／西側",
+        "名稱": "21｜復興南路口／西側／北側車道",
         "類別": "跨市民大道行人穿越標線",
-        "地址或鄰近路口": "復興南路口／西側",
+        "地址或鄰近路口": "復興南路口／西側／北側車道",
         "範圍": "中山北路至光復南路，保留端點路口完整穿越組",
-        "經度": null,
-        "緯度": null,
-        "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "經度": 121.54356,
+        "緯度": 25.04493,
+        "座標依據": "官方原圖形提供跨向軸線；地面影像辨識中央島及南北車道，採各車道概略查核點。原矩形橫跨島面，不作現況連續標線邊界。",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2024-12、2025-04、2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14；https://www.google.com/maps/@?api=1&map_action=pano&pano=OCI9OZwdTue1yfHZijZmDA&viewpoint=25.0447,121.543551&heading=60&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=gCLe0lNmRyHMO0Tcuuy1Og&viewpoint=25.0449162,121.5435525&heading=180&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=W7yVqpmB3_GRMjErCguLjQ&viewpoint=25.0447615,121.5440413&heading=0&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-021",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "復興南路口西側北、南車道各1段，中央為通風建物與橋柱間的鋪面斜坡步行通道，沒有連續枕木紋，原單一SHP須拆2段；東側標線沿島頭外緣連續，計1段。合計3段，原核列2段需修正。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "地面影像／圖說概略查核點，非測量標線範圍",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=OCI9OZwdTue1yfHZijZmDA&viewpoint=25.0447,121.543551&heading=60&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=gCLe0lNmRyHMO0Tcuuy1Og&viewpoint=25.0449162,121.5435525&heading=180&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=W7yVqpmB3_GRMjErCguLjQ&viewpoint=25.0447615,121.5440413&heading=0&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計3段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "復興南路口西側北、南車道各1段，中央為通風建物與橋柱間的鋪面斜坡步行通道，沒有連續枕木紋，原單一SHP須拆2段；東側標線沿島頭外緣連續，計1段。合計3段，原核列2段需修正。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-11935"
-            ]
+            "source": "C-A8-11935"
           }
         ],
         "result": "derived-crossway"
@@ -2139,9 +2686,27 @@
           "C-A8-11924"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "復興南路口西側北、南車道各1段，中央為通風建物與橋柱間的鋪面斜坡步行通道，沒有連續枕木紋，原單一SHP須拆2段；東側標線沿島頭外緣連續，計1段。合計3段，原核列2段需修正。",
+        "observations": [
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=OCI9OZwdTue1yfHZijZmDA&viewpoint=25.0447,121.543551&heading=60&pitch=0&fov=90",
+            "finding": "西側南段終止於通風建物／橋柱間鋪面。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=gCLe0lNmRyHMO0Tcuuy1Og&viewpoint=25.0449162,121.5435525&heading=180&pitch=0&fov=90",
+            "finding": "西側北段接中央鋪面斜坡，可見兩段中間為步行通道。"
+          },
+          {
+            "date": "2024-12",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=W7yVqpmB3_GRMjErCguLjQ&viewpoint=25.0447615,121.5440413&heading=0&pitch=0&fov=90",
+            "finding": "東側整條標線在實體島外連續通過。"
+          }
+        ],
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-022",
@@ -2152,36 +2717,178 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2024-12、2025-04、2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14；https://www.google.com/maps/@?api=1&map_action=pano&pano=OCI9OZwdTue1yfHZijZmDA&viewpoint=25.0447,121.543551&heading=60&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=gCLe0lNmRyHMO0Tcuuy1Og&viewpoint=25.0449162,121.5435525&heading=180&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=W7yVqpmB3_GRMjErCguLjQ&viewpoint=25.0447615,121.5440413&heading=0&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-022",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "復興南路口西側北、南車道各1段，中央為通風建物與橋柱間的鋪面斜坡步行通道，沒有連續枕木紋，原單一SHP須拆2段；東側標線沿島頭外緣連續，計1段。合計3段，原核列2段需修正。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=OCI9OZwdTue1yfHZijZmDA&viewpoint=25.0447,121.543551&heading=60&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=gCLe0lNmRyHMO0Tcuuy1Og&viewpoint=25.0449162,121.5435525&heading=180&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=W7yVqpmB3_GRMjErCguLjQ&viewpoint=25.0447615,121.5440413&heading=0&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計3段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "復興南路口西側北、南車道各1段，中央為通風建物與橋柱間的鋪面斜坡步行通道，沒有連續枕木紋，原單一SHP須拆2段；東側標線沿島頭外緣連續，計1段。合計3段，原核列2段需修正。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-11924"
+            "source": "C-A8-11924"
+          }
+        ],
+        "result": "derived-crossway"
+      }
+    },
+    {
+      "id": "CW-039",
+      "name": "39｜復興南路口／西側／南側車道",
+      "category": "crossway",
+      "subtype": "跨市民大道行人穿越標線",
+      "table": "穿越道核列",
+      "segments": [
+        "S4"
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5436,
+          25.0447
+        ]
+      },
+      "historical": false,
+      "pending": false,
+      "isIndex": false,
+      "parent": "",
+      "group": "",
+      "members": [
+        "C-A8-11935"
+      ],
+      "crossway": {
+        "number": 39,
+        "site": "G-028",
+        "location": "復興南路口",
+        "side": "西側／南側車道",
+        "sourceIds": [
+          "C-A8-11935"
+        ],
+        "count": 1,
+        "basis": "復興南路口西側北、南車道各1段，中央為通風建物與橋柱間的鋪面斜坡步行通道，沒有連續枕木紋，原單一SHP須拆2段；東側標線沿島頭外緣連續，計1段。合計3段，原核列2段需修正。",
+        "observations": [
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=OCI9OZwdTue1yfHZijZmDA&viewpoint=25.0447,121.543551&heading=60&pitch=0&fov=90",
+            "finding": "西側南段終止於通風建物／橋柱間鋪面。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=gCLe0lNmRyHMO0Tcuuy1Og&viewpoint=25.0449162,121.5435525&heading=180&pitch=0&fov=90",
+            "finding": "西側北段接中央鋪面斜坡，可見兩段中間為步行通道。"
+          },
+          {
+            "date": "2024-12",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=W7yVqpmB3_GRMjErCguLjQ&viewpoint=25.0447615,121.5440413&heading=0&pitch=0&fov=90",
+            "finding": "東側整條標線在實體島外連續通過。"
+          }
+        ],
+        "precision": "地面影像／圖說概略查核點，非測量標線範圍",
+        "sourceGeometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                121.5436298076981,
+                25.044673966622383
+              ],
+              [
+                121.5435791810029,
+                25.04466720582141
+              ],
+              [
+                121.54354786048897,
+                25.04495731596223
+              ],
+              [
+                121.54358068282943,
+                25.044960268487333
+              ],
+              [
+                121.5436298076981,
+                25.044673966622383
+              ]
             ]
+          ]
+        },
+        "splitFrom": "CW-021",
+        "splitPart": "南側車道",
+        "positionBasis": "官方原圖形提供跨向軸線；地面影像辨識中央島及南北車道，採各車道概略查核點。原矩形橫跨島面，不作現況連續標線邊界。",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段",
+        "positionLimitations": "相機定位、全景拼接及人工判讀誤差未經測量評定；點位代表所在車道與穿越位置，不代表標線端點或範圍。"
+      },
+      "original": {
+        "編號": "CW-039",
+        "名稱": "39｜復興南路口／西側／南側車道",
+        "類別": "跨市民大道行人穿越標線",
+        "地址或鄰近路口": "復興南路口／西側／南側車道",
+        "範圍": "中山北路至光復南路，保留端點路口完整穿越組",
+        "經度": 121.5436,
+        "緯度": 25.0447,
+        "座標依據": "官方原圖形提供跨向軸線；地面影像辨識中央島及南北車道，採各車道概略查核點。原矩形橫跨島面，不作現況連續標線邊界。",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2024-12、2025-04、2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14；https://www.google.com/maps/@?api=1&map_action=pano&pano=OCI9OZwdTue1yfHZijZmDA&viewpoint=25.0447,121.543551&heading=60&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=gCLe0lNmRyHMO0Tcuuy1Og&viewpoint=25.0449162,121.5435525&heading=180&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=W7yVqpmB3_GRMjErCguLjQ&viewpoint=25.0447615,121.5440413&heading=0&pitch=0&fov=90",
+        "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
+      },
+      "verification": {
+        "id": "CW-039",
+        "checkedAt": "2026-11-05",
+        "summary": "復興南路口西側北、南車道各1段，中央為通風建物與橋柱間的鋪面斜坡步行通道，沒有連續枕木紋，原單一SHP須拆2段；東側標線沿島頭外緣連續，計1段。合計3段，原核列2段需修正。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "地面影像／圖說概略查核點，非測量標線範圍",
+        "sourceDate": "來源日期與影像日期分列",
+        "sources": [
+          "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
+          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=OCI9OZwdTue1yfHZijZmDA&viewpoint=25.0447,121.543551&heading=60&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=gCLe0lNmRyHMO0Tcuuy1Og&viewpoint=25.0449162,121.5435525&heading=180&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=W7yVqpmB3_GRMjErCguLjQ&viewpoint=25.0447615,121.5440413&heading=0&pitch=0&fov=90"
+        ],
+        "issues": [],
+        "checks": [
+          {
+            "field": "計數單位",
+            "result": "match",
+            "source": "本筆1段；同處合計3段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "復興南路口西側北、南車道各1段，中央為通風建物與橋柱間的鋪面斜坡步行通道，沒有連續枕木紋，原單一SHP須拆2段；東側標線沿島頭外緣連續，計1段。合計3段，原核列2段需修正。"
+          },
+          {
+            "field": "原圖形關聯",
+            "result": "match",
+            "source": "C-A8-11935"
           }
         ],
         "result": "derived-crossway"
@@ -2274,16 +2981,32 @@
           "C-A8-11927"
         ],
         "count": 1,
-        "basis": "同一連續標線被官方分成相接圖形，合併計1段。西側連續段與東側兩個分隔段分列，非3個路口。",
+        "basis": "大安路／八德路二段366巷口：西側1段連續彎折標線，原SHP相接碎片合併正確；東側北車道1段、南車道1段，兩者由中央鋪面島分隔，合計3段。島間大安路向車道不自動補畫標線。",
         "observations": [
           {
-            "groupId": "G-030",
             "date": "2025-05",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=200&pitch=0&fov=100",
-            "finding": "地面視角可見西側斜向連續枕木紋；本次未據此定案整個路口數量。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=220&pitch=0&fov=90",
+            "finding": "西側全段連續。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=90&pitch=0&fov=90",
+            "finding": "東側北段接鋪面島。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=130&pitch=0&fov=90",
+            "finding": "中央島及道路分隔關係。"
+          },
+          {
+            "date": "2024-12",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=dNVj5eQqtHriYurUexuc-Q&viewpoint=25.0449861,121.5463588&heading=0&pitch=0&fov=90",
+            "finding": "東側南段接鋪面島另一側。"
           }
         ],
-        "precision": "官方來源圖形"
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-023",
@@ -2294,38 +3017,44 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14；https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=200&pitch=0&fov=100",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2024-12、2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14；https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=200&pitch=0&fov=100；https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=220&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=90&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=130&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=dNVj5eQqtHriYurUexuc-Q&viewpoint=25.0449861,121.5463588&heading=0&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-023",
-        "checkedAt": "2026-11-04",
-        "summary": "同一連續標線被官方分成相接圖形，合併計1段。西側連續段與東側兩個分隔段分列，非3個路口。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "大安路／八德路二段366巷口：西側1段連續彎折標線，原SHP相接碎片合併正確；東側北車道1段、南車道1段，兩者由中央鋪面島分隔，合計3段。島間大安路向車道不自動補畫標線。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
           "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
-          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=200&pitch=0&fov=100"
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=200&pitch=0&fov=100",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=220&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=90&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=130&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=dNVj5eQqtHriYurUexuc-Q&viewpoint=25.0449861,121.5463588&heading=0&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計3段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "大安路／八德路二段366巷口：西側1段連續彎折標線，原SHP相接碎片合併正確；東側北車道1段、南車道1段，兩者由中央鋪面島分隔，合計3段。島間大安路向車道不自動補畫標線。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-11987",
-              "C-A8-11927"
-            ]
+            "source": "C-A8-11987、C-A8-11927"
           }
         ],
         "result": "derived-crossway"
@@ -2418,16 +3147,32 @@
           "C-A8-11934"
         ],
         "count": 1,
-        "basis": "同一連續標線被官方分成相接圖形，合併計1段。西側連續段與東側兩個分隔段分列，非3個路口。",
+        "basis": "大安路／八德路二段366巷口：西側1段連續彎折標線，原SHP相接碎片合併正確；東側北車道1段、南車道1段，兩者由中央鋪面島分隔，合計3段。島間大安路向車道不自動補畫標線。",
         "observations": [
           {
-            "groupId": "G-030",
             "date": "2025-05",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=200&pitch=0&fov=100",
-            "finding": "地面視角可見西側斜向連續枕木紋；本次未據此定案整個路口數量。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=220&pitch=0&fov=90",
+            "finding": "西側全段連續。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=90&pitch=0&fov=90",
+            "finding": "東側北段接鋪面島。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=130&pitch=0&fov=90",
+            "finding": "中央島及道路分隔關係。"
+          },
+          {
+            "date": "2024-12",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=dNVj5eQqtHriYurUexuc-Q&viewpoint=25.0449861,121.5463588&heading=0&pitch=0&fov=90",
+            "finding": "東側南段接鋪面島另一側。"
           }
         ],
-        "precision": "官方來源圖形"
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-024",
@@ -2438,38 +3183,44 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14；https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=200&pitch=0&fov=100",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2024-12、2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14；https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=200&pitch=0&fov=100；https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=220&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=90&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=130&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=dNVj5eQqtHriYurUexuc-Q&viewpoint=25.0449861,121.5463588&heading=0&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-024",
-        "checkedAt": "2026-11-04",
-        "summary": "同一連續標線被官方分成相接圖形，合併計1段。西側連續段與東側兩個分隔段分列，非3個路口。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "大安路／八德路二段366巷口：西側1段連續彎折標線，原SHP相接碎片合併正確；東側北車道1段、南車道1段，兩者由中央鋪面島分隔，合計3段。島間大安路向車道不自動補畫標線。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
           "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
-          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=200&pitch=0&fov=100"
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=200&pitch=0&fov=100",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=220&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=90&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=130&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=dNVj5eQqtHriYurUexuc-Q&viewpoint=25.0449861,121.5463588&heading=0&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計3段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "大安路／八德路二段366巷口：西側1段連續彎折標線，原SHP相接碎片合併正確；東側北車道1段、南車道1段，兩者由中央鋪面島分隔，合計3段。島間大安路向車道不自動補畫標線。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-11988",
-              "C-A8-11934"
-            ]
+            "source": "C-A8-11988、C-A8-11934"
           }
         ],
         "result": "derived-crossway"
@@ -2528,16 +3279,32 @@
           "C-A8-11928"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。西側連續段與東側兩個分隔段分列，非3個路口。",
+        "basis": "大安路／八德路二段366巷口：西側1段連續彎折標線，原SHP相接碎片合併正確；東側北車道1段、南車道1段，兩者由中央鋪面島分隔，合計3段。島間大安路向車道不自動補畫標線。",
         "observations": [
           {
-            "groupId": "G-030",
             "date": "2025-05",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=200&pitch=0&fov=100",
-            "finding": "地面視角可見西側斜向連續枕木紋；本次未據此定案整個路口數量。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=220&pitch=0&fov=90",
+            "finding": "西側全段連續。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=90&pitch=0&fov=90",
+            "finding": "東側北段接鋪面島。"
+          },
+          {
+            "date": "2025-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=130&pitch=0&fov=90",
+            "finding": "中央島及道路分隔關係。"
+          },
+          {
+            "date": "2024-12",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=dNVj5eQqtHriYurUexuc-Q&viewpoint=25.0449861,121.5463588&heading=0&pitch=0&fov=90",
+            "finding": "東側南段接鋪面島另一側。"
           }
         ],
-        "precision": "官方來源圖形"
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-025",
@@ -2548,37 +3315,44 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14；https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=200&pitch=0&fov=100",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2024-12、2025-05",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14；https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=200&pitch=0&fov=100；https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=220&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=90&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=130&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=dNVj5eQqtHriYurUexuc-Q&viewpoint=25.0449861,121.5463588&heading=0&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-025",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。西側連續段與東側兩個分隔段分列，非3個路口。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "大安路／八德路二段366巷口：西側1段連續彎折標線，原SHP相接碎片合併正確；東側北車道1段、南車道1段，兩者由中央鋪面島分隔，合計3段。島間大安路向車道不自動補畫標線。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
           "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
-          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=200&pitch=0&fov=100"
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=200&pitch=0&fov=100",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=220&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=90&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&viewpoint=25.045165,121.5461091&heading=130&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=dNVj5eQqtHriYurUexuc-Q&viewpoint=25.0449861,121.5463588&heading=0&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計3段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "大安路／八德路二段366巷口：西側1段連續彎折標線，原SHP相接碎片合併正確；東側北車道1段、南車道1段，兩者由中央鋪面島分隔，合計3段。島間大安路向車道不自動補畫標線。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-11928"
-            ]
+            "source": "C-A8-11928"
           }
         ],
         "result": "derived-crossway"
@@ -2637,9 +3411,22 @@
           "C-A8-11929"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "敦化南路口西側、東側各1段連續標線。西側正面可見標線位於島頭前方，東側近景可見枕木紋沿島外緣從南到北連續；不因兩幅高架或中央橋柱拆段。",
+        "observations": [
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=byXfFfPnnlyzOKk6ckTONg&viewpoint=25.0449125,121.5486818&heading=270&pitch=0&fov=90",
+            "finding": "敦化南路口西側、東側各1段連續標線。西側正面可見標線位於島頭前方，東側近景可見枕木紋沿島外緣從南到北連續；不因兩幅高架或中央橋柱拆段。"
+          },
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qXinbwjRCQlWqaTDpGXyg&viewpoint=25.0446858,121.5492392&heading=345&pitch=0&fov=90",
+            "finding": "敦化南路口西側、東側各1段連續標線。西側正面可見標線位於島頭前方，東側近景可見枕木紋沿島外緣從南到北連續；不因兩幅高架或中央橋柱拆段。"
+          }
+        ],
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-026",
@@ -2650,36 +3437,41 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-04",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14；https://www.google.com/maps/@?api=1&map_action=pano&pano=byXfFfPnnlyzOKk6ckTONg&viewpoint=25.0449125,121.5486818&heading=270&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=9qXinbwjRCQlWqaTDpGXyg&viewpoint=25.0446858,121.5492392&heading=345&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-026",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "敦化南路口西側、東側各1段連續標線。西側正面可見標線位於島頭前方，東側近景可見枕木紋沿島外緣從南到北連續；不因兩幅高架或中央橋柱拆段。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=byXfFfPnnlyzOKk6ckTONg&viewpoint=25.0449125,121.5486818&heading=270&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qXinbwjRCQlWqaTDpGXyg&viewpoint=25.0446858,121.5492392&heading=345&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "敦化南路口西側、東側各1段連續標線。西側正面可見標線位於島頭前方，東側近景可見枕木紋沿島外緣從南到北連續；不因兩幅高架或中央橋柱拆段。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-11929"
-            ]
+            "source": "C-A8-11929"
           }
         ],
         "result": "derived-crossway"
@@ -2738,9 +3530,22 @@
           "C-A8-11930"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "敦化南路口西側、東側各1段連續標線。西側正面可見標線位於島頭前方，東側近景可見枕木紋沿島外緣從南到北連續；不因兩幅高架或中央橋柱拆段。",
+        "observations": [
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=byXfFfPnnlyzOKk6ckTONg&viewpoint=25.0449125,121.5486818&heading=270&pitch=0&fov=90",
+            "finding": "敦化南路口西側、東側各1段連續標線。西側正面可見標線位於島頭前方，東側近景可見枕木紋沿島外緣從南到北連續；不因兩幅高架或中央橋柱拆段。"
+          },
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qXinbwjRCQlWqaTDpGXyg&viewpoint=25.0446858,121.5492392&heading=345&pitch=0&fov=90",
+            "finding": "敦化南路口西側、東側各1段連續標線。西側正面可見標線位於島頭前方，東側近景可見枕木紋沿島外緣從南到北連續；不因兩幅高架或中央橋柱拆段。"
+          }
+        ],
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-027",
@@ -2751,36 +3556,41 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-04",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14；https://www.google.com/maps/@?api=1&map_action=pano&pano=byXfFfPnnlyzOKk6ckTONg&viewpoint=25.0449125,121.5486818&heading=270&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=9qXinbwjRCQlWqaTDpGXyg&viewpoint=25.0446858,121.5492392&heading=345&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-027",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "敦化南路口西側、東側各1段連續標線。西側正面可見標線位於島頭前方，東側近景可見枕木紋沿島外緣從南到北連續；不因兩幅高架或中央橋柱拆段。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
+          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=byXfFfPnnlyzOKk6ckTONg&viewpoint=25.0449125,121.5486818&heading=270&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qXinbwjRCQlWqaTDpGXyg&viewpoint=25.0446858,121.5492392&heading=345&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "敦化南路口西側、東側各1段連續標線。西側正面可見標線位於島頭前方，東側近景可見枕木紋沿島外緣從南到北連續；不因兩幅高架或中央橋柱拆段。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-11930"
-            ]
+            "source": "C-A8-11930"
           }
         ],
         "result": "derived-crossway"
@@ -2796,30 +3606,10 @@
         "S4"
       ],
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              121.55097620365119,
-              25.04468968290687
-            ],
-            [
-              121.55092745367885,
-              25.044694589882255
-            ],
-            [
-              121.55094022339745,
-              25.04476544258151
-            ],
-            [
-              121.55098793581922,
-              25.044760539449555
-            ],
-            [
-              121.55097620365119,
-              25.04468968290687
-            ]
-          ]
+          121.5508,
+          25.04473
         ]
       },
       "historical": false,
@@ -2839,9 +3629,56 @@
           "C-A8-11933"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。中央島兩側標線分開計數。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "南、北車道各1段，中間為P256橋柱、鋪面步道及植栽島。2025-04近景對照相機位置，原SHP南北兩矩形與可見標線均有約十餘至二十公尺落差；改採近景概略查核點，保留原幾何作來源追溯，不當現況精確邊界。南側位於181巷旁1號樓梯東側。",
+        "observations": [
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=-WWkX3XNnzxZAicROMN9lA&viewpoint=25.0447221,121.5508252&heading=240&pitch=-15&fov=90",
+            "finding": "南、北車道各1段，中間為鋪面步道及植栽島。2025-04北側近景可見標線位於P256橋柱西側；原SHP北側矩形與街景相機位置有約十餘公尺落差，改採帶精度註記的近景定位，不把SHP當現況精確邊界。南側為181巷旁1號樓梯東側穿越線。"
+          },
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=MaDpBJ6RyAh1rNoa1HLVEQ&viewpoint=25.04454,121.5506789&heading=90&pitch=0&fov=75",
+            "finding": "南、北車道各1段，中間為鋪面步道及植栽島。2025-04北側近景可見標線位於P256橋柱西側；原SHP北側矩形與街景相機位置有約十餘公尺落差，改採帶精度註記的近景定位，不把SHP當現況精確邊界。南側為181巷旁1號樓梯東側穿越線。"
+          },
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=DBMRYGvuPPCGctsGuygrKA&viewpoint=25.0445338,121.5507552&heading=270&pitch=-15&fov=90",
+            "finding": "南側穿越線旁P256橋柱及1號樓梯近景，相機已到穿越線附近；回看停等線及巷口位置，原SHP矩形偏東。街景地理配準誤差未知，僅採概略點。"
+          }
+        ],
+        "precision": "地面影像／圖說概略查核點，非測量標線範圍",
+        "sourceGeometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                121.55097620365119,
+                25.04468968290687
+              ],
+              [
+                121.55092745367885,
+                25.044694589882255
+              ],
+              [
+                121.55094022339745,
+                25.04476544258151
+              ],
+              [
+                121.55098793581922,
+                25.044760539449555
+              ],
+              [
+                121.55097620365119,
+                25.04468968290687
+              ]
+            ]
+          ]
+        },
+        "positionBasis": "北側標線位於P256橋柱西側，依2025-04近景相機位置及路緣關係採概略點；原圖形與街景配準有落差。",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段",
+        "positionLimitations": "相機定位、全景拼接及人工判讀誤差未經測量評定；點位代表所在車道與穿越位置，不代表標線端點或範圍。"
       },
       "original": {
         "編號": "CW-028",
@@ -2849,39 +3686,45 @@
         "類別": "跨市民大道行人穿越標線",
         "地址或鄰近路口": "忠孝東路四段181巷口／北側車道",
         "範圍": "中山北路至光復南路，保留端點路口完整穿越組",
-        "經度": null,
-        "緯度": null,
-        "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15",
+        "經度": 121.5508,
+        "緯度": 25.04473,
+        "座標依據": "北側標線位於P256橋柱西側，依2025-04近景相機位置及路緣關係採概略點；原圖形與街景配準有落差。",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-04",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15；https://www.google.com/maps/@?api=1&map_action=pano&pano=-WWkX3XNnzxZAicROMN9lA&viewpoint=25.0447221,121.5508252&heading=240&pitch=-15&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=MaDpBJ6RyAh1rNoa1HLVEQ&viewpoint=25.04454,121.5506789&heading=90&pitch=0&fov=75；https://www.google.com/maps/@?api=1&map_action=pano&pano=DBMRYGvuPPCGctsGuygrKA&viewpoint=25.0445338,121.5507552&heading=270&pitch=-15&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-028",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。中央島兩側標線分開計數。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "南、北車道各1段，中間為P256橋柱、鋪面步道及植栽島。2025-04近景對照相機位置，原SHP南北兩矩形與可見標線均有約十餘至二十公尺落差；改採近景概略查核點，保留原幾何作來源追溯，不當現況精確邊界。南側位於181巷旁1號樓梯東側。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "地面影像／圖說概略查核點，非測量標線範圍",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15"
+          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=-WWkX3XNnzxZAicROMN9lA&viewpoint=25.0447221,121.5508252&heading=240&pitch=-15&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=MaDpBJ6RyAh1rNoa1HLVEQ&viewpoint=25.04454,121.5506789&heading=90&pitch=0&fov=75",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=DBMRYGvuPPCGctsGuygrKA&viewpoint=25.0445338,121.5507552&heading=270&pitch=-15&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "南、北車道各1段，中間為P256橋柱、鋪面步道及植栽島。2025-04近景對照相機位置，原SHP南北兩矩形與可見標線均有約十餘至二十公尺落差；改採近景概略查核點，保留原幾何作來源追溯，不當現況精確邊界。南側位於181巷旁1號樓梯東側。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-11933"
-            ]
+            "source": "C-A8-11933"
           }
         ],
         "result": "derived-crossway"
@@ -2897,30 +3740,10 @@
         "S4"
       ],
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              121.55090165240863,
-              25.04449427348422
-            ],
-            [
-              121.55091021166139,
-              25.044551907569513
-            ],
-            [
-              121.55095896580204,
-              25.04454794582277
-            ],
-            [
-              121.55095246900706,
-              25.04448746837874
-            ],
-            [
-              121.55090165240863,
-              25.04449427348422
-            ]
-          ]
+          121.55076,
+          25.04453
         ]
       },
       "historical": false,
@@ -2940,9 +3763,56 @@
           "C-A8-11931"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。中央島兩側標線分開計數。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "南、北車道各1段，中間為P256橋柱、鋪面步道及植栽島。2025-04近景對照相機位置，原SHP南北兩矩形與可見標線均有約十餘至二十公尺落差；改採近景概略查核點，保留原幾何作來源追溯，不當現況精確邊界。南側位於181巷旁1號樓梯東側。",
+        "observations": [
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=-WWkX3XNnzxZAicROMN9lA&viewpoint=25.0447221,121.5508252&heading=240&pitch=-15&fov=90",
+            "finding": "南、北車道各1段，中間為鋪面步道及植栽島。2025-04北側近景可見標線位於P256橋柱西側；原SHP北側矩形與街景相機位置有約十餘公尺落差，改採帶精度註記的近景定位，不把SHP當現況精確邊界。南側為181巷旁1號樓梯東側穿越線。"
+          },
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=MaDpBJ6RyAh1rNoa1HLVEQ&viewpoint=25.04454,121.5506789&heading=90&pitch=0&fov=75",
+            "finding": "南、北車道各1段，中間為鋪面步道及植栽島。2025-04北側近景可見標線位於P256橋柱西側；原SHP北側矩形與街景相機位置有約十餘公尺落差，改採帶精度註記的近景定位，不把SHP當現況精確邊界。南側為181巷旁1號樓梯東側穿越線。"
+          },
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=DBMRYGvuPPCGctsGuygrKA&viewpoint=25.0445338,121.5507552&heading=270&pitch=-15&fov=90",
+            "finding": "南側穿越線旁P256橋柱及1號樓梯近景，相機已到穿越線附近；回看停等線及巷口位置，原SHP矩形偏東。街景地理配準誤差未知，僅採概略點。"
+          }
+        ],
+        "precision": "地面影像／圖說概略查核點，非測量標線範圍",
+        "sourceGeometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                121.55090165240863,
+                25.04449427348422
+              ],
+              [
+                121.55091021166139,
+                25.044551907569513
+              ],
+              [
+                121.55095896580204,
+                25.04454794582277
+              ],
+              [
+                121.55095246900706,
+                25.04448746837874
+              ],
+              [
+                121.55090165240863,
+                25.04449427348422
+              ]
+            ]
+          ]
+        },
+        "positionBasis": "南側標線位於181巷口、P256橋柱及1號樓梯旁，依2025-04近景相機位置採概略點；原圖形偏東。",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段",
+        "positionLimitations": "相機定位、全景拼接及人工判讀誤差未經測量評定；點位代表所在車道與穿越位置，不代表標線端點或範圍。"
       },
       "original": {
         "編號": "CW-029",
@@ -2950,39 +3820,45 @@
         "類別": "跨市民大道行人穿越標線",
         "地址或鄰近路口": "忠孝東路四段181巷口／南側車道",
         "範圍": "中山北路至光復南路，保留端點路口完整穿越組",
-        "經度": null,
-        "緯度": null,
-        "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15",
+        "經度": 121.55076,
+        "緯度": 25.04453,
+        "座標依據": "南側標線位於181巷口、P256橋柱及1號樓梯旁，依2025-04近景相機位置採概略點；原圖形偏東。",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-04",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15；https://www.google.com/maps/@?api=1&map_action=pano&pano=-WWkX3XNnzxZAicROMN9lA&viewpoint=25.0447221,121.5508252&heading=240&pitch=-15&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=MaDpBJ6RyAh1rNoa1HLVEQ&viewpoint=25.04454,121.5506789&heading=90&pitch=0&fov=75；https://www.google.com/maps/@?api=1&map_action=pano&pano=DBMRYGvuPPCGctsGuygrKA&viewpoint=25.0445338,121.5507552&heading=270&pitch=-15&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-029",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。中央島兩側標線分開計數。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "南、北車道各1段，中間為P256橋柱、鋪面步道及植栽島。2025-04近景對照相機位置，原SHP南北兩矩形與可見標線均有約十餘至二十公尺落差；改採近景概略查核點，保留原幾何作來源追溯，不當現況精確邊界。南側位於181巷旁1號樓梯東側。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "地面影像／圖說概略查核點，非測量標線範圍",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15"
+          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=-WWkX3XNnzxZAicROMN9lA&viewpoint=25.0447221,121.5508252&heading=240&pitch=-15&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=MaDpBJ6RyAh1rNoa1HLVEQ&viewpoint=25.04454,121.5506789&heading=90&pitch=0&fov=75",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=DBMRYGvuPPCGctsGuygrKA&viewpoint=25.0445338,121.5507552&heading=270&pitch=-15&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "南、北車道各1段，中間為P256橋柱、鋪面步道及植栽島。2025-04近景對照相機位置，原SHP南北兩矩形與可見標線均有約十餘至二十公尺落差；改採近景概略查核點，保留原幾何作來源追溯，不當現況精確邊界。南側位於181巷旁1號樓梯東側。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-11931"
-            ]
+            "source": "C-A8-11931"
           }
         ],
         "result": "derived-crossway"
@@ -3041,9 +3917,27 @@
           "C-A8-13284"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "西側沿P264橋柱東側狹長鋪面有連續枕木紋，非被島分開；東側枕木紋繞過島頭連續接南北車道。因此東、西各1段。",
+        "observations": [
+          {
+            "date": "2025-01",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=2FrDh188P14PiCc5aujrow&viewpoint=25.0444755,121.5536657&heading=180&pitch=0&fov=90",
+            "finding": "西側沿P264橋柱東側狹長鋪面有連續枕木紋，非被島分開；東側枕木紋繞過島頭連續接南北車道。因此東、西各1段。"
+          },
+          {
+            "date": "2025-01",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Gkwq1TwVE9-u-GnuyTBHhA&viewpoint=25.0444925,121.5539727&heading=225&pitch=0&fov=90",
+            "finding": "西側沿P264橋柱東側狹長鋪面有連續枕木紋，非被島分開；東側枕木紋繞過島頭連續接南北車道。因此東、西各1段。"
+          },
+          {
+            "date": "2024-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=L58Js6r_qWNjsfrJCFVmqQ&viewpoint=25.0442881,121.5539629&heading=285&pitch=0&fov=75",
+            "finding": "西側沿P264橋柱東側狹長鋪面有連續枕木紋，非被島分開；東側枕木紋繞過島頭連續接南北車道。因此東、西各1段。"
+          }
+        ],
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-030",
@@ -3054,36 +3948,42 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2024-05、2025-01",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16；https://www.google.com/maps/@?api=1&map_action=pano&pano=2FrDh188P14PiCc5aujrow&viewpoint=25.0444755,121.5536657&heading=180&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=Gkwq1TwVE9-u-GnuyTBHhA&viewpoint=25.0444925,121.5539727&heading=225&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=L58Js6r_qWNjsfrJCFVmqQ&viewpoint=25.0442881,121.5539629&heading=285&pitch=0&fov=75",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-030",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "西側沿P264橋柱東側狹長鋪面有連續枕木紋，非被島分開；東側枕木紋繞過島頭連續接南北車道。因此東、西各1段。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
+          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=2FrDh188P14PiCc5aujrow&viewpoint=25.0444755,121.5536657&heading=180&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=Gkwq1TwVE9-u-GnuyTBHhA&viewpoint=25.0444925,121.5539727&heading=225&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=L58Js6r_qWNjsfrJCFVmqQ&viewpoint=25.0442881,121.5539629&heading=285&pitch=0&fov=75"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "西側沿P264橋柱東側狹長鋪面有連續枕木紋，非被島分開；東側枕木紋繞過島頭連續接南北車道。因此東、西各1段。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-13284"
-            ]
+            "source": "C-A8-13284"
           }
         ],
         "result": "derived-crossway"
@@ -3142,9 +4042,27 @@
           "C-A8-13285"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "西側沿P264橋柱東側狹長鋪面有連續枕木紋，非被島分開；東側枕木紋繞過島頭連續接南北車道。因此東、西各1段。",
+        "observations": [
+          {
+            "date": "2025-01",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=2FrDh188P14PiCc5aujrow&viewpoint=25.0444755,121.5536657&heading=180&pitch=0&fov=90",
+            "finding": "西側沿P264橋柱東側狹長鋪面有連續枕木紋，非被島分開；東側枕木紋繞過島頭連續接南北車道。因此東、西各1段。"
+          },
+          {
+            "date": "2025-01",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Gkwq1TwVE9-u-GnuyTBHhA&viewpoint=25.0444925,121.5539727&heading=225&pitch=0&fov=90",
+            "finding": "西側沿P264橋柱東側狹長鋪面有連續枕木紋，非被島分開；東側枕木紋繞過島頭連續接南北車道。因此東、西各1段。"
+          },
+          {
+            "date": "2024-05",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=L58Js6r_qWNjsfrJCFVmqQ&viewpoint=25.0442881,121.5539629&heading=285&pitch=0&fov=75",
+            "finding": "西側沿P264橋柱東側狹長鋪面有連續枕木紋，非被島分開；東側枕木紋繞過島頭連續接南北車道。因此東、西各1段。"
+          }
+        ],
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-031",
@@ -3155,36 +4073,42 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2024-05、2025-01",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16；https://www.google.com/maps/@?api=1&map_action=pano&pano=2FrDh188P14PiCc5aujrow&viewpoint=25.0444755,121.5536657&heading=180&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=Gkwq1TwVE9-u-GnuyTBHhA&viewpoint=25.0444925,121.5539727&heading=225&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=L58Js6r_qWNjsfrJCFVmqQ&viewpoint=25.0442881,121.5539629&heading=285&pitch=0&fov=75",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-031",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "西側沿P264橋柱東側狹長鋪面有連續枕木紋，非被島分開；東側枕木紋繞過島頭連續接南北車道。因此東、西各1段。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
+          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=2FrDh188P14PiCc5aujrow&viewpoint=25.0444755,121.5536657&heading=180&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=Gkwq1TwVE9-u-GnuyTBHhA&viewpoint=25.0444925,121.5539727&heading=225&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=L58Js6r_qWNjsfrJCFVmqQ&viewpoint=25.0442881,121.5539629&heading=285&pitch=0&fov=75"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "西側沿P264橋柱東側狹長鋪面有連續枕木紋，非被島分開；東側枕木紋繞過島頭連續接南北車道。因此東、西各1段。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-13285"
-            ]
+            "source": "C-A8-13285"
           }
         ],
         "result": "derived-crossway"
@@ -3243,9 +4167,22 @@
           "C-A8-13290"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。中央島兩側標線分開計數。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "106巷口南北各1段，中間經橋下鋪面步道連接；近景可見北側標線接步道，南側標線跨南側車道。跨106巷的橫向標線另排除。",
+        "observations": [
+          {
+            "date": "2025-01",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=98P5-TSwyi9gx7dZ2eodPw&viewpoint=25.0443087,121.5546708&heading=315&pitch=0&fov=90",
+            "finding": "106巷口南北各1段，中間經橋下鋪面步道連接；近景可見北側標線接步道，南側標線跨南側車道。跨106巷的橫向標線另排除。"
+          },
+          {
+            "date": "2025-01",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=S-2Krxtuxm6QjZ7SFJ4ZhA&viewpoint=25.0445845,121.5545154&heading=180&pitch=0&fov=90",
+            "finding": "106巷口南北各1段，中間經橋下鋪面步道連接；近景可見北側標線接步道，南側標線跨南側車道。跨106巷的橫向標線另排除。"
+          }
+        ],
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-032",
@@ -3256,36 +4193,41 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-01",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16；https://www.google.com/maps/@?api=1&map_action=pano&pano=98P5-TSwyi9gx7dZ2eodPw&viewpoint=25.0443087,121.5546708&heading=315&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=S-2Krxtuxm6QjZ7SFJ4ZhA&viewpoint=25.0445845,121.5545154&heading=180&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-032",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。中央島兩側標線分開計數。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "106巷口南北各1段，中間經橋下鋪面步道連接；近景可見北側標線接步道，南側標線跨南側車道。跨106巷的橫向標線另排除。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
+          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=98P5-TSwyi9gx7dZ2eodPw&viewpoint=25.0443087,121.5546708&heading=315&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=S-2Krxtuxm6QjZ7SFJ4ZhA&viewpoint=25.0445845,121.5545154&heading=180&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "106巷口南北各1段，中間經橋下鋪面步道連接；近景可見北側標線接步道，南側標線跨南側車道。跨106巷的橫向標線另排除。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-13290"
-            ]
+            "source": "C-A8-13290"
           }
         ],
         "result": "derived-crossway"
@@ -3344,9 +4286,22 @@
           "C-A8-13287"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。中央島兩側標線分開計數。",
-        "observations": [],
-        "precision": "官方來源圖形"
+        "basis": "106巷口南北各1段，中間經橋下鋪面步道連接；近景可見北側標線接步道，南側標線跨南側車道。跨106巷的橫向標線另排除。",
+        "observations": [
+          {
+            "date": "2025-01",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=98P5-TSwyi9gx7dZ2eodPw&viewpoint=25.0443087,121.5546708&heading=315&pitch=0&fov=90",
+            "finding": "106巷口南北各1段，中間經橋下鋪面步道連接；近景可見北側標線接步道，南側標線跨南側車道。跨106巷的橫向標線另排除。"
+          },
+          {
+            "date": "2025-01",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=S-2Krxtuxm6QjZ7SFJ4ZhA&viewpoint=25.0445845,121.5545154&heading=180&pitch=0&fov=90",
+            "finding": "106巷口南北各1段，中間經橋下鋪面步道連接；近景可見北側標線接步道，南側標線跨南側車道。跨106巷的橫向標線另排除。"
+          }
+        ],
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-033",
@@ -3357,36 +4312,41 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-01",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16；https://www.google.com/maps/@?api=1&map_action=pano&pano=98P5-TSwyi9gx7dZ2eodPw&viewpoint=25.0443087,121.5546708&heading=315&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=S-2Krxtuxm6QjZ7SFJ4ZhA&viewpoint=25.0445845,121.5545154&heading=180&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-033",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。中央島兩側標線分開計數。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "106巷口南北各1段，中間經橋下鋪面步道連接；近景可見北側標線接步道，南側標線跨南側車道。跨106巷的橫向標線另排除。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
+          "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=98P5-TSwyi9gx7dZ2eodPw&viewpoint=25.0443087,121.5546708&heading=315&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=S-2Krxtuxm6QjZ7SFJ4ZhA&viewpoint=25.0445845,121.5545154&heading=180&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計2段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "106巷口南北各1段，中間經橋下鋪面步道連接；近景可見北側標線接步道，南側標線跨南側車道。跨106巷的橫向標線另排除。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-13287"
-            ]
+            "source": "C-A8-13287"
           }
         ],
         "result": "derived-crossway"
@@ -3495,16 +4455,32 @@
           "C-A8-13333"
         ],
         "count": 1,
-        "basis": "同一連續標線被官方分成相接圖形，合併計1段。納入光復端點路口完整穿越組；東側含市民五段起點及橋下分隔島接續段，不表示向東擴大研究路段。",
+        "basis": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。",
         "observations": [
           {
-            "groupId": "G-039",
             "date": "2025-01",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90",
-            "finding": "光復路口東側橋下可見分隔島與接續標線；同一全景向東90度可見市民五段北側車道穿越。原始圖形拼接及範圍仍待核。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=J9u6mjrNOBwrC5l-lYhiaQ&viewpoint=25.0451794,121.5575559&heading=180&pitch=0&fov=90",
+            "finding": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
+          },
+          {
+            "date": "2025-01",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=150&pitch=0&fov=90",
+            "finding": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
+          },
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=150&pitch=0&fov=90",
+            "finding": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
+          },
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=350&pitch=0&fov=90",
+            "finding": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
           }
         ],
-        "precision": "官方來源圖形"
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-034",
@@ -3515,37 +4491,43 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-01、2025-04",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=J9u6mjrNOBwrC5l-lYhiaQ&viewpoint=25.0451794,121.5575559&heading=180&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=150&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=150&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=350&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-034",
-        "checkedAt": "2026-11-04",
-        "summary": "同一連續標線被官方分成相接圖形，合併計1段。納入光復端點路口完整穿越組；東側含市民五段起點及橋下分隔島接續段，不表示向東擴大研究路段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90"
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=J9u6mjrNOBwrC5l-lYhiaQ&viewpoint=25.0451794,121.5575559&heading=180&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=150&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=150&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=350&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計4段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-13288",
-              "C-A8-13333"
-            ]
+            "source": "C-A8-13288、C-A8-13333"
           }
         ],
         "result": "derived-crossway"
@@ -3604,16 +4586,32 @@
           "C-A8-13289"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。納入光復端點路口完整穿越組；東側含市民五段起點及橋下分隔島接續段，不表示向東擴大研究路段。",
+        "basis": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。",
         "observations": [
           {
-            "groupId": "G-039",
             "date": "2025-01",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90",
-            "finding": "光復路口東側橋下可見分隔島與接續標線；同一全景向東90度可見市民五段北側車道穿越。原始圖形拼接及範圍仍待核。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=J9u6mjrNOBwrC5l-lYhiaQ&viewpoint=25.0451794,121.5575559&heading=180&pitch=0&fov=90",
+            "finding": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
+          },
+          {
+            "date": "2025-01",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=150&pitch=0&fov=90",
+            "finding": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
+          },
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=150&pitch=0&fov=90",
+            "finding": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
+          },
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=350&pitch=0&fov=90",
+            "finding": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
           }
         ],
-        "precision": "官方來源圖形"
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-035",
@@ -3624,36 +4622,43 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-01、2025-04",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=J9u6mjrNOBwrC5l-lYhiaQ&viewpoint=25.0451794,121.5575559&heading=180&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=150&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=150&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=350&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-035",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。納入光復端點路口完整穿越組；東側含市民五段起點及橋下分隔島接續段，不表示向東擴大研究路段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90"
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=J9u6mjrNOBwrC5l-lYhiaQ&viewpoint=25.0451794,121.5575559&heading=180&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=150&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=150&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=350&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計4段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-13289"
-            ]
+            "source": "C-A8-13289"
           }
         ],
         "result": "derived-crossway"
@@ -3746,16 +4751,32 @@
           "C-A8-13334"
         ],
         "count": 1,
-        "basis": "同一連續標線被官方分成相接圖形，合併計1段。納入光復端點路口完整穿越組；東側含市民五段起點及橋下分隔島接續段，不表示向東擴大研究路段。",
+        "basis": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。",
         "observations": [
           {
-            "groupId": "G-039",
             "date": "2025-01",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90",
-            "finding": "光復路口東側橋下可見分隔島與接續標線；同一全景向東90度可見市民五段北側車道穿越。原始圖形拼接及範圍仍待核。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=J9u6mjrNOBwrC5l-lYhiaQ&viewpoint=25.0451794,121.5575559&heading=180&pitch=0&fov=90",
+            "finding": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
+          },
+          {
+            "date": "2025-01",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=150&pitch=0&fov=90",
+            "finding": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
+          },
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=150&pitch=0&fov=90",
+            "finding": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
+          },
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=350&pitch=0&fov=90",
+            "finding": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
           }
         ],
-        "precision": "官方來源圖形"
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-036",
@@ -3766,37 +4787,43 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-01、2025-04",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=J9u6mjrNOBwrC5l-lYhiaQ&viewpoint=25.0451794,121.5575559&heading=180&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=150&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=150&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=350&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-036",
-        "checkedAt": "2026-11-04",
-        "summary": "同一連續標線被官方分成相接圖形，合併計1段。納入光復端點路口完整穿越組；東側含市民五段起點及橋下分隔島接續段，不表示向東擴大研究路段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90"
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=J9u6mjrNOBwrC5l-lYhiaQ&viewpoint=25.0451794,121.5575559&heading=180&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=150&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=150&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=350&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計4段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-13291",
-              "C-A8-13334"
-            ]
+            "source": "C-A8-13291、C-A8-13334"
           }
         ],
         "result": "derived-crossway"
@@ -3855,16 +4882,32 @@
           "C-A8-13363"
         ],
         "count": 1,
-        "basis": "以官方跨向標線圖形計1段。納入光復端點路口完整穿越組；東側含市民五段起點及橋下分隔島接續段，不表示向東擴大研究路段。",
+        "basis": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。",
         "observations": [
           {
-            "groupId": "G-039",
             "date": "2025-01",
-            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90",
-            "finding": "光復路口東側橋下可見分隔島與接續標線；同一全景向東90度可見市民五段北側車道穿越。原始圖形拼接及範圍仍待核。"
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=J9u6mjrNOBwrC5l-lYhiaQ&viewpoint=25.0451794,121.5575559&heading=180&pitch=0&fov=90",
+            "finding": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
+          },
+          {
+            "date": "2025-01",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=150&pitch=0&fov=90",
+            "finding": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
+          },
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=150&pitch=0&fov=90",
+            "finding": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
+          },
+          {
+            "date": "2025-04",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=350&pitch=0&fov=90",
+            "finding": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
           }
         ],
-        "precision": "官方來源圖形"
+        "precision": "官方來源圖形",
+        "checkedAt": "2026-11-05",
+        "countConfidence": "所列地面影像中可辨識的獨立標線段"
       },
       "original": {
         "編號": "CW-037",
@@ -3875,40 +4918,53 @@
         "經度": null,
         "緯度": null,
         "座標依據": "官方SHP原幾何，僅合併相接碎片",
-        "確認程度": "公開來源核列；非即時現勘",
-        "來源日期": "官方SHP快照2024-07-12；圖形個別編修日期保留於來源紀錄；街景日期逐項列出",
-        "查核日期": "2026-11-04",
-        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90",
+        "確認程度": "公開來源與附日期地面影像已核；非即時現勘",
+        "來源日期": "官方SHP快照2024-07-12；採用地面影像 2025-01、2025-04",
+        "查核日期": "2026-11-05",
+        "來源連結": "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5；https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=J9u6mjrNOBwrC5l-lYhiaQ&viewpoint=25.0451794,121.5575559&heading=180&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=150&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=150&pitch=0&fov=90；https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=350&pitch=0&fov=90",
         "待確認事項": "不保證2026-11即時標線、號誌或無障礙狀態；不自動推定自行車通行性。"
       },
       "verification": {
         "id": "CW-037",
-        "checkedAt": "2026-11-04",
-        "summary": "以官方跨向標線圖形計1段。納入光復端點路口完整穿越組；東側含市民五段起點及橋下分隔島接續段，不表示向東擴大研究路段。",
-        "method": "逐組判別跨向／道路歸屬、合併連續圖形碎片，圖說及街景補列缺漏",
-        "position": "來源圖形",
+        "checkedAt": "2026-11-05",
+        "summary": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。",
+        "method": "官方圖資／圖說與地面街景逐處核對道路歸屬、標線連續性及實體島分段；保留來源年代與定位精度",
+        "position": "官方來源圖形",
         "sourceDate": "來源日期與影像日期分列",
         "sources": [
           "https://data.taipei/dataset/detail?id=4d6bd0c6-9f56-408b-bb96-ac41134a95d5",
-          "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90"
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=160&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=J9u6mjrNOBwrC5l-lYhiaQ&viewpoint=25.0451794,121.5575559&heading=180&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=xxFXNgASQPakbtEFFVQlNg&viewpoint=25.0452554,121.5578541&heading=150&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=150&pitch=0&fov=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=uftX1C1MLH3ZPS8TEqLcww&viewpoint=25.0450518,121.5579162&heading=350&pitch=0&fov=90"
         ],
         "issues": [],
         "checks": [
           {
             "field": "計數單位",
             "result": "match",
-            "source": "本筆1段；不是1個路口或1筆原始圖形"
+            "source": "本筆1段；同處合計4段"
+          },
+          {
+            "field": "地面複核",
+            "result": "match",
+            "source": "西側枕木紋繞P276島頭連續，原SHP分片合併計1段。東側由兩個實體島分成北車道、中間車道、南車道3段，近景可見各段端點。按研究範圍既定規則保留端點路口完整穿越組，不延伸盤點五段路廊。"
           },
           {
             "field": "原圖形關聯",
             "result": "match",
-            "source": [
-              "C-A8-13363"
-            ]
+            "source": "C-A8-13363"
           }
         ],
         "result": "derived-crossway"
       }
     }
+  ],
+  "reviewedGroupCount": 29,
+  "excludedGroupCount": 11,
+  "imageDateRange": [
+    "2024-05",
+    "2025-05"
   ]
 }

@@ -291,11 +291,21 @@
       "category": "entrance",
       "parent": "P-TPE0155",
       "priority": 2,
-      "status": "not-yet-reviewed-this-pass",
-      "resultPosition": null,
+      "status": "positioned-official-source",
+      "resultPosition": {
+        "type": "Point",
+        "coordinates": [
+          121.5476,
+          25.0449
+        ]
+      },
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.json",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=d9p8kfEfJ1uF5PyJiMA7Sw&viewpoint=25.0451154,121.5475865&heading=180&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "2026官方附件第14頁東側坡道明載1F往B1，對應停車場API登錄入口E-TPE0155-01的位置；2025-01北側街景可見復敦入口標示、下行坡道與西側G排風口。採官方登錄入口點代表坡道口，不作坡道全長、精確門檻或另外一個入口。"
     },
     {
       "id": "H-FD-06",
@@ -306,11 +316,21 @@
       "category": "entrance",
       "parent": "P-TPE0155",
       "priority": 2,
-      "status": "not-yet-reviewed-this-pass",
-      "resultPosition": null,
+      "status": "positioned-document-and-ground",
+      "resultPosition": {
+        "type": "Point",
+        "coordinates": [
+          121.54591,
+          25.04507
+        ]
+      },
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=gnC9jHOlJgRhTQKjyIFeaQ&viewpoint=25.0449532,121.5458605&heading=0&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=2882lEnxh46OedwtnsGNQg&viewpoint=25.0449439,121.54576&heading=30&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "官方第14頁標示B1往1F坡道向東接大安路西側市民大道；2024-12兩個地面視角可辨識上行坡道收費棚及東端平面接道路口，以棚東端出口接地面位置為概略代表，不代表完整坡道線形。"
     },
     {
       "id": "H-FD-07",
@@ -321,11 +341,21 @@
       "category": "utility",
       "parent": "P-TPE0155",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
-      "resultPosition": null,
+      "status": "positioned-document-and-ground",
+      "resultPosition": {
+        "type": "Point",
+        "coordinates": [
+          121.54475,
+          25.04496
+        ]
+      },
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=KafJiQnwhzpKAS2IHVcMwQ&viewpoint=25.0448581,121.5449533&heading=300&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=qO9vy2z0l826vmFLb83htg&viewpoint=25.0448477,121.5448541&heading=315&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "官方第14頁A水塔在復興側中央島、B送風口西側；2024-12南側兩視點均可見大矩形貼面箱體，淺色端面與深色側面可交叉辨識，採箱體代表點。"
     },
     {
       "id": "H-FD-08",
@@ -336,11 +366,21 @@
       "category": "utility",
       "parent": "P-TPE0155",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
-      "resultPosition": null,
+      "status": "positioned-document-and-ground",
+      "resultPosition": {
+        "type": "Point",
+        "coordinates": [
+          121.54478,
+          25.04497
+        ]
+      },
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=KafJiQnwhzpKAS2IHVcMwQ&viewpoint=25.0448581,121.5449533&heading=300&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=qO9vy2z0l826vmFLb83htg&viewpoint=25.0448477,121.5448541&heading=315&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "官方第14頁B送風口緊鄰A水塔東側；2024-12兩個南側視點均可見A箱體東側低矮矩形通風構造，採低矮構造代表點。未將其他景觀矮牆併作送風口。"
     },
     {
       "id": "H-FD-09",
@@ -351,11 +391,21 @@
       "category": "utility",
       "parent": "P-TPE0155",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
-      "resultPosition": null,
+      "status": "positioned-document-and-ground",
+      "resultPosition": {
+        "type": "Point",
+        "coordinates": [
+          121.54586,
+          25.04513
+        ]
+      },
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=4Djk8NBsd9ThzH0yGvGDHQ&viewpoint=25.0451911,121.5459453&heading=250&pitch=0&fov=75",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=TjppeHVXKgBWG-ylrekPyw&viewpoint=25.0451831,121.5458468&heading=180&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "官方第14頁C排風口位於大安路西側出口坡道北緣；2025-05兩個北側視角可辨識收費棚北側長條石面基座與頂部金屬格柵，與南側D分開記錄，採格柵中段代表位置。"
     },
     {
       "id": "H-FD-10",
@@ -366,11 +416,21 @@
       "category": "utility",
       "parent": "P-TPE0155",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
-      "resultPosition": null,
+      "status": "positioned-document-and-ground",
+      "resultPosition": {
+        "type": "Point",
+        "coordinates": [
+          121.54584,
+          25.04504
+        ]
+      },
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=gnC9jHOlJgRhTQKjyIFeaQ&viewpoint=25.0449532,121.5458605&heading=0&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=2882lEnxh46OedwtnsGNQg&viewpoint=25.0449439,121.54576&heading=30&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "官方第14頁D排風口位於大安路西側B1往1F出口坡道南緣；2024-12兩個南側視角可見相同長條石面基座、頂部水平金屬格柵及其北側出口收費棚，採格柵中段代表點。"
     },
     {
       "id": "H-FD-11",
@@ -381,11 +441,16 @@
       "category": "utility",
       "parent": "P-TPE0155",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
+      "status": "ground-reviewed-still-unlocated",
       "resultPosition": null,
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=hM2avK5l_WXqsRBo5Vcy0A&viewpoint=25.0451997,121.5461999&heading=115&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=MLpOEjHppk_Dtb5DszFH7A&viewpoint=25.0452142,121.5466497&heading=180&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=YBW6PPoE7vJ-A91t5QiFRA&viewpoint=25.0449838,121.546565&heading=60&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "官方第14頁E發電機出風口在大安路東側路島西段；2025-05由北側3號梯及中段向設備帶查看，可見箱體、樹叢與平台，但尚無可將某一箱體唯一對應E的標誌或完整構造，不將路邊電箱逕認為發電機出風口。"
     },
     {
       "id": "H-FD-12",
@@ -396,11 +461,16 @@
       "category": "utility",
       "parent": "P-TPE0155",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
+      "status": "ground-reviewed-still-unlocated",
       "resultPosition": null,
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=hM2avK5l_WXqsRBo5Vcy0A&viewpoint=25.0451997,121.5461999&heading=115&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=MLpOEjHppk_Dtb5DszFH7A&viewpoint=25.0452142,121.5466497&heading=180&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=YBW6PPoE7vJ-A91t5QiFRA&viewpoint=25.0449838,121.546565&heading=60&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "官方第14頁F送風口在中段路島南側、平台附近；2025-05北側與2024-12南側街景能看到平台及石材矮構造，但送風百葉／出口面未充分辨識，無法排除景觀構造，未移用平台中心。"
     },
     {
       "id": "H-FD-13",
@@ -411,11 +481,21 @@
       "category": "utility",
       "parent": "P-TPE0155",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
-      "resultPosition": null,
+      "status": "positioned-document-and-ground",
+      "resultPosition": {
+        "type": "Point",
+        "coordinates": [
+          121.54749,
+          25.04497
+        ]
+      },
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=d9p8kfEfJ1uF5PyJiMA7Sw&viewpoint=25.0451154,121.5475865&heading=180&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=6JR9ib7QPI9kKtwq-IybHA&viewpoint=25.0451272,121.5474841&heading=180&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "官方第14頁G排風口在東側進場坡道口西側中央島；2025-01兩個北側視點均可見三座相鄰圓筒百葉罩，部分罩頂有排氣口標示，採三罩整組代表點，未拆為三筆設備。"
     },
     {
       "id": "H-FD-14",
@@ -426,11 +506,21 @@
       "category": "utility",
       "parent": "P-TPE0155",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
-      "resultPosition": null,
+      "status": "positioned-document-and-ground",
+      "resultPosition": {
+        "type": "Point",
+        "coordinates": [
+          121.54845,
+          25.04491
+        ]
+      },
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=jk19U0pDudy9TSS5ylzHPw&viewpoint=25.0450197,121.5484134&heading=180&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=2Bz3KSXQQVgVZbXI5DYqsQ&viewpoint=25.0450443,121.5482204&heading=140&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "官方第14頁H水塔在敦化側中央島北側，I送風口在其南側。2025-04兩個北側地面視角均可辨識大型灰綠外罩、端部直條及西向藍色面板；採H外罩西面代表位置。"
     },
     {
       "id": "H-FD-15",
@@ -441,11 +531,21 @@
       "category": "utility",
       "parent": "P-TPE0155",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
-      "resultPosition": null,
+      "status": "positioned-document-and-ground",
+      "resultPosition": {
+        "type": "Point",
+        "coordinates": [
+          121.54843,
+          25.04489
+        ]
+      },
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=jk19U0pDudy9TSS5ylzHPw&viewpoint=25.0450197,121.5484134&heading=180&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=2Bz3KSXQQVgVZbXI5DYqsQ&viewpoint=25.0450443,121.5482204&heading=140&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "官方第14頁I送風口緊鄰H水塔南側；2025-04北側及西北側街景可見H大型外罩後方較小獨立外罩，兩者的南北順序與圖說相符，採較小構造西面代表位置。"
     },
     {
       "id": "H-FD-16",
@@ -456,11 +556,13 @@
       "category": "crossing",
       "parent": "P-TPE0155",
       "priority": 2,
-      "status": "not-yet-reviewed-this-pass",
+      "status": "source-reviewed-no-individual-coordinate",
       "resultPosition": null,
       "sources": [
         "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
-      ]
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "2026附件第14頁B1、B2圖均列A梯，靠西側；地面層另列1–4號梯間，A梯不是另增地面入口。本筆僅支持地下樓層連通構造，沒有可獨立採用的經緯度或直接地面街景，不移用1號入口位置。"
     },
     {
       "id": "H-FD-17",
@@ -471,11 +573,13 @@
       "category": "crossing",
       "parent": "P-TPE0155",
       "priority": 2,
-      "status": "not-yet-reviewed-this-pass",
+      "status": "source-reviewed-no-individual-coordinate",
       "resultPosition": null,
       "sources": [
         "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
-      ]
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "2026附件第14頁B1、B2圖均列B梯，位於中段鄰微風廣場；地面層另列1–4號梯間，B梯不當成第5個地面入口。保留地下性質與樓層相對位置，未將3號地面入口座標代用。"
     },
     {
       "id": "H-FD-18",
@@ -486,11 +590,13 @@
       "category": "crossing",
       "parent": "P-TPE0155",
       "priority": 2,
-      "status": "not-yet-reviewed-this-pass",
+      "status": "source-reviewed-no-individual-coordinate",
       "resultPosition": null,
       "sources": [
         "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
-      ]
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "2026附件第14頁B1、B2圖均列C梯，靠敦化側；地面層另列1–4號梯間，C梯不當成另一座地面入口或電梯。未取得可地理對位的地下平面圖，不以4號入口代用。"
     },
     {
       "id": "H-FD-19",
@@ -501,11 +607,13 @@
       "category": "utility",
       "parent": "P-TPE0155",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
+      "status": "source-reviewed-no-individual-coordinate",
       "resultPosition": null,
       "sources": [
         "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=14"
-      ]
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "2026附件第14頁B1圖在西側及中段各見「鐵路檢修門」文字；既有單筆為圖說項目紀錄，不能視為只存在1扇門。這些為地下檢修連接，非地面管理中心或公眾入口；未取得可獨立地理定位或可確認門體的地面影像，不套用場站中心。"
     },
     {
       "id": "U-DOC-TPE0100-W-S",
@@ -754,11 +862,16 @@
       "category": "utility",
       "parent": "P-TPE0110",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
+      "status": "ground-reviewed-still-unlocated",
       "resultPosition": null,
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=GTG-p1gPkuG6y9tv6fOLUw&viewpoint=25.0468564,121.5273087&heading=300&pitch=0&fov=75",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=9YSRpDMbZoIRB95IzAtrTQ&viewpoint=25.0472884,121.5271632&heading=240&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=o_eI0cYW3l_z0SU1FjVn-w&viewpoint=25.0474094,121.5269575&heading=240&pitch=0&fov=75"
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "重新比對官方第12頁，發電機排煙管道口在52巷西側路島、排風口在其東側。2024-09由南側5號梯附近、北側4號梯及北側公園步道三個地面視角查看，樓梯棚、樹籬及橋柱遮擋設備帶，無法唯一辨識本筆設備構造，不以綠地或橋柱位置代替。"
     },
     {
       "id": "U-DOC-TPE0110-E-E",
@@ -769,11 +882,16 @@
       "category": "utility",
       "parent": "P-TPE0110",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
+      "status": "ground-reviewed-still-unlocated",
       "resultPosition": null,
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=GTG-p1gPkuG6y9tv6fOLUw&viewpoint=25.0468564,121.5273087&heading=300&pitch=0&fov=75",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=9YSRpDMbZoIRB95IzAtrTQ&viewpoint=25.0472884,121.5271632&heading=240&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=o_eI0cYW3l_z0SU1FjVn-w&viewpoint=25.0474094,121.5269575&heading=240&pitch=0&fov=75"
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "重新比對官方第12頁，發電機排煙管道口在52巷西側路島、排風口在其東側。2024-09由南側5號梯附近、北側4號梯及北側公園步道三個地面視角查看，樓梯棚、樹籬及橋柱遮擋設備帶，無法唯一辨識本筆設備構造，不以綠地或橋柱位置代替。"
     },
     {
       "id": "U-DOC-TPE0110-E-S",
@@ -784,11 +902,21 @@
       "category": "utility",
       "parent": "P-TPE0110",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
-      "resultPosition": null,
+      "status": "positioned-document-and-ground",
+      "resultPosition": {
+        "type": "Point",
+        "coordinates": [
+          121.52913,
+          25.04647
+        ]
+      },
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=n7qver0VQIC-7B8AXJGfDA&viewpoint=25.0463372,121.5289848&heading=60&pitch=0&fov=75",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=tYT2MzYW4umM66vcJoDfkQ&viewpoint=25.0462787,121.5292143&heading=0&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "東端送風口為淺色水塔西側的深色百葉箱體，2024-09南側兩個地面視角可見其與水塔、端部橋柱及迴轉口的相對關係，對照官方第12頁採送風構造代表位置。"
     },
     {
       "id": "U-DOC-TPE0110-E-W",
@@ -799,11 +927,21 @@
       "category": "utility",
       "parent": "P-TPE0110",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
-      "resultPosition": null,
+      "status": "positioned-document-and-ground",
+      "resultPosition": {
+        "type": "Point",
+        "coordinates": [
+          121.52916,
+          25.04647
+        ]
+      },
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9158834/adb80235-54e8-477f-8357-90b9c1625e5f.pdf#page=12",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=n7qver0VQIC-7B8AXJGfDA&viewpoint=25.0463372,121.5289848&heading=60&pitch=0&fov=75",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=tYT2MzYW4umM66vcJoDfkQ&viewpoint=25.0462787,121.5292143&heading=0&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "東端水塔為東端路島內淺色方形箱體，西鄰深色百葉送風口；2024-09南側兩個地面視角均可見箱體、送風構造與橋柱排列，與官方第12頁水塔在送風口東側的關係相符。採箱體代表位置。"
     },
     {
       "id": "U-DOC-TPE0109-A",
@@ -962,11 +1100,21 @@
       "category": "utility",
       "parent": "P-TPE0163",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
-      "resultPosition": null,
+      "status": "positioned-document-and-ground",
+      "resultPosition": {
+        "type": "Point",
+        "coordinates": [
+          121.54967,
+          25.04472
+        ]
+      },
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=HuRg052cHwI9nAsFkmf1eA&viewpoint=25.0446518,121.5496449&heading=0&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=Vz8vZvD1GMxX6iWGCsaFOQ&viewpoint=25.0446333,121.549745&heading=315&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "官方第15頁A水箱位於敦化南路東側首個橋下區塊、長條建物東邊，C通風口西邊；2025-04南側兩視點可辨識較高方箱及相鄰低格柵，採水箱南面代表點，未將接頭逕認為B水箱開關。"
     },
     {
       "id": "U-DOC-TPE0163-B",
@@ -977,11 +1125,14 @@
       "category": "utility",
       "parent": "P-TPE0163",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
+      "status": "ground-reviewed-position-unresolved",
       "resultPosition": null,
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=HuRg052cHwI9nAsFkmf1eA&viewpoint=25.0446518,121.5496449&heading=0&pitch=0&fov=90"
+      ],
+      "observed": "官方第15頁列B水箱開關（水箱旁）；2025-04由西側路口沿南側查看至水箱，雖可見箱體側面接頭及環形構件，但沒有足夠銘牌或獨立圖例判定哪個是B開關，不以水箱中心冒充獨立開關座標。",
+      "checkedAt": "2026-11-04"
     },
     {
       "id": "U-DOC-TPE0163-C",
@@ -992,11 +1143,21 @@
       "category": "utility",
       "parent": "P-TPE0163",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
-      "resultPosition": null,
+      "status": "positioned-document-and-ground",
+      "resultPosition": {
+        "type": "Point",
+        "coordinates": [
+          121.54969,
+          25.04473
+        ]
+      },
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=HuRg052cHwI9nAsFkmf1eA&viewpoint=25.0446518,121.5496449&heading=0&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=Vz8vZvD1GMxX6iWGCsaFOQ&viewpoint=25.0446333,121.549745&heading=315&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "官方第15頁C通風口與A水箱東側相鄰；2025-04兩地面視點可辨識水箱東方較低長方形箱體及頂部格柵，採南面代表點。"
     },
     {
       "id": "U-DOC-TPE0163-D",
@@ -1051,11 +1212,15 @@
       "category": "utility",
       "parent": "P-TPE0163",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
+      "status": "ground-reviewed-position-unresolved",
       "resultPosition": null,
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=15",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=7XYL48xuO-uWzHMt8moM8w&viewpoint=25.0444109,121.5520545&heading=60&pitch=0&fov=75",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=T2ICT7Sdc_EnJW_hlvKMlw&viewpoint=25.0445791,121.5520841&heading=180&pitch=0&fov=90"
+      ],
+      "observed": "官方第15頁F送風口標於敦延出口北緣；已沿2024-12南側坡道與2025-01北側道路檢視。北側可見電箱、坡道護牆及濃密綠帶，但無法把其中單一構造與F唯一對應；不把電箱或坡道中心當通風口。",
+      "checkedAt": "2026-11-04"
     },
     {
       "id": "U-DOC-TPE0164-A",
@@ -1066,11 +1231,21 @@
       "category": "utility",
       "parent": "P-TPE0164",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
-      "resultPosition": null,
+      "status": "positioned-document-and-ground",
+      "resultPosition": {
+        "type": "Point",
+        "coordinates": [
+          121.55246,
+          25.04451
+        ]
+      },
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=zNxdJKQbihyg7a7rjgMxRw&viewpoint=25.0445369,121.5524591&heading=180&pitch=0&fov=75",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=1quaXgAsAUt9kDXMoKTSzQ&viewpoint=25.0445474,121.5523621&heading=110&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "官方第16頁A送風口位於延吉段西端出入口北緣、八德路三段74巷口東側；2025-01道路視點可見坡道北側狹長綠帶中開放金屬格柵，下方可見風管構造，第二視點可辨識同一坡道與格柵。採格柵組中段代表點。"
     },
     {
       "id": "U-DOC-TPE0164-B",
@@ -1081,11 +1256,21 @@
       "category": "utility",
       "parent": "P-TPE0164",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
-      "resultPosition": null,
+      "status": "positioned-document-and-ground",
+      "resultPosition": {
+        "type": "Point",
+        "coordinates": [
+          121.55288,
+          25.04447
+        ]
+      },
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=loyf53qWMmZP6FfyKy2BcQ&viewpoint=25.0444912,121.5529515&heading=260&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=BJqep8bdE944FQAgZXCG1w&viewpoint=25.0444995,121.5528497&heading=140&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-05",
+      "observed": "官方第16頁B送風口位於延吉西側坡道北緣偏東端；2025-01東西兩個道路視點可見P262橋柱西側的石面矮箱及頂部雙片格柵，採同一格柵組中段代表點，未拆為兩座。"
     },
     {
       "id": "U-DOC-TPE0164-C",
@@ -1096,11 +1281,21 @@
       "category": "utility",
       "parent": "P-TPE0164",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
-      "resultPosition": null,
+      "status": "positioned-document-and-ground",
+      "resultPosition": {
+        "type": "Point",
+        "coordinates": [
+          121.55393,
+          25.04442
+        ]
+      },
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=2FrDh188P14PiCc5aujrow&viewpoint=25.0444755,121.5536657&heading=100&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=Gkwq1TwVE9-u-GnuyTBHhA&viewpoint=25.0444925,121.5539727&heading=180&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-05",
+      "observed": "官方第16頁C排風口位於延吉街東側橋下區塊最西緣、D水塔西側；2025-01路口西北視點與北側近景可辨識同一長條石面基座、頂部格柵及直立護欄，近景P265橋柱在其東北側。採設備組概略代表位置，護欄邊界非設備測量界址。"
     },
     {
       "id": "U-DOC-TPE0164-D",
@@ -1111,11 +1306,21 @@
       "category": "utility",
       "parent": "P-TPE0164",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
-      "resultPosition": null,
+      "status": "positioned-document-and-ground",
+      "resultPosition": {
+        "type": "Point",
+        "coordinates": [
+          121.5541,
+          25.04443
+        ]
+      },
       "sources": [
-        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16"
-      ]
+        "https://www-ws.gov.taipei/001/Upload/455/relfile/22477/9717636/51bd0482-fef4-48c2-bc93-288e6cc5691c.pdf#page=16",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=fHSlor3ifW1lmBMTZaH3rA&viewpoint=25.0443236,121.5543133&heading=310&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=qiLoXsftZaROiNzXKquc-Q&viewpoint=25.0443002,121.5541138&heading=0&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-05",
+      "observed": "官方第16頁D水塔位於延吉街東側橋下獨立區塊、C排風口東邊；2024-05兩個南側道路視點可辨識同一方形箱體、周邊直立護條、南側接管及東側景觀石，採箱體南面代表位置。"
     },
     {
       "id": "U-DOC-TPE0164-E",
@@ -1188,11 +1393,17 @@
       "category": "public",
       "parent": "",
       "priority": 1,
-      "status": "not-yet-reviewed-this-pass",
+      "status": "ground-reviewed-still-unlocated",
       "resultPosition": null,
       "sources": [
-        "https://publicart.taipei/Works_detail.aspx?id=1144"
-      ]
+        "https://publicart.taipei/Works_detail.aspx?id=1144",
+        "https://publicart.taipei/admincms/upload_file/works/20240710_171535.944.jpg",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=byXfFfPnnlyzOKk6ckTONg&viewpoint=25.0449125,121.5486818&heading=90&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=byXfFfPnnlyzOKk6ckTONg&viewpoint=25.0449125,121.5486818&heading=270&pitch=0&fov=90",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=jk19U0pDudy9TSS5ylzHPw&viewpoint=25.0450197,121.5484134&heading=180&pitch=0&fov=90"
+      ],
+      "checkedAt": "2026-11-04",
+      "observed": "核對市文化局作品頁照片，為帶行人號誌的黑白斑馬造型，頁面另描述多種時間意象構件。2025-04由敦化／市民路口東西兩向及西側北車道查看，未取得可與官方斑馬照片唯一對應的地面構造；路島可見其他大型雕塑，未僅憑同路口就認定同一作品。不採原有錯點，也不把作品名稱當穿越標線。"
     },
     {
       "id": "F-ENG-JA-STAGE",

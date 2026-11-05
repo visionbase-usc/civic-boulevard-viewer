@@ -26,7 +26,10 @@ class InventoryTests(unittest.TestCase):
    if x['parent']:self.assertIn(x['parent'],r)
    if x['group']:self.assertIn(x['group'],r)
    if x['table']=='歷史圖說設備' and not x.get('access'):
-    self.assertFalse(x['historical']);self.assertTrue(x['pending']);self.assertIsNone(x['geometry'])
+    self.assertFalse(x['historical'])
+    if x.get('positionReview'):
+     self.assertEqual(x['geometry'],x['positionReview']['geometry']);self.assertTrue(x['positionReview']['url'])
+    else:self.assertTrue(x['pending']);self.assertIsNone(x['geometry'])
     self.assertIn('2026-10-05',x['verification']['sourceDate'])
   stairs=[x for x in r.values() if x['subtype']=='地下樓梯（非地面口）']
   self.assertEqual(len(stairs),3)

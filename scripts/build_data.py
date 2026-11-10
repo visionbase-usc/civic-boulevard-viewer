@@ -149,7 +149,7 @@ followup['reviewedCount']=sum(f['status']!='not-yet-reviewed-this-pass' for f in
 build_bridge_register()
 bridge_columns=load_columns(ROOT)
 (ROOT/'docs/data/bridge-columns.csv').write_bytes((ROOT/'research/bridge-columns/column-register.csv').read_bytes())
-pack=dict(bridgeColumns=bridge_columns,followup=followup,crosswayReview=crossway_review,crossways=crossways,version='1.10.0',scope=dict(name=NAME,segments=list(SEGMENTS),west=west,east=east,viewBounds=[[25.035,west-.002],[25.057,east+.002]]),date='2026-11-10',sourceSnapshotDate=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],corridorAudit=coverage,
+pack=dict(bridgeColumns=bridge_columns,followup=followup,crosswayReview=crossway_review,crossways=crossways,version='1.10.1',scope=dict(name=NAME,segments=list(SEGMENTS),west=west,east=east,viewBounds=[[25.035,west-.002],[25.057,east+.002]]),date='2026-11-10',sourceSnapshotDate=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],corridorAudit=coverage,
     roads=roads,elevated=elevated,sources=sources,
     meta=dict(pedestrianAccessCount=len(access['items']),documentedGroundAccessCount=sum(i['groundDocumented'] for i in access['items']),accessImageReviewCount=sum(bool(i['groundReview']) for i in access['items']),imageReviewCount=len(reviews),recordCount=len(records),indexCount=sum(r['isIndex'] for r in records),
         categoryCounts=dict(Counter(r['category'] for r in records if not r['isIndex'])),

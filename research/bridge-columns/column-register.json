@@ -4,7 +4,7 @@
   "checkedAt": "2026-11-10",
   "verifiedWholeScopeTotal": null,
   "readableDistinctMarks": 15,
-  "numberedPhysicalColumnsObserved": 17,
+  "numberedPhysicalColumnsObserved": 18,
   "locatedRecords": 0,
   "countRule": "按獨立實體柱紀錄計數。同柱多視角不重複；同號南北兩柱各計一根。未辨號但已區分實體者另列暫編，不以柱號連號補齊。未去重觀察視角不加入柱數。",
   "records": [
@@ -409,7 +409,7 @@
     },
     {
       "id": "BC-OBS-022",
-      "observedMark": null,
+      "observedMark": "P149",
       "locationDescription": "林森北路西側迴轉口西端，與南排 P149 並列的北排柱",
       "geometry": null,
       "coordinateStatus": "no-reliable-column-coordinate",
@@ -417,13 +417,13 @@
       "countMeaning": "本筆為已區分的單一實體柱；同號的其他實體柱另列。",
       "officialPierId": null,
       "officialDrawingMatch": false,
-      "streetviewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=96vPx5TcxJtbPdBW84_6LQ&heading=20&pitch=0&fov=50",
+      "streetviewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=z7DJbvj20TYdoUWjgnrDEQ&heading=139&pitch=0&fov=20",
       "imageryDate": "2025-05",
       "checkedAt": "2026-11-10",
-      "finding": "同一畫面可見與南排P149隔著橋下空間的另一根北排柱；柱號未讀到，不沿用南排柱號。",
-      "status": "physical-column-observed-mark-unreadable",
+      "finding": "由北側道路近景放大，柱面可讀 P149；與南排 P149 隔著橋下空間，為不同實體柱。兩側影像以迴轉口、設備平台及4號行人入口對照。",
+      "status": "streetview-mark-read-only",
       "side": "north",
-      "markStatus": "unreadable",
+      "markStatus": "readable",
       "physicalIdentity": "BC-OBS-022"
     },
     {

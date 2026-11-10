@@ -205,7 +205,7 @@ function showDetail(r){
  const audit=D.accessAudit.find(a=>a.parent===r.id);
  if(audit)body+=`<section class="notice"><strong>行人出入口 · 官方圖說</strong><p>${audit.documentedGroundCount===null?'尚無完整地面入口清冊':`已採用 ${audit.documentedGroundCount} 個文件載明地面樓梯口`}；${audit.groundImageReviewed} 個另有日期街景；${audit.approximateCount} 個有影像概略套位（非測量座標）。</p><p>${esc(audit.note)}</p></section>`;
  if(r.scopeNote)body+=`<div class="notice">${esc(r.scopeNote)}</div>`;
- if(!r.geometry)body+='<div class="notice warning">尚無已核實的入口／設施座標。地圖僅顯示所屬分段或另標示街景觀察點，不將場站中心或相機位置當作入口位置。</div>';
+ if(!r.geometry)body+=r.bridgeColumn?'<div class="notice warning">尚無可靠柱位座標。本筆僅保留清冊與文字位置，地圖不顯示柱位或街景相機點。</div>':'<div class="notice warning">尚無已核實的入口／設施座標。地圖僅顯示所屬分段或另標示街景觀察點，不將場站中心或相機位置當作入口位置。</div>';
  if(r.historical)body+=`<div class="notice warning">歷史參考，不計現況。${esc(o['來源日期'])}</div>`;
  if(r.table==='車輛入口')body+='<div class="notice">登錄入口位置。來源未確認出口、雙向通行或進出方向；不代表完整出入口清冊。</div>';
  if(r.category==='crossing')body+='<div class="notice">自行車通行性：未確認。行穿線、陸橋、地下通道或樓梯資料，不等同已確認的自行車穿越路徑。</div>';

@@ -10,7 +10,7 @@ class BridgeColumnTests(unittest.TestCase):
     def setUp(self):
         self.data=load_columns(ROOT)
     def test_same_mark_on_opposite_rows_remains_two_physical_columns(self):
-        for mark in ('P140','P143'):
+        for mark in ('P140','P143','P149'):
             rows=[r for r in self.data['records'] if r['bridgeColumn']['observedMark']==mark]
             self.assertEqual(len(rows),2)
             self.assertEqual({r['bridgeColumn']['side'] for r in rows},{'north','south'})

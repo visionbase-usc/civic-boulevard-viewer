@@ -19,7 +19,7 @@ def build():
     (BASE/'column-register.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     fields=['id','observedMark','side','locationDescription','imageryDate','checkedAt','streetviewUrl','finding','coordinateStatus','physicalIdentity']
     with (BASE/'column-register.csv').open('w',encoding='utf-8-sig',newline='') as f:
-        w=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore');w.writeheader();w.writerows(rows)
+        w=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore',lineterminator='\n');w.writeheader();w.writerows(rows)
     e=lambda v:html.escape(str(v or '未確認'),quote=True)
     body=''.join('<tr>'+''.join('<td>'+e(r.get(k))+'</td>' for k in ['id','observedMark','side','locationDescription','imageryDate','finding'])+'<td><a rel="noopener" target="_blank" href="'+e(r['streetviewUrl'])+'">原始街景</a></td></tr>' for r in rows)
     sections=json.loads((BASE/'section-reviews.json').read_text())['sections']

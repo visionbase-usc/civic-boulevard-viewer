@@ -1,0 +1,265 @@
+{
+  "currentVersion": 11.3,
+  "cimVersion": "3.3.0",
+  "serviceDescription": "",
+  "mapName": "DGN_2025_97",
+  "description": "",
+  "copyrightText": "",
+  "supportsDynamicLayers": true,
+  "layers": [
+    {
+      "id": 0,
+      "name": "DGN_2025_97",
+      "parentLayerId": -1,
+      "defaultVisibility": true,
+      "subLayerIds": null,
+      "minScale": 1500000,
+      "maxScale": 0,
+      "type": "Raster Layer",
+      "supportsDynamicLegends": true
+    },
+    {
+      "id": 1,
+      "name": "行政區",
+      "parentLayerId": -1,
+      "defaultVisibility": true,
+      "subLayerIds": null,
+      "minScale": 1500000,
+      "maxScale": 0,
+      "type": "Feature Layer",
+      "geometryType": "esriGeometryPolygon",
+      "supportsDynamicLegends": true
+    }
+  ],
+  "tables": [],
+  "spatialReference": {
+    "wkid": 102443,
+    "latestWkid": 3826,
+    "xyTolerance": 0.001,
+    "zTolerance": 0.001,
+    "mTolerance": 0.001,
+    "falseX": -5372600,
+    "falseY": -10001100,
+    "xyUnits": 10000,
+    "falseZ": -100000,
+    "zUnits": 10000,
+    "falseM": -100000,
+    "mUnits": 10000
+  },
+  "singleFusedMapCache": true,
+  "tileInfo": {
+    "rows": 256,
+    "cols": 256,
+    "dpi": 96,
+    "format": "PNG",
+    "compressionQuality": 0,
+    "origin": {
+      "x": -5372600,
+      "y": 10001100
+    },
+    "spatialReference": {
+      "wkid": 102443,
+      "latestWkid": 3826,
+      "xyTolerance": 0.001,
+      "zTolerance": 0.001,
+      "mTolerance": 0.001,
+      "falseX": -5372600,
+      "falseY": -10001100,
+      "xyUnits": 450310428.5899046,
+      "falseZ": -100000,
+      "zUnits": 10000,
+      "falseM": -100000,
+      "mUnits": 10000
+    },
+    "lods": [
+      {
+        "level": 0,
+        "resolution": 3307.2982812632295,
+        "scale": 12500000
+      },
+      {
+        "level": 1,
+        "resolution": 2645.8386250105837,
+        "scale": 10000000
+      },
+      {
+        "level": 2,
+        "resolution": 1322.9193125052918,
+        "scale": 5000000
+      },
+      {
+        "level": 3,
+        "resolution": 661.4596562526459,
+        "scale": 2500000
+      },
+      {
+        "level": 4,
+        "resolution": 264.5838625010584,
+        "scale": 1000000
+      },
+      {
+        "level": 5,
+        "resolution": 132.2919312505292,
+        "scale": 500000
+      },
+      {
+        "level": 6,
+        "resolution": 66.1459656252646,
+        "scale": 250000
+      },
+      {
+        "level": 7,
+        "resolution": 26.458386250105836,
+        "scale": 100000
+      },
+      {
+        "level": 8,
+        "resolution": 13.229193125052918,
+        "scale": 50000
+      },
+      {
+        "level": 9,
+        "resolution": 6.614596562526459,
+        "scale": 25000
+      },
+      {
+        "level": 10,
+        "resolution": 2.6458386250105836,
+        "scale": 10000
+      },
+      {
+        "level": 11,
+        "resolution": 1.3229193125052918,
+        "scale": 5000
+      },
+      {
+        "level": 12,
+        "resolution": 0.6614596562526459,
+        "scale": 2500
+      },
+      {
+        "level": 13,
+        "resolution": 0.26458386250105836,
+        "scale": 1000
+      },
+      {
+        "level": 14,
+        "resolution": 0.13229193125052918,
+        "scale": 500
+      },
+      {
+        "level": 15,
+        "resolution": 0.06614596562526459,
+        "scale": 250
+      }
+    ]
+  },
+  "storageInfo": {
+    "storageFormat": "esriMapCacheStorageModeCompactV2",
+    "packetSize": 128
+  },
+  "initialExtent": {
+    "xmin": 283375.7875802545,
+    "ymin": 2756782.6110047465,
+    "xmax": 329919.75271974504,
+    "ymax": 2793914.638595254,
+    "spatialReference": {
+      "wkid": 102443,
+      "latestWkid": 3826,
+      "xyTolerance": 0.001,
+      "zTolerance": 0.001,
+      "mTolerance": 0.001,
+      "falseX": -5372600,
+      "falseY": -10001100,
+      "xyUnits": 10000,
+      "falseZ": -100000,
+      "zUnits": 10000,
+      "falseM": -100000,
+      "mUnits": 10000
+    }
+  },
+  "fullExtent": {
+    "xmin": 278507.2616999997,
+    "ymin": 2729667.8115999997,
+    "xmax": 351649.7148000002,
+    "ymax": 2799240.0568000004,
+    "spatialReference": {
+      "wkid": 102443,
+      "latestWkid": 3826,
+      "xyTolerance": 0.001,
+      "zTolerance": 0.001,
+      "mTolerance": 0.001,
+      "falseX": -5372600,
+      "falseY": -10001100,
+      "xyUnits": 10000,
+      "falseZ": -100000,
+      "zUnits": 10000,
+      "falseM": -100000,
+      "mUnits": 10000
+    }
+  },
+  "datesInUnknownTimezone": false,
+  "minScale": 12500000,
+  "maxScale": 250,
+  "units": "esriMeters",
+  "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+  "documentInfo": {
+    "Title": "DGN_2025",
+    "Author": "",
+    "Comments": "",
+    "Subject": "",
+    "Category": "",
+    "Version": "3.3.0",
+    "AntialiasingMode": "Fast",
+    "TextAntialiasingMode": "Force",
+    "Keywords": ""
+  },
+  "supportsQueryDomains": true,
+  "capabilities": "Map,Query,Data",
+  "supportedQueryFormats": "JSON, geoJSON, PBF",
+  "exportTilesAllowed": false,
+  "referenceScale": 0.0,
+  "datumTransformations": [
+    {
+      "geoTransforms": [
+        {
+          "wkid": 108854,
+          "latestWkid": 3830,
+          "transformForward": false,
+          "name": "TWD_1997_To_WGS_1984_1"
+        }
+      ]
+    },
+    {
+      "geoTransforms": [
+        {
+          "wkid": 108854,
+          "latestWkid": 3830,
+          "transformForward": true,
+          "name": "TWD_1997_To_WGS_1984_1"
+        }
+      ]
+    }
+  ],
+  "supportsDatumTransformation": true,
+  "floorAwareMapProperties": {
+    "defaultFloorFilterSettings": {
+      "isEnabled": false
+    }
+  },
+  "archivingInfo": {
+    "supportsHistoricMoment": false
+  },
+  "supportsClipping": true,
+  "supportsSpatialFilter": true,
+  "supportsTimeRelation": true,
+  "supportsQueryDataElements": true,
+  "mapUnits": {
+    "uwkid": 9001
+  },
+  "maxRecordCount": 2000,
+  "maxImageHeight": 4096,
+  "maxImageWidth": 4096,
+  "supportedExtensions": "",
+  "serviceItemId": "205b85f5c4e04826b17a995b3d4111ad"
+}

@@ -5,7 +5,7 @@
 <meta name="description" content="市民大道中山北路—光復南路公開圖資檢視器：停車場、車輛出入口、行人與自行車穿越、公共運輸、公共空間及機電維護。">
 <meta name="theme-color" content="#174b70"><title>市民大道｜資料庫檢視器</title>
 <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="./vendor/leaflet.css"><link rel="stylesheet" href="./style.css?v=1.9.0">
+<link rel="stylesheet" href="./vendor/leaflet.css"><link rel="stylesheet" href="./style.css?v=1.10.0">
 </head>
 <body>
 <div id="map" aria-label="市民大道中山北路—光復南路互動地圖"></div>
@@ -18,6 +18,7 @@
  <div class="panel-heading"><h2>圖層</h2><button class="close" data-close="layers-panel" aria-label="關閉圖層面板">×</button></div>
  <div class="small-actions"><button id="all-layers">全部開啟</button><button id="no-layers">全部關閉</button></div>
  <div id="layer-options"></div>
+ <button id="columns-button" class="relation-button">橋柱 · 部分查核清冊（不代表總數）</button>
  <button id="crossways-button" class="relation-button">穿越道 · 數量與位置核列</button>
  <button id="access-button" class="relation-button">停車場行人出入口 · 核對清單</button>
  <div class="settings-group"><h3>資料狀態</h3><label><input type="checkbox" id="status-confirmed" checked><span class="status-key solid"></span>官方來源已核</label><label><input type="checkbox" id="status-pending" checked><span class="status-key pending"></span>待確認／未定位</label><label><input type="checkbox" id="status-historical"><span class="status-key historical"></span>歷史資料</label><p class="hint">分類與狀態分開篩選。歷史資料不代表現況。</p></div>
@@ -32,5 +33,5 @@
 <div class="map-actions"><button id="full-extent" class="surface" title="回到研究範圍" aria-label="回到市民大道中山北路—光復南路">⌖<span>總覽</span></button></div>
 <div id="toast" role="status" hidden></div>
 <noscript>請開啟瀏覽器 JavaScript 以使用互動地圖。原始資料可從 GitHub repo 下載。</noscript>
-<script src="./vendor/leaflet.js"></script><script src="./data/inventory.js?v=1.9.0"></script><script src="./app.js?v=1.9.0"></script>
+<script src="./vendor/leaflet.js"></script><script src="./data/inventory.js?v=1.10.0"></script><script src="./app.js?v=1.10.0"></script>
 </body></html>

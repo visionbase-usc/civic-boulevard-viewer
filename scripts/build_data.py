@@ -5,6 +5,8 @@ from pathlib import Path
 from collections import Counter
 from scope import SEGMENTS, NAME, clip_line, select_records
 from positioning import intersect_rays
+from bridge_columns import load_columns
+from build_bridge_register import build as build_bridge_register
 ROOT = Path(__file__).resolve().parents[1]
 src = json.loads((ROOT/'source/inventory.json').read_text())
 osm = json.loads((ROOT/'source/osm-roads.json').read_text())
@@ -144,7 +146,10 @@ for f in followup['records']:
 followup['locatedCount']=sum(bool(byid[f['id']]['geometry']) for f in followup['records'])
 followup['remainingCount']=77-followup['locatedCount']
 followup['reviewedCount']=sum(f['status']!='not-yet-reviewed-this-pass' for f in followup['records'])
-pack=dict(followup=followup,crosswayReview=crossway_review,crossways=crossways,version='1.9.0',scope=dict(name=NAME,segments=list(SEGMENTS),west=west,east=east,viewBounds=[[25.035,west-.002],[25.057,east+.002]]),date='2026-11-05',sourceSnapshotDate=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],corridorAudit=coverage,
+build_bridge_register()
+bridge_columns=load_columns(ROOT)
+(ROOT/'docs/data/bridge-columns.csv').write_bytes((ROOT/'research/bridge-columns/column-register.csv').read_bytes())
+pack=dict(bridgeColumns=bridge_columns,followup=followup,crosswayReview=crossway_review,crossways=crossways,version='1.10.0',scope=dict(name=NAME,segments=list(SEGMENTS),west=west,east=east,viewBounds=[[25.035,west-.002],[25.057,east+.002]]),date='2026-11-10',sourceSnapshotDate=src['date'],categories=categories,segments=segments,records=records,accessAudit=access['audits'],accessScope=access['scope'],corridorAudit=coverage,
     roads=roads,elevated=elevated,sources=sources,
     meta=dict(pedestrianAccessCount=len(access['items']),documentedGroundAccessCount=sum(i['groundDocumented'] for i in access['items']),accessImageReviewCount=sum(bool(i['groundReview']) for i in access['items']),imageReviewCount=len(reviews),recordCount=len(records),indexCount=sum(r['isIndex'] for r in records),
         categoryCounts=dict(Counter(r['category'] for r in records if not r['isIndex'])),

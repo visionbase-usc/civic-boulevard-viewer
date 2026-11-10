@@ -1,0 +1,32 @@
+{
+  "sections": [
+    {
+      "scope": "中山北路東側至天津街西側，兩排主線柱",
+      "status": "physical-columns-reviewed-labels-partial",
+      "physicalColumnCount": 10,
+      "northCount": 5,
+      "southCount": 5,
+      "records": [
+        "BC-OBS-001",
+        "BC-OBS-009",
+        "BC-OBS-010",
+        "BC-OBS-011",
+        "BC-OBS-012",
+        "BC-OBS-013",
+        "BC-OBS-014",
+        "BC-OBS-015",
+        "BC-OBS-016",
+        "BC-OBS-017"
+      ],
+      "geometry": null,
+      "countBasis": "北側向東、南側向西的連續街景核對，對照停管處A92第1頁西半部5組雙柱符號；逐根分列。影像跨2024-12至2025-05，非同日現勘。",
+      "completeWholeScope": false,
+      "labelComplete": false,
+      "notes": [
+        "未核定正式墩號對照。",
+        "不將此子段數量外推至天津街以東。",
+        "未辨號3根，保留實體紀錄。"
+      ]
+    }
+  ]
+}

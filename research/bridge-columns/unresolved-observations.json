@@ -1,0 +1,162 @@
+{
+  "status": "partial-observations-not-column-inventory",
+  "countRule": "這是查核視角，不是柱的筆數；不可與可辨號清冊相加計數。",
+  "observations": [
+    {
+      "id": "BC-VIEW-001",
+      "locationDescription": "中山北路與天津街之間",
+      "imageryDate": "2025-04",
+      "checkedAt": "2026-11-10",
+      "streetviewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=wfWza2SiBdXEQE06kAVPVQ&heading=180&pitch=0&fov=60",
+      "finding": "停車場坡道後方可見柱體，這一視角無可辨讀柱號。",
+      "geometry": null,
+      "observedMark": null,
+      "deduplicatedPhysicalCount": null,
+      "status": "visible-columns-number-unresolved"
+    },
+    {
+      "id": "BC-VIEW-002",
+      "locationDescription": "天津街口",
+      "imageryDate": "2025-05",
+      "checkedAt": "2026-11-10",
+      "streetviewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkEbmMU4qb3VmkPB8KODdw&heading=150&pitch=0&fov=60",
+      "finding": "近處兩根柱體可見；未辨讀柱號，遠方柱亦不混入數量。",
+      "geometry": null,
+      "observedMark": null,
+      "deduplicatedPhysicalCount": null,
+      "status": "visible-columns-number-unresolved"
+    },
+    {
+      "id": "BC-VIEW-003",
+      "locationDescription": "天津街至林森北路之間",
+      "imageryDate": "2025-05",
+      "checkedAt": "2026-11-10",
+      "streetviewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=z7DJbvj20TYdoUWjgnrDEQ&heading=180&pitch=0&fov=60",
+      "finding": "近處及對側柱體可見，近柱部分超出畫面；需換角度。",
+      "geometry": null,
+      "observedMark": null,
+      "deduplicatedPhysicalCount": null,
+      "status": "visible-columns-number-unresolved"
+    },
+    {
+      "id": "BC-VIEW-004",
+      "locationDescription": "林森北路東側",
+      "imageryDate": "2025-05",
+      "checkedAt": "2026-11-10",
+      "streetviewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=KW6mbNzeovXtbhFCYaD-7Q&heading=200&pitch=0&fov=60",
+      "finding": "路口可見兩根柱體，畫面未讀到柱號。",
+      "geometry": null,
+      "observedMark": null,
+      "deduplicatedPhysicalCount": null,
+      "status": "visible-columns-number-unresolved"
+    },
+    {
+      "id": "BC-VIEW-005",
+      "locationDescription": "林森北路以東",
+      "imageryDate": "2025-05",
+      "checkedAt": "2026-11-10",
+      "streetviewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=CaaDJnlrHp8y12LxO9uhQA&heading=180&pitch=0&fov=90",
+      "finding": "近景柱面殘留淡字，未可靠辨讀，不填猜測字樣。",
+      "geometry": null,
+      "observedMark": null,
+      "deduplicatedPhysicalCount": null,
+      "status": "visible-columns-number-unresolved"
+    },
+    {
+      "id": "BC-VIEW-006",
+      "locationDescription": "長安東路一段30巷口",
+      "imageryDate": "2025-05",
+      "checkedAt": "2026-11-10",
+      "streetviewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=q6mDoBi_z_u2BX6Xm9pwcw&heading=180&pitch=0&fov=90",
+      "finding": "近景圓柱有彩繪，未讀到柱號；多根背景柱未去重。",
+      "geometry": null,
+      "observedMark": null,
+      "deduplicatedPhysicalCount": null,
+      "status": "visible-columns-number-unresolved"
+    },
+    {
+      "id": "BC-VIEW-007",
+      "locationDescription": "長安東路一段52巷口",
+      "imageryDate": "2025-05",
+      "checkedAt": "2026-11-10",
+      "streetviewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0gZkar_7B6rr88TrGgEigQ&heading=115&pitch=0&fov=70",
+      "finding": "成列柱體可見，近柱部分受植栽遮擋；不能據遠景當完整數量。",
+      "geometry": null,
+      "observedMark": null,
+      "deduplicatedPhysicalCount": null,
+      "status": "visible-columns-number-unresolved"
+    },
+    {
+      "id": "BC-VIEW-008",
+      "locationDescription": "松江路／新生南路口",
+      "imageryDate": "2025-05",
+      "checkedAt": "2026-11-10",
+      "streetviewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FZ9QmT0h5eF-CQ407nb6fg&heading=180&pitch=0&fov=90",
+      "finding": "可見近、遠柱體，未讀到柱號；需補柱面方向。",
+      "geometry": null,
+      "observedMark": null,
+      "deduplicatedPhysicalCount": null,
+      "status": "visible-columns-number-unresolved"
+    },
+    {
+      "id": "BC-VIEW-009",
+      "locationDescription": "八德路二段174巷口",
+      "imageryDate": "2025-04",
+      "checkedAt": "2026-11-10",
+      "streetviewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=laDr224p7xk-Ay2n89xypg&heading=180&pitch=0&fov=90",
+      "finding": "畫面可見至少四根柱體，部分彩繪；未辨號、未完成與其他視角去重。",
+      "geometry": null,
+      "observedMark": null,
+      "deduplicatedPhysicalCount": null,
+      "status": "visible-columns-number-unresolved"
+    },
+    {
+      "id": "BC-VIEW-010",
+      "locationDescription": "大安路口",
+      "imageryDate": "2025-05",
+      "checkedAt": "2026-11-10",
+      "streetviewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9qb1wAqRYxr2PrQ7KGT6KQ&heading=180&pitch=0&fov=90",
+      "finding": "可見路口兩側柱體，無可靠可讀柱號。",
+      "geometry": null,
+      "observedMark": null,
+      "deduplicatedPhysicalCount": null,
+      "status": "visible-columns-number-unresolved"
+    },
+    {
+      "id": "BC-VIEW-011",
+      "locationDescription": "P268以東沿南側道路",
+      "imageryDate": "2024-12",
+      "checkedAt": "2026-11-10",
+      "streetviewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=F6OwmTzGza_LcTpcBR95-g&heading=45&pitch=0&fov=50",
+      "finding": "前方矩形柱可見，柱號未讀到，不自行填為P269。",
+      "geometry": null,
+      "observedMark": null,
+      "deduplicatedPhysicalCount": null,
+      "status": "visible-columns-number-unresolved"
+    },
+    {
+      "id": "BC-VIEW-012",
+      "locationDescription": "P276以西沿北側道路",
+      "imageryDate": "2025-01",
+      "checkedAt": "2026-11-10",
+      "streetviewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=A-JUIn10_hi7dDNpLyxtww&heading=210&pitch=0&fov=55",
+      "finding": "通風建物西端另有柱體，柱號未讀到，不自行填為P275。",
+      "geometry": null,
+      "observedMark": null,
+      "deduplicatedPhysicalCount": null,
+      "status": "visible-columns-number-unresolved"
+    },
+    {
+      "id": "BC-VIEW-013",
+      "locationDescription": "市民大道四段201號旁／敦延段停車場坡道",
+      "imageryDate": "2025-01",
+      "checkedAt": "2026-11-10",
+      "streetviewUrl": "https://www.google.com/maps/@?api=1&map_action=pano&pano=zNxdJKQbihyg7a7rjgMxRw&heading=180&pitch=0&fov=90",
+      "finding": "停車場坡道旁可見柱體；本視角未可靠辨讀柱號，未與相鄰柱完成去重。",
+      "geometry": null,
+      "observedMark": null,
+      "deduplicatedPhysicalCount": null,
+      "status": "visible-columns-number-unresolved"
+    }
+  ]
+}
